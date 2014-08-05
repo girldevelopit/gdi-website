@@ -5,5 +5,6 @@ class LocationsController < ApplicationController
 
   def show
     @locations = Location.find(params[:id])
+    @bio = Bio.all
   end
 end

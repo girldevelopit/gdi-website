@@ -5,3 +5,13 @@
     <br><%= @locations.meetup %>
     <br><%= @locations.geo %>
   </ul>
+
+<h1>The Team</h1>
+  <% @bio.each do |b| %>
+    <ul>
+      <br><%= b.title %>
+      <br><%= b.name %>
+      <br><%= b.info %>
+      <br><%= b.image %>
+    </ul>
+  <% end %>
