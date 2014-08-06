@@ -20,6 +20,11 @@ gem 'fog'
 gem "mini_magick"
 # file upload solution
 gem 'carrierwave'
+
+group :development do
+  gem 'guard-livereload'
+end
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
