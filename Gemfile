@@ -15,6 +15,10 @@ gem 'spring',        group: :development
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 
+group :development do
+  gem 'guard-livereload'
+end
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
