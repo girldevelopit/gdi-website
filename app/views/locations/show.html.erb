@@ -1,7 +1,19 @@
-<h1>Welcome to <%= @locations.location %></h1>
+<h1>Welcome to <%= @location.location %></h1>
   <ul>
-    <br><%= @locations.blurb %>
-    <br><%= @locations.fb %>
-    <br><%= @locations.meetup %>
-    <br><%= @locations.geo %>
+    <br><%= @location.blurb %>
+    <br><%= @location.fb %>
+    <br><%= @location.meetup %>
+    <br><%= @location.geo %>
   </ul>
+
+<h1>The Team</h1>
+  <% @bios.each do |bio| %>
+    <br><%= bio.title %>
+    <br><%= bio.name %>
+    <br><%= bio.info %>
+    <br><%= bio.admin_user.id %>
+    <br>
+    <% if bio.image? %>
+      <%= image_tag bio.image.thumb.url %>
+    <% end %>
+  <% end %>
