@@ -7,11 +7,12 @@
   </ul>
 
 <h1>The Team</h1>
-  <% @bio.each do |b| %>
-    <ul>
-      <br><%= b.title %>
-      <br><%= b.name %>
-      <br><%= b.info %>
-      <br><%= b.image %>
-    </ul>
+  <% @bio.each do |bio| %>
+    <br><%= bio.title %>
+    <br><%= bio.name %>
+    <br><%= bio.info %>
+    <br>
+    <% if bio.image? %>
+      <%= image_tag bio.image.thumb.url %>
+    <% end %>
   <% end %>
