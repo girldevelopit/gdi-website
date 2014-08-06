@@ -22,6 +22,17 @@ ActiveAdmin.register Bio do
     active_admin_comments
   end
 
+  form do |f|
+    f.inputs "Edit Bio" do
+      f.input :admin_user, member_label: :email
+      f.input :title
+      f.input :name
+      f.input :info
+      f.input :image
+    end
+    f.actions
+  end
+
   #
   # or
   #

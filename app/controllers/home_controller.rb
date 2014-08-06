@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
   def index
-  	locational
+    locational # in applaction controller
+  end
+
+  def about
   end
 end

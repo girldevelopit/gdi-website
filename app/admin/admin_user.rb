@@ -22,7 +22,7 @@ ActiveAdmin.register AdminUser do
       f.input :email
       # f.input :password
       # f.input :password_confirmation
-      f.input :location
+      f.input :location, member_label: :location
     end
     f.actions
   end
