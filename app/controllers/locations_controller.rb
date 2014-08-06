@@ -4,7 +4,11 @@ class LocationsController < ApplicationController
   end
 
   def show
-    @locations = Location.find(params[:id])
-    @bio = Bio.all
+    @location = Location.find(params[:id])
+    @users = @location.admin_users
+    @bios = []
+    @users.each do |user|
+      @bios << user.bio
+    end
   end
 end
