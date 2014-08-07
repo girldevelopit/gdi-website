@@ -13,6 +13,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
+gem 'cancan'
+gem 'rolify'
+
+gem 'quiet_assets', group: :development
 
 # for aws cloud storage
 gem 'fog'
@@ -24,6 +28,7 @@ gem 'carrierwave'
 group :development do
   gem 'guard-livereload'
 end
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
