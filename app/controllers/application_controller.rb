@@ -6,8 +6,9 @@ class ApplicationController < ActionController::Base
     @location = Location.all
   end
 
-  def access_denied(exception)
-    binding.pry
-    redirect_to admin_path, :alert => exception.message
-  end
+  # def access_denied(exception)
+  #   binding.pry
+  #   redirect_to admin_path, :alert => exception.message
+  # end
+
 end
