@@ -8,34 +8,26 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  
+  <%= yield %>
   <body>
-    <header>
-      <h1><span class="tagline1">Don't be Shy</span><span class="tagline2">Develop It</span></h1>
-      image_tag("gdi_logo_badge.png")
-      <nav class="top">
-        <%= link_to "home", root_path %>
-        <%= link_to "about", about_path %>
-        <%= link_to "chapters", locations_path %>
-        <%#=link_to "resources", resources_path %>
-        <%#= link_to "donate", donate_path %>
-      </nav>
-    </header>
+  <%= render "shared/header" %>
 
     <aside class="city">
-<!--       image_tag("state.png")
- -->      <h1><%= @location.location %></h1>
+<!--       <%= image_tag("state.png") %>
+ -->      <h2><%= @location.location %></h2>
         <ul>
-          <li><%= @location.blurb %></li>
-          <%= link_to image_tag "fb.png", @location.fb %>
-
-          <li><%= @location.meetup %></li> //URL --button
-          <li><%= @location.geo %></li>
+          <%#= link_to image_tag "fb.png", @location.fb %>
+          <%#= link_to image_tag "tw.png", @location.tw %>
+          <%#= link_to image_tag "in.png", @location.in %>
+          <%#= link_to image_tag "gh.png", @location.gh %>
+          <%#= mail_to image_tag "email.png", @location.email %>
         </ul>
+
+        <button class="join"><%= link_to @location.meetup %></button>
+
     </aside>
 
     <section ="main">
-      
       <div class="classes">
         <h2>Upcoming Classes</h2>
 <!--         some code to make the meetup API data show up!
@@ -75,13 +67,8 @@
 
     </section>
     
-    <footer>
-      <nav class="bottom">
-        <%= link_to "Home", root_path %>
-        <a href="#/partners">partners</a>
-        <a href="http://girldevelopit.tumblr.com/">blog</a> 
-      </nav>
-    </footer>
+    
+    <%= render "shared/footer" %>
   </body>
 </html>
 <% end %>

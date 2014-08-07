@@ -8,38 +8,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<h1>Girl Develop It</h1>
-	<header>
-		<h2>Don't be Shy</h2>
-		<h2>Develop It</h2>
-		<img class="banner" src="#">
-		<img class="logo" src="#">
-		<nav class="top">
-			<%= link_to "home", root_path %>
-			<a href="#/about">about</a>
-			<%= link_to "chapters", locations_path %>
-			<a href="#/resources">resources</a>
-			<a href="#/donate">donate</a>
-		</nav>
-	</header>
-	
-	
-	
+
+
+<!-- 	load _header partial: is this right? -->
+	<%= render "shared/header" %>
+
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
+
 <%= yield %>
 
-	<footer>
-		<nav class="bottom">
-			<%= link_to "Home", root_path %>
-			<a href="#/partners">partners</a>
-			<a href="http://girldevelopit.tumblr.com/">blog</a> 
-		</nav>
-	</footer>
 
-
+<!-- load _footer partial: is this right? -->
+	<%= render "shared/footer" %>
 
 </body>
 </html>
