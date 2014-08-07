@@ -2,11 +2,27 @@
 <html>
 <head>
   <title><%= @location.location %></title>
+  <meta charset="UTF-8">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<h1>Girl Develop It</h1>
+  <header>
+    <h2>Don't be Shy</h2>
+    <h2>Develop It</h2>
+    <img class="banner" src="#">
+    <img class="logo" src="#">
+    <nav class="top">
+      <%= link_to "home", root_path %>
+      <a href="#/about">about</a>
+      <%= link_to "chapters", locations_path %>
+      <a href="#/resources">resources</a>
+      <a href="#/donate">donate</a>
+    </nav>
+  </header>
 
 <h1>Welcome to <%= @location.location %></h1>
   <ul>
