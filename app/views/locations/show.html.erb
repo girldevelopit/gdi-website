@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= @location.location %></title>
-  <meta charset="UTF-8">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  
+  <head>
+    <title><%= @location.location %></title>
+    <meta charset="UTF-8">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  
+  <body>
+    <header>
+      <h1><span class="tagline1">Don't be Shy</span><span class="tagline2">Develop It</span></h1>
+      image_tag("gdi_logo_badge.png")
+      <nav class="top">
+        <%= link_to "home", root_path %>
+        <%= link_to "about", about_path %>
+        <%= link_to "chapters", locations_path %>
+        <%#=link_to "resources", resources_path %>
+        <%#= link_to "donate", donate_path %>
+      </nav>
+    </header>
 
-<h1>Girl Develop It</h1>
-  <header>
-    <h2>Don't be Shy</h2>
-    <h2>Develop It</h2>
-    <img class="banner" src="#">
-    <img class="logo" src="#">
-    <nav class="top">
-      <%= link_to "home", root_path %>
-      <a href="#/about">about</a>
-      <%= link_to "chapters", locations_path %>
-      <a href="#/resources">resources</a>
-      <a href="#/donate">donate</a>
-    </nav>
-  </header>
+    <aside class="city">
+<!--       image_tag("state.png")
+ -->      <h1><%= @location.location %></h1>
+        <ul>
+          <li><%= @location.blurb %></li>
+          <%= link_to image_tag "fb.png", @location.fb %>
 
-<h1>Welcome to <%= @location.location %></h1>
-  <ul>
-    <li><%= @location.blurb %></li>
-    <li><%= @location.fb %></li>
-    <li><%= @location.meetup %></li>
-    <li><%= @location.geo %></li>
-  </ul>
+          <li><%= @location.meetup %></li> //URL --button
+          <li><%= @location.geo %></li>
+        </ul>
+    </aside>
 
-<h1>The Team</h1>
-  <% @bios.each do |bio| %>
-    <ul>
-      <li><%= bio.title %></li>
-      <li><%= bio.name %></li>
-      <li><%= bio.info %></li>
-      <li><%= bio.admin_user.id %></li>
-      <li>
-    </ul>
-    <% if bio.image? %>
-      <%= image_tag bio.image.thumb.url %>
-    <% end %>
-  <% end %>
+    <section ="main">
+      
+      <div class="classes">
+        <h2>Upcoming Classes</h2>
+<!--         some code to make the meetup API data show up!
+ -->      
+      </div>
+  
+      
+      <h2>Chapter Leaders</h2>
+        <div class="leaders">
+          <% @bios.each do |bio| %>
+            <ul>
+              <li><%= bio.title %></li>
+              <li><%= bio.name %></li>
+              <li><%= bio.info %></li>
+              <li><%= bio.admin_user.id %></li>
+              <li>
+            </ul>
+            <% if bio.image? %>
+              <%= image_tag bio.image.thumb.url %>
+            <% end %>
+      </div>
+      
+      <h2>The Instructors</h2>
+        <div class="instructors">
+          <% @bios.each do |bio| %>
+            <ul>
+              <li><%= bio.title %></li>
+              <li><%= bio.name %></li>
+              <li><%= bio.info %></li>
+              <li><%= bio.admin_user.id %></li>
+              <li>
+            </ul>
+            <% if bio.image? %>
+              <%= image_tag bio.image.thumb.url %>
+          <% end %>
+      </div>
+
+    </section>
+    
+    <footer>
+      <nav class="bottom">
+        <%= link_to "Home", root_path %>
+        <a href="#/partners">partners</a>
+        <a href="http://girldevelopit.tumblr.com/">blog</a> 
+      </nav>
+    </footer>
+  </body>
+</html>
+<% end %>
