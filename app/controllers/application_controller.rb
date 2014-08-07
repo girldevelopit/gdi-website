@@ -4,5 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   def locational
     @location = Location.all
-      end
+  end
+
+  def access_denied(exception)
+    binding.pry
+    redirect_to admin_path, :alert => exception.message
+  end
 end
