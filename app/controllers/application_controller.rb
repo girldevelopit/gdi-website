@@ -5,4 +5,10 @@ class ApplicationController < ActionController::Base
   def locational
     @location = Location.all
   end
+
+  def access_denied(exception)
+    binding.pry
+    redirect_to admin_path, :alert => exception.message
+  end
+
 end
