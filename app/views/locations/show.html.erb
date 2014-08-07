@@ -1,18 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @location.location %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
 <h1>Welcome to <%= @location.location %></h1>
   <ul>
-    <br><%= @location.blurb %>
-    <br><%= @location.fb %>
-    <br><%= @location.meetup %>
-    <br><%= @location.geo %>
+    <li><%= @location.blurb %></li>
+    <li><%= @location.fb %></li>
+    <li><%= @location.meetup %></li>
+    <li><%= @location.geo %></li>
   </ul>
 
 <h1>The Team</h1>
   <% @bios.each do |bio| %>
-    <br><%= bio.title %>
-    <br><%= bio.name %>
-    <br><%= bio.info %>
-    <br><%= bio.admin_user.id %>
-    <br>
+    <ul>
+      <li><%= bio.title %></li>
+      <li><%= bio.name %></li>
+      <li><%= bio.info %></li>
+      <li><%= bio.admin_user.id %></li>
+      <li>
+    </ul>
     <% if bio.image? %>
       <%= image_tag bio.image.thumb.url %>
     <% end %>
