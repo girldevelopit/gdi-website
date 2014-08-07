@@ -26,29 +26,43 @@ Location.create! do |a|
   a.meetup    = 'http://www.meetup.com/girldevelopit/'
   a.geo       = 'New York, NY'
 end
+#
+# AdminUser.create! do |a|
+#   a.email       = 'julia@girldevelopit.com'
+#   a.password    = a.password_confirmation = 'password'
+# end
 
-AdminUser.create! do |a|
-  a.email       = 'julia@girldevelopit.com'
-  a.password    = a.password_confirmation = 'password'
-end
+julia = AdminUser.create! do |a|
+            a.email       = 'julia@girldevelopit.com'
+            a.password    = a.password_confirmation = 'password'
+          end
+
+webmistress = Role.create! do |a|
+                a.name = 'webmistress'
+                a.resource_id = 1
+              end
+
+admin = Role.create! do |a|
+                a.name = 'admin'
+                a.resource_id = 2
+              end
+
+julia.roles << webmistress
+julia.roles << admin
+julia.save!
 
 Bio.create! do |a|
   a.title     = 'LEADERS'
   a.name      = 'Julia Elman'
   a.info      = "Julia Elman is a Designer & Front-End Developer based in Chapel Hill, NC. She has been working her brand of web skills for over a decade, focusing mainly on HTML/CSS markup and Javascript. She is an avid supporter of tech education and recently volunteered at a local Teen Tech Camp in Durham, NC in 2012. Julia is excited to be a part of the first Girl Develop It in North Carolina and share her wealth of knowledge with others."
   a.admin_user_id = 2
-  a.image     = 'https://s3.amazonaws.com/girl_develop_it/gdi_logo_badge.png'
+  a.image     = ''
 end
 
-AdminUser.create! do |a|
-  a.email       = 'aurelia@girldevelopit.com'
-  a.password    = a.password_confirmation = 'password'
-end
-
-Bio.create! do |a|
-  a.title     = 'LEADERS'
-  a.name      = 'Aurelia Moser'
-  a.info      = "Aurelia is a librarian and developer in NYC. In addition leading NYC's GDI chapter, she teaches metadata and data visualization courses, and develops open source mapping software and data-journo curriculum under current support of a Knight-Mozilla fellowship. In her free time, she contributes to art && code community programs and participates in hackathons for Data Kind, Hack n'Jill, Art Hack Day and Open Data programs. Full stack from data munging to code monkeying, she's happy to geek for social good where possible."
-  a.admin_user_id = 3
-  a.image     = 'https://s3.amazonaws.com/girl_develop_it/gdi_logo_badge.png'
-end
+# Bio.create! do |a|
+#   a.title     = 'LEADERS'
+#   a.name      = 'Aurelia Moser'
+#   a.info      = "Aurelia is a librarian and developer in NYC. In addition leading NYC's GDI chapter, she teaches metadata and data visualization courses, and develops open source mapping software and data-journo curriculum under current support of a Knight-Mozilla fellowship. In her free time, she contributes to art && code community programs and participates in hackathons for Data Kind, Hack n'Jill, Art Hack Day and Open Data programs. Full stack from data munging to code monkeying, she's happy to geek for social good where possible."
+#   a.admin_user_id = 3
+#   a.image     = ''
+# end
