@@ -30,7 +30,7 @@ end
 julia = AdminUser.create! do |a|
   a.email       = 'julia@girldevelopit.com'
   a.password    = a.password_confirmation = 'password'
-  binding.pry
+  #binding.pry
   a.location_id = rdu.id
 end
 
