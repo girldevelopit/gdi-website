@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html>
-  
-  <head>
-    <title><%= @location.location %></title>
-    <meta charset="UTF-8">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <%= yield %>
-  <body>
-  <%= render "shared/header" %>
 
     <aside class="city">
 <!--       <%= image_tag("state.png") %>
@@ -31,10 +18,10 @@
       <div class="classes">
         <h2>Upcoming Classes</h2>
 <!--         some code to make the meetup API data show up!
- -->      
+ -->
       </div>
-  
-      
+
+
       <h2>Chapter Leaders</h2>
         <div class="leaders">
           <% @bios.each do |bio| %>
@@ -49,7 +36,7 @@
               <%= image_tag bio.image.thumb.url %>
             <% end %>
       </div>
-      
+
       <h2>The Instructors</h2>
         <div class="instructors">
           <% @bios.each do |bio| %>
@@ -66,9 +53,5 @@
       </div>
 
     </section>
-    
-    
-    <%= render "shared/footer" %>
-  </body>
-</html>
+
 <% end %>
