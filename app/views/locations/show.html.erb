@@ -25,6 +25,6 @@
     <br><%= sponsor.location.id %>
     <br>
     <% if sponsor.image? %>
-      <%= image_tag sponsor.image.thumb.url %>
+      <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
     <% end %>
   <% end %>
