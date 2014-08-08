@@ -51,12 +51,23 @@ julia.roles << webmistress
 julia.roles << admin
 julia.save!
 
+adminfirst = AdminUser.first
+adminfirst.roles << webmistress
+adminfirst.roles << admin
+
 Bio.create! do |a|
   a.title     = 'LEADERS'
   a.name      = 'Julia Elman'
   a.info      = "Julia Elman is a Designer & Front-End Developer based in Chapel Hill, NC. She has been working her brand of web skills for over a decade, focusing mainly on HTML/CSS markup and Javascript. She is an avid supporter of tech education and recently volunteered at a local Teen Tech Camp in Durham, NC in 2012. Julia is excited to be a part of the first Girl Develop It in North Carolina and share her wealth of knowledge with others."
   a.admin_user_id = 2
-  a.image     = ''
+  a.image     = 'uploads/bio/image/1/profile_julia-elman.jpg'
+end
+
+Sponsor.create! do |a|
+  a.name      = 'The Iron Yard'
+  a.url       = 'http://theironyard.com/locations/ '
+  a.location_id = 1
+  a.image     = 'uploads/sponsor/image/1/thumb_Iron-Yard-Logo.png'
 end
 
 # Bio.create! do |a|

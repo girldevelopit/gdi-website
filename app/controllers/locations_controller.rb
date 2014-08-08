@@ -6,6 +6,7 @@ class LocationsController < ApplicationController
   def show
     @location = Location.find(params[:id])
     @users = @location.admin_users
+    @sponsors = @location.sponsors
 
     @bios = []
     @users.each do |user|
@@ -14,10 +15,5 @@ class LocationsController < ApplicationController
 
     #for each sponsor with location.id == to current location show sponsor
 
-    @sponsor = Sponsor.all
-
-    # @location.each do |location|
-    #   @sponsor << location.sponsor
-    # end
   end
 end

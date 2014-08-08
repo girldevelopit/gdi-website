@@ -12,7 +12,7 @@ class Ability
     elsif allroles.include? "admin"
       can :manage, :all
     else
-      can :manage, :all
+      can :view, :all
     end
   end
 end
