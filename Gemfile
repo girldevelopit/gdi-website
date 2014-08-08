@@ -1,3 +1,5 @@
+ruby '2.1.2'
+
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.4'
@@ -28,7 +30,8 @@ gem 'carrierwave'
 group :development do
   gem 'guard-livereload'
 end
-
+gem 'unicorn'
+gem 'rails_12factor', group: :production
 
 # Use unicorn as the app server
 # gem 'unicorn'
