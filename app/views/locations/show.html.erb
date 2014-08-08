@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-  
-  <head>
-    <title><%= @location.location %></title>
-    <meta charset="UTF-8">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <%= yield %>
-  <body>
-  <%= render "shared/header" %>
+
+
+
+
 
     <aside class="city">
 <!--       <%= image_tag("state.png") %>
@@ -68,7 +59,5 @@
     </section>
     
     
-    <%= render "shared/footer" %>
-  </body>
-</html>
+    
 <% end %>
