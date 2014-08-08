@@ -13,11 +13,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
+gem "font-awesome-rails"
+gem 'bourbon'
+gem 'neat'
 gem 'cancan'
 gem 'rolify'
-
 gem 'quiet_assets', group: :development
-
 # for aws cloud storage
 gem 'fog'
 # photo resizing

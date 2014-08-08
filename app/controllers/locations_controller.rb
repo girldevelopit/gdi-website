@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   def index
-    locational
+   locational
   end
 
   def show
