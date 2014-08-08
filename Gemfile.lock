@@ -260,6 +260,7 @@ DEPENDENCIES
   devise
   fog
   font-awesome-rails
+  guard
   guard-livereload
   jbuilder (~> 2.0)
   jquery-rails

@@ -27,7 +27,8 @@ gem "mini_magick"
 gem 'carrierwave'
 
 group :development do
-  gem 'guard-livereload'
+  gem 'guard-livereload', require: false
+  gem 'guard'
 end
 
 
