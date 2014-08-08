@@ -17,3 +17,14 @@
       <%= image_tag bio.image.profile.url %>
     <% end %>
   <% end %>
+
+<h1>The Sponsors</h1>
+  <% @sponsor.each do |sponsor| %>
+    <br><%= sponsor.name %>
+    <br><%= sponsor.url %>
+    <br><%= sponsor.location.id %>
+    <br>
+    <% if sponsor.image? %>
+      <%= image_tag sponsor.image.thumb.url %>
+    <% end %>
+  <% end %>
