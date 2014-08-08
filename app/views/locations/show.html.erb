@@ -22,6 +22,7 @@
   <% @sponsors.each do |sponsor| %>
     <br><%= sponsor.name %>
     <br><%= sponsor.url %>
+    <br><%= sponsor.image.thumb.url %>
     <br><%= sponsor.location.id %>
     <br>
     <% if sponsor.image? %>
