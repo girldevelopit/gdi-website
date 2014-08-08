@@ -16,6 +16,8 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 
+gem 'meetup_client'
+
 gem 'quiet_assets', group: :development
 
 # for aws cloud storage
