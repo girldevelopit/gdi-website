@@ -194,7 +194,7 @@ $green: #26906c;
 .profile{
   @include span-columns(8 of 8);
   @include omega();
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   .profile-img{
     @include span-columns(3 of 8);
     img{
