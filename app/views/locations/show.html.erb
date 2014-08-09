@@ -1,22 +1,15 @@
-<h1>Welcome to <%= @location.location %></h1>
-  <ul>
-    <br><%= @location.blurb %>
-    <br><%= @location.fb %>
-    <br><%= @location.meetup %>
-    <br><%= @location.geo %>
-  </ul>
+    <aside class="city">
+<!--       <%= image_tag("state.png") %>
+ -->      <h2><%= @location.location %></h2>
+        <ul>
+          <%#= link_to image_tag "fb.png", @location.fb %>
+          <%#= link_to image_tag "tw.png", @location.tw %>
+          <%#= link_to image_tag "in.png", @location.in %>
+          <%#= link_to image_tag "gh.png", @location.gh %>
+          <%#= mail_to image_tag "email.png", @location.email %>
+        </ul>
 
-<h1>The Team</h1>
-  <% @bios.each do |bio| %>
-    <br><%= bio.title %>
-    <br><%= bio.name %>
-    <br><%= bio.info %>
-    <br><%= bio.admin_user.id %>
-    <br>
-    <% if bio.image? %>
-      <%= image_tag bio.image.profile.url %>
-    <% end %>
-  <% end %>
+        <button class="join"><%= link_to @location.meetup %></button>
 
 <h1>The Sponsors</h1>
   <% @sponsors.each do |sponsor| %>
@@ -29,3 +22,45 @@
       <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
     <% end %>
   <% end %>
+    </aside>
+
+    <section ="main">
+      <div class="classes">
+        <h2>Upcoming Classes</h2>
+<!--         some code to make the meetup API data show up!
+ -->
+      </div>
+
+
+      <h2>Chapter Leaders</h2>
+        <div class="leaders">
+          <% @bios.each do |bio| %>
+            <ul>
+              <li><%= bio.title %></li>
+              <li><%= bio.name %></li>
+              <li><%= bio.info %></li>
+              <li><%= bio.admin_user.id %></li>
+              <li>
+            </ul>
+            <% if bio.image? %>
+              <%= image_tag bio.image.thumb.url %>
+            <% end %>
+          <% end %>
+      </div>
+
+      <h2>The Instructors</h2>
+        <div class="instructors">
+          <% @bios.each do |bio| %>
+            <ul>
+              <li><%= bio.title %></li>
+              <li><%= bio.name %></li>
+              <li><%= bio.info %></li>
+              <li><%= bio.admin_user.id %></li>
+              <li>
+            </ul>
+            <% if bio.image? %>
+              <%= image_tag bio.image.thumb.url %>
+          <% end %>
+        <% end %>
+      </div>
+    </section>

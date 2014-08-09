@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   def index
-    locational
+   locational
   end
 
   def show
@@ -12,8 +12,5 @@ class LocationsController < ApplicationController
     @users.each do |user|
       @bios << user.bio
     end
-
-    #for each sponsor with location.id == to current location show sponsor
-
   end
 end
