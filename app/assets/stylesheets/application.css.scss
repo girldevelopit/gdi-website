@@ -1,6 +1,7 @@
-@import "bourbon";	
+@import "bourbon";
 @import "neat";
 @import "font-awesome";
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500,300");
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -21,3 +22,235 @@
  *= require modules
  *= require state
  */
+
+ // Custom Styles
+$mainfont: "Roboto";
+
+//Colors
+$pink: #f95a61;
+$black: #282828;
+$blush: #fbcfc6;
+$gold: #d8ae64;
+$green: #26906c;
+
+* {
+  @include box-sizing(border-box);
+}
+
+#container {
+  @include outer-container;
+  width: 965px;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+ .chapter-aside {
+   @include span-columns(4);
+   text-align: center;
+   .state-container{
+     width: 180px;
+     margin: auto;
+     padding-bottom: 20px;
+     .state-img{
+       width: 100%;
+     }
+   }
+   hr{
+     width: 160px;
+     height: .1rem;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: $pink;
+     border: 0 none;
+     margin-top: 0px;
+     margin-bottom: 3px;
+   }
+   h1, a {
+     font-family: $mainfont;
+     color: $black;
+     font-size: 1rem;
+     text-transform: uppercase;
+     letter-spacing: .14rem;
+     font-weight: 400;
+     margin-top: 1em;
+     text-decoration: none;
+     }
+   ul{
+     padding: 0px;
+     margin: 1em 0em 1.5em 0em;
+     li{
+       display: inline;
+     }
+     i{
+       font-size: .8em;
+       height: 2em;
+       width: 2em;
+       color: white;
+       padding: .54em .54em;
+       background-color: $gold;
+       border-radius: 50%;
+       margin: .2em;
+     }
+     i:hover{
+       background-color: $black;
+       color: $blush;
+     }
+   }
+   p{
+     font-family: $mainfont;
+     font-weight: 400;
+     color: $pink;
+     font-style: italic;
+     font-weight: 400;
+     font-size: .8rem;
+     letter-spacing: .05rem;
+     margin: .4rem 0rem .35rem 0rem;
+   }
+   button {
+     font-family: $mainfont;
+     font-weight: 400;
+     color: white;
+     font-size: .8rem;
+     text-transform: uppercase;
+     letter-spacing: .14rem;
+     background-color: $gold;
+     padding: .5rem;
+     margin-right: auto;
+     margin-left: auto;
+     border: none;
+     margin-bottom: 2.5rem;
+     text-decoration: none;
+   }
+   button:hover{
+     background-color: $black;
+     color: $blush;
+   }
+   h2{
+     font-family: $mainfont;
+     font-weight: 400;
+     color: $black;
+     font-size: .8rem;
+     text-transform: uppercase;
+     letter-spacing: .14rem;
+     width: 90px;
+     margin: auto;
+     padding: .1rem;
+     border-bottom: dashed 1px $pink;
+   }
+ }
+
+ #content-section{
+   @include span-columns(8);
+ }
+
+ .classes{
+  @include span-columns(8 of 8);
+  @include omega();
+  margin-bottom: 20px;
+  h2{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $black;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+    margin-bottom: 0rem;
+  }
+  .class-info{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $pink;
+    font-style: italic;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    margin-top: .3rem;
+  }
+  p{
+    font-family: $mainfont;
+    font-size: .75rem;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    color: #9a9a9a;
+    line-weight: .1rem;
+  }
+  .read-more{
+    color: $gold;
+    text-decoration: none;
+    font-style: italic;
+  }
+  .read-more:hover{
+    color: $pink;
+  }
+  .rsvp{
+    float: right;
+    color: white;
+    padding: .5rem;
+    background-color: $blush;
+  }
+}
+
+.profile{
+  @include span-columns(8 of 8);
+  @include omega();
+  margin-bottom: 4em;
+  .profile-img{
+    @include span-columns(3 of 8);
+    img{
+      width: 100%;
+      background-color: gray;
+    }
+    ul{
+      padding: 0px;
+      margin: 1em 0em 1.5em 0em;
+      li{
+        display: inline;
+      }
+      i{
+        font-size: .8em;
+        height: 2em;
+        width: 2em;
+        color: $black;
+        padding: .5em .5em;
+        border-radius: 50%;
+        margin: .1em;
+      }
+      i:hover{
+        background-color: $gold;
+        color: white;
+      }
+    }
+  }
+  .profile-content{
+    @include span-columns(5 of 8);
+    @include omega();
+    h2{
+      font-family: $mainfont;
+      font-weight: 400;
+      color: $black;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14rem;
+      margin: 0rem;
+      padding-bottom: .4rem;
+      border-bottom: dashed 1px $pink;
+    }
+    p{
+      font-family: $mainfont;
+      font-size: .75rem;
+      font-weight: 400;
+      letter-spacing: .05rem;
+      color: #9a9a9a;
+      line-weight: .1rem;
+    }
+    .link{
+      color: $gold;
+      text-decoration: none;
+      font-style: italic;
+    }
+    .link:hover{
+      color: $pink;
+    }
+  }
+}
