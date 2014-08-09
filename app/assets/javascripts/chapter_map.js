@@ -2,7 +2,22 @@
 $(function(){
  	$(".chapter_map").mapael({
 		map : {
-			name : "usa_states"
+			name : "usa_states",
+			cssClass : "map",
+			tooltip : {
+				cssClass : "mapTooltip" //class name of the tooltip container
+			},
+			defaultArea : {
+				attrs : {
+					fill : "#282828",
+					stroke: "#282828"
+				}
+			},
+			defaultPlot : {
+				type : "circle",
+
+
+			}
 		},
 		plots: {
 			'ny' : {
@@ -20,11 +35,6 @@ $(function(){
 				longitude: -122.394613,
 				tooltip: {content : "San Francisco"}
 			},
-			'pa' : {
-				latitude: 19.493204,
-				longitude: -154.8199569,
-				tooltip: {content : "Pahoa"}
-			}
 		}
 	});
 });
