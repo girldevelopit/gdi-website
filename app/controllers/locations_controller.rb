@@ -1,9 +1,16 @@
 class LocationsController < ApplicationController
   def index
-    @location = Location.all
+   locational
   end
 
   def show
-    @locations = Location.find(params[:id])
+    @location = Location.find(params[:id])
+    @users = @location.admin_users
+    @sponsors = @location.sponsors
+
+    @bios = []
+    @users.each do |user|
+      @bios << user.bio
+    end
   end
 end

@@ -1,10 +1,22 @@
-<h1>Locations</h1>
-  <% @location.each do |l| %>
-    <ul>
-      <%= link_to l.location, location_path(l.id) %>
-      <br><%= l.blurb %>
-      <br><%= l.fb %>
-      <br><%= l.meetup %>
-      <br><%= l.geo %>
-    </ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GDI Chapters</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<h1>Locations</h1>
+	<% @location.each do |l| %>
+    </br><%= link_to l.location, location_path(l.id) %>
+    </br><%= l.blurb %>
+    </br><%= l.fb %>
+    </br><%= l.meetup %>
+    </br><%= l.geo %>
+    </br><%= l.latitude %>
+    </br><%= l.longitude %>
   <% end %>
+
+</body>
