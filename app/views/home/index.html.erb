@@ -8,17 +8,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-		<h1>Home</h1>
-    <!-- Home Page -->
-		<section>
-		<h2>Who are we?</h2>
-			<p>mission statement Lorem ipsum dolor sit amet, sea id debet veritus, pri dicant dictas honestatis id. Per ei soluta essent, ea sea molestiae comprehensam. Sed cu regione voluptua, eu eum ignota invenire molestiae. </p>
-	</section>
+  <!-- Home Page -->
+  <div class="opener">
+    <%= image_tag("photo.png") %>
+    <h1>Don't be shy. Develop it.</h1>
+  </div>
+  <div id="container">
+  	<section class="mission-statement">
+    	<h2>Who are we?</h2>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lobortis purus. Nunc et arcu varius, tempor sapien at, tempor sapien. Suspendisse volutpat nisl in lacus molestie, quis ultricies felis viverra. Donec massa urna, venenatis ut ligula eu, pharetra posuere nisl. Mauris scelerisque dui eu mi bibendum, at fringilla nulla dignissim. Morbi posuere est id molestie tempor. Phasellus ut augue blandit, ultricies erat vel, porttitor lorem. </p>
+    </section>
 
-	<section>
-		<h3>We are now in <%= @location.count %> cities!</h3>
-		<h4>Don't see your city? Start a new chapter!</h4>
-		<img class="map" src="#">
-	</section>
+  	<section>
+  		<!-- <p>We're now located in <%= @location.count %> cities!</p>
+  		<p>Don't see your city? Start a new chapter!</p>
+  		<img class="map" src="#"> -->
+  	</section>
+  </div>
 
 </body>

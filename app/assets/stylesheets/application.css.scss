@@ -31,7 +31,7 @@ $black: #282828;
 $blush: #fbcfc6;
 $gold: #d8ae64;
 $green: #074232;
-
+$gray: #9a9a9a;
 * {
   @include box-sizing(border-box);
 }
@@ -42,9 +42,16 @@ body {
   margin: 0;
 }
 
+//header and footer
+
 header {
-  height: 80px;
+  height: 90px;
   background-color: $pink;
+  img{
+    height: 60px;
+    margin-top: 15px;
+    float: left;
+  }
   nav a{
     text-decoration: none;
     font-family: $mainfont;
@@ -54,8 +61,8 @@ header {
     font-size: .8rem;
     letter-spacing: .05rem;
     float: right;
-    padding: 2em 1em 4em 1em;
-    margin-bottom: 2em;
+    padding: 2.5em 1em 4.5em 1em;
+    margin-bottom: 0em;
   }
   nav a:first-child{
     margin-right: -1em
@@ -67,18 +74,86 @@ header {
 }
 
 footer {
-  height: 200px;
+  height: 350px;
   background-color: $black;
-  nav a{
-    text-decoration: none;
-    font-family: $mainfont;
-    color: $blush;
-    font-weight: 300;
-    font-size: .8rem;
-    letter-spacing: .05rem;
-    padding: 2em 1em 4em 1em;
+  padding: 2em 0em 0em 0em;
+  .publicity-logos{
+    text-align: center;
+    margin-bottom: 4em;
+    img{
+      height: 90px;
+      // margin-bottom: 4em;
+    }
+    h2{
+      font-family: $mainfont;
+      font-weight: 400;
+      color: $gold;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14rem;
+    }
+  }
+  .bottom-footer{
+    nav a{
+      text-decoration: none;
+      font-family: $mainfont;
+      color: $blush;
+      font-weight: 300;
+      font-size: .8rem;
+      letter-spacing: .05rem;
+      padding: 2em 2em 4em 0em;
+    }
+    p{
+      font-family: $mainfont;
+      font-weight: 400;
+      color: white;
+      font-style: italic;
+      font-weight: 400;
+      font-size: .8rem;
+      letter-spacing: .05rem;
+      margin: .4rem 0rem .35rem 0rem;
+    }
   }
 }
+
+//home page
+.opener{
+  margin-bottom: 1em;
+  img{
+    width: 100%;
+    margin-top: -1.1em;
+    position: relative;
+  }
+  h2{
+    position: absolute;
+  }
+}
+
+.mission-statement{
+  @include span-columns(8);
+  @include shift(2);
+  text-align: center;
+  p{
+    font-family: $mainfont;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: $gray;
+    line-weight: .1rem;
+    line-height: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+//chapters page
 
 #container {
   @include outer-container;
@@ -110,7 +185,7 @@ footer {
      margin-top: 0px;
      margin-bottom: 3px;
    }
-   h1, a {
+   h1 {
      font-family: $mainfont;
      color: $black;
      font-size: 1rem;
@@ -237,11 +312,12 @@ footer {
   }
   p{
     font-family: $mainfont;
-    font-size: .75rem;
-    font-weight: 400;
+    font-size: .8rem;
+    font-weight: 300;
     letter-spacing: .05rem;
-    color: #9a9a9a;
+    color: $gray;
     line-weight: .1rem;
+    line-height: 1.2rem;
   }
   .read-more{
     color: $gold;
@@ -259,12 +335,11 @@ footer {
   }
 }
 
-.profiles{
+.single-profile{
   @include span-columns(8 of 8);
   @include omega();
   .profile-img{
     @include span-columns(3 of 8);
-    height: 50px;
     img{
       width: 100%;
       // background-color: gray;
@@ -293,6 +368,7 @@ footer {
   .profile-content{
     @include span-columns(5 of 8);
     @include omega();
+    margin-bottom: 2em;
     h2{
       font-family: $mainfont;
       font-weight: 400;
@@ -306,11 +382,12 @@ footer {
     }
     p{
       font-family: $mainfont;
-      font-size: .75rem;
-      font-weight: 400;
+      font-size: .8rem;
+      font-weight: 300;
       letter-spacing: .05rem;
       color: #9a9a9a;
       line-weight: .1rem;
+      line-height: 1.2rem;
     }
     ul{
       padding: 0px;
