@@ -4,5 +4,5 @@ class Location < ActiveRecord::Base
   has_many :sponsors
 
   geocoded_by :geo
-  after_validation :geocode          # auto-fetch coordinates
+  after_validation :geocode
 end
