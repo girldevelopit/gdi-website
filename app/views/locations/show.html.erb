@@ -2,8 +2,8 @@
   <div id="container">
     <aside class="chapter-aside">
       <div class="state-container">
-        <img class="state-img"src="images/NC.png"></img>
-        <!-- <%= image_tag("state.png") %> -->
+        <%= image_tag("NC.png") %>
+        <!-- <%= image_tag("NC.png") %> -->
       </div>
       <hr><hr>
       <h1><%= @location.location %></h1>
@@ -26,6 +26,12 @@
     </aside>
 
     <section id="content-section">
+
+      <div id="headline">
+        <%= image_tag 'pencil.png' %>
+        <h2>Upcoming Classes</h2>
+      </div>
+
       <div class="classes">
         <h2>Intro To Javascript and jQuery</h2>
         <p class="class-info">[ August 7, 2014, 6:30pm to 9:15pm, Cary, NC ]</p>
@@ -42,22 +48,31 @@
         <!-- some code to make the meetup API data show up! -->
       </div>
 
-      <div class="profile">
+
+      <div class="profiles">
         <% @bios.each do |bio| %>
-          <div class="profile-img">
-            <% if bio.image? %>
-              <%= image_tag bio.image.profile.url %>
-            <% end %>
-            <ul class="profile-links">
-              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="profile-content">
-            <h2><%= bio.name %></h2>
-            <p><%= bio.info %></p>
+          <div class="single-profile">
+            <div class="profile-img">
+              <% if bio.image? %>
+                <%= image_tag bio.image.profile.url %>
+              <% end %>
+              <!-- <ul class="profile-links">
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul> -->
+            </div>
+            <div class="profile-content">
+              <h2><%= bio.name %></h2>
+              <p><%= bio.info %></p>
+              <ul class="profile-links">
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
           </div>
         <% end %>
       </div>

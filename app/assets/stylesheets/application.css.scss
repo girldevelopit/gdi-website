@@ -1,8 +1,7 @@
 @import "bourbon";
 @import "neat";
 @import "font-awesome";
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500,300");
-/*
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700");/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -31,10 +30,54 @@ $pink: #f95a61;
 $black: #282828;
 $blush: #fbcfc6;
 $gold: #d8ae64;
-$green: #26906c;
+$green: #074232;
 
 * {
   @include box-sizing(border-box);
+}
+
+body {
+  font-family: $mainfont, Helvetica, Arial, sans-serif;
+  font-size: 100%; //16px
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  background-color: $pink;
+  nav a{
+    text-decoration: none;
+    font-family: $mainfont;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    float: right;
+    padding: 2em 1em 4em 1em;
+    margin-bottom: 2em;
+  }
+  nav a:first-child{
+    margin-right: -1em
+  }
+  nav a:hover{
+    background-color: $black;
+    color: $blush;
+  }
+}
+
+footer {
+  height: 200px;
+  background-color: $black;
+  nav a{
+    text-decoration: none;
+    font-family: $mainfont;
+    color: $blush;
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    padding: 2em 1em 4em 1em;
+  }
 }
 
 #container {
@@ -42,17 +85,18 @@ $green: #26906c;
   width: 965px;
   max-width: 100%;
   margin: auto;
-  padding-top: 50px;
+  // padding-top: 50px;
 }
 
  .chapter-aside {
    @include span-columns(4);
    text-align: center;
+   padding-top: 50px;
    .state-container{
-     width: 180px;
+     width: 200px;
      margin: auto;
      padding-bottom: 20px;
-     .state-img{
+     img{
        width: 100%;
      }
    }
@@ -141,7 +185,30 @@ $green: #26906c;
  }
 
  #content-section{
-   @include span-columns(8);
+  @include span-columns(8);
+  padding-top: 40px;
+ }
+
+ #headline{
+  @include span-columns(8 of 8);
+  @include omega();
+  text-align: center;
+  img{
+    height: 20px;
+  }
+  h2{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $gold;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+    text-decoration: none;
+    padding-bottom: .4rem;
+    border-bottom: solid $black 1px;
+    width: 200px;
+    margin: .5rem auto 3rem auto;
+  }
  }
 
  .classes{
@@ -152,10 +219,11 @@ $green: #26906c;
     font-family: $mainfont;
     font-weight: 400;
     color: $black;
+    text-decoration: none;
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .14rem;
-    margin-bottom: 0rem;
+    margin: 0rem;
   }
   .class-info{
     font-family: $mainfont;
@@ -185,42 +253,42 @@ $green: #26906c;
   }
   .rsvp{
     float: right;
-    color: white;
+    color: $gold;
     padding: .5rem;
-    background-color: $blush;
+    background-color: #f1f2f2;
   }
 }
 
-.profile{
+.profiles{
   @include span-columns(8 of 8);
   @include omega();
-  margin-bottom: 2em;
   .profile-img{
     @include span-columns(3 of 8);
+    height: 50px;
     img{
       width: 100%;
-      background-color: gray;
+      // background-color: gray;
     }
-    ul{
-      padding: 0px;
-      margin: 1em 0em 1.5em 0em;
-      li{
-        display: inline;
-      }
-      i{
-        font-size: .8em;
-        height: 2em;
-        width: 2em;
-        color: $black;
-        padding: .5em .5em;
-        border-radius: 50%;
-        margin: .1em;
-      }
-      i:hover{
-        background-color: $gold;
-        color: white;
-      }
-    }
+    // ul{
+    //   padding: 0px;
+    //   margin: 0em 0em 1.5em -.45em;
+    //   li{
+    //     display: inline;
+    //   }
+    //   i{
+    //     font-size: .8em;
+    //     height: 2em;
+    //     width: 2em;
+    //     color: $black;
+    //     padding: .5em .5em;
+    //     border-radius: 50%;
+    //     margin: .1em;
+    //   }
+    //   i:hover{
+    //     background-color: $gold;
+    //     color: white;
+    //   }
+    // }
   }
   .profile-content{
     @include span-columns(5 of 8);
@@ -244,13 +312,25 @@ $green: #26906c;
       color: #9a9a9a;
       line-weight: .1rem;
     }
-    .link{
-      color: $gold;
-      text-decoration: none;
-      font-style: italic;
-    }
-    .link:hover{
-      color: $pink;
+    ul{
+      padding: 0px;
+      margin: -.5em 0em 1.5em -.45em;
+      li{
+        display: inline;
+      }
+      i{
+        font-size: .8em;
+        height: 2em;
+        width: 2em;
+        color: $black;
+        padding: .5em .5em;
+        border-radius: 50%;
+        margin: .1em;
+      }
+      i:hover{
+        background-color: $gold;
+        color: white;
+      }
     }
   }
 }
