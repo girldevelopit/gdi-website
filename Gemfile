@@ -12,7 +12,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem "font-awesome-rails"
@@ -20,7 +19,6 @@ gem 'bourbon'
 gem 'neat'
 gem 'cancan'
 gem 'rolify'
-gem 'quiet_assets', group: :development
 # for aws cloud storage
 gem 'fog'
 # photo resizing
@@ -28,7 +26,11 @@ gem "mini_magick"
 # file upload solution
 gem 'carrierwave'
 
+gem "geocoder"
+
 group :development do
+  gem 'spring'
+  gem 'quiet_assets'
   gem 'guard-livereload', require: false
   gem 'guard'
 end

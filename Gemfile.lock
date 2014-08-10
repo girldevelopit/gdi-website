@@ -110,6 +110,7 @@ GEM
     formatador (0.2.5)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
+    geocoder (1.2.3)
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -271,6 +272,7 @@ DEPENDENCIES
   devise
   fog
   font-awesome-rails
+  geocoder
   guard
   guard-livereload
   jbuilder (~> 2.0)
