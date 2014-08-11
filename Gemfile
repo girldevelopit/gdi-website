@@ -29,6 +29,7 @@ gem 'carrierwave'
 gem "geocoder"
 
 group :development do
+  gem 'pry-byebug'
   gem 'spring'
   gem 'quiet_assets'
   gem 'guard-livereload', require: false
