@@ -1,11 +1,24 @@
 <footer>
-		<nav class="bottom">
-			<%= link_to "home", root_path %>
-			<%#= link_to "partners", partners_path %>
-			<a href="http://girldevelopit.tumblr.com/">blog</a>
-			<% if current_admin_user != nil %>
-				<%= link_to "ADMIN", admin_root_path %>
-				<%= link_to "LOGOUT", destroy_admin_user_session_path %>
-			<% end %>
-		</nav>
-	</footer>
+	<div id="container">
+		<div class="publicity-logos">
+			<h2>{ As seen in }</h2>
+			<%= image_tag("publicity-logos.png") %>
+		</div>
+		<div class="bottom-footer">
+			<p>Don't see your city? Help bring Girl Develop It to your home town.</p>
+			<p>To be a sponsor or for partnership opportunities, email  us at sponsorships@girldevelopit.com</p>
+			<nav class="bottom">
+				<%= link_to "about", root_path %>
+				<%= link_to "partners", root_path %>
+				<% if current_admin_user != nil %>
+					<%= link_to "ADMIN", admin_root_path %>
+					<%= link_to "LOGOUT", destroy_admin_user_session_path %>
+				<% end %>
+				<%#= link_to "partners", partners_path %>
+				<a href="http://girldevelopit.tumblr.com/">blog</a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</nav>
+		</div>
+	</div>
+</footer>
