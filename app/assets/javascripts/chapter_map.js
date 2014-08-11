@@ -16,8 +16,9 @@ $(function(){
 			defaultPlot : {
 				type : "circle",
 
-
 			}
+
+
 		},
 		plots: {
 			'ny' : {
@@ -25,16 +26,7 @@ $(function(){
 				longitude: -74.00116,
 				tooltip: {content : "New York"}
 			},
-			'an' : {
-				latitude: 61.2108398, 
-				longitude: -149.9019557,
-				tooltip: {content : "Anchorage"}
-			},
-			'sf' : {
-				latitude: 37.792032,
-				longitude: -122.394613,
-				tooltip: {content : "San Francisco"}
-			},
+			
 		}
 	});
 });
