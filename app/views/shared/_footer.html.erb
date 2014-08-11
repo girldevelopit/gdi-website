@@ -3,5 +3,9 @@
 			<%= link_to "home", root_path %>
 			<%#= link_to "partners", partners_path %>
 			<a href="http://girldevelopit.tumblr.com/">blog</a>
+			<% if current_admin_user != nil %>
+				<%= link_to "ADMIN", admin_root_path %>
+				<%= link_to "LOGOUT", destroy_admin_user_session_path %>
+			<% end %>
 		</nav>
 	</footer>
