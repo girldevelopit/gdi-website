@@ -9,7 +9,7 @@ class HomeController < ApplicationController
     meetup_api = MeetupApi.new
     @events = meetup_api.open_events(params) ## Currently events just gets
   end    ## dumped straight into the page. It is ugly, but there is information,
-         ## and we can get better information out of it :) 
+         ## and we can get better information out of it :)
 
   def about
   end
