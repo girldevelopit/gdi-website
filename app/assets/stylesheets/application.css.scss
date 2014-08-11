@@ -1,7 +1,7 @@
-@import "bourbon";	
+@import "bourbon";
 @import "neat";
 @import "font-awesome";
-/*
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700");/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -21,3 +21,482 @@
  *= require modules
  *= require state
  */
+
+ // Custom Styles
+$mainfont: "Roboto";
+
+//Colors
+$pink: #f95a61;
+$black: #282828;
+$blush: #fbcfc6;
+$gold: #d8ae64;
+$green: #074232;
+$gray: #9a9a9a;
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  font-family: $mainfont, Helvetica, Arial, sans-serif;
+  font-size: 100%; //16px
+  margin: 0;
+}
+
+//header and footer
+
+header {
+  height: 100px;
+  background-color: $pink;
+  img{
+    height: 60px;
+    margin-top: 15px;
+    float: left;
+  }
+  nav a{
+    text-decoration: none;
+    font-family: $mainfont;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    float: right;
+    padding: 2.5em 1em 4.5em 1em;
+    margin-bottom: 0em;
+  }
+  nav a:first-child{
+    margin-right: -1em
+  }
+  nav a:hover{
+    background-color: $black;
+    color: $blush;
+    box-shadow: .1em .1em .5em $black;
+  }
+}
+
+footer {
+  height: 350px;
+  background-color: $black;
+  padding: 2em 0em 0em 0em;
+  .publicity-logos{
+    text-align: center;
+    margin-bottom: 4em;
+    img{
+      height: 90px;
+      // margin-bottom: 4em;
+    }
+    h2{
+      font-family: $mainfont;
+      font-weight: 400;
+      color: $gold;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14rem;
+    }
+  }
+  .bottom-footer{
+    nav a{
+      text-decoration: none;
+      font-family: $mainfont;
+      color: $blush;
+      font-weight: 300;
+      font-size: .8rem;
+      letter-spacing: .05rem;
+      padding: 2em 2em 4em 0em;
+    }
+    p{
+      font-family: $mainfont;
+      font-weight: 400;
+      color: white;
+      font-style: italic;
+      font-weight: 400;
+      font-size: .8rem;
+      letter-spacing: .05rem;
+      margin: .4rem 0rem .35rem 0rem;
+    }
+  }
+}
+
+//home page
+.opener{
+  text-align: center;
+  background-image: url('photo2.png');
+  background-color: #e4e9e5;
+  background-repeat: no-repeat;
+    // background-size: Auto 500px;
+    background-size: 100% 100%;
+  // // background-size: cover;
+  height: 400px;
+  h1{
+    font-family: $mainfont;
+    color: #2a4758;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    margin: -.33em 0em 2em 0em;
+    padding-top: 2em;
+    // text-shadow: .01em .01em .05em #405b71;
+    img{
+      height: 80px;
+      margin-bottom: -.05em;
+    }
+  }
+}
+
+.mission-statement{
+  @include span-columns(8);
+  @include shift(2);
+  text-align: center;
+  p{
+    font-family: $mainfont;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: $gray;
+    line-weight: .1rem;
+    line-height: 1.2rem;
+    margin-bottom: 4em;
+  }
+  h2{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: white;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+    background-color: $gold;
+    padding: .5rem;
+    border: none;
+    width: 200px;
+    margin: -1.4em auto 2.5em auto;
+    text-decoration: none;
+  }
+}
+
+.map{
+  background-color: #e4e9e5;
+  height: 45em;
+  text-align: center;
+  img{
+    width:100%;
+  }
+  p{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $black;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+  }
+}
+
+.stats-section{
+  @include span-columns(12);
+  text-align: center;
+  h2{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: white;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+    background-color: $gold;
+    padding: .5rem;
+    width: 150px;
+    margin: -1.1em auto auto auto;
+  }
+  .stats{
+    text-align: center;
+    img{
+      width: 100%;
+      @include span-columns(4 of 12);
+      @include omega(3n);
+      padding: 0em 3em;
+      margin-top: 4em;
+      margin-bottom: 1em;
+    }
+    p{
+      @include span-columns(4 of 12);
+      @include omega(3n);
+      padding: 0em 2em;
+      font-family: $mainfont;
+      font-size: .8rem;
+      font-weight: 300;
+      letter-spacing: .05rem;
+      color: $gray;
+      line-weight: .1rem;
+      line-height: 1.2rem;
+      margin-bottom: 5em;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+//chapters page
+
+#container {
+  @include outer-container;
+  width: 965px;
+  max-width: 100%;
+  margin: auto;
+  // padding-top: 50px;
+}
+
+ .chapter-aside {
+   @include span-columns(4);
+   text-align: center;
+   padding-top: 50px;
+   .state-container{
+     width: 200px;
+     margin: auto;
+     padding-bottom: 20px;
+     img{
+       width: 100%;
+     }
+   }
+   hr{
+     width: 160px;
+     height: .1rem;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: $pink;
+     border: 0 none;
+     margin-top: 0px;
+     margin-bottom: 3px;
+   }
+   h1 {
+     font-family: $mainfont;
+     color: $black;
+     font-size: 1rem;
+     text-transform: uppercase;
+     letter-spacing: .14rem;
+     font-weight: 400;
+     margin-top: 1em;
+     text-decoration: none;
+     }
+   ul{
+     padding: 0px;
+     margin: 1em 0em 1.5em 0em;
+     li{
+       display: inline;
+     }
+     i{
+       font-size: .8em;
+       height: 2em;
+       width: 2em;
+       color: white;
+       padding: .54em .54em;
+       background-color: $gold;
+       border-radius: 50%;
+       margin: .2em;
+     }
+     i:hover{
+       background-color: $black;
+       color: $blush;
+     }
+   }
+   p{
+     font-family: $mainfont;
+     font-weight: 400;
+     color: $pink;
+     font-style: italic;
+     font-weight: 400;
+     font-size: .8rem;
+     letter-spacing: .05rem;
+     margin: .4rem 0rem .35rem 0rem;
+   }
+   button {
+     font-family: $mainfont;
+     font-weight: 400;
+     color: white;
+     font-size: .8rem;
+     text-transform: uppercase;
+     letter-spacing: .14rem;
+     background-color: $gold;
+     padding: .5rem;
+     margin-right: auto;
+     margin-left: auto;
+     border: none;
+     margin-bottom: 2.5rem;
+     text-decoration: none;
+   }
+   button:hover{
+     background-color: $black;
+     color: $blush;
+   }
+   h2{
+     font-family: $mainfont;
+     font-weight: 400;
+     color: $black;
+     font-size: .8rem;
+     text-transform: uppercase;
+     letter-spacing: .14rem;
+     width: 90px;
+     margin: auto;
+     padding: .1rem;
+     border-bottom: dashed 1px $pink;
+   }
+ }
+
+ #content-section{
+  @include span-columns(8);
+  padding-top: 40px;
+ }
+
+ #headline{
+  @include span-columns(8 of 8);
+  @include omega();
+  text-align: center;
+  img{
+    height: 40px;
+  }
+  h2{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $gold;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+    text-decoration: none;
+    padding-bottom: .4rem;
+    border-bottom: solid $black 1px;
+    width: 200px;
+    margin: .5rem auto 3rem auto;
+  }
+ }
+
+ .classes{
+  @include span-columns(8 of 8);
+  @include omega();
+  margin-bottom: 20px;
+  h2{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $black;
+    text-decoration: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .14rem;
+    margin: 0rem;
+  }
+  .class-info{
+    font-family: $mainfont;
+    font-weight: 400;
+    color: $pink;
+    font-style: italic;
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    margin-top: .3rem;
+  }
+  p{
+    font-family: $mainfont;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: $gray;
+    line-weight: .1rem;
+    line-height: 1.2rem;
+  }
+  .read-more{
+    color: $gold;
+    text-decoration: none;
+    font-style: italic;
+  }
+  .read-more:hover{
+    color: $pink;
+  }
+  .rsvp{
+    float: right;
+    color: $gold;
+    padding: .5rem;
+    background-color: #f1f2f2;
+  }
+}
+
+.single-profile{
+  @include span-columns(8 of 8);
+  @include omega();
+  .profile-img{
+    @include span-columns(3 of 8);
+    img{
+      width: 100%;
+      // background-color: gray;
+    }
+    // ul{
+    //   padding: 0px;
+    //   margin: 0em 0em 1.5em -.45em;
+    //   li{
+    //     display: inline;
+    //   }
+    //   i{
+    //     font-size: .8em;
+    //     height: 2em;
+    //     width: 2em;
+    //     color: $black;
+    //     padding: .5em .5em;
+    //     border-radius: 50%;
+    //     margin: .1em;
+    //   }
+    //   i:hover{
+    //     background-color: $gold;
+    //     color: white;
+    //   }
+    // }
+  }
+  .profile-content{
+    @include span-columns(5 of 8);
+    @include omega();
+    margin-bottom: 2em;
+    h2{
+      font-family: $mainfont;
+      font-weight: 400;
+      color: $black;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14rem;
+      margin: 0rem;
+      padding-bottom: .4rem;
+      border-bottom: dashed 1px $pink;
+    }
+    p{
+      font-family: $mainfont;
+      font-size: .8rem;
+      font-weight: 300;
+      letter-spacing: .05rem;
+      color: #9a9a9a;
+      line-weight: .1rem;
+      line-height: 1.2rem;
+    }
+    ul{
+      padding: 0px;
+      margin: -.5em 0em 1.5em -.45em;
+      li{
+        display: inline;
+      }
+      i{
+        font-size: .8em;
+        height: 2em;
+        width: 2em;
+        color: $black;
+        padding: .5em .5em;
+        border-radius: 50%;
+        margin: .1em;
+      }
+      i:hover{
+        background-color: $gold;
+        color: white;
+      }
+    }
+  }
+}
