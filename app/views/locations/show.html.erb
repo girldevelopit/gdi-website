@@ -1,4 +1,5 @@
 
+
   <div id="container">
     <aside class="chapter-aside">
       <div class="state-container">
@@ -23,6 +24,18 @@
         <!-- <button class="button"><%= link_to "{ Join Us }", @location.meetup %></button> -->
         <button class="button">{ Join Us }</button>
         <h2>Sponsors</h2>
+
+  <% @sponsors.each do |sponsor| %>
+    <!-- <br><%= sponsor.name %>
+    <br><%= sponsor.url %>
+    <br><%= sponsor.image.thumb.url %>
+    <br><%= sponsor.location.id %>
+    <br> -->
+    <% if sponsor.image? %>
+      <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
+    <% end %>
+  <% end %>
+
     </aside>
 
     <section id="content-section">
@@ -85,6 +98,7 @@
         <%= image_tag 'apple.png' %>
         <h2>The Instructors</h2>
       </div>
+
 
     </section>
 
