@@ -19,6 +19,9 @@ gem 'bourbon'
 gem 'neat'
 gem 'cancan'
 gem 'rolify'
+
+gem 'meetup_client'
+
 # for aws cloud storage
 gem 'fog'
 # photo resizing
