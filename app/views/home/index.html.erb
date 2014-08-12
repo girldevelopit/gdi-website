@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +6,10 @@
   <meta charset="UTF-8">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'raphael-min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.mapael', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'usa_states', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'chapter_map', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -20,13 +25,19 @@
     </section>
   </div>
 
+  
+
+		<h1>Home</h1>
+
   <section class="map">
     <div id="container">
     	<p>We're now located in <%= @location.count %> cities!</p>
   		<p>Don't see your city? Start a new chapter!</p>
       <%= image_tag("map.png") %>
+      <div class="chapter_map"></div>
     </div>
   </section>
+
 
   <div id="container">
     <section class="stats-section">
@@ -43,3 +54,12 @@
   </div>
 
 </body>
+
+	<section>
+		<h3>We are now in <%= @location.count %> cities!</h3>
+		<h4>Don't see your city? Start a new chapter!</h4>
+	</section>
+
+
+
+
