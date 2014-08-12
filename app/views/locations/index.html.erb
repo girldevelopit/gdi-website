@@ -11,34 +11,22 @@
   <div class="container">
     <h1>This is the Chapter Index</h1>
 
+
+
     <div class="state-index">
-      <% @location.each do |l| %>
+      <% @states.keys.each do |s| %>
         <div class="state-container">
           <div class="state">
-            <%= image_tag("NC.png") %>
+            <%= image_tag(image_route(s)) %>
           </div>
           <hr>
-
-          <h1><%= l.state %></h1>
-          <% @location.each do |s| %>
-            <% if l.state == s.state %>
-          <h2><%= link_to s.location, location_path(s.id) %></h2>
-            <% end %>
+          <h2><%= s %></h2>
+          <% @states[s].each do |l| %>
+            <h2><%= l %></h2>
           <% end %>
+        <% end %>
         </div>
-      <% end %>
     </div>
-
-  <!-- <div class="state">
-    <% @location.each do |l| %>
-      <div class="state-container">
-        <%= image_tag("NC.png") %>
-      </div>
-      <hr>
-      <h2><%= link_to l.location, location_path(l.id) %></h2>
-    <% end %>
-  </div> -->
-</div>
-
-<!-- <%#= @events %> -->
+  </div>
+</section>
 </body>
