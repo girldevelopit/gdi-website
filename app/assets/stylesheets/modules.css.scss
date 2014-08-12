@@ -1,4 +1,105 @@
-//The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS) 
+//The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS)
 //https://smacss.com
 
 //MODULES: styles for reusable page components
+
+.media-links {
+  padding: 0px;
+  margin: 1em -.45em 1.5em -.45em;
+  li{
+    display: inline;
+  }
+  a {
+    display: inline-block;
+    font-size: .8em;
+    height: 25px;
+    width: 25px;
+    color: #000;
+    border-radius: 50%;
+    margin: .2em;
+    padding-top: 3px;
+    text-align: center;
+
+    &:hover {
+      background: $gold;
+      color: #fff;
+    }
+  }
+  &.media-links-rounded {
+    a {
+      color: white;
+      background-color: $gold;
+
+      &:hover{
+        background-color: $black;
+        color: $blush;
+      }
+    }
+  }
+}
+
+header {
+  height: 100px;
+  background-color: $pink;
+  img{
+    height: 60px;
+    margin-top: 15px;
+    float: left;
+  }
+  nav a{
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    float: right;
+    padding: 2.5em 1em 4.5em 1em;
+    margin-bottom: 0em;
+  }
+  nav a:first-child{
+    margin-right: -1em
+  }
+  nav a:hover{
+    background-color: $black;
+    color: $blush;
+    box-shadow: .1em .1em .5em $black;
+  }
+}
+
+footer {
+  height: 350px;
+  background-color: $black;
+  padding: 2em 0em 0em 0em;
+  .publicity-logos{
+    text-align: center;
+    margin-bottom: 4em;
+    img{
+      height: 90px;
+    }
+    h2{
+      font-weight: 400;
+      color: $gold;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14rem;
+    }
+  }
+  .bottom-footer{
+    nav a{
+      color: $blush;
+      font-weight: 300;
+      font-size: .8rem;
+      letter-spacing: .05rem;
+      padding: 2em 2em 4em 0em;
+    }
+    p{
+      font-weight: 400;
+      color: white;
+      font-style: italic;
+      font-weight: 400;
+      font-size: .8rem;
+      letter-spacing: .05rem;
+      margin: .4rem 0rem .35rem 0rem;
+    }
+  }
+}

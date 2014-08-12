@@ -8,7 +8,22 @@
 </head>
 <body>
 
-	<h1>Locations</h1>
+
+  <h1>Chapter Index</h1>
+
+  <div class="state">
+    <% @location.each do |l| %>
+      <div class="state-container">
+        <%= image_tag("NC.png") %>
+        <!-- <%= image_tag("NC.png") %> -->
+      </div>
+      <hr>
+      <h1>State Name</h1>
+      <p><%= link_to l.location, location_path(l.id) %></p>
+    <% end %>
+  </div>
+
+	<!-- <h1>Locations</h1>
 	<% @location.each do |l| %>
     </br><%= link_to l.location, location_path(l.id) %>
     </br><%= l.blurb %>
@@ -17,7 +32,7 @@
     </br><%= l.geo %>
     </br><%= l.latitude %>
     </br><%= l.longitude %>
-  </br><%= l.geo.result.state_code %>
-  <% end %>
+  </br><%#= l.geo.result.state_code %>
+  <% end %> -->
 
 </body>
