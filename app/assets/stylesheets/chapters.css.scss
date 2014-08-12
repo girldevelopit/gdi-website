@@ -82,6 +82,9 @@
     h2{
       @extend %dashed-border;
     }
+    ul{
+      margin-top: -10px;
+    }
   }
 }
 
