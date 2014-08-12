@@ -13,20 +13,21 @@
 
 
 
-    <div class="state-index">
+    <section class="state-index">
       <% @states.keys.each do |s| %>
         <div class="state-container">
           <div class="state">
             <%= image_tag(image_route(s)) %>
           </div>
           <hr>
-          <h2><%= s %></h2>
+          <h1><%= s %></h1>
           <% @states[s].each do |l| %>
             <h2><%= l %></h2>
           <% end %>
-        <% end %>
         </div>
-    </div>
+        <% end %>
+
+    </section>
   </div>
 </section>
 </body>
