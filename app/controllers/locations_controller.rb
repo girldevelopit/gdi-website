@@ -11,6 +11,12 @@ class LocationsController < ApplicationController
     #   page: '1'}
     # meetup_api = MeetupApi.new
     # @events = meetup_api.open_events(params)
+
+    @locations = Location.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @locations}
+    end
   end
 
   def show
