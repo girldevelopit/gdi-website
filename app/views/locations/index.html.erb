@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>GDI Chapters</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+
+  <section class="main-container">
+  <div class="container">
+    <h1>Chapter Index</h1>
+
 
 	<h1>Locations</h1>
 	<% @location.each do |l| %>
@@ -19,4 +15,19 @@
     </br><%= l.longitude %>
   <% end %>
 
-</body>
+    <div class="state-index">
+      <% @location.each do |l| %>
+        <div class="state-container">
+          <div class="state">
+            <%= image_tag("NC.png") %>
+            <!-- <%= image_tag("NC.png") %> -->
+          </div>
+          <hr>
+          <h1>State Name</h1>
+          <h2><%= link_to l.location, location_path(l.id) %></h2>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+  </section>

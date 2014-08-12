@@ -19,6 +19,9 @@ gem 'bourbon'
 gem 'neat'
 gem 'cancan'
 gem 'rolify'
+
+gem 'meetup_client'
+
 # for aws cloud storage
 gem 'fog'
 # photo resizing
@@ -27,8 +30,9 @@ gem "mini_magick"
 gem 'carrierwave'
 
 gem "geocoder"
-
+ 
 group :development do
+  gem 'pry-byebug'
   gem 'spring'
   gem 'quiet_assets'
   gem 'guard-livereload', require: false
