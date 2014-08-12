@@ -7,8 +7,13 @@ class ApplicationController < ActionController::Base
   end
 
   def access_denied(exception)
-    binding.pry
     redirect_to admin_path, :alert => exception.message
   end
 
+  private
+
+  def after_sign_out_path_for(resource_or_scope)
+    # binding.pry
+    root_path
+  end
 end

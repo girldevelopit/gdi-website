@@ -77,6 +77,11 @@ ActiveRecord::Schema.define(version: 20140811191019) do
     t.string   "geo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "twitter"
+    t.string   "linkedin"
+    t.string   "github"
+    t.float    "latitude"
+    t.float    "longitude"
     t.string   "meetup_id"
   end
 
@@ -90,5 +95,14 @@ ActiveRecord::Schema.define(version: 20140811191019) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
+
+  create_table "sponsors", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "location_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image"
+  end
 
 end

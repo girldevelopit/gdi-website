@@ -1,13 +1,45 @@
-<h1>Home</h1>
-<% @location.each do |l| %>
-  <ul>
-    <%= link_to l.location, location_path(l.id) %>
-    <br><%= l.blurb %>
-    <br><%= l.fb %>
-    <br><%= l.meetup %>
-    <br><%= l.geo %>
-  </ul>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Girl Develop It</title>
+  <meta charset="UTF-8">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- Home Page -->
+  <div class="opener">
+    <!-- <%= image_tag("photo2.png") %> -->
+    <h1>Don't be shy <%= image_tag("flourish-med.png") %> Develop it</h1>
+  </div>
+  <div id="container">
+  	<section class="mission-statement">
+    	<h2>{ Who are we? }</h2>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lobortis purus. Nunc et arcu varius, tempor sapien at, tempor sapien. Suspendisse volutpat nisl in lacus molestie, quis ultricies felis viverra. Donec massa urna, venenatis ut ligula eu, pharetra posuere nisl. Mauris scelerisque dui eu mi bibendum, at fringilla nulla dignissim. Morbi posuere est id molestie tempor.</p>
+    </section>
+  </div>
 
+  <section class="map">
+    <div id="container">
+    	<p>We're now located in <%= @location.count %> cities!</p>
+  		<p>Don't see your city? Start a new chapter!</p>
+      <%= image_tag("map.png") %>
+    </div>
+  </section>
 
-<p><%= @events %></p>
+  <div id="container">
+    <section class="stats-section">
+      <h2>{ The Facts }</h2>
+      <div class="stats">
+        <%= image_tag("stat1.png") %>
+        <%= image_tag("stat1.png") %>
+        <%= image_tag("stat1.png") %>
+        <p>Women hold only 26% of the 3,816,000 commuting related occupations in the US.</p>
+        <p>Woman obtain 57% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. (Contrast to 1984 when women earned 37%)</p>
+        <p>Tech companies with more women in management have 34% higher Return of investment. Diverse tech and startup teams are critical for innovation</p>
+      </div>
+    </section>
+  </div>
+
+</body>
