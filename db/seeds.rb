@@ -90,7 +90,7 @@ locs.each do |l|
   lat = Random.new.rand(32..43)
   long = Random.new.rand(-117..-67)
   Location.create!(location: l["name"], fb: l["facebook"], meetup: l["meetup_url"],
-                  twitter: l["twitter"], linkedin: l["linkedin"],
+                  twitter: l["twitter"], linkedin: l["linkedin"], geo: l["name"],
                   github: l["github"], latitude: lat, longitude: long, meetup_id: l["meetup_id"])
 end
 
