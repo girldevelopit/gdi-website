@@ -11,7 +11,8 @@ class LocationsController < ApplicationController
         states[l.state] = [l.location]
       end
     end
-    @states = states
+    binding.pry
+    @states = states.to_a.sort
 
   respond_to do |format|
     format.html # index.html.erb
