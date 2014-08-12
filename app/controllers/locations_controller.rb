@@ -1,6 +1,12 @@
 class LocationsController < ApplicationController
   def index
    locational
+
+    @locations = Location.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @locations}
+    end
   end
 
   def show
