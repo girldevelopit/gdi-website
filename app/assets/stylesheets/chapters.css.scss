@@ -3,17 +3,17 @@
   @media screen and (min-width: 500px) {
     @include span-columns(4);
   }
-  .state-container{
-    width: 200px;
+  .state-container-aside{
+    // width: 200px;
     margin: auto;
     padding-bottom: 14px;
-
     img{
      width: 100%;
+     padding: 0em 2em;
     }
   }
   hr{
-    width: 160px;
+    width: 70%;
     margin-bottom: 3px;
   }
   h1{
@@ -100,7 +100,11 @@
     width: 100%;
     padding: 0em 2em;
   }
-  a{
-    text-decoration: none;
+  h2 a{
+    color: $pink;
+    &:hover{
+      color: $gold;
+      font-style: italic;
+    }
   }
 }
