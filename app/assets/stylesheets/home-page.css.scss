@@ -10,8 +10,6 @@
   h1{
     color: #2a4758;
     font-size: 3.5rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
     font-weight: 700;
     margin: -.33em 0em 2em 0em;
     padding-top: 2em;
@@ -27,25 +25,7 @@
   @include shift(2);
   text-align: center;
   p{
-    font-size: .8rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
-    color: $gray;
-    line-weight: .1rem;
-    line-height: 1.2rem;
     margin-bottom: 4em;
-  }
-  h2{
-    font-weight: 400;
-    color: white;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: .14rem;
-    background-color: $gold;
-    padding: .5rem;
-    border: none;
-    margin: -1.4em auto 2.5em auto;
-    display: inline-block;
   }
 }
 
@@ -56,29 +36,11 @@
   img{
     width:100%;
   }
-  p{
-    font-weight: 400;
-    color: $black;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: .14rem;
-  }
 }
 
 .stats-section{
   //@include span-columns(12);
   text-align: center;
-  h2{
-    font-weight: 400;
-    color: white;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: .14rem;
-    background-color: $gold;
-    padding: .5rem;
-    width: 150px;
-    margin: -1.1em auto auto auto;
-  }
   .stats{
     text-align: center;
     img{
@@ -93,12 +55,6 @@
       @include span-columns(4 of 12);
       @include omega(3n);
       padding: 0em 2em;
-      font-size: .8rem;
-      font-weight: 300;
-      letter-spacing: .05rem;
-      color: $gray;
-      line-weight: .1rem;
-      line-height: 1.2rem;
       margin-bottom: 5em;
     }
   }
