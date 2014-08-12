@@ -17,3 +17,6 @@
 
 # Ignore public uploads
 /public/uploads
+
+# Ignore meetup API key
+/config/initializers/meetup_client.rb

@@ -1,6 +1,22 @@
 class LocationsController < ApplicationController
   def index
-   locational
+    locational
+
+    #  params = { category: '1',
+    #   city: 'London',
+    #   country: 'GB',
+    #   id: '13459032',
+    #   name: 'Diorama-Arts-Studios,',
+    #   format: 'json',
+    #   page: '1'}
+    # meetup_api = MeetupApi.new
+    # @events = meetup_api.open_events(params)
+
+    @locations = Location.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @locations}
+    end
   end
 
   def show
