@@ -22,8 +22,6 @@ gem 'rolify'
 
 gem 'meetup_client'
 
-gem 'quiet_assets', group: :development
-
 # for aws cloud storage
 gem 'fog'
 # photo resizing
@@ -32,8 +30,9 @@ gem "mini_magick"
 gem 'carrierwave'
 
 gem "geocoder"
-
+ 
 group :development do
+  gem 'pry-byebug'
   gem 'spring'
   gem 'quiet_assets'
   gem 'guard-livereload', require: false

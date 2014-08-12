@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1rem;
+  letter-spacing: .14rem;
+}
+
+h2{
+  font-weight: 400;
+  color: $black;
+  font-size: .8rem;
+  letter-spacing: .14rem;
+  margin: auto;
+  padding: .1rem;
+}
+
+%dashed-border {
+  border-bottom: 1px dashed $pink;
+  padding-bottom: .2rem;
+}
+
+p{
+  font-size: .8rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+  color: $gray;
+  line-weight: .1rem;
+  line-height: 1.2rem;
+  a{
+    font-style: italic;
+    color: $gold;
+    &:hover{
+      color: $pink;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.subtitle {
+ font-weight: 400;
+ color: $pink;
+ font-style: italic;
+ font-weight: 400;
+ font-size: .8rem;
+ letter-spacing: .05rem;
+ margin: .35rem 0rem;
+}
+
+.button {
+ display: inline-block;
+ font-weight: 400;
+ color: white;
+ font-size: .8rem;
+ text-transform: uppercase;
+ letter-spacing: .14rem;
+ background-color: $gold;
+ padding: .5rem;
+ &:hover{
+  background-color: $black;
+  color: $blush;
+  }
+}
