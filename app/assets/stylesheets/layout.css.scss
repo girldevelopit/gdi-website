@@ -1,4 +1,16 @@
-//The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS) 
+//The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS)
 //https://smacss.com
 
 //LAYOUT: styles for positioning the major page elements
+
+.container {
+  @include outer-container;
+  width: 965px;
+  max-width: 100%;
+  margin: auto;
+  // padding-top: 50px;
+}
+
+.main-container {
+  padding-top: 50px;
+}

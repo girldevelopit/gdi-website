@@ -11,21 +11,21 @@
 #   a.password = a.password_confirmation = 'password'
 # end
 
-rdu = Location.create! do |a|
-  a.location  = 'RDU'
-  a.blurb     = 'Durham is a colorful, creative, and entrepreneurial community that continuously earns accolades as one of the best places in the world to visit, live, and do business. With nationally acclaimed restaurants, shopping, historical sites, and myriad other things to do, Durham is the place where great things happen.'
-  a.fb        = 'https://www.facebook.com/girldevelopit'
-  a.meetup    = 'http://www.meetup.com/Girl-Develop-It-RDU'
-  a.geo       = 'American Underground, Durham, NC'
-end
-
-nyc = Location.create! do |a|
-  a.location  = 'NYC'
-  a.blurb     = "It can be intimidating for women to learn and ask questions when they are in an extreme minority. While open and welcoming, today's budding developer community is up to 91% male. There isn't a comfortable place where women can learn at their own pace and not be afraid to ask stupid questions."
-  a.fb        = 'https://www.facebook.com/girldevelopit'
-  a.meetup    = 'http://www.meetup.com/girldevelopit/'
-  a.geo       = 'New York, NY'
-end
+# rdu = Location.create! do |a|
+#   a.location  = 'Raleigh/Durham'
+#   a.blurb     = 'Durham is a colorful, creative, and entrepreneurial community that continuously earns accolades as one of the best places in the world to visit, live, and do business. With nationally acclaimed restaurants, shopping, historical sites, and myriad other things to do, Durham is the place where great things happen.'
+#   a.fb        = 'https://www.facebook.com/girldevelopit'
+#   a.meetup    = 'http://www.meetup.com/Girl-Develop-It-RDU'
+#   a.geo       = 'American Underground, Durham, NC'
+# end
+#
+# nyc = Location.create! do |a|
+#   a.location  = 'New York City'
+#   a.blurb     = "It can be intimidating for women to learn and ask questions when they are in an extreme minority. While open and welcoming, today's budding developer community is up to 91% male. There isn't a comfortable place where women can learn at their own pace and not be afraid to ask stupid questions."
+#   a.fb        = 'https://www.facebook.com/girldevelopit'
+#   a.meetup    = 'http://www.meetup.com/girldevelopit/'
+#   a.geo       = 'New York, NY'
+# end
 #
 # AdminUser.create! do |a|
 #   a.email       = 'julia@girldevelopit.com'
@@ -66,7 +66,7 @@ end
 aurelia = AdminUser.create! do |a|
   a.email       = 'aurelia@girldevelopit.com'
   a.password    = a.password_confirmation = 'password'
-  a.location_id = rdu.id
+  # a.location_id = rdu.id
 end
 
 aureliabio = Bio.create! do |a|
@@ -83,3 +83,15 @@ instructorbio = Bio.create! do |a|
   a.info      = "This awesome human is super jazzed to help people learn to code."
   a.image     = 'https://s3.amazonaws.com/girl_develop_it/gdi_logo_badge.png'
 end
+
+seed_file = Rails.root.join('db', 'seeds', 'locs2.yml')
+locs = YAML::load_file(seed_file)
+locs.each do |l|
+  lat = Random.new.rand(32..43)
+  long = Random.new.rand(-117..-67)
+  Location.create!(location: l["name"], fb: l["facebook"], meetup: l["meetup_url"],
+                  twitter: l["twitter"], linkedin: l["linkedin"],
+                  github: l["github"], latitude: lat, longitude: long, meetup_id: l["meetup_id"])
+end
+
+aurelia.location_id = Location.first

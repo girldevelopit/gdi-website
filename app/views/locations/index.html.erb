@@ -7,15 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <section class="main-container">
+  <div class="container">
+    <h1>Chapter Index</h1>
 
-	<h1>Locations</h1>
-  		<% @location.each do |l| %>
-    <ul>
-      <%= link_to l.location, location_path(l.id) %>
-      <li><%= l.blurb %></li>
-      <li><%= l.fb %></li>
-      <li><%= l.meetup %></li>
-      <li><%= l.geo %></li>
-    </ul>
-  <% end %>
+    <div class="state-index">
+      <% @location.each do |l| %>
+        <div class="state-container">
+          <div class="state">
+            <%= image_tag("NC.png") %>
+            <!-- <%= image_tag("NC.png") %> -->
+          </div>
+          <hr>
+          <h1>State Name</h1>
+          <h2><%= link_to l.location, location_path(l.id) %></h2>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+  </section>
 </body>
