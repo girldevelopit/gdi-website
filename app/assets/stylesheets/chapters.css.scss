@@ -85,8 +85,14 @@
   }
 }
 
-.state-container{
+.state{
   @include span-columns(4);
-  // @include omega(3n);
+  @include omega(3n);
   text-align: center;
+  hr{
+    width: 180px;
+  }
+  img{
+    width: 100%;
+  }
 }
