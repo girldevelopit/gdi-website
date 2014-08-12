@@ -2,7 +2,6 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    # binding.pry
     allroles = []
     user.roles.each do |r|
       allroles << r.name
@@ -10,7 +9,11 @@ class Ability
     if allroles.include? "webmistress"
       can :manage, :all
     elsif allroles.include? "admin"
-      can :manage, :all
+      # binding.pry
+      can :manage, user.location
+      can :manage, user.bio
+      can :manage, Sponsor
+      can :read, :all
     else
       can :view, :all
     end
