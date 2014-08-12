@@ -13,7 +13,7 @@
     }
   }
   hr{
-    width: 70%;
+    width: 60%;
     margin-bottom: 3px;
   }
   h1{
@@ -21,6 +21,8 @@
   }
   h2{
     @extend %dashed-border;
+    width: 100px;
+    margin-top: 3em;
   }
 }
 
@@ -59,11 +61,13 @@
   .read-more:hover{
     color: $pink;
   }
-  .rsvp{
-    float: right;
-    color: $gold;
-    padding: .5rem;
-    background-color: #f1f2f2;
+  .button{
+    background-color: $paleblue;
+    color: $pink;
+    &:hover{
+      background-color: $pink;
+      color: white;
+    }
   }
 }
 .single-profile{

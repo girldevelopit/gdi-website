@@ -67,23 +67,9 @@ header {
 }
 
 footer {
-  height: 350px;
-  background-color: $black;
+  height: 150px;
+  background-color: $pink;
   padding: 2em 0em 0em 0em;
-  .publicity-logos{
-    text-align: center;
-    margin-bottom: 4em;
-    img{
-      height: 90px;
-    }
-    h2{
-      font-weight: 400;
-      color: $gold;
-      font-size: .8rem;
-      text-transform: uppercase;
-      letter-spacing: .14rem;
-    }
-  }
   .bottom-footer{
     nav a{
       color: $blush;
@@ -93,13 +79,7 @@ footer {
       padding: 2em 2em 4em 0em;
     }
     p{
-      font-weight: 400;
       color: white;
-      font-style: italic;
-      font-weight: 400;
-      font-size: .8rem;
-      letter-spacing: .05rem;
-      margin: .4rem 0rem .35rem 0rem;
     }
   }
 }
