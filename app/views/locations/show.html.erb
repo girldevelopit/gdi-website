@@ -4,21 +4,41 @@
       <aside class="chapter-aside">
         <div class="state-container-aside">
           <%= image_tag("NC.png") %>
-          <!-- <%= image_tag("NC.png") %> -->
         </div>
         <hr>
         <h1><%= @location.location %></h1>
         <ul class="media-links media-links-rounded">
-          <%#= link_to image_tag "fb.png", @location.fb %>
-          <%#= link_to image_tag "tw.png", @location.tw %>
-          <%#= link_to image_tag "in.png", @location.in %>
-          <%#= link_to image_tag "gh.png", @location.gh %>
-          <%#= mail_to image_tag "email.png", @location.email %>
-          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+
+          <% unless @location.twitter.to_s == "" %>
+            <%= mail_to @location.email do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
+          <% end %>
+
+          <% unless @location.twitter.to_s == "" %>
+            <%= link_to "https://twitter.com/#{@location.twitter}" do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
+          <% end %>
+
+          <% unless @location.linkedin.to_s == "" %>
+            <%= link_to "https://www.linkedin.com/#{@location.linkedin}" do %>
+              <i class="fa fa-linkedin"></i>
+            <% end %>
+          <% end %>
+
+          <% unless @location.github.to_s == "" %>
+            <%= link_to @location.github do %>
+              <i class="fa fa-github-alt"></i>
+            <% end %>
+          <% end %>
+
+          <% unless @location.fb.to_s == "" %>
+            <%= link_to "https://www.facebook.com/#{@location.fb}" do %>
+              <i class="fa fa-facebook"></i>
+            <% end %>
+          <% end %>
+
         </ul>
         <p class="subtitle">don't be shy</p>
           <!-- <button class="button"><%= link_to "{ Join Us }", @location.meetup %></button> -->
