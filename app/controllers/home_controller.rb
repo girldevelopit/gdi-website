@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
+
   def index
+  @location = Location.all
+
 #
 #     params = { category: '1',
 #       zip: '27701',

@@ -25,10 +25,7 @@ end
     @users = @location.admin_users
     @sponsors = @location.sponsors
 
-    @bios = []
-    @users.each do |user|
-      @bios << user.bio
-    end
+    @bios = @location.bios
 
     api = MeetupApi.new
     @events = api.events(group_id: @location.meetup_id)

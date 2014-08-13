@@ -1,45 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Girl Develop It</title>
-  <meta charset="UTF-8">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <%= javascript_include_tag 'raphael-min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.mapael', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'usa_states', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'chapter_map', 'data-turbolinks-track' => true %>
+
+		<h1>Home</h1>
+
   <!-- Home Page -->
+
   <div class="opener">
     <!-- <%= image_tag("photo2.png") %> -->
     <h1>Don't be shy <%= image_tag("flourish-med.png") %> Develop it</h1>
   </div>
+
   <div class="container">
   	<section class="mission-statement">
-    	<h2 class="button">{ Who are we? }</h2>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lobortis purus. Nunc et arcu varius, tempor sapien at, tempor sapien. Suspendisse volutpat nisl in lacus molestie, quis ultricies felis viverra. Donec massa urna, venenatis ut ligula eu, pharetra posuere nisl. Mauris scelerisque dui eu mi bibendum, at fringilla nulla dignissim. Morbi posuere est id molestie tempor.</p>
+    	<h2>{ Who are we? }</h2>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lobortis purus. Nunc et arcu varius, tempor sapien at, tempor sapien. Suspendisse volutpat nisl in lacus molestie, quis ultricies felis viverra. Donec massa urna, venenatis ut ligula eu, pharetra posuere nisl. Mauris scelerisque dui eu mi bibendum, at fringilla nulla dignissim. Morbi posuere est id molestie tempor. Bibendum, at fringilla nulla dignissim.</p>
+      <%= link_to "learn more", about_path, :class=>"subtitle"%>
     </section>
   </div>
 
   <section class="map">
     <div class="container">
-    	<p>We're now located in <%= @location.count %> cities!</p>
-  		<p>Don't see your city? Start a new chapter!</p>
+    	<h2>We're now located in <%= @location.count %> cities!</h2>
+  		<p class="subtitle">Don't see your city? Start a new chapter!</p>
       <%= image_tag("map.png") %>
     </div>
   </section>
 
+	<section>
+		<h3>We are now in <%= @location.count %> cities!</h3>
+		<h4>Don't see your city? Start a new chapter!</h4>
+	</section>
+
+	<section class='map-container'>
+		<div class="chapter_map"></div>
+	</section>
+
   <section class="stats-section">
     <div class="container">
-      <h2 class="button">{ The Facts }</h2>
+      <!-- <h2 class="button">{ The Facts }</h2> -->
       <div class="stats">
-        <%= image_tag("stat1.png") %>
-        <%= image_tag("stat1.png") %>
-        <%= image_tag("stat1.png") %>
-        <p>Women hold only 26% of the 3,816,000 commuting related occupations in the US.</p>
-        <p>Woman obtain 57% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. (Contrast to 1984 when women earned 37%)</p>
+        <%= image_tag("stat-25.png") %>
+        <%= image_tag("stat-58.png") %>
+        <%= image_tag("stat-34.png") %>
+        <p>Women hold only 25% of the 3,816,000 computing related occupations in the US.</p>
+        <p>Woman obtain 58% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. Compared to 1984, when women earned 37%)</p>
         <p>Tech companies with more women in management have 34% higher Return of investment. Diverse tech and startup teams are critical for innovation</p>
       </div>
     </div>
   </section>
 
-</body>
+  <div class="press-logos">
+    <h2>{ As seen in }</h2>
+    <%= image_tag("publicity-logos.png") %>
+  </div>
