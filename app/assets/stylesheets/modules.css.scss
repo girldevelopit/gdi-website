@@ -66,31 +66,33 @@ header {
 
 footer {
   text-align: center;
-  height: 180px;
-  background-color: $pink;
+  height: 190px;
+  background-color: $navy;
   padding: 20px 0px 0px 0px;
   .navigation {
     margin-top: 25px;
-    text-transform: uppercase;
     a{
+      color: white;
+      font-style: italic;
       font-weight: 300;
-      color: #fff;
-      font-size: .8rem;
-      letter-spacing: .14rem;
-      padding: 0rem 1rem;
+      font-size: .9rem;
+      letter-spacing: .05rem;
+      padding: 0 1rem;
+      margin-bottom: 0em;
       &:hover{
         color: $gold;
+      }
+      i{
+        color: $gold;
+        &:hover{
+          color: #fff;
+        }
       }
     }
   }
   .subtitle{
-    color: $blush;
+    color: $paleblue;
     font-weight: 300;
-  }
-  .media-links{
-    margin-top: 1rem;
-    a{
-      color: $gold;
-    }
+    margin-bottom: -1px;
   }
 }
