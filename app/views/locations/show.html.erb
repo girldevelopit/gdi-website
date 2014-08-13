@@ -129,10 +129,40 @@
               <h2><%= bio.name %></h2>
               <p><%= bio.info.html_safe %></p>
               <ul class="media-links">
-                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-envelope"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                <%= binding.pry  %>
+                <% unless bio.email.to_s == "" %>
+                  <%= mail_to bio.email do %>
+                    <i class="fa fa-envelope"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.fb.to_s == "" %>
+                  <%= link_to "https://www.facebook.com/#{bio.fb}" do %>
+                    <i class="fa fa-facebook"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.twitter.to_s == "" %>
+                  <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+                    <i class="fa fa-twitter"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.linkedin.to_s == "" %>
+                  <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+                    <i class="fa fa-linkedin"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.github.to_s == "" %>
+                  <%= link_to bio.github do %>
+                    <i class="fa fa-github-alt"></i>
+                  <% end %>
+                <% end %>
               </ul>
             </div>
           </div>
