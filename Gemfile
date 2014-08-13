@@ -40,7 +40,7 @@ group :development do
 end
 gem 'unicorn'
 gem 'rails_12factor', group: :production
-
+gem 'friendly_id'
 # Use unicorn as the app server
 # gem 'unicorn'
 
