@@ -98,12 +98,14 @@
         <script type="text/javascript">
           var meetup_url = 'http://localhost:3000/meetups/26.json'
           $.getJSON(meetup_url).done(function (classesData){
-            console.log(classesData);
+            console.log("here are all classes", classesData);
+            var oneClass = '';
             _.each(classesData, function (one) {
-              console.log (one);
+              console.log("Here is one class", one);
             });
-            var classesTemplate = $('#meetup').html();
-            $(".classes").html(_.template(classesTemplate, classesData));
+            var classes = $('#meetup').html();
+            var classesTemplate = _.template(classes, {classesData: classesData});
+            $(".classes").html(classesTemplate);
             });
     
         </script>
