@@ -11,16 +11,14 @@
   <div class="container">
     <h1>This is the Chapter Index</h1>
     <section class="state-index">
-      <% @states.keys.each do |s| %>
+      <% @states.each do |s| %>
         <div class="state-container">
           <div class="state"><%= image_tag(image_route(s)) %></div>
           <hr>
-          <h1><%= s %></h1>
-
-          <% @states[s].each do |l| %>
+          <h1><%= s[0] %></h1>
+          <% s[1].each do |l| %>
             <h2><%= l %></h2>
           <% end %>
-
         </div>
     <% end %>
     </section>
