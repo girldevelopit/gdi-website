@@ -21,6 +21,7 @@ gem 'cancan'
 gem 'rolify'
 
 gem 'meetup_client'
+gem 'underscore-rails'
 
 # for aws cloud storage
 gem 'fog'
