@@ -40,10 +40,10 @@
           <% end %>
 
         </ul>
-        <p class="subtitle">don't be shy</p>
-        <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
-        <h2>Sponsors</h2>
-    <% @sponsors.each do |sponsor| %>
+        <%= link_to "learn more", about_path, :class=>"subtitle"%>
+        <br><%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+          <h2>Sponsors</h2>
+  <% @sponsors.each do |sponsor| %>
     <!-- <br><%= sponsor.name %>
     <br><%= sponsor.url %>
     <br><%= sponsor.image.thumb.url %>
@@ -137,7 +137,7 @@
               <div class="profile-content">
                 <h2><%= bio.name %></h2>
                 <p><%= bio.info.html_safe %></p>
-                  <ul class="media-links">
+                  <ul class="media-links">  
                     <% unless bio.email.to_s == "" %>
                       <%= mail_to bio.email do %>
                         <i class="fa fa-envelope"></i>
