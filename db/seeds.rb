@@ -91,7 +91,9 @@ locs.each do |l|
   long = Random.new.rand(-117..-67)
   Location.create!(location: l["name"], fb: l["facebook"], meetup: l["meetup_url"],
                   twitter: l["twitter"], linkedin: l["linkedin"], geo: l["name"],
-                  github: l["github"], latitude: lat, longitude: long, meetup_id: l["meetup_id"])
+                  github: l["github"],
+                  # latitude: lat, longitude: long,
+                  meetup_id: l["meetup_id"])
 end
 
 aurelia.location_id = Location.first
