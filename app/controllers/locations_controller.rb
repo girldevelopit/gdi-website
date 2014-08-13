@@ -26,6 +26,8 @@ end
     @sponsors = @location.sponsors
 
     @bios = @location.bios
+    @leaders = @bios.where(title: "LEADERS")
+    @instructors = @bios.where(title: "INSTRUCTORS")
 
     api = MeetupApi.new
     @events = api.events(group_id: @location.meetup_id)

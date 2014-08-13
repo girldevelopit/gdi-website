@@ -57,34 +57,6 @@
     </aside>
 
     <section id="content-section">
-        <div class="profiles">
-          <% @bios.each do |bio| %>
-            <div class="single-profile">
-              <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image.profile.url %>
-                <% end %>
-                <!-- <ul class="profile-links">
-                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                </ul> -->
-              </div>
-              <div class="profile-content">
-                <h2><%= bio.name %></h2>
-                <p><%= bio.info.html_safe %></p>
-                <ul class="media-links">
-                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          <% end %>
-        </div>
-
       <div id="headline">
         <%= image_tag 'pencil.png' %>
         <h2>Upcoming Classes</h2>
@@ -118,52 +90,88 @@
               <% if bio.image? %>
                 <%= image_tag bio.image.profile.url %>
               <% end %>
-              <!-- <ul class="profile-links">
-                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul> -->
             </div>
             <div class="profile-content">
               <h2><%= bio.name %></h2>
               <p><%= bio.info.html_safe %></p>
-              <ul class="media-links">
-                <!-- <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-                <%= binding.pry  %>
-                <% unless bio.email.to_s == "" %>
-                  <%= mail_to bio.email do %>
-                    <i class="fa fa-envelope"></i>
+                <ul class="media-links">
+                  <% unless bio.email.to_s == "" %>
+                    <%= mail_to bio.email do %>
+                      <i class="fa fa-envelope"></i>
+                    <% end %>
                   <% end %>
-                <% end %>
 
-                <% unless bio.fb.to_s == "" %>
-                  <%= link_to "https://www.facebook.com/#{bio.fb}" do %>
-                    <i class="fa fa-facebook"></i>
+                  <% unless bio.website.to_s == "" %>
+                    <%= link_to bio.website do %>
+                      <i class="fa fa-globe"></i>
+                    <% end %>
                   <% end %>
-                <% end %>
 
-                <% unless bio.twitter.to_s == "" %>
-                  <%= link_to "https://twitter.com/#{bio.twitter}" do %>
-                    <i class="fa fa-twitter"></i>
+                  <% unless bio.twitter.to_s == "" %>
+                    <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+                      <i class="fa fa-twitter"></i>
+                    <% end %>
                   <% end %>
-                <% end %>
 
-                <% unless bio.linkedin.to_s == "" %>
-                  <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
-                    <i class="fa fa-linkedin"></i>
+                  <% unless bio.linkedin.to_s == "" %>
+                    <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+                      <i class="fa fa-linkedin"></i>
+                    <% end %>
                   <% end %>
-                <% end %>
 
-                <% unless bio.github.to_s == "" %>
-                  <%= link_to bio.github do %>
-                    <i class="fa fa-github-alt"></i>
+                  <% unless bio.github.to_s == "" %>
+                    <%= link_to "https://www.github.com/#{bio.github}" do %>
+                      <i class="fa fa-github-alt"></i>
+                    <% end %>
                   <% end %>
+                </ul>
+
+        <div class="profiles">
+          <% @instructors.each do |bio| %>
+            <div class="single-profile">
+              <div class="profile-img">
+                <% if bio.image? %>
+                  <%= image_tag bio.image.profile.url %>
                 <% end %>
-              </ul>
+              </div>
+              <div class="profile-content">
+                <h2><%= bio.name %></h2>
+                <p><%= bio.info.html_safe %></p>
+                  <ul class="media-links">
+                    <% unless bio.email.to_s == "" %>
+                      <%= mail_to bio.email do %>
+                        <i class="fa fa-envelope"></i>
+                      <% end %>
+                    <% end %>
+
+                    <% unless bio.website.to_s == "" %>
+                      <%= link_to bio.website do %>
+                        <i class="fa fa-globe"></i>
+                      <% end %>
+                    <% end %>
+
+                    <% unless bio.twitter.to_s == "" %>
+                      <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+                        <i class="fa fa-twitter"></i>
+                      <% end %>
+                    <% end %>
+
+                    <% unless bio.linkedin.to_s == "" %>
+                      <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+                        <i class="fa fa-linkedin"></i>
+                      <% end %>
+                    <% end %>
+
+                    <% unless bio.github.to_s == "" %>
+                      <%= link_to "https://www.github.com/#{bio.github}" do %>
+                        <i class="fa fa-github-alt"></i>
+                      <% end %>
+                    <% end %>
+                  </ul>
+              </div>
+            </div>
+          <% end %>
+        </div>
             </div>
           </div>
         <% end %>
