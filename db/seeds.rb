@@ -91,7 +91,9 @@ locs.each do |l|
   long = Random.new.rand(-117..-67)
   newloc = Location.create!(location: l["name"], fb: l["facebook"], meetup: l["meetup_url"],
                   twitter: l["twitter"], linkedin: l["linkedin"],
-                  github: l["github"], latitude: lat, longitude: long, meetup_id: l["meetup_id"])
+                  github: l["github"],
+                  #latitude: lat, longitude: long,
+                  meetup_id: l["meetup_id"])
   l["leaders"].each do |leader|
     Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"], location_id: newloc.id)
   end
