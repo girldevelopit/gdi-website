@@ -30,7 +30,7 @@ gem "mini_magick"
 gem 'carrierwave'
 
 gem "geocoder"
- 
+
 group :development do
   gem 'pry-byebug'
   gem 'spring'

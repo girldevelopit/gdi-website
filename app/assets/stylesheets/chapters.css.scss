@@ -43,7 +43,7 @@
   }
   h2 {
     color: $gold;
-    padding-bottom: .4rem;
+    padding: 0px 5px 6px 5px;
     border-bottom: solid $black 1px;
     display: inline-block;
     margin: .5rem auto 3rem auto;
@@ -62,6 +62,7 @@
     color: $pink;
   }
   .button{
+    margin-top: 10px;
     background-color: $paleblue;
     color: $pink;
     &:hover{
@@ -88,6 +89,9 @@
     }
     ul{
       margin-top: -10px;
+    }
+    p{
+      padding: 10px 0px;
     }
   }
 }

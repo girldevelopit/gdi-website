@@ -1,6 +1,7 @@
 .opener{
   text-align: center;
-  background: url('photo2.png') no-repeat center center fixed;
+  // background: url('photo.png') no-repeat center center fixed;
+  background: url('photo.png');
   background-color: $paleblue;
   // background-repeat: no-repeat;
   // background-size: Auto 500px;
@@ -22,8 +23,8 @@
 }
 
 .mission-statement{
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(10);
+  @include shift(1);
   text-align: center;
   position: relative;
   padding: 0px 0px 50px 0px;
@@ -36,7 +37,10 @@
     top: -18px;
   }
   p{
-    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: .9rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -77,13 +81,15 @@
 }
 
 .press-logos{
-  height: 200px;
+  height: 220px;
   background-color: $black;
   text-align: center;
+  padding: 40px 0px;
   img{
-    height: 90px;
+    height: 80px;
   }
   h2{
     color: $gold;
+    margin-bottom: 15px;
   }
 }
