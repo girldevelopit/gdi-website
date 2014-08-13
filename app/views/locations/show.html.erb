@@ -90,7 +90,10 @@
 
 
          <script type="text/template" id="meetup">
-        <h2><%%= name %></h2>
+         <%% for(var i=0; i<classesData.length; i++) { %>
+            <%% var oneClass = classesData[i]; %>
+        <%% } %>
+        <h2><%%= oneClass.name %></h2>
         <p class="subtitle">[ <%%= status %>, <%%= time %> , <%%= address %> ]</p>
         <p><%%= description %></p>
         <a href="#" class="button">RSVP</a>
@@ -102,8 +105,9 @@
             console.log("here are all the classes", classesData);
             //var oneClass = '';
             _.each(classesData, function (one) {
+              
               console.log("Here is one class", one);
-             
+             return classesData;
             });
             
              var classes = $('#meetup').html();
