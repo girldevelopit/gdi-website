@@ -13,7 +13,7 @@
   h1{
     color: $navy;
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 400;
     padding-top: 85px;
     img{
       height: 80px;
@@ -42,6 +42,9 @@
     font-size: .9rem;
     line-height: 1.5rem;
   }
+  .subtitle{
+    font-size: 1rem;
+  }
 }
 
 .map{
@@ -50,11 +53,16 @@
   text-align: center;
   h2{
     font-size: 1.5rem;
-    color: $pink;
+    color: $black;
     padding-top: 50px;
+    font-weight: 300;
+    letter-spacing: .1rem;
   }
   img{
     width:100%;
+  }
+  .subtitle{
+    font-size: 1rem;
   }
 }
 

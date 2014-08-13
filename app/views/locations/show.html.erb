@@ -40,10 +40,10 @@
           <% end %>
 
         </ul>
-        <%= link_to "learn more", about_path, :class=>"subtitle"%>
-        <br><%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
-          <h2>Sponsors</h2>
-  <% @sponsors.each do |sponsor| %>
+        <p class="subtitle">don't be shy</p>
+        <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+        <h2>Sponsors</h2>
+    <% @sponsors.each do |sponsor| %>
     <!-- <br><%= sponsor.name %>
     <br><%= sponsor.url %>
     <br><%= sponsor.image.thumb.url %>
