@@ -57,6 +57,33 @@
     </aside>
 
     <section id="content-section">
+        <div class="profiles">
+          <% @bios.each do |bio| %>
+            <div class="single-profile">
+              <div class="profile-img">
+                <% if bio.image? %>
+                  <%= image_tag bio.image.profile.url %>
+                <% end %>
+                <!-- <ul class="profile-links">
+                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul> -->
+              </div>
+              <div class="profile-content">
+                <h2><%= bio.name %></h2>
+                <p><%= bio.info.html_safe %></p>
+                <ul class="media-links">
+                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          <% end %>
+        </div>
 
       <div id="headline">
         <%= image_tag 'pencil.png' %>
