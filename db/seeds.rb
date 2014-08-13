@@ -100,6 +100,13 @@ locs.each do |l|
     website: leader["website"], github: leader["github"],
     linkedin: leader["linkedin"])
   end
+  l["instructors"].each do |instructor|
+    Bio.create!(title: "INSTRUCTORS", name: instructor["name"],
+    info: instructor["bio"], location_id: newloc.id,
+    twitter: instructor["twitter"], email: instructor["email"],
+    website: instructor["website"], github: instructor["github"],
+    linkedin: instructor["linkedin"])
+  end
 end
 
 aurelia.location_id = Location.first
