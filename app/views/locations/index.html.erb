@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GDI Chapters</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+
 <body>
   <section class="main-container">
   <div class="container">
@@ -17,7 +12,7 @@
           <hr>
           <h1><%= s[0] %></h1>
           <% s[1].each do |l| %>
-            <h2><%= l %></h2>
+            <h2><%= link_to l, location_path(l.parameterize.underscore) %></h2>
           <% end %>
         </div>
     <% end %>
