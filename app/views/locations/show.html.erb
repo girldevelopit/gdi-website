@@ -9,9 +9,15 @@
         <h1><%= @location.location %></h1>
         <ul class="media-links media-links-rounded">
 
-          <% unless @location.twitter.to_s == "" %>
+          <% unless @location.email.to_s == "" %>
             <%= mail_to @location.email do %>
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-envelope"></i>
+            <% end %>
+          <% end %>
+
+          <% unless @location.fb.to_s == "" %>
+            <%= link_to "https://www.facebook.com/#{@location.fb}" do %>
+              <i class="fa fa-facebook"></i>
             <% end %>
           <% end %>
 
@@ -33,18 +39,10 @@
             <% end %>
           <% end %>
 
-          <% unless @location.fb.to_s == "" %>
-            <%= link_to "https://www.facebook.com/#{@location.fb}" do %>
-              <i class="fa fa-facebook"></i>
-            <% end %>
-          <% end %>
-
         </ul>
-        <p class="subtitle">don't be shy</p>
-          <!-- <button class="button"><%= link_to "{ Join Us }", @location.meetup %></button> -->
-          <a href="" class="button">{ Join Us }</a>
+        <%= link_to "learn more", about_path, :class=>"subtitle"%>
+        <br><%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
           <h2>Sponsors</h2>
-
   <% @sponsors.each do |sponsor| %>
     <!-- <br><%= sponsor.name %>
     <br><%= sponsor.url %>
