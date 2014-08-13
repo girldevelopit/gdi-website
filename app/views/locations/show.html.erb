@@ -69,8 +69,8 @@
           <% @leaders.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image.profile.url %>
+                <% if bio.pic_link? %>
+                  <%= image_tag bio.pic_link %>
                 <% end %>
                 <!-- <ul class="profile-links">
                   <li><a href="#"><i class="fa fa-envelope"></i></a></li>
@@ -102,8 +102,8 @@
           <% @instructors.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image.profile.url %>
+                <% if bio.pic_link? %>
+                  <%= image_tag bio.pic_link %>
                 <% end %>
                 <!-- <ul class="profile-links">
                   <li><a href="#"><i class="fa fa-envelope"></i></a></li>

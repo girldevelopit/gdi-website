@@ -97,12 +97,12 @@ locs.each do |l|
   l["leaders"].each do |leader|
     Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"],
     location_id: newloc.id, twitter: leader["twitter"], email: leader["email"],
-    website: leader["website"], github: leader["github"],
+    website: leader["website"], github: leader["github"], pic_link: leader["image"],
     linkedin: leader["linkedin"])
   end
   l["instructors"].each do |instructor|
     Bio.create!(title: "INSTRUCTORS", name: instructor["name"],
-    info: instructor["bio"], location_id: newloc.id,
+    info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"],
     twitter: instructor["twitter"], email: instructor["email"],
     website: instructor["website"], github: instructor["github"],
     linkedin: instructor["linkedin"])
