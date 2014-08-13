@@ -1,7 +1,7 @@
 
   <section class="main-container">
   <div class="container">
-    <h1>This is the Chapter Index</h1>
+    <!-- <h1>This is the Chapter Index</h1> -->
 
     <section class="state-index">
       <% @states.each do |s| %>
@@ -10,7 +10,7 @@
           <hr>
           <h1><%= s[0] %></h1>
           <% s[1].each do |l| %>
-            <h2><%= l %></h2>
+            <h2><%= link_to l %></h2>
           <% end %>
         </div>
     <% end %>
