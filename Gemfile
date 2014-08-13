@@ -21,6 +21,7 @@ gem 'cancan'
 gem 'rolify'
 
 gem 'meetup_client'
+gem 'underscore-rails'
 
 # for aws cloud storage
 gem 'fog'
@@ -30,7 +31,7 @@ gem "mini_magick"
 gem 'carrierwave'
 
 gem "geocoder"
- 
+
 group :development do
   gem 'pry-byebug'
   gem 'spring'
