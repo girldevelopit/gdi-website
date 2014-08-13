@@ -1,30 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>GDI Chapters</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+
   <section class="main-container">
   <div class="container">
-    <h1>Chapter Index</h1>
+    <h1>This is the Chapter Index</h1>
 
-    <div class="state-index">
-      <% @location.each do |l| %>
+    <section class="state-index">
+      <% @states.each do |s| %>
         <div class="state-container">
-          <div class="state">
-            <%= image_tag("NC.png") %>
-            <!-- <%= image_tag("NC.png") %> -->
-          </div>
+          <div class="state"><%= image_tag(image_route(s)) %></div>
           <hr>
-          <h1>State Name</h1>
-          <h2><%= link_to l.location, location_path(l.id) %></h2>
+          <h1><%= s[0] %></h1>
+          <% s[1].each do |l| %>
+            <h2><%= l %></h2>
+          <% end %>
         </div>
-      <% end %>
-    </div>
-
+    <% end %>
+    </section>
   </div>
   </section>
-</body>

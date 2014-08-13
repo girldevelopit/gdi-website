@@ -15,27 +15,25 @@
   li{
     display: inline;
   }
-  a {
+  a{
     display: inline-block;
     font-size: .8em;
     height: 25px;
     width: 25px;
-    color: #000;
+    color: $black;
     border-radius: 50%;
-    margin: .2em;
-    padding-top: 3px;
+    margin: 2px;
+    padding-top: 6px;
     text-align: center;
-
     &:hover {
       background: $gold;
       color: #fff;
     }
   }
-  &.media-links-rounded {
-    a {
+  &.media-links-rounded{
+    a{
       color: white;
-      background-color: #2a4758;
-
+      background-color: $gold;
       &:hover{
         background-color: $black;
         color: $blush;
@@ -56,56 +54,49 @@ header {
     color: white;
     font-style: italic;
     font-weight: 300;
-    font-size: .8rem;
+    font-size: .9rem;
     letter-spacing: .05rem;
     float: right;
-    padding: 2.5em 1em 4.5em 1em;
+    padding: 3rem 1rem 3rem 1rem;
     margin-bottom: 0em;
   }
   nav a:first-child{
-    margin-right: -1em
+    margin-right: -1rem
   }
   nav a:hover{
     background-color: $black;
     color: $blush;
-    box-shadow: .1em .1em .5em $black;
+    box-shadow: .025rem .025rem .5rem $black;
   }
 }
 
 footer {
-  height: 350px;
-  background-color: $black;
-  padding: 2em 0em 0em 0em;
-  .publicity-logos{
-    text-align: center;
-    margin-bottom: 4em;
-    img{
-      height: 90px;
-    }
-    h2{
-      font-weight: 400;
-      color: $gold;
+  text-align: center;
+  height: 180px;
+  background-color: $pink;
+  padding: 20px 0px 0px 0px;
+  .navigation {
+    margin-top: 25px;
+    text-transform: uppercase;
+    a{
+      font-weight: 300;
+      color: #fff;
       font-size: .8rem;
-      text-transform: uppercase;
       letter-spacing: .14rem;
+      padding: 0rem 1rem;
+      &:hover{
+        color: $gold;
+      }
     }
   }
-  .bottom-footer{
-    nav a{
-      color: $blush;
-      font-weight: 300;
-      font-size: .8rem;
-      letter-spacing: .05rem;
-      padding: 2em 2em 4em 0em;
-    }
-    p{
-      font-weight: 400;
-      color: white;
-      font-style: italic;
-      font-weight: 400;
-      font-size: .8rem;
-      letter-spacing: .05rem;
-      margin: .4rem 0rem .35rem 0rem;
+  .subtitle{
+    color: $blush;
+    font-weight: 300;
+  }
+  .media-links{
+    margin-top: 1rem;
+    a{
+      color: $gold;
     }
   }
 }

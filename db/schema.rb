@@ -89,6 +89,8 @@ ActiveRecord::Schema.define(version: 20140813143442) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "meetup_id"
+    t.string   "state"
+    t.string   "email"
   end
 
   create_table "roles", force: true do |t|
