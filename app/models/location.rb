@@ -1,4 +1,7 @@
 class Location < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :location, use: [:slugged, :history]
+
   resourcify
   has_many :admin_users
   has_many :sponsors
@@ -13,4 +16,6 @@ class Location < ActiveRecord::Base
     end
   end
   after_validation :reverse_geocode
+
+
 end

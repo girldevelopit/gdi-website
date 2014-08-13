@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    locational # in applaction controller
 #
 #     params = { category: '1',
 #       zip: '27701',
