@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140813143442) do
+=======
+ActiveRecord::Schema.define(version: 20140813135253) do
+>>>>>>> acf36a44bb53b4224ee698053896e88dfe6fa4bb
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +79,11 @@ ActiveRecord::Schema.define(version: 20140813143442) do
     t.string   "github"
   end
 
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
+
   create_table "locations", force: true do |t|
     t.string   "location"
     t.text     "blurb"
@@ -91,7 +100,10 @@ ActiveRecord::Schema.define(version: 20140813143442) do
     t.string   "meetup_id"
     t.string   "state"
     t.string   "email"
+    t.string   "slug"
   end
+
+  add_index "locations", ["slug"], name: "index_locations_on_slug", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"
