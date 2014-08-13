@@ -66,7 +66,7 @@
         </div>
 
         <div class="profiles">
-          <% @bios.each do |bio| %>
+          <% @leaders.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
                 <% if bio.image? %>
@@ -96,6 +96,34 @@
         <div id="headline">
           <%= image_tag 'apple.png' %>
           <h2>The Instructors</h2>
+        </div>
+
+        <div class="profiles">
+          <% @instructors.each do |bio| %>
+            <div class="single-profile">
+              <div class="profile-img">
+                <% if bio.image? %>
+                  <%= image_tag bio.image.profile.url %>
+                <% end %>
+                <!-- <ul class="profile-links">
+                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul> -->
+              </div>
+              <div class="profile-content">
+                <h2><%= bio.name %></h2>
+                <p><%= bio.info.html_safe %></p>
+                <ul class="media-links">
+                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          <% end %>
         </div>
 
 
