@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-var api_key = ""
+var api_key = "315d52644b474a1e61687d5bb337f62"
 var chapter_id = 
 var meetup_url = '"https://api.meetup.com/2/events?key=" + api_key + "&sign=true&group_id=" + chapter_id '
 
