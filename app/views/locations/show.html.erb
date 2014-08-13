@@ -86,20 +86,24 @@
 
       </section>
     </div>
-  </div> <!-- the rest of the section -->
+  </div> 
 
     <script type="text/template" id="meetup">
-        <h2><%%= results.name %></h2>
-        <p class="subtitle">[ <%%= results.date %>, <%%= results.time %> , <%%= results.address %> ]</p>
-        <p><%%= results.description %></p>
+        <h2><%%= name %></h2>
+        <p class="subtitle">[ <%%= status %>, <%%= time %> , <%%= address %> ]</p>
+        <p><%%= description %></p>
         <a href="" class="button">RSVP</a>
         </script>
 
         <script type="text/javascript">
           var meetup_url = 'http://localhost:3000/meetups/26.json'
           $.getJSON(meetup_url).done(function (classesData){
+            console.log(classesData);
+            _.each(classesData, function (one) {
+              console.log (one);
+            });
             var classesTemplate = $('#meetup').html();
-            $(".classes").html(_.template(classesTemplate, {classesData}));
-            })
+            $(".classes").html(_.template(classesTemplate, classesData));
+            });
     
         </script>
