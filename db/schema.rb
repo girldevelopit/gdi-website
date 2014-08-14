@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20140813143442) do
-=======
-ActiveRecord::Schema.define(version: 20140813135253) do
->>>>>>> acf36a44bb53b4224ee698053896e88dfe6fa4bb
+ActiveRecord::Schema.define(version: 20140813202609) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -77,6 +73,15 @@ ActiveRecord::Schema.define(version: 20140813135253) do
     t.string   "website"
     t.string   "linkedin"
     t.string   "github"
+    t.string   "pic_link"
+  end
+
+  create_table "friendly_id_slugs", force: true do |t|
+    t.string   "slug",                      null: false
+    t.integer  "sluggable_id",              null: false
+    t.string   "sluggable_type", limit: 50
+    t.string   "scope"
+    t.datetime "created_at"
   end
 
   add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree

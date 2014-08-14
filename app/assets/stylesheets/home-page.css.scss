@@ -9,12 +9,12 @@
   -webkit-background-size: cover;
   background-size: cover;
   // width: 100%;
-  height: 400px;
+  height: 500px;
   h1{
     color: $navy;
     font-size: 3.5rem;
-    font-weight: 700;
-    padding-top: 85px;
+    font-weight: 400;
+    padding-top: 150px;
     img{
       height: 80px;
       margin-bottom: -8px;
@@ -28,7 +28,7 @@
   text-align: center;
   position: relative;
   padding: 0px 0px 50px 0px;
-  h2{//unsure about this design.
+  h2{
     background-color: $gold;
     padding: .5rem;
     width: 250px;
@@ -42,25 +42,47 @@
     font-size: .9rem;
     line-height: 1.5rem;
   }
+  .subtitle{
+    font-size: .8rem;
+  }
 }
 
 .map{
   background-color: $paleblue;
-  height: 45em;
+  @include background-image( radial-gradient(#fff, #e4e9e5) );
+  height: 100%;
   text-align: center;
+  hr{
+    width: 400px;
+    border-top: 2px solid $gold;
+    border-bottom: 2px solid $gold;
+  }
   h2{
     font-size: 1.5rem;
-    color: $pink;
+    color: $black;
     padding-top: 50px;
+    font-weight: 300;
+    letter-spacing: .1rem;
   }
   img{
     width:100%;
+    padding-bottom: 35px;
   }
 }
 
 .stats-section{
-  //@include span-columns(12);
   text-align: center;
+  // h2{
+  //   background-color: #fff;
+  //   color: $gold;
+  //   position: relative;
+  //   bottom: -25px;
+  // }
+  // hr{
+  //   width: 50%;
+  //   border-top: 2px solid $gold;
+  //   border-bottom: 2px solid $gold;
+  // }
   .stats{
     text-align: center;
     img{
@@ -81,15 +103,15 @@
 }
 
 .press-logos{
-  height: 220px;
+  height: 180px;
   background-color: $black;
   text-align: center;
-  padding: 40px 0px;
+  padding: 30px 0px;
   img{
     height: 80px;
   }
   h2{
     color: $gold;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 }

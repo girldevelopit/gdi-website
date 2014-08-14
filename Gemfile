@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'devise'
+gem 'devise',  '~> 3.2.0'
 gem "font-awesome-rails"
 gem 'bourbon'
 gem 'neat'
