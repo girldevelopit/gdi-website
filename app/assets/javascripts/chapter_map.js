@@ -6,6 +6,7 @@ $(document).ready(function(){
 			newPlots: {
 				latitude: "that.lat",
 				longitude: "that.long",
+				href: ""
 				tooltip: {content : "that.location"}
 			}
 		};*/
