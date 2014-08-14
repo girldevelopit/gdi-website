@@ -168,15 +168,14 @@
       </div>
 
 <script type="text/template" id="meetup">
-
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
-        <p class="subtitle">[ <%%= time %>, <%%= venue.address_1 %>, <%%= venue.city %> ]</p>
+        <p class="subtitle">[ moment(<%%= time %>), <%%= venue.address_1 %>, <%%= venue.city %> ]</p>
         <p><%%= description %></p>
         <a href="#" class="button">RSVP</a>
       </script>
 
 <script type="text/javascript">
-  var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
+  var meetup_url = 'http://localhost:3000/meetups/26.json';
   console.log(meetup_url);
           $.getJSON(meetup_url).done(function (classesData){
             console.log("here are all the classes", classesData);
@@ -190,6 +189,7 @@
 
             $(".classes").html(oneClass);
             });
+
             </script>
 
     </section>
