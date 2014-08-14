@@ -10,15 +10,22 @@ $(document).ready(function(){
 			defaultArea : {
 				attrs : {
 					fill : "#282828",
-					stroke: "#282828"
+					stroke: "#9a9a9a",
+				},
+				attrsHover : {
+					fill : "#d8ae64"
 				}
 			},
 			defaultPlot : {
 				type : "circle",
-
+				href : "#",
+				attrs: {
+					fill : "#f95a61"
+				}
+			},
+			eventHandlers: {
+				click : function (){}
 			}
-
-
 		},
 		plots: {
 			'ny' : {
