@@ -2,7 +2,7 @@
   <div class="container">
     <aside class="chapter-aside">
       <div class="state-container-aside">
-        <%= image_tag("NC.png") %>
+        <%= image_tag(image_route(@location.state.downcase)) %>
       </div>
       <hr>
       <h1><%= @location.location %></h1>

@@ -6,7 +6,7 @@
     <section class="state-index">
       <% @states.each do |s| %>
         <div class="state-container">
-          <div class="state"><%= image_tag(image_route(s)) %></div>
+          <div class="state"><%= image_tag(image_route(s[0])) %></div>
           <hr>
           <h1><%= s[0] %></h1>
           <% s[1].each do |l| %>
