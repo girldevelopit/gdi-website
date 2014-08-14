@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   resources :locations, only: [:index, :show]
-  resources :meetups, only: [:show]
+  match '/meetups/:slug' => 'meetups#show', via: :get
+
+  # resource :meetups, only: [:show]
 
   get 'about', to: 'home#about'
   # Example of named route that can be invoked with purchase_url(id: product.id)
