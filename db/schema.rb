@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20140813135253) do
     t.datetime "updated_at"
     t.integer  "admin_user_id"
     t.string   "image"
-    t.string   "location_id"
+    t.integer  "location_id"
   end
 
   create_table "friendly_id_slugs", force: true do |t|
