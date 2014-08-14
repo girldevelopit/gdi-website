@@ -1,5 +1,9 @@
 ---
 - name: Ann Arbor
+  latitude:  42.2808256
+  longitude: -83.7430378
+  location: Ann Arbor
+  state: Michigan
   meetup_url: Girl-Develop-It-Ann-Arbor
   meetup_id: '13779792'
   slug: ann-arbor
@@ -95,7 +99,12 @@
   email: annarbor@girldevelopit.com
   twitter: GDIAnnArbor
   facebook: GirlDevelopItAnnArbor
+
 - name: Austin
+  latitude:  30.267153
+  longitude: -97.7430608
+  location: Austin
+  state: Texas
   meetup_url: Girl-Develop-It-Austin
   meetup_id: '1981461'
   slug: austin
@@ -175,7 +184,12 @@
   twitter: gdiatx
   email: atx@girldevelopit.com
   logo: austin/logo.png
+
 - name: Baltimore
+  latitude:  39.2903848
+  longitude: -76.6121893
+  location: Baltimore
+  state: Maryland
   meetup_url: Girl-Develop-It-Baltimore
   meetup_id: '11091822'
   slug: baltimore
@@ -220,7 +234,12 @@
   sponsors: []
   email: baltimore@girldevelopit.com
   logo: gdi_logo_badge.png
+
 - name: Boise
+  latitude:  43.6187102
+  longitude: -116.2146068
+  location: Boise
+  state: Idaho
   meetup_url: Girl-Develop-It-Boise
   meetup_id: '14646254'
   slug: boise
@@ -295,7 +314,12 @@
   linkedin: https://www.linkedin.com/groups/Girl-Develop-It-Boise-6696817
   github: gdiboise
   twitter: gdiboise
+
 - name: Boston
+  latitude:  42.3584308
+  longitude: -71.0597732
+  location: Boston
+  state: Massachusetts
   meetup_url: Girl-Develop-It-Boston
   meetup_id: '7217272'
   slug: boston
@@ -422,7 +446,12 @@
   logo: boston/logo.png
   facebook: gdiboston
   twitter: gdiboston
+
 - name: Boulder / Denver
+  latitude:  39.7601821
+  longitude: -105.009292
+  location:  Boulder / Denver
+  state: Colorado
   meetup_url: Girl-Develop-It-Boulder
   meetup_id: '8237432'
   slug: boulder
@@ -559,7 +588,12 @@
   facebook: gdiboulder
   email: boulder@girldevelopit.com
   logo: boulder/boulder-stamp.png
+
 - name: Bucks County
+  latitude:  40.4107964
+  longitude: -75.2479061
+  location: Bucks County
+  state: Pennsylvania
   meetup_url: Girl-Develop-It-Bucks-County
   meetup_id: '12116712'
   slug: bucks-county
@@ -580,7 +614,12 @@
   logo: gdi_logo_badge.png
   twitter: gdiBucksCounty
   facebook: gdibucks
+
 - name: Buffalo
+  latitude:  42.8864468
+  longitude: -78.8783689
+  location: Buffalo
+  state: New York
   meetup_url: Girl-Develop-It-Buffalo
   meetup_id: '7411702'
   slug: buffalo
@@ -637,7 +676,12 @@
   logo: gdi_logo_badge.png
   facebook: GirlDevelopItBuffalo
   twitter: gdiBuffalo
+
 - name: Burlington
+  latitude:  44.4758825
+  longitude: -73.212072
+  location: Burlington
+  state: Vermont
   meetup_url: Girl-Develop-It-Burlington
   meetup_id: '7412552'
   slug: burlington
@@ -687,7 +731,12 @@
   twitter: gdiburlington
   facebook: GirlDevelopItBTV
   linkedin: http://www.linkedin.com/groups/Girl-Develop-It-Burlington-4913954
+
 - name: Chicago
+  latitude:  41.8781136
+  longitude: -87.6297982
+  location: Chicago
+  state: Illinois
   meetup_url: Girl-Develop-It-Chicago-IL
   meetup_id: '7208502'
   slug: chicago
@@ -790,7 +839,12 @@
   email: chicago@girldevelopit.com
   logo: gdi_logo_badge.png
   twitter: gdichicago
+
 - name: Columbus
+  latitude:  39.9611755
+  longitude: -82.9987942
+  location: Columbus
+  state: Ohio
   meetup_url: girldevelopitcbus
   meetup_id: '1798823'
   slug: columbus
@@ -888,7 +942,12 @@
   logo: columbus/logo.png
   announcements: Stuck on a project? Look into our <a href="http://bit.ly/180Ko22">mentor
     program</a>!
+
 - name: Cincinnati
+  latitude:  39.1031182
+  longitude: -84.5120196
+  location: Cincinnati
+  state: Ohio
   meetup_url: Girl-Develop-It-Cincinnati
   meetup_id: '3754602'
   slug: cincinnati
@@ -970,7 +1029,12 @@
   facebook: GDICincinnati
   email: cincinnati@girldevelopit.com
   announcements: ''
+
 - name: Dallas / Fort Worth
+  latitude:  32.7554883
+  longitude: -97.3307658
+  location: Dallas / Fort Worth
+  state: Texas
   meetup_url: Girl-Develop-It-DFW
   meetup_id: '12114702'
   slug: dallas-fort-worth
@@ -1036,7 +1100,12 @@
   logo: gdi_logo_badge.png
   twitter: gdidfw
   facebook: gdidfw
+  
 - name: Washington DC
+  latitude:  38.9071923
+  longitude: -77.0368707
+  location:  Washington DC
+  state: District of Columbia
   meetup_url: Girl-Develop-It-DC
   meetup_id: '13526522'
   slug: dc
@@ -1080,6 +1149,10 @@
   twitter: girldevelopitDC
   facebook: GDIWashingtonDC
 - name: Detroit
+  latitude:  42.331427
+  longitude: -83.0457538
+  location: Detroit
+  state: Michigan
   meetup_url: Girl-Develop-It-Detroit
   meetup_id: '5147482'
   slug: detroit
@@ -1185,6 +1258,10 @@
   facebook: GirlDevelopItDetroit
   email: detroit@girldevelopit.com
 - name: Fort Collins
+  latitude:  40.5852602
+  longitude: -105.084423
+  location:  Fort Collins
+  state: Colorado
   meetup_url: Girl-Develop-It-Fort-Collins
   meetup_id: '15318852'
   slug: fort-collins
@@ -1228,6 +1305,10 @@
   linkedin: ''
   github: ''
 - name: Kansas City
+  latitude:  39.0997265
+  longitude: -94.5785667
+  location: Kansas City
+  state: Missouri
   meetup_url: Girl-Develop-It-Kansas-City
   meetup_id: '12117372'
   slug: kansas-city
@@ -1260,6 +1341,10 @@
   twitter: gdikc
   facebook: gdikc
 - name: Lehigh Valley
+  latitude:  40.6645737
+  longitude: -75.5113752
+  location: Lehigh Valley
+  state: Pennsylvania
   meetup_url: Girl-Develop-It-lehigh-valley
   meetup_id: '14071082'
   slug: lehigh-valley
@@ -1300,6 +1385,10 @@
   linkedin: ''
   github: ''
 - name: Los Angeles
+  latitude:  34.0522342
+  longitude: -118.2436849
+  location: Los Angeles
+  state: California
   meetup_url: Girl-Develop-It-Los-Angeles
   meetup_id: '12114102'
   slug: los-angeles
@@ -1339,6 +1428,10 @@
   logo: gdi_logo_badge.png
   twitter: girldevelopitLA
 - name: Miami
+  latitude:  25.7890972
+  longitude: -80.2040435
+  location: Miami
+  state: Florida
   meetup_url: Girl-Develop-It-Miami
   meetup_id: '12114422'
   slug: miami
@@ -1363,6 +1456,10 @@
     href="https://docs.google.com/forms/d/14I6_BJY4GK7hk9MBK9imGv2en8wEQS3oL7_jGC5dQ6E/viewform"
     target="blank">instructor interest form</a>.</p>
 - name: Milwaukee
+  latitude:  43.0389025
+  longitude: -87.9064736
+  location: Milwaukee
+  state: Wisconsin
   meetup_url: Girl-Develop-It-Milwaukee
   meetup_id: '12114972'
   slug: milwaukee
@@ -1389,6 +1486,10 @@
   logo: gdi_logo_badge.png
   twitter: milwaukeegdi
 - name: New York
+  latitude:  40.7127837
+  longitude: -74.0059413
+  location: New York
+  state: New York
   meetup_url: girldevelopit
   meetup_id: '1669000'
   slug: new-york
@@ -1471,6 +1572,10 @@
   email: nyc@girldevelopit.com
   logo: gdi_logo_square.png
 - name: Ottawa
+  latitude:  45.4215296
+  longitude: -75.6971931
+  location: Ottawa
+  state: Ontario
   meetup_url: Girl-Develop-It-Ottawa
   meetup_id: '14646254'
   slug: ottawa
@@ -1490,6 +1595,10 @@
   email: ottawa@girldevelopit.com
   logo: gdi_logo_badge.png
 - name: Philadelphia
+  latitude:  39.952335
+  longitude: -75.163789
+  location: Philadelphia
+  state: Pennsylvania
   meetup_url: Girl-Develop-It-Philadelphia
   meetup_id: '1901841'
   slug: philadelphia
@@ -1662,6 +1771,10 @@
   email: philly@girldevelopit.com
   logo: philadelphia/logo.png
 - name: Pittsburgh
+  latitude:  40.4406248
+  longitude: -79.9958864
+  location: Pittsburgh
+  state: Pennsylvania
   meetup_url: girl-develop-it-pittsburgh
   meetup_id: '4076772'
   slug: pittsburgh
@@ -1688,6 +1801,10 @@
   email: pittsburgh@girldevelopit.com
   logo: gdi_logo_badge.png
 - name: Raleigh / Durham
+  latitude:  35.7795897
+  longitude: -78.6381787
+  location: Raleigh / Durham
+  state: North Carolina
   meetup_url: Girl-Develop-It-RDU
   meetup_id: '5538402'
   slug: raleigh-durham
@@ -1734,31 +1851,31 @@
   instructors:
   - name: Amy Hendrix
     image: raleigh-durham/amy-hendrix.jpg
-    bio: Amy Hendrix is a Front-End Developer and Open-Source advocate based in Durham,
+    bio: <p>Amy Hendrix is a Front-End Developer and Open-Source advocate based in Durham,
       NC. In her years of web work, she has worked with a wide variety of languages
       and technologies, ranging from HTML/CSS and JavaScript to PHP, Ruby and Python.
       Amy is dedicated to building a web that is beautiful, useful, and accessible
       to everyone. She's equally in love with teaching and empowering others to be
-      a part of building it.
+      a part of building it.</p>
     contact:
       twitter: sabreuse
   - name: Caleb Smith
     image: raleigh-durham/caleb-smith.jpg
-    bio: In his youth, Caleb began programming text adventures and RPG's in BASIC.
+    bio: <p>In his youth, Caleb began programming text adventures and RPG's in BASIC.
       More recently, Caleb can be found spending his days writing Python and JavaScript
       for web applications at Caktus Consulting Group LLC. In his spare time, Caleb
       enjoys functional programming, music theory and contributing to free and open
       source software projects. Caleb studied music education in college and especially
-      enjoys mentoring new programmers.
+      enjoys mentoring new programmers.</p>
     contact:
       twitter: calebsmithnc
   - name: Dan Lucas
     image: raleigh-durham/dan-lucas.jpg
-    bio: Dan Lucas is a UI & Front-End developer based in Durham, NC with a background
+    bio: <p>Dan Lucas is a UI & Front-End developer based in Durham, NC with a background
       in multimedia design and information science.  He is obsessed with the interactions
       between people and computers and strives to make those interactions easier and
       more useful.  Dan has worked in education for most of his career and is excited
-      about the opportunity to help even more people to become more tech saavy.
+      about the opportunity to help even more people to become more tech saavy.</p>
     contact:
       twitter: danlucas
       website: http://danlucas.org
@@ -1768,6 +1885,10 @@
   logo: gdi_logo_badge.png
   twitter: gdirdu
 - name: Salt Lake City
+  latitude:  40.7607793
+  longitude: -111.8910474
+  location: Salt Lake City
+  state: Utah
   meetup_url: Girl-Develop-It-Salt-Lake-City
   meetup_id: '12001542'
   slug: salt-lake-city
@@ -1813,6 +1934,10 @@
   facebook: gdislc
   linkedin: http://www.linkedin.com/groups?gid=6630862
 - name: San Francisco
+  latitude:  37.7749295
+  longitude: -122.4194155
+  location: San Francisco
+  state: California
   meetup_id: '3286622'
   meetup_url: Girl-Develop-It-San-Francisco
   slug: san-francisco
@@ -1844,6 +1969,10 @@
   logo: san-francisco/logo.jpeg
   email: sf@girldevelopit.com
 - name: Seattle
+  latitude:  47.6062095
+  longitude: -122.3320708
+  location: Seattle
+  state: Washington
   meetup_url: Girl-Develop-It-Seattle
   meetup_id: '7208692'
   slug: seattle
@@ -1922,6 +2051,10 @@
   logo: gdi_logo_badge.png
   twitter: gdiseattle
 - name: Toledo
+  latitude:  41.6639383
+  longitude: -83.555212
+  location: Toledo
+  state: Ohio
   meetup_url: Girl-Develop-It-Toledo
   meetup_id: '12116962'
   slug: toledo
@@ -1957,6 +2090,10 @@
   twitter: GDIToledo
   facebook: GirlDevelopItToledo
 - name: Tri-Cities
+  latitude:  46.2349999
+  longitude: -119.2233014
+  location: Tri-Cities
+  state: Washington
   meetup_url: Girl-Develop-It-Tri-Cities/
   meetup_id: '14071162'
   slug: tri-cities

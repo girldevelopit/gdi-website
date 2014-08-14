@@ -1,27 +1,25 @@
-
-
-		<h1>Home</h1>
-  <!-- Home Page -->
-     <div class="opener">
+  <div class="opener">
     <!-- <%= image_tag("photo2.png") %> -->
     <h1><span class="headline1">Don't be shy</span> <%= image_tag("flourish-med.png") %> <span class="headline2">Develop it</span></h1>
   </div>
+
   <div class="container">
   	<section class="mission-statement">
     	<h2>{ Who are we? }</h2>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lobortis purus. Nunc et arcu varius, tempor sapien at, tempor sapien. Suspendisse volutpat nisl in lacus molestie, quis ultricies felis viverra. Donec massa urna, venenatis ut ligula eu, pharetra posuere nisl. Mauris scelerisque dui eu mi bibendum, at fringilla nulla dignissim. Morbi posuere est id molestie tempor.</p>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec lobortis purus. Nunc et arcu varius, tempor sapien at, tempor sapien. Suspendisse volutpat nisl in lacus molestie, quis ultricies felis viverra. Donec massa urna, venenatis ut ligula eu, pharetra posuere nisl. Mauris scelerisque dui eu mi bibendum, at fringilla nulla dignissim. Morbi posuere est id molestie tempor. Bibendum, at fringilla nulla dignissim.</p>
+      <%= link_to "learn more", about_path, :class=>"subtitle"%>
     </section>
   </div>
 
 
-  
+
 
 
   <section class="map">
     <div class="container">
-    	<p>We're now located in <%= @location.count %> cities!</p>
-  		<p>Don't see your city? Start a new chapter!</p>
-<!--       <%= image_tag("map.png") %> -->
+    	<h2>Now located in <%= @location.count %> cities!</h2>
+      <hr>
+  		<p class="subtitle">Don't see your hometown? Start a new chapter!</p>
         <div class="us_map">
           <div class="map"></div>
         </div>
@@ -32,17 +30,23 @@
 
   <section class="stats-section">
     <div class="container">
-      <h2>{ The Facts }</h2>
+      <!-- <h2 class="button">{ The Facts }</h2>
+      <hr> -->
       <div class="stats">
-        <%= image_tag("stat1.png") %>
-        <%= image_tag("stat1.png") %>
-        <%= image_tag("stat1.png") %>
-        <p>Women hold only 26% of the 3,816,000 commuting related occupations in the US.</p>
-        <p>Woman obtain 57% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. (Contrast to 1984 when women earned 37%)</p>
+        <%= image_tag("stat-25.png") %>
+        <%= image_tag("stat-58.png") %>
+        <%= image_tag("stat-34.png") %>
+        <p>Women hold only 25% of the 3,816,000 computing related occupations in the US.</p>
+        <p>Woman obtain 58% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. Compared to 1984, when women earned 37%)</p>
         <p>Tech companies with more women in management have 34% higher Return of investment. Diverse tech and startup teams are critical for innovation</p>
       </div>
     </div>
   </section>
 
-
-
+  <div class="press-logos">
+    <h2>{ As seen in }</h2>
+    <%= image_tag("press-logos.png") %>
+  </div>
+  <script>
+    var location_id = "locations/3";
+  </script>
