@@ -13,14 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require underscore
+//= require moment
 //= require_tree .
 
-var api_key = ""
-var chapter_id = 
-var meetup_url = '"https://api.meetup.com/2/events?key=" + api_key + "&sign=true&group_id=" + chapter_id '
-
-$(document).ready(function(){
-	$.getJSON(meetup_url).done(function(classes){
-		$.each
-	})
-}

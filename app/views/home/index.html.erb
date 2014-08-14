@@ -1,14 +1,11 @@
-  <%= javascript_include_tag 'raphael-min', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery.mapael', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'usa_states', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'chapter_map', 'data-turbolinks-track' => true %>
 
 
+		<h1>Home</h1>
   <!-- Home Page -->
 
   <div class="opener">
     <!-- <%= image_tag("photo2.png") %> -->
-    <h1>Don't be shy <%= image_tag("flourish-med.png") %> Develop it</h1>
+    <h1><span class="headline1">Don't be shy</span> <%= image_tag("flourish-med.png") %> <span class="headline2">Develop it</span></h1>
   </div>
 
   <div class="container">
@@ -19,22 +16,27 @@
     </section>
   </div>
 
+
+
+
+
   <section class="map">
     <div class="container">
-    	<h2>We're now located in <%= @location.count %> cities!</h2>
-  		<p class="subtitle">Don't see your city? Start a new chapter!</p>
-      <%= image_tag("map.png") %>
+    	<h2>Now located in <%= @location.count %> cities!</h2>
+      <hr>
+  		<p class="subtitle">Don't see your hometown? Start a new chapter!</p>
+        <div class="us_map">
+          <div class="map"></div>
+        </div>
     </div>
   </section>
 
 
-	<section class='map-container'>
-		<div class="chapter_map"></div>
-	</section>
 
   <section class="stats-section">
     <div class="container">
-      <!-- <h2 class="button">{ The Facts }</h2> -->
+      <!-- <h2 class="button">{ The Facts }</h2>
+      <hr> -->
       <div class="stats">
         <%= image_tag("stat-25.png") %>
         <%= image_tag("stat-58.png") %>
@@ -48,5 +50,8 @@
 
   <div class="press-logos">
     <h2>{ As seen in }</h2>
-    <%= image_tag("publicity-logos.png") %>
+    <%= image_tag("press-logos.png") %>
   </div>
+  <script>
+    var location_id = "locations/3";
+  </script>

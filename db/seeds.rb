@@ -87,13 +87,13 @@ end
 seed_file = Rails.root.join('db', 'seeds', 'locs2.yml')
 locs = YAML::load_file(seed_file)
 locs.each do |l|
-  lat = Random.new.rand(32..43)
-  long = Random.new.rand(-117..-67)
-
-  newloc = Location.create!(location: l["name"], fb: l["facebook"],
-                  meetup: l["meetup_url"], twitter: l["twitter"],
-                  linkedin: l["linkedin"], github: l["github"], geo: l["name"],
-                  #latitude: lat, longitude: long,
+  # lat = Random.new.rand(32..43)
+  # long = Random.new.rand(-117..-67)
+  # sleep 0.25
+  newloc = Location.create!(location: l["name"], fb: l["facebook"], meetup: l["meetup_url"],
+                  twitter: l["twitter"], linkedin: l["linkedin"], github: l["github"],
+                  latitude: l["latitude"], longitude: l["longitude"], state: l["state"],
+                  #geo: l["name"],
                   meetup_id: l["meetup_id"])
   l["leaders"].each do |leader|
     Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"],

@@ -19,7 +19,7 @@ gem 'bourbon'
 gem 'neat'
 gem 'cancan'
 gem 'rolify'
-
+gem 'momentjs-rails'
 gem 'meetup_client'
 gem 'underscore-rails'
 
@@ -41,7 +41,7 @@ group :development do
 end
 gem 'unicorn'
 gem 'rails_12factor', group: :production
-
+gem 'friendly_id'
 # Use unicorn as the app server
 # gem 'unicorn'
 
