@@ -21,6 +21,9 @@ h2{
   letter-spacing: .14rem;
   margin: auto;
   padding: .1rem;
+  a {
+    color: $black;
+  }
 }
 
 %dashed-border {

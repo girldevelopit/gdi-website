@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 11be681e33a1303f590414097158abc517bf2db9
+  revision: b8e89c74788199d383963267f4735dccbf292f20
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -84,7 +84,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    excon (0.39.4)
+    excon (0.39.5)
     execjs (2.2.1)
     ffi (1.9.3)
     fog (1.23.0)
@@ -115,6 +115,8 @@ GEM
     formatador (0.2.5)
     formtastic (2.3.0.rc4)
       actionpack (>= 3.0)
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
     geocoder (1.2.4)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -281,9 +283,10 @@ DEPENDENCIES
   cancan
   carrierwave
   coffee-rails (~> 4.0.0)
-  devise
+  devise (~> 3.2.0)
   fog
   font-awesome-rails
+  friendly_id
   geocoder
   guard
   guard-livereload

@@ -3,17 +3,17 @@
   @media screen and (min-width: 500px) {
     @include span-columns(4);
   }
-  .state-container{
-    width: 200px;
+  .state-container-aside{
+    // width: 200px;
     margin: auto;
     padding-bottom: 14px;
-
     img{
      width: 100%;
+     padding: 0em 2em;
     }
   }
   hr{
-    width: 160px;
+    width: 60%;
     margin-bottom: 3px;
   }
   h1{
@@ -21,6 +21,8 @@
   }
   h2{
     @extend %dashed-border;
+    width: 100px;
+    margin-top: 3em;
   }
 }
 
@@ -41,7 +43,7 @@
   }
   h2 {
     color: $gold;
-    padding-bottom: .4rem;
+    padding: 0px 5px 6px 5px;
     border-bottom: solid $black 1px;
     display: inline-block;
     margin: .5rem auto 3rem auto;
@@ -59,11 +61,14 @@
   .read-more:hover{
     color: $pink;
   }
-  .rsvp{
-    float: right;
-    color: $gold;
-    padding: .5rem;
-    background-color: #f1f2f2;
+  .button{
+    margin-top: 10px;
+    background-color: $paleblue;
+    color: $pink;
+    &:hover{
+      background-color: $pink;
+      color: white;
+    }
   }
 }
 .single-profile{
@@ -85,6 +90,9 @@
     ul{
       margin-top: -10px;
     }
+    p{
+      padding: 10px 0px;
+    }
   }
 }
 
@@ -93,6 +101,9 @@
   @include omega(3n);
   text-align: center;
   margin-bottom: 3em;
+  h1{
+    margin-bottom: 10px;
+  }
   hr{
     width: 70%;
   }
@@ -100,7 +111,14 @@
     width: 100%;
     padding: 0em 2em;
   }
-  a{
-    text-decoration: none;
+  h2 {
+    color: $pink;
+    text-transform: none;
+    margin-bottom: 3px;
+    letter-spacing: .05rem;
+    &:hover{
+      color: $gold;
+      font-style: italic;
+    }
   }
 }
