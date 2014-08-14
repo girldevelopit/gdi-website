@@ -1,7 +1,5 @@
 class LocationsController < ApplicationController
   def index
-    locational
-
     @locations = Location.all
     states = {}
     @locations.each do |l|
@@ -20,7 +18,10 @@ class LocationsController < ApplicationController
 end
 
   def show
-    @location = Location.find(params[:id])
+    @location = Location.friendly.find(params[:id])
+    if request.path != location_path(@location)
+      redirect_to @location, status: :moved_permanently
+    end
     @users = @location.admin_users
     @sponsors = @location.sponsors
 
