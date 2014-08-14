@@ -11,6 +11,12 @@ ActiveAdmin::ResourceController.class_eval do
     scoped_collection.find_by! id_field => params[:id]
   end
 end
+
+  module ActiveAdmin::Devise::Controller
+    def root_path
+      "/"  #add your logic
+    end
+  end
   # == Site Title
   #
   # Set the title that is displayed on the main layout
