@@ -1,6 +1,6 @@
 
-$(function(){
- 	$(".chapter_map").mapael({
+$(document).ready(function(){
+ 	$(".us_map").mapael({
 		map : {
 			name : "usa_states",
 			cssClass : "map",
@@ -25,8 +25,7 @@ $(function(){
 				latitude: 40.717079,
 				longitude: -74.00116,
 				tooltip: {content : "New York"}
-			},
-			
+			},	
 		}
 	});
 });
