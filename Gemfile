@@ -19,7 +19,7 @@ gem 'bourbon'
 gem 'neat'
 gem 'cancan'
 gem 'rolify'
-
+gem 'momentjs-rails'
 gem 'meetup_client'
 gem 'underscore-rails'
 
