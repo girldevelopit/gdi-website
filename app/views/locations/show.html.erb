@@ -43,23 +43,7 @@
           <h2>Upcoming Classes</h2>
         </div>
 
-        <div class="classes">
-        <script type="text/template" id="meetup">
-        <%= class.title %>
-        </script>
-          <h2>Intro To Javascript and jQuery</h2>
-          <p class="subtitle">[ August 7, 2014, 6:30pm to 9:15pm, Cary, NC ]</p>
-          <p>Object-oriented programming is an approach to programming that helps you conceptualize and organize your code in a way that will make it more structured and more easily maintainable. Remember in high school geometry when you learned that all squares are rectangles, but not all rectangles are squares? As a programmer, you can think about that relationship in an object-oriented way: the squares and rectangles are your "objects", and squares "inherit" some of their properties from...<a href="#"> read more</a></p>
-          <a href="" class="button">RSVP</a>
-        </div>
-
-        <div class="classes">
-          <h2>Intro To HTML and CSS</h2>
-          <p class="subtitle">[ August 20, 2014, 6:30pm to 9:15pm, Durham, NC ]</p>
-          <p>Object-oriented programming is an approach to programming that helps you conceptualize and organize your code in a way that will make it more structured and more easily maintainable. Remember in high school geometry when you learned that all squares are rectangles, but not all rectangles are squares? As a programmer, you can think about that relationship in an object-oriented way: the squares and rectangles are your...<a href="#"> read more</a></p>
-          <a href="" class="button">RSVP</a>
-          <!-- some code to make the meetup API data show up! -->
-        </div>
+        <div class="classes"></div>
 
         <div id="headline">
           <%= image_tag 'flourish.png' %>
@@ -102,4 +86,35 @@
 
       </section>
     </div>
-  </div>
+  </div> 
+
+
+         <script type="text/template" id="meetup">
+         <%% for(var i=0; i<classesData.length; i++) { %>
+            <%% var oneClass = classesData[i]; %>
+        <%% } %>
+        <h2><%%= oneClass.name %></h2>
+        <p class="subtitle">[ <%%= status %>, <%%= time %> , <%%= address %> ]</p>
+        <p><%%= description %></p>
+        <a href="#" class="button">RSVP</a>
+        </script>
+   
+        <script type="text/javascript">
+          var meetup_url = 'http://localhost:3000/meetups/26.json'
+          $.getJSON(meetup_url).done(function (classesData){
+            console.log("here are all the classes", classesData);
+            //var oneClass = '';
+            _.each(classesData, function (one) {
+              
+              console.log("Here is one class", one);
+             return classesData;
+            });
+            
+             var classes = $('#meetup').html();
+            var classesTemplate = _.template(classes, classesData);
+            $(".classes").html(classesTemplate);
+            });
+    
+        </script>
+
+
