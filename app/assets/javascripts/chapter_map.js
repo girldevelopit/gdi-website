@@ -1,5 +1,15 @@
 
 $(document).ready(function(){
+	$.getJSON().done(function() { //need a url from the backend here in the ajax request
+		/*var that = this;
+		$(".us_map").trigger('update'){
+			newPlots: {
+				latitude: "that.lat",
+				longitude: "that.long",
+				tooltip: {content : "that.location"}
+			}
+		};*/
+	});
  	$(".us_map").mapael({
 		map : {
 			name : "usa_states",
@@ -38,3 +48,4 @@ $(document).ready(function(){
 		}
 	});
 });
+
