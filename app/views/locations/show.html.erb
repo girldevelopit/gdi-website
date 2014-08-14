@@ -40,19 +40,21 @@
           <% end %>
 
         </ul>
-        <%= link_to "learn more", about_path, :class=>"subtitle"%>
-        <br><%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
-          <h2>Sponsors</h2>
-  <% @sponsors.each do |sponsor| %>
-    <!-- <br><%= sponsor.name %>
-    <br><%= sponsor.url %>
-    <br><%= sponsor.image.thumb.url %>
-    <br><%= sponsor.location.id %>
-    <br> -->
-    <% if sponsor.image? %>
-      <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
-    <% end %>
-  <% end %>
+
+        <p><%= link_to "don't be shy", about_path, :class=>"subtitle"%></p>
+        <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+        <h2>Sponsors</h2>
+
+        <% @sponsors.each do |sponsor| %>
+          <!-- <br><%= sponsor.name %>
+          <br><%= sponsor.url %>
+          <br><%= sponsor.image.thumb.url %>
+          <br><%= sponsor.location.id %>
+          <br> -->
+          <% if sponsor.image? %>
+            <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
+          <% end %>
+        <% end %>
 
     </aside>
 
