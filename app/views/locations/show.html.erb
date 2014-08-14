@@ -38,8 +38,9 @@
           <% end %>
         <% end %>
       </ul>
-      <%= link_to "learn more", about_path, :class=>"subtitle"%>
-      <br><%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+
+      <%= link_to "don't be shy", about_path, :class=>"subtitle"%>
+      <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
     <h2>Sponsors</h2>
     <% @sponsors.each do |sponsor| %>
@@ -71,10 +72,13 @@
         <!-- some code to make the meetup API data show up! -->
       </div>
 
+      <% if @leaders.count != 0 %>
       <div id="headline">
         <%= image_tag 'flourish.png' %>
         <h2>Chapter Leaders</h2>
       </div>
+      <% end %>
+
       <div class="profiles">
         <% @leaders.each do |bio| %>
           <div class="single-profile">
@@ -120,10 +124,14 @@
               </div>
             <% end %>
 
+        <% if @instructors.count != 0 %>
+        <% binding.pry %>
+
           <div id="headline">
             <%= image_tag 'apple.png' %>
             <h2>The Instructors</h2>
           </div>
+        <% end %>
 
         <div class="profiles">
           <% @instructors.each do |bio| %>
