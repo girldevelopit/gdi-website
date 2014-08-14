@@ -57,19 +57,6 @@
       </div>
 
       <div class="classes">
-        <h2>Intro To Javascript and jQuery</h2>
-        <p class="subtitle">[ August 7, 2014, 6:30pm to 9:15pm, Cary, NC ]</p>
-        <p>Object-oriented programming is an approach to programming that helps you conceptualize and organize your code in a way that will make it more structured and more easily maintainable. Remember in high school geometry when you learned that all squares are rectangles, but not all rectangles are squares? As a programmer, you can think about that relationship in an object-oriented way: the squares and rectangles are your "objects", and squares "inherit" some of their properties from...<a href="#"> read more</a></p>
-        <a href="" class="button">RSVP</a>
-        <!-- some code to make the meetup API data show up! -->
-      </div>
-
-      <div class="classes">
-        <h2>Intro To HTML and CSS</h2>
-        <p class="subtitle">[ August 20, 2014, 6:30pm to 9:15pm, Durham, NC ]</p>
-        <p>Object-oriented programming is an approach to programming that helps you conceptualize and organize your code in a way that will make it more structured and more easily maintainable. Remember in high school geometry when you learned that all squares are rectangles, but not all rectangles are squares? As a programmer, you can think about that relationship in an object-oriented way: the squares and rectangles are your...<a href="#"> read more</a></p>
-        <a href="" class="button">RSVP</a>
-        <!-- some code to make the meetup API data show up! -->
       </div>
 
       <% if @leaders.count != 0 %>
@@ -89,7 +76,7 @@
             </div>
             <div class="profile-content">
               <h2><%= bio.name %></h2>
-              <p><%= bio.info.html_safe %></p>
+              <%= bio.info.html_safe %>
               <ul class="media-links">
                 <% unless bio.email.to_s == "" %>
                   <%= mail_to bio.email do %>
@@ -143,7 +130,7 @@
             </div>
             <div class="profile-content">
               <h2><%= bio.name %></h2>
-              <p><%= bio.info.html_safe %></p>
+              <%= bio.info.html_safe %>
               <ul class="media-links">
                 <% unless bio.email.to_s == "" %>
                   <%= mail_to bio.email do %>
@@ -189,7 +176,8 @@
       </script>
 
 <script type="text/javascript">
-  var meetup_url = 'http://localhost:3000/meetups/26.json'
+  var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
+  console.log(meetup_url);
           $.getJSON(meetup_url).done(function (classesData){
             console.log("here are all the classes", classesData);
             var oneClass = '';
@@ -198,11 +186,16 @@
               console.log("Here is one class", one)
               oneClass += _.template(classes, one);
             });
-
-
             $(".classes").html(oneClass);
             });
-            </script>
+</script>
+        
+   
+       
+          
+    
+
+
 
     </section>
   </div>
