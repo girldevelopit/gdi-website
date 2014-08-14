@@ -281,7 +281,7 @@ DEPENDENCIES
   cancan
   carrierwave
   coffee-rails (~> 4.0.0)
-  devise
+  devise (~> 3.2.0)
   fog
   font-awesome-rails
   friendly_id

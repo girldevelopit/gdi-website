@@ -33,7 +33,7 @@
         <% end %>
 
         <% unless @location.github.to_s == "" %>
-          <%= link_to @location.github do %>
+          <%= link_to "https://www.github.com/#{@location.github}" do %>
             <i class="fa fa-github-alt"></i>
           <% end %>
         <% end %>
@@ -79,8 +79,8 @@
         <% @leaders.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
-              <% if bio.image? %>
-                <%= image_tag bio.image.profile.url %>
+              <% if bio.pic_link? %>
+                <%= image_tag bio.pic_link %>
               <% end %>
             </div>
             <div class="profile-content">
@@ -173,7 +173,6 @@
           </div>
         <% end %>
       </div>
-
     </section>
   </div>
 </section>
