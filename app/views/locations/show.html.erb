@@ -89,32 +89,33 @@
   </div> 
 
 
-         <script type="text/template" id="meetup">
-         <%% for(var i=0; i<classesData.length; i++) { %>
-            <%% var oneClass = classesData[i]; %>
-        <%% } %>
-        <h2><%%= oneClass.name %></h2>
-        <p class="subtitle">[ <%%= status %>, <%%= time %> , <%%= address %> ]</p>
+<script type = "text/template" id= "meetup">
+         
+        <h2><%%= name %></h2>
+        <p class="subtitle">[ <%%= status %> , <%%= time %>, <%%= venue.address_1 %> ]</p>
         <p><%%= description %></p>
         <a href="#" class="button">RSVP</a>
-        </script>
-   
-        <script type="text/javascript">
-          var meetup_url = 'http://localhost:3000/meetups/26.json'
+      </script> 
+         
+<script type = "text/javascript"> 
+  var meetup_url = 'http://localhost:3000/meetups/26.json'
           $.getJSON(meetup_url).done(function (classesData){
             console.log("here are all the classes", classesData);
-            //var oneClass = '';
+            var oneClass = '';
+            var classes = $('#meetup').html();
             _.each(classesData, function (one) {
-              
-              console.log("Here is one class", one);
-             return classesData;
+              console.log("Here is one class", one)
+              oneClass += _.template(classes, one);
             });
             
-             var classes = $('#meetup').html();
-            var classesTemplate = _.template(classes, classesData);
-            $(".classes").html(classesTemplate);
+             
+            $(".classes").html(oneClass);
             });
+            </script>
+        
+   
+       
+          
     
-        </script>
 
 
