@@ -25,15 +25,15 @@ $(document).ready(function(){
 			},
 			eventHandlers: {
 				click : function (){
-					  
+					this.href="locations/26"  
 				}
 			}
 		},
 		plots: {
-			'ny' : {
-				latitude: 40.717079,
-				longitude: -74.00116,
-				tooltip: {content : "New York"}
+			'nc' : {
+				latitude: 35.7806,
+				longitude: -78.6389,
+				tooltip: {content : "Raleigh-Durham"}
 			},	
 		}
 	});
