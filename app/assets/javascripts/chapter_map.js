@@ -24,7 +24,9 @@ $(document).ready(function(){
 				}
 			},
 			eventHandlers: {
-				click : function (){}
+				click : function (){
+					  
+				}
 			}
 		},
 		plots: {
