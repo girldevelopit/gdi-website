@@ -1851,31 +1851,31 @@
   instructors:
   - name: Amy Hendrix
     image: raleigh-durham/amy-hendrix.jpg
-    bio: Amy Hendrix is a Front-End Developer and Open-Source advocate based in Durham,
+    bio: <p>Amy Hendrix is a Front-End Developer and Open-Source advocate based in Durham,
       NC. In her years of web work, she has worked with a wide variety of languages
       and technologies, ranging from HTML/CSS and JavaScript to PHP, Ruby and Python.
       Amy is dedicated to building a web that is beautiful, useful, and accessible
       to everyone. She's equally in love with teaching and empowering others to be
-      a part of building it.
+      a part of building it.</p>
     contact:
       twitter: sabreuse
   - name: Caleb Smith
     image: raleigh-durham/caleb-smith.jpg
-    bio: In his youth, Caleb began programming text adventures and RPG's in BASIC.
+    bio: <p>In his youth, Caleb began programming text adventures and RPG's in BASIC.
       More recently, Caleb can be found spending his days writing Python and JavaScript
       for web applications at Caktus Consulting Group LLC. In his spare time, Caleb
       enjoys functional programming, music theory and contributing to free and open
       source software projects. Caleb studied music education in college and especially
-      enjoys mentoring new programmers.
+      enjoys mentoring new programmers.</p>
     contact:
       twitter: calebsmithnc
   - name: Dan Lucas
     image: raleigh-durham/dan-lucas.jpg
-    bio: Dan Lucas is a UI & Front-End developer based in Durham, NC with a background
+    bio: <p>Dan Lucas is a UI & Front-End developer based in Durham, NC with a background
       in multimedia design and information science.  He is obsessed with the interactions
       between people and computers and strives to make those interactions easier and
       more useful.  Dan has worked in education for most of his career and is excited
-      about the opportunity to help even more people to become more tech saavy.
+      about the opportunity to help even more people to become more tech saavy.</p>
     contact:
       twitter: danlucas
       website: http://danlucas.org
