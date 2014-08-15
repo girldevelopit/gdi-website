@@ -170,7 +170,7 @@
 <script type="text/template" id="meetup">
 
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
-        <p class="subtitle">[ <%%= time %>, <%%= typeof(venue.address_1)!== 'undefined' ?  venue.address_1 : ''>, 
+        <p class="subtitle">[ <%%= time %> <%%= typeof(venue.address_1)!== 'undefined' ?  venue.address_1 : ''%>, 
 
     <%%= venue.city %> ]</p>
         <p><%%= description %></p>
