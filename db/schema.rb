@@ -68,15 +68,12 @@ ActiveRecord::Schema.define(version: 20140813202609) do
     t.integer  "admin_user_id"
     t.string   "image"
     t.integer  "location_id"
-<<<<<<< HEAD
-=======
     t.string   "twitter"
     t.string   "email"
     t.string   "website"
     t.string   "linkedin"
     t.string   "github"
     t.string   "pic_link"
->>>>>>> master
   end
 
   create_table "friendly_id_slugs", force: true do |t|
