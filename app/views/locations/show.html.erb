@@ -168,8 +168,9 @@
       </div>
 
 <script type="text/template" id="meetup">
+
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
-        <p class="subtitle">[ moment(<%%= time %>), <%%= venue.address_1 %>, <%%= venue.city %> ]</p>
+        <p class="subtitle">[ <%%= time %>, <%%= venue.address_1 %>, <%%= venue.city %> ]</p>
         <p><%%= description %></p>
         <a href="#" class="button">RSVP</a>
       </script>
@@ -189,9 +190,8 @@
 
             $(".classes").html(oneClass);
             });
-
+      
             </script>
-
     </section>
   </div>
 </section>
