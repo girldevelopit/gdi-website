@@ -170,11 +170,15 @@
 <script type="text/template" id="meetup">
 
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
-        <p class="subtitle">[ <%%= time %> <%%= typeof(venue.address_1)!== 'undefined' ?  venue.address_1 : ''%>, 
-
-    <%%= venue.city %> ]</p>
+        <p class="subtitle">[ <%%= time %>, <%%= venue.address_1 %>, <%%= venue.city %>  ]</p>
         <p><%%= description %></p>
         <a href="#" class="button">RSVP</a>
+      </script>
+
+      <script>
+        function truncateString(str, length) {
+     return str.length > length ? str.substring(0, length - 3) + '...' : str
+  }
       </script>
 
 <script type="text/javascript">
