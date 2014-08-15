@@ -167,7 +167,7 @@
         <% end %>
       </div>
 
-<script type="text/template" id="meetup">
+      <script type="text/template" id="meetup">
 
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
         <p class="subtitle">[ <%%= time %>, <%%= venue.address_1 %>, <%%= venue.city %>  ]</p>
@@ -175,26 +175,21 @@
         <a href="#" class="button">RSVP</a>
       </script>
 
-      <script>
-        function truncateString(str, length) {
-     return str.length > length ? str.substring(0, length - 3) + '...' : str
-  }
-      </script>
 
-<script type="text/javascript">
-  var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
-  console.log(meetup_url);
-          $.getJSON(meetup_url).done(function (classesData){
-            console.log("here are all the classes", classesData);
-            var oneClass = '';
-            var classes = $('#meetup').html();
-            _.each(classesData, function (one) {
-              console.log("Here is one class", one)
-              oneClass += _.template(classes, one);
-            });
-            $(".classes").html(oneClass);
-            });
-</script>
+      <script type="text/javascript">
+        var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
+        console.log(meetup_url);
+                $.getJSON(meetup_url).done(function (classesData){
+                  console.log("here are all the classes", classesData);
+                  var oneClass = '';
+                  var classes = $('#meetup').html();
+                  _.each(classesData, function (one) {
+                    console.log("Here is one class", one)
+                    oneClass += _.template(classes, one);
+                  });
+                  $(".classes").html(oneClass);
+                  });
+      </script>
         
    
       
