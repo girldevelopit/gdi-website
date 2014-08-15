@@ -24,6 +24,10 @@
     width: 100px;
     margin-top: 3em;
   }
+  .subtitle {
+    margin-bottom: 0.5em;
+    display: block;
+  }
 }
 
 #content-section{
@@ -57,18 +61,21 @@
   .read-more{
     color: $gold;
     font-style: italic;
-  }
-  .read-more:hover{
-    color: $pink;
+    &:hover{
+      color: $pink;
+    }
   }
   .button{
-    margin-top: 10px;
+    margin: 10px 0 55px 0;
     background-color: $paleblue;
     color: $pink;
     &:hover{
       background-color: $pink;
       color: white;
     }
+  }
+  p {
+    padding-bottom: 5px;
   }
 }
 .single-profile{
