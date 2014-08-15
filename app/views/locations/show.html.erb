@@ -2,7 +2,7 @@
   <div class="container">
     <aside class="chapter-aside">
       <div class="state-container-aside">
-        <%= image_tag(image_route(@location.state.downcase)) %>
+        <%= image_tag(image_route(@location.state)) %>
       </div>
       <hr>
       <h1><%= @location.location %></h1>
@@ -59,20 +59,23 @@
       <div class="classes">
       </div>
 
+      <% if @leaders.count != 0 %>
+      <div id="headline">
+        <%= image_tag 'flourish.png' %>
+        <h2>Chapter Leaders</h2>
+      </div>
+      <% end %>
+
       <div class="profiles">
-
-        <% if @leaders.count != 0 %>
-          <div id="headline">
-            <%= image_tag 'flourish.png' %>
-            <h2>Chapter Leaders</h2>
-          </div>
-        <% end %>
-
         <% @leaders.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
-              <% if bio.pic_link? %>
+              <% if bio.image? %>
+                <%= image_tag bio.image %>
+              <% elsif bio.pic_link? %>
                 <%= image_tag bio.pic_link %>
+              <% else %>
+                <%= image_tag "photo-not-available.jpg" %>
               <% end %>
             </div>
 
@@ -123,8 +126,12 @@
         <% @instructors.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
-              <% if bio.pic_link? %>
+              <% if bio.image? %>
+                <%= image_tag bio.image %>
+              <% elsif bio.pic_link? %>
                 <%= image_tag bio.pic_link %>
+              <% else %>
+                <%= image_tag "photo-not-available.jpg" %>
               <% end %>
             </div>
 
@@ -160,12 +167,23 @@
                   <%= link_to "https://www.github.com/#{bio.github}" do %>
                     <i class="fa fa-github-alt"></i>
                   <% end %>
+<<<<<<< HEAD
                 </ul>
             </div>
         <% end %>
       </div>
+=======
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+>>>>>>> ee8bb23a08b56826878a3935431fa0e48cf744ee
 
       <script type="text/template" id="meetup">
+
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
         <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%>
           <%% if(typeof venue !== "undefined") { %>
