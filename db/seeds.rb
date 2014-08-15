@@ -84,8 +84,10 @@ instructorbio = Bio.create! do |a|
   a.image     = 'https://s3.amazonaws.com/girl_develop_it/gdi_logo_badge.png'
 end
 
-seed_file = Rails.root.join('db', 'seeds', 'locs2.yml')
-locs = YAML::load_file(seed_file)
+location_seed = Rails.root.join('db', 'seeds', 'locs2.yml')
+board_seed = Rails.root.join('db', 'seeds', 'board.yml')
+locs = YAML::load_file(location_seed)
+board = YAML::load_file(board_seed) ## come back to this
 locs.each do |l|
   # lat = Random.new.rand(32..43)
   # long = Random.new.rand(-117..-67)
@@ -94,7 +96,7 @@ locs.each do |l|
                   twitter: l["twitter"], linkedin: l["linkedin"], github: l["github"],
                   latitude: l["latitude"], longitude: l["longitude"], state: l["state"],
                   #geo: l["name"],
-                  meetup_id: l["meetup_id"])
+                  meetup_id: l["meetup_id"], email: l["email"])
   l["leaders"].each do |leader|
     Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"],
     location_id: newloc.id, twitter: leader["twitter"], email: leader["email"],

@@ -49,7 +49,7 @@
 
 .map{
   background-color: $paleblue;
-  @include background-image( radial-gradient(#fff, #e4e9e5) );
+  //@include background-image( radial-gradient(#fff, #e4e9e5) );
   height: 100%;
   text-align: center;
   hr{

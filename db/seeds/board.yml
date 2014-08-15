@@ -1,0 +1,64 @@
+---
+- Board
+  
+%h2.pink Our Board
+
+.bio
+  %h3 Corinne Warnshuis
+  = image_tag "board/corinnewarnshuis.jpg", :class => 'photo', :alt => 'Corinne Warnshuis'
+  %p Corinne is the Executive Director of Girl Develop It. After graduating from University of California, Santa Cruz with a degree in Sociology and Film & Digital Media, she moved to Philadelphia. Prior to becoming the first ED of Girl Develop It, she was the co-leader of the Philly chapter for two years. She also previously worked for the Technical.ly news network, an online publication that covers technology issues and organizes regular events in Philly, Baltimore and Brooklyn. She has also worked in community relations at WHYY.org and written freelance for various online publications. Corinne sits on the Board of Directors for the Prometheus Radio Project. In her spare time, she is a regular contributor to Rad Girls, co-curates Ignite Philly and loves learning hands-on skills, playing with her cats and watching documentaries.
+.bio
+  %h3 Erynn Petersen
+  = image_tag "board/erynn.jpg", :class => 'photo', :alt => 'Erynn Petersen'
+  %p Erynn Petersen is Executive Director of Outercurve, an OSS foundation focused on developing open source projects between enterprise software companies. She is also a founder at Station082, which is dedicated to providing technology access to rural kids.
+  %p Erynn joined Outercurve after spending a year at Activate Consulting where she advised media companies in redefining corporate and product strategies around technology investments.
+  %p Prior to Activate, Erynn was SVP of Paid Services Engineering at AOL, where her teams built the tools, frameworks, and services that helped AOL subscribers safely and securely access content and applications online.Her early career included Amazon.com, where she worked on projects including the launch of the third party sellers platform, several startups, and Microsoft, where she was on the launch team for Bing paid advertising. She combines product management and technical management skills, and spends time teaching for Girl Develop It. She has spoken at events ranging from OSCON to SXSW and is a strong proponent of getting more people into technology and engineering roles.
+  %p She lives in bucolic Enumclaw, Washington with her family and her mongrel terrier, Lebowski, and invites anyone driving through to stop by for coffee.
+.clear
+.bio
+  %h3 Marc Hedlund
+  = image_tag "board/marc.png", :class => 'photo', :alt => 'Marc Hedlund'
+  %p Marc Hedlund is VP Engineering at Stripe, the online payments company that allows businesses to start accepting payments from all over the world in minutes, with just a few lines of code. At Stripe, Marc is responsible for growing and managing Stripe's engineering team.
+  %p Prior to Stripe, Marc was SVP of Product Development and Engineering at Etsy in New York. One of Stripe's 17 former founders, he also co-founded and was CEO of Wesabe, an online personal finance company. Perviously, Marc held leadership roles at O'Reilly Media, Lucasfilm, and Organic Online. Early in his career, Marc authored one of the first shopping carts on the web.
+  %p Marc serves on the board of directors for Code:2040, a non-profit working to bring more Black and Latina/o engineers into tech startups. Marc is a graduate of Reed College.
+.bio
+  %h3 Alanna Gombert
+  = image_tag "board/alanna.jpg", :class => 'photo', :alt => 'Alanna Gombert'
+  %p Alanna Gombert is General Manager of CatalystDesk, Conde Nast's digital media trading platform.
+  %p Alanna joined Condé Nast from Google by way of Admeld where she ran the trading desk, agency and demand-side platform relationships and helped grow RTB from an idea to a killer business.
+  %p Prior to Admeld, Alanna worked at Right Media, the first online advertising exchange, where she focused on ad selection algorithms and market dynamics. Right Media was acquired by Yahoo in 2007. Her early career included stints with Nielsen, DoubleClick and the finance world with JP Morgan Chase and Commerzbank. Advertising has allowed her to travel the world and she has experience in international markets including EMEA, APAC, and Latin America.
+  %p Alanna is also very active in the startup community in NYC. She enjoys advising startups, angel investing, and is a proud board member of Rare Crowds and Snowball Technologies.
+  %p She lives in Brooklyn with Husband Gombert and Baby Gombert, likes Thai food, and is trying desperately to learn how to meditate.
+.clear
+.bio
+  %h3 Cara Jo Miller
+  = image_tag "board/carajo.jpg", :class => 'photo', :alt => 'Cara Jo Miller'
+  %p Cara Jo is the Lead UI/UX Designer at Simple Energy, a Boulder company whose mission is to help people save energy.
+  %p Before Simple Energy Cara Jo was the Lead Designer at Are You a Human and the Detroit Media Partnership, both based out of downtown Detroit. While in Detroit Cara Jo was very involved in the technical community and led several groups focused on getting more people involved in technology. In addition to those organizations Cara Jo helped co-lead the Detroit chapter of GDI before moving to Boulder to start a local chapter in the mountains.
+  %p In addition to being Co-leader for the Boulder chapter Cara Jo also serves as the Chapter Leader Board member, making sure that each Chapter Leader get’s the resources they need to bring the GDI mission to their local communities.
+  %p Cara Jo lives in beautiful Boulder, Colorado where she trains for marathons, bikes, and enjoys backpacking in the mountains.
+.clear
+%h2.red Our Team
+.bio
+  %h3 Sara Chipps - Co-Founder
+  = image_tag "board/sara.jpg", :class => 'photo', :alt => 'Sara Chipps'
+  %p Sara is the CTO of
+  = link_to 'Levo League,', 'http://levoleague.com', :alt => 'Levo League', :target => '_blank'
+  where she focuses on developer happiness as a metric for success. In 2010, she cofounded Girl Develop It because she thinks that the development community could use a few more ladies.
+  %p Sara blogs at
+  = link_to 'SaraJChipps.com', 'http://sarajchipps.com', :alt => 'The wit and wisdom of Sara J Chipps', :target => '_blank'
+  and enjoys speaking to and meeting with diverse groups from the Girl Scouts to straight up code junkies. Sara's favorite language is JavaScript, and she thinks coffee is for drinking not coding.
+.bio
+  %h3 Vanessa Hurst - Co-Founder
+  = image_tag "board/vanessahurst.jpg", :class => 'photo', :alt => 'Vanessa Hurst'
+  %p
+  = link_to 'Vanessa', 'http://www.vanessahurst.com', :alt => 'Vanessa Hurst', :target => '_blank'
+  believes every person should be empowered to use technology to make the world a better place. She started Girl Develop It to provide judgment-free learning opportunities with a focus on results, and to support women teaching and learning from one another. She’s a lifetime Girl Scout, a teacher, and a passionate supporter of open source software.
+  %p Vanessa is currently building
+  = link_to 'CodeMontage', 'http://www.codemontage.com', :alt => 'CodeMontage', :target => '_blank'
+  to help people improve their software skills while improving the world. She also founded and organizes
+  = link_to 'Developers for Good', 'http://www.developersforgood.org', :alt => 'Developers for Good', :target => '_blank'
+  to connect technologists who want to use their skills to make an impact with organizations that need help.
+  Previously, Vanessa led the database and analytics efforts at
+  = link_to 'Paperless Post.', 'http://www.paperlesspost.com', :alt => 'Paperless Post', :target => '_blank'
+.clear
