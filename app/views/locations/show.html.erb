@@ -124,8 +124,8 @@
         <% @instructors.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
-              <% if bio.image? %>
-                <%= image_tag bio.image.profile.url %>
+              <% if bio.pic_link? %>
+                <%= image_tag bio.pic_link %>
               <% end %>
             </div>
             <div class="profile-content">
@@ -168,17 +168,16 @@
       </div>
 
       <script type="text/template" id="meetup">
-
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
-        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%> 
-          <%% if(typeof venue !== "undefined") { %> 
-          <%%= venue.address_1 %>, 
-          <%%= venue.city %> 
-          <%% } %> 
-         ] </p>   
+        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%>
+          <%% if(typeof venue !== "undefined") { %>
+          <%%= venue.address_1 %>,
+          <%%= venue.city %>
+          <%% } %>
+         ] </p>
         <p><%%= description.substring(0, 400) %><a href="<%%= event_url %>">...read more</a></p>
         <a href="<%%= event_url %>" class="button">RSVP</a>
-      </script> 
+      </script>
 
 
       <script type="text/javascript">
@@ -198,11 +197,8 @@
         } else {
           $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled. <a href=\"http://meetup.com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening.</p>")};
         });
-                
-      </script>
-        
-   
-      
+
+      </script> 
     </section>
   </div>
 </section>
