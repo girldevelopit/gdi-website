@@ -9,14 +9,17 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  process :resize_to_fit => [400, 500]
+  process :resize_to_fit => [300, nil]
+  process :crop => '300x300+0+0'
+
 
   version :thumb do
     process :resize_to_fit => [100, 150]
   end
 
   version :profile do
-    process :resize_to_fit => [200, 300]
+    process :resize_to_fit => [300, nil]
+    process :crop => '200x200+0+0'
   end
 
   def extension_white_list
@@ -26,8 +29,17 @@ class ImageUploader < CarrierWave::Uploader::Base
   def default_url
     size = case version_name
            when :thumb then "100x150"
-           else "200x300"
+           else "200x200"
            end
     "holder.js/#{size}/text:#{size}/social"
+  end
+
+  private
+
+  def crop(geometry)
+  manipulate! do |img|
+    img.crop(geometry)
+    img
+    end
   end
 end

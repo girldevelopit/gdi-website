@@ -7,7 +7,14 @@
 
 .mapTooltip {
 	background-color: #f95a61;
+  position: fixed;
+  font-family: $mainfont;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: .75em;
 }
+
+
 
 .media-links {
   padding: 0px;
