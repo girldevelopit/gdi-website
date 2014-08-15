@@ -62,13 +62,16 @@
     color: $pink;
   }
   .button{
-    margin-top: 10px;
+    margin: 10px 0 35px 0;
     background-color: $paleblue;
     color: $pink;
     &:hover{
       background-color: $pink;
       color: white;
     }
+  }
+  p {
+    padding-bottom: 10px;
   }
 }
 .single-profile{
