@@ -34,7 +34,6 @@ ActiveAdmin.register Bio do
       f.input :title
       f.input :name
       f.input :info
-      f.input :image
       f.input :twitter
       f.input :email
       f.input :website
