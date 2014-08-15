@@ -94,7 +94,7 @@ locs.each do |l|
                   twitter: l["twitter"], linkedin: l["linkedin"], github: l["github"],
                   latitude: l["latitude"], longitude: l["longitude"], state: l["state"],
                   #geo: l["name"],
-                  meetup_id: l["meetup_id"])
+                  meetup_id: l["meetup_id"], email: l["email"])
   l["leaders"].each do |leader|
     Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"],
     location_id: newloc.id, twitter: leader["twitter"], email: leader["email"],
