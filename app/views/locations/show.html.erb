@@ -2,7 +2,7 @@
   <div class="container">
     <aside class="chapter-aside">
       <div class="state-container-aside">
-        <%= image_tag("NC.png") %>
+        <%= image_tag(image_route(@location.state.downcase)) %>
       </div>
       <hr>
       <h1><%= @location.location %></h1>
@@ -72,14 +72,15 @@
         <!-- some code to make the meetup API data show up! -->
       </div>
 
-      <% if @leaders.count != 0 %>
-      <div id="headline">
-        <%= image_tag 'flourish.png' %>
-        <h2>Chapter Leaders</h2>
-      </div>
-      <% end %>
-
       <div class="profiles">
+
+        <% if @leaders.count != 0 %>
+          <div id="headline">
+            <%= image_tag 'flourish.png' %>
+            <h2>Chapter Leaders</h2>
+          </div>
+        <% end %>
+
         <% @leaders.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
@@ -87,13 +88,67 @@
                 <%= image_tag bio.pic_link %>
               <% end %>
             </div>
-            <div class="profile-content">
-              <h2><%= bio.name %></h2>
-              <p><%= bio.info.html_safe %></p>
-              <ul class="media-links">
-                <% unless bio.email.to_s == "" %>
-                  <%= mail_to bio.email do %>
-                    <i class="fa fa-envelope"></i>
+
+          <div class="profile-content">
+            <h2><%= bio.name %></h2>
+            <%= bio.info.html_safe %>
+            <ul class="media-links">
+              <% unless bio.email.to_s == "" %>
+                <%= mail_to bio.email do %>
+                  <i class="fa fa-envelope"></i>
+                <% end %>
+              <% end %>
+
+              <% unless bio.website.to_s == "" %>
+                <%= link_to bio.website do %>
+                  <i class="fa fa-globe"></i>
+                <% end %>
+              <% end %>
+
+              <% unless bio.twitter.to_s == "" %>
+                <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+                  <i class="fa fa-twitter"></i>
+                <% end %>
+              <% end %>
+
+              <% unless bio.linkedin.to_s == "" %>
+                <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+                  <i class="fa fa-linkedin"></i>
+                <% end %>
+              <% end %>
+
+              <% unless bio.github.to_s == "" %>
+                <%= link_to "https://www.github.com/#{bio.github}" do %>
+                  <i class="fa fa-github-alt"></i>
+                <% end %>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <% if @instructors.count != 0 %>
+          <div id="headline">
+            <%= image_tag 'apple.png' %>
+            <h2>The Instructors</h2>
+          </div>
+        <% end %>
+
+        <% @instructors.each do |bio| %>
+          <div class="single-profile">
+            <div class="profile-img">
+              <% if bio.pic_link? %>
+                <%= image_tag bio.pic_link %>
+              <% end %>
+            </div>
+
+          <div class="profile-content">
+            <h2><%= bio.name %></h2>
+              <%= bio.info.html_safe %>
+                <ul class="media-links">
+                  <% unless bio.email.to_s == "" %>
+                    <%= mail_to bio.email do %>
+                      <i class="fa fa-envelope"></i>
+                    <% end %>
                   <% end %>
                 <% end %>
 
@@ -176,7 +231,6 @@
                 <% end %>
               </ul>
             </div>
-          </div>
         <% end %>
       </div>
 
