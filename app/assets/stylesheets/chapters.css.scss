@@ -77,6 +77,9 @@
   p {
     padding-bottom: 5px;
   }
+  .uhOh {
+    text-align: center;
+  }
 }
 .single-profile{
   @include span-columns(8 of 8);
