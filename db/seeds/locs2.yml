@@ -196,7 +196,7 @@
   leaders:
   - name: Misty Melton
     image: baltimore/misty.jpg
-    bio: ! "Dabbling in code for fun over the years, Misty Melton likes to joke that
+    bio: ! "<p>Dabbling in code for fun over the years, Misty Melton likes to joke that
       she's\n              done every job in IT except be a programmer. With a background
       in implementation, training,\n              process mapping/improvement, and
       QA/tech writing she set off to find opportunities to expand\n              her
@@ -1174,13 +1174,13 @@
       twitter: eacarlson
       email: erika@girldevelopit.com
   - name: Michelle Srbinovich
-    bio: Michelle Srbinovich is the Co-General Manager of WDET 101.9FM, Detroit's
+    bio: <p>Michelle Srbinovich is the Co-General Manager of WDET 101.9FM, Detroit's
       public radio station. She's passionate about accelerating the growth of Detroit's
       tech industry by building a strong community of female developers and technology
       leaders. Michelle is excited to extend GDI's reach across Southeast Michigan
       and provide women from all walks of life with the opportunity to connect, learn
       code, and be part of moving Detroit forward. She's not only a chapter leader,
-      she's also a student.
+      she's also a student.</p>
     image: detroit/michellesrbinovich.jpg
     contact:
       twitter: MSrbinovich
@@ -1511,10 +1511,10 @@
   - name: Alexis Goldstein
     image: new-york/alexisgoldstein.jpeg
     bio: ! "<p>Alexis Goldstein is an entrepreneur, a technical author and a teacher
-      based in Brooklyn, NY.</p>\n          Alexis is the founder and CEO of <a href
+      based in Brooklyn, NY.</p>\n         <p> Alexis is the founder and CEO of <a href
       = \"http://www.autfaciam.com/\" target =\"_blank\" alt =\" aut faciam\">aut
       faciam</a>, a technical training, consulting and software development company.
-      She is the co-author of book HTML5 & CSS3 in The Real Worldle by Sitepoint."
+      She is the co-author of book HTML5 & CSS3 in The Real Worldle by Sitepoint.</p>"
   - name: Bethany Macri
     image: new-york/bethanymacri.jpg
     bio: <p>Bethany Macri is a Software Engineer on Etsy's Core Platform team. Bethany
@@ -2020,12 +2020,12 @@
     contact: {}
   - name: Heather Moore
     image: seattle/heathermoore.png
-    bio: ! 'Heather Moore is a software developer and partner at Lightspun.com. She
+    bio: ! '<p>Heather Moore is a software developer and partner at Lightspun.com. She
       loves working with early-stage startups and is passionate about <a href=''http://en.wikipedia.org/wiki/Extreme_programming''>eXtreme
       Programming</a>: testing, pairing and releasing often. Heather first learned
       Ruby in a RailsBridge class five years ago and is excited to bring her experience
       to GDI. When she''s not writing code, she''s either brewing beer or sailing
-      on the Sound.'
+      on the Sound.</p>'
     contact:
       twitter: heathrmoor
   - name: Paige Pauli
@@ -2035,12 +2035,12 @@
       twitter: paigepauli
   - name: Wendy Grus
     image: seattle/wendygrus.jpg
-    bio: Wendy Grus is a Senior Scientist at Knome Inc, a biotech software startup,
+    bio: <p>Wendy Grus is a Senior Scientist at Knome Inc, a biotech software startup,
       where she writes python scripts for genome analysis. She is an active member
       of the Seattle PyLadies chapter. She advocates that it is never too late to
       learn new skills. Through her involvement in organizations like Girl Develop
       It Seattle and Rain City Rock Camp for Girls, she has seen how empowering it
-      can be to develop confidence in women and girls.
+      can be to develop confidence in women and girls.</p>
     contact: {}
   volunteers: []
   sponsors:
@@ -2100,21 +2100,21 @@
   leaders:
   - name: Tanya Lasuk
     image: tri-cities/tanya.jpg
-    bio: ! "Tanya Lasuk has a 30 year career as a Software Engineer and IT Analyst.\n
+    bio: ! "<p>Tanya Lasuk has a 30 year career as a Software Engineer and IT Analyst.\n
       \           She has done every level of coding there is  and programmed in most
       popular languages\n            and a few obscure ones (APL, anyone?). Her passion
       is opening the doors of technology\n            for women and transforming technology
-      so it works for women."
+      so it works for women.</p>"
     contact:
       email: tanya@girldevelopit.com
       twitter: ThubtenDolma
   - name: Erin Schmidt
     image: tri-cities/erin.jpeg
-    bio: ! "Erin Schmidt is a graphic designer, artist and entrepreneur. She is an
+    bio: ! "<p>Erin Schmidt is a graphic designer, artist and entrepreneur. She is an
       entry\n            level developer passionate about learning code as a new medium
       to create art.\n            Erin enjoys working with other women to foster a
       supportive environment where women can\n            feel confident to develop
-      skills together."
+      skills together.</p>"
     contact:
       email: erins@girldevelopit.com
       twitter: ErinSchmidt1
