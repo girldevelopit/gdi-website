@@ -52,9 +52,7 @@ $(document).ready(function(){
 			//tooltip: {content : "<% location %>"}
 			}
 		};
-	$(".us_map").trigger("update", newPlots);
+		$(".us_map").trigger("update", newPlots);
 	});
-
- 	
 });
 
