@@ -6,6 +6,7 @@ $(document).ready(function(){
 		console.log(chapter);
 		_.each(chapter, function (plot) {
 			console.log(plot);
+
 			$(".us_map").mapael({
 				map : {
 					name : "usa_states",
@@ -35,13 +36,7 @@ $(document).ready(function(){
 						}
 					}
 				},
-				plots: {
-					'nc' : {
-						latitude: 35.7806,
-						longitude: -78.6389,
-						tooltip: {content : "Raleigh-Durham"}
-					},	
-				}
+				plots: {},	
 			});
 		});
 		var newPlots = {
