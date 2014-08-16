@@ -1,16 +1,24 @@
+var locationsURL = "http://localhost:3000/locations.json"
 
 $(document).ready(function(){
-	$.getJSON().done(function() { //need a url from the backend here in the ajax request
-		/*var that = this;
-		$(".us_map").trigger('update'){
-			newPlots: {
-				latitude: "that.lat",
-				longitude: "that.long",
-				href: ""
-				tooltip: {content : "that.location"}
-			}
-		};*/
+	var newPlots = {
+		"<%%= location %>" : {
+			latitude: "<%%= latitude %>",
+			longitude: "<%%= longitude %>",
+			//href: "locations/<% slug %>",
+			//tooltip: {content : "<% location %>"}
+		}
+	};
+	$.getJSON(locationsURL).done(function (chapter) { 
+		console.log(chapter);
+		_.each(chapter, function (plot) {
+			console.log(plot);
+			//feed coordinates into the variable above
+
+		});
+	$(".us_map").trigger("update", newPlots);
 	});
+
  	$(".us_map").mapael({
 		map : {
 			name : "usa_states",
