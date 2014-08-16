@@ -36,7 +36,7 @@ $(document).ready(function(){
 			},
 			eventHandlers: {
 				click : function (){
-					this.href="locations/26"  
+					this.href="locations/26"
 				}
 			}
 		},
@@ -45,8 +45,7 @@ $(document).ready(function(){
 				latitude: 35.7806,
 				longitude: -78.6389,
 				tooltip: {content : "Raleigh-Durham"}
-			},	
+			},
 		}
 	});
 });
-
