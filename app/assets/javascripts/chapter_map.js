@@ -2,9 +2,9 @@ var locationsURL = "http://localhost:3000/locations.json"
 
 $(document).ready(function(){
 	var newPlots = {
-		"<%%= location %>" : {
-			latitude: "<%%= latitude %>",
-			longitude: "<%%= longitude %>",
+		"<%= location %>" : {
+			latitude: "<%= latitude %>",
+			longitude: "<%= longitude %>",
 			//href: "locations/<% slug %>",
 			//tooltip: {content : "<% location %>"}
 		}
@@ -44,7 +44,7 @@ $(document).ready(function(){
 			},
 			eventHandlers: {
 				click : function (){
-					this.href="locations/26"  
+					this.href="locations/<%= slug %>"  
 				}
 			}
 		},
