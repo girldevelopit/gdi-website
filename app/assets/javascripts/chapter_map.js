@@ -36,7 +36,7 @@ $(document).ready(function(){
 			},
 			eventHandlers: {
 				click : function (){
-					this.href="locations/26"  
+					this.href="locations/params[:id]"  
 				}
 			}
 		},
