@@ -15,15 +15,17 @@
     font-size: 3.5rem;
     font-weight: 400;
     padding-top: 150px;
+    height: auto;
+    width: 100%;
+  }
     img{
       height: 80px;
       margin-bottom: -8px;
     }
   }
-  /* .animated.fadeInRight {
+  .fadeInLeft {
      -vendor-animation-delay: 2s;
-  } */
-}
+  }
 
 .mission-statement{
   @include span-columns(10);
