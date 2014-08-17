@@ -41,6 +41,20 @@ $(document).ready(function(){
 						longitude: -78.6389,
 						tooltip: {content : "Raleigh-Durham"}
 					},	
+				attrsHover : {
+					fill : "#d8ae64"
+				}
+			},
+			defaultPlot : {
+				type : "circle",
+				href : "#",
+				attrs: {
+					fill : "#f95a61"
+				}
+			},
+			eventHandlers: {
+				click : function (){
+					this.href="locations/26"
 				}
 			});
 		});
@@ -53,6 +67,6 @@ $(document).ready(function(){
 			}
 		};
 		$(".us_map").trigger("update", newPlots);
+
 	});
 });
-

@@ -85,6 +85,7 @@ instructorbio = Bio.create! do |a|
 end
 
 location_seed = Rails.root.join('db', 'seeds', 'locs2.yml')
+
 #board_seed = Rails.root.join('db', 'seeds', 'board.yml')
 locs = YAML::load_file(location_seed)
 #board = YAML::load_file(board_seed) ## come back to this
