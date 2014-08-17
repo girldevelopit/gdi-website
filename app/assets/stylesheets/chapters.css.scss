@@ -36,6 +36,7 @@
  @media screen and (min-width: 500px) {
    @include span-columns(8);
  }
+ margin-bottom: 80px;
 }
 
 #headline{
@@ -116,14 +117,14 @@
     padding: 0em 4em;
   }
   h3{
-    margin-bottom: 5px;
-  }
-  a{
-    color: $pink;
     text-transform: none;
     letter-spacing: .05rem;
-    &:hover{
-      color: $gold;
+    font-weight: 300;
+    a{
+      color: $gray;
+      &:hover{
+        color: $pink;
+      }
     }
   }
 }

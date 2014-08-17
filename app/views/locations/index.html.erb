@@ -15,7 +15,7 @@
           <hr>
           <h2><%= s[0] %></h2>
           <% s[1].each do |l| %>
-            <h3><%= link_to l, location_path(l.parameterize) %></h3>
+            <h3 class="large"><%= link_to l, location_path(l.parameterize) %></h3>
           <% end %>
         </div>
     <% end %>
