@@ -1,0 +1,28 @@
+//layout media queries
+@media screen and (max-width: 320px) {
+	.hide {
+		display: none;
+	}
+  	header {
+  		height: 200px;
+  		img {
+    		height: 60px;
+    		margin-top: 20px;
+    		margin-left: 100px;
+   			float: none;
+  		}
+  		nav {
+  			float: none;
+  			.fa {
+  				position: relative;
+  				clear: both;
+  			}
+  			a {
+  			  padding: 2rem 0.5rem;
+  			  &:first-child {
+  			  	margin-right: 2rem;
+  			  }
+  			}
+  		}
+  	}
+}
