@@ -1,4 +1,4 @@
-.opener{
+.opener {
   text-align: center;
   // background: url('photo.png') no-repeat center center fixed;
   background: url('photo.png');
@@ -18,7 +18,7 @@
     height: auto;
     width: 100%;
   }
-    img{
+    img {
       height: 80px;
       margin-bottom: -8px;
     }
@@ -40,7 +40,7 @@
      -o-animation-duration: 1.4s;
   }
 
-.mission-statement{
+.mission-statement {
   @include span-columns(10);
   @include shift(1);
   text-align: center;
@@ -62,7 +62,7 @@
   }
 }
 
-.map{
+.map {
   background-color: $paleblue;
   height: 100%;
   text-align: center;
@@ -72,11 +72,22 @@
   }
 }
 
-.stats-section{
+.stats-section {
   text-align: center;
-  .stats{
+  // h2{
+  //   background-color: #fff;
+  //   color: $gold;
+  //   position: relative;
+  //   bottom: -25px;
+  // }
+  // hr{
+  //   width: 50%;
+  //   border-top: 2px solid $gold;
+  //   border-bottom: 2px solid $gold;
+  // }
+  .stats {
     text-align: center;
-    img{
+    img {
       width: 100%;
       @include span-columns(4 of 12);
       @include omega(3n);
@@ -84,7 +95,7 @@
       margin-top: 60px;
       margin-bottom: 25px;
     }
-    p{
+    p {
       @include span-columns(4 of 12);
       @include omega(3n);
       padding: 0px 30px;;
@@ -93,7 +104,7 @@
   }
 }
 
-.press-logos{
+.press-logos {
   height: 180px;
   background-color: $black;
   text-align: center;
