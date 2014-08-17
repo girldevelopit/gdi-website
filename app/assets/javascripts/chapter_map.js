@@ -29,7 +29,6 @@ $(document).ready(function(){
 					fill : "#282828",
 					stroke: "#9a9a9a",
 				},
-
 				attrsHover : {
 					fill : "#fbcfc6",
 					animDuration: 300 
@@ -46,30 +45,10 @@ $(document).ready(function(){
 
 				}
 			},
-
-			eventHandlers: {
-				click : function (){
-					this.href="locations/26"
-				}
-			});
-		});
-		var newPlots = {
-			"<%= location %>" : {
-			latitude: "<%= latitude %>",
-			longitude: "<%= longitude %>",
-			//href: "locations/<% slug %>",
-			//tooltip: {content : "<% location %>"}
-			}
-		};
-		$(".us_map").trigger("update", newPlots);
-
-	});
-
 		},
 
 		plots : plots,		
 		
 		})
 	})
-
 });
