@@ -1,0 +1,84 @@
+.mission{
+  @include span-columns(10);
+  @include shift(1);
+  text-align: center;
+  margin-bottom: 50px;
+  p{
+    color: $black;
+  }
+}
+
+.vision{
+  @include span-columns(5);
+  @include shift(1);
+  text-align: right;
+  .subtitle{
+    padding: 0 .2rem .5rem .2rem;
+  }
+}
+
+.values{
+  @include span-columns(5);
+  @include omega();
+  .subtitle{
+    padding: 0 .2rem .5rem .2rem;
+  }
+}
+
+.support{
+  text-align: center;
+  height: 300px;
+  margin: 60px 0;
+  padding: 60px 0;
+  @include background-image( radial-gradient(#fff, #e4e9e5) );
+  p{
+    @include span-columns(10);
+    @include shift(1);
+    color: $black;
+  }
+}
+
+@mixin profile{
+  @include span-columns(6);
+  margin-bottom: 80px;
+  img{
+    @include span-columns(3 of 6);
+    @include shift (1.5);
+    box-shadow: .025rem .025rem .5rem #bdbec0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  h3{
+    @include span-columns(6 of 6);
+    text-align: center;
+    @extend %dashed-border;
+  }
+  p{
+    @include span-columns(6 of 6);
+    margin-top: 5px;
+  }
+}
+
+.profile-left{
+  @include profile;
+  @include span-columns(6);
+  padding-right: 12px;
+}
+
+.profile-right{
+  @include profile;
+  @include span-columns(6);
+  @include omega();
+  padding-left: 12px;
+
+}
+
+.code{
+  padding: 60px 0;
+  // text-align: center;
+  @include background-image( radial-gradient(#fff, #e4e9e5) );
+  p{
+    margin-top: 10px;
+    color: $black;
+  }
+}

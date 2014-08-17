@@ -66,9 +66,52 @@ footer {
       }
     }
   }
-  .subtitle { 
+  .subtitle {
     color: $paleblue;
     font-weight: 300;
     margin-bottom: -1px;
+  }
+}
+
+#headline{
+  text-align: center;
+  img{
+    height: 35px;
+    display: block;
+    margin: auto;
+  }
+  h2 {
+    font-weight: 300;
+    color: $gold;
+    padding: 0px 5px 6px 5px;
+    @extend %dashed-border;
+    // border-bottom: solid $black 1px;
+    display: inline-block;
+    margin: .5rem auto 3rem auto;
+  }
+}
+
+.underlined-headline{
+  text-align: center;
+  hr{
+    width: 400px;
+    border-top: 2px solid $gold;
+    border-bottom: 2px solid $gold;
+    margin-bottom: 30px;
+  }
+  h2{
+    font-size: 1.5rem;
+    color: $black;
+    font-weight: 300;
+    letter-spacing: .1rem;
+  }
+  .subtitle{
+    margin-top: -20px;
+    a{
+      color: $pink;
+      &:hover{
+        color: $black;
+      }
+    }
   }
 }
