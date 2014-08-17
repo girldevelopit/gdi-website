@@ -46,7 +46,13 @@ $(document).ready(function(){
 			},
 		},
 
-		plots : plots
-		})
+		plots : plots,
+
+		eventHandlers: {
+			click : function (){
+				this.href="locations/26"
+			}
+		}
+	})
 	})
 });
