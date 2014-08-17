@@ -31,6 +31,7 @@ $(document).ready(function(){
 				},
 				attrsHover : {
 					fill : "#fbcfc6",
+					animDuration: 300 
 				}
 			},
 			defaultPlot : {
