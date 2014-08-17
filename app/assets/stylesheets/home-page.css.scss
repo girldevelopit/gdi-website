@@ -9,8 +9,8 @@
   -webkit-background-size: cover;
   background-size: cover;
   // width: 100%;
-  height: 500px;
-  h1 {
+  height: 400px;
+  h1{
     color: $navy;
     font-size: 3.5rem;
     font-weight: 400;
@@ -47,44 +47,28 @@
   position: relative;
   padding: 0px 0px 50px 0px;
   h2{
-    background-color: $gold;
-    padding: .5rem;
+    margin-top: 60px;
+  }
+  hr{
     width: 250px;
-    color: white;
-    position: relative;
-    top: -18px;
   }
   p{
     margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: .9rem;
-    line-height: 1.5rem;
+    margin-bottom: 15px;
   }
-  .subtitle{
-    font-size: .8rem;
+  a.subtitle{
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
 }
 
 .map {
   background-color: $paleblue;
-  //@include background-image( radial-gradient(#fff, #e4e9e5) );
   height: 100%;
   text-align: center;
-  hr{
-    width: 400px;
-    border-top: 2px solid $gold;
-    border-bottom: 2px solid $gold;
-  }
+  padding-bottom: 30px;
   h2{
-    font-size: 1.5rem;
-    color: $black;
-    padding-top: 50px;
-    font-weight: 300;
-    letter-spacing: .1rem;
-  }
-  img{
-    width:100%;
-    padding-bottom: 35px;
+    padding-top: 60px;
   }
 }
 
@@ -125,11 +109,11 @@
   background-color: $black;
   text-align: center;
   padding: 30px 0px;
-  img {
-    height: 80px;
+  img{
+    height: 60px;
   }
-  h2 {
+  h3{
     color: $gold;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 }
