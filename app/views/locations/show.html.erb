@@ -2,7 +2,7 @@
   <div class="container">
     <aside class="chapter-aside">
       <div class="state-container-aside">
-        <%= image_tag(image_route(@location.state)) %>
+        <%= link_to image_tag(image_route(@location.state)), locations_path %>
       </div>
       <hr>
       <h1><%= @location.location %></h1>
@@ -39,7 +39,7 @@
         <% end %>
       </ul>
 
-      <p><%= link_to "don't be shy", about_path, :class=>"subtitle"%></p>
+      <p><%= link_to "- don't be shy -", about_path, :class=>"subtitle"%></p>
       <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
       <h2>Sponsors</h2>
@@ -80,7 +80,7 @@
             </div>
 
           <div class="profile-content">
-            <h2><%= bio.name %></h2>
+            <h3><%= bio.name %></h3>
             <%= bio.info.html_safe %>
             <ul class="media-links">
               <% unless bio.email.to_s == "" %>
@@ -136,7 +136,7 @@
             </div>
 
           <div class="profile-content">
-            <h2><%= bio.name %></h2>
+            <h3><%= bio.name %></h3>
               <%= bio.info.html_safe %>
                 <ul class="media-links">
                   <% unless bio.email.to_s == "" %>
@@ -167,12 +167,6 @@
                   <%= link_to "https://www.github.com/#{bio.github}" do %>
                     <i class="fa fa-github-alt"></i>
                   <% end %>
-<<<<<<< HEAD
-                </ul>
-            </div>
-        <% end %>
-      </div>
-=======
                 <% end %>
               </ul>
             </div>
@@ -180,11 +174,9 @@
         <% end %>
       </div>
 
->>>>>>> ee8bb23a08b56826878a3935431fa0e48cf744ee
-
       <script type="text/template" id="meetup">
 
-        <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
+        <h3><a href=" <%%= event_url %>"><%%= name %></a></h3>
         <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%>
           <%% if(typeof venue !== "undefined") { %>
           <%%= venue.address_1 %>,
@@ -211,7 +203,7 @@
             $(".classes").html(oneClass);
           });
         } else {
-          $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled. <a href=\"http://meetup.com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening.</p>")};
+          $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled for this Chapter. <a href=\"http://meetup.com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening. Thanks for checking in!</p>")};
         });
 
       </script>
