@@ -1,7 +1,7 @@
 var locationsURL = "http://localhost:3000/locations.json";
 
 $(document).ready(function(){
-	var plots = []
+	var plots = [];
 
 	$.getJSON(locationsURL).done(function (chapters) {
 		_.each(chapters, function (plot) {
@@ -22,7 +22,7 @@ $(document).ready(function(){
 			name : "usa_states",
 			cssClass : "map",
 			tooltip : {
-				cssClass : "mapTooltip" //class name of the tooltip container
+				cssClass : "mapTooltip" 
 				},
 			defaultArea : {
 				attrs : {
@@ -32,6 +32,7 @@ $(document).ready(function(){
 
 				attrsHover : {
 					fill : "#fbcfc6",
+					animDuration: 300 
 				}
 			},
 			defaultPlot : {
@@ -66,14 +67,9 @@ $(document).ready(function(){
 
 		},
 
-		plots : plots,
-
-		eventHandlers: {
-			click : function (){
-				this.href="locations/26"
-			}
-		}
-	})
+		plots : plots,		
+		
+		})
 	})
 
 });
