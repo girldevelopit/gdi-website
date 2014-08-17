@@ -178,7 +178,7 @@
       <script type="text/template" id="meetup">
 
         <h2><a href=" <%%= event_url %>"><%%= name %></a></h2>
-        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%>
+        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, h:mm a")%>,
           <%% if(typeof venue !== "undefined") { %>
           <%%= venue.address_1 %>,
           <%%= venue.city %>
