@@ -4,15 +4,13 @@ $(document).ready(function(){
 	var plots = []
 
 	$.getJSON(locationsURL).done(function (chapters) {
-		// 	console.log(chapters);
-			// _.each(chapter, function (plot) {
-			// 	console.log(plot);
-			// });
 		_.each(chapters, function (plot) {
 			newobj = {
 				value: plot.location,
 				latitude: plot.latitude,
-				longitude: plot.longitude
+				longitude: plot.longitude,
+				tooltip: {content: plot.location},
+				href: "locations/" + plot.slug
 			}
 			plots.push(newobj);
 		})
@@ -32,21 +30,20 @@ $(document).ready(function(){
 					stroke: "#9a9a9a",
 				},
 				attrsHover : {
-					fill : "#d8ae64"
+					fill : "#fbcfc6",
 				}
 			},
 			defaultPlot : {
 				type : "circle",
 				href : "#",
+				size : 15,
 				attrs: {
 					fill : "#f95a61"
+				},
+				attrsHover: {
+
 				}
 			},
-			eventHandlers: {
-				click : function (){
-					this.href="locations/<%#= @locations.location %>" // needs to be something else
-				}
-			}
 		},
 
 		plots : plots

@@ -4,14 +4,19 @@
 //MODULES: styles for reusable page components
 
 //Map
+.map {
+  background-color: green;
+}
 
 .mapTooltip {
 	background-color: #f95a61;
   position: fixed;
   font-family: $mainfont;
-  padding: 3px 8px;
-  border-radius: 5px;
-  font-size: .75em;
+  padding: 6px;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: .05rem;
+  font-weight: 300;
 }
 
 
