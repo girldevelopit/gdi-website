@@ -15,12 +15,30 @@
     font-size: 3.5rem;
     font-weight: 400;
     padding-top: 150px;
+    height: auto;
+    width: 100%;
+  }
     img{
       height: 80px;
       margin-bottom: -8px;
     }
   }
-}
+  .fadeInRightBig {
+     -webkit-animation-delay: 1s;
+     -moz-animation-delay: 1s;
+     -ms-animation-delay: 1s;
+     -o-animation-delay: 1s;
+     -webkit-animation-duration: 1.4s;
+     -moz-animation-duration: 1.4s;
+     -ms-animation-duration: 1.4s;
+     -o-animation-duration: 1.4s;
+  }
+  .fadeInLeftBig {
+    -webkit-animation-duration: 1.4s;
+     -moz-animation-duration: 1.4s;
+     -ms-animation-duration: 1.4s;
+     -o-animation-duration: 1.4s;
+  }
 
 .mission-statement{
   @include span-columns(10);

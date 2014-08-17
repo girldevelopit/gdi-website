@@ -82,6 +82,7 @@
           <div class="profile-content">
             <h3><%= bio.name %></h3>
             <%= bio.info.html_safe %>
+
             <ul class="media-links">
               <% unless bio.email.to_s == "" %>
                 <%= mail_to bio.email do %>
