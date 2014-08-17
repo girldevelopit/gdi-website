@@ -25,4 +25,13 @@
   			}
   		}
   	}
+  	.stats {
+  		float: none;
+  		img, p {
+  			@include span-columns (3);
+  		}
+  	}
+  	.stats-section {
+  		float: none;
+  	}
 }
