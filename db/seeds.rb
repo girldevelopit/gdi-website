@@ -26,11 +26,7 @@
 #   a.meetup    = 'http://www.meetup.com/girldevelopit/'
 #   a.geo       = 'New York, NY'
 # end
-#
-# AdminUser.create! do |a|
-#   a.email       = 'julia@girldevelopit.com'
-#   a.password    = a.password_confirmation = 'password'
-# end
+
 
 
 
@@ -103,7 +99,8 @@ locs.each do |l|
   l["leaders"].each do |leader|
     # binding.pry
     ldr = Bio.new(title: "LEADERS", name: leader["name"], info: leader["bio"],
-    location_id: newloc.id, pic_link: leader["image"])
+    # image: File.open(File.join(Rails.root, "app/assets/images/#{leader["image"]}")),
+    location_id: newloc.id)
     # binding.pry
     if leader["contact"]
       leader["contact"].each do |k, v|
@@ -122,6 +119,7 @@ locs.each do |l|
 
   l["instructors"].each do |instructor|
     inst = Bio.new(title: "INSTRUCTORS", name: instructor["name"],
+    # image: File.open(File.join(Rails.root, "app/assets/images/#{instructor["image"]}")),
     info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"])
     if instructor["contact"]
       instructor["contact"].each do |k, v|
@@ -130,6 +128,13 @@ locs.each do |l|
     end
     inst.save
   end
+  l["sponsors"].each do |sponsor|
+    Sponsor.create!(name: sponsor["website"], url: sponsor["website"], location_id: newloc.id,
+    # image: File.open(File.join(Rails.root, "app/assets/images/#{sponsor["logo"]}"))
+    )
+  end
 end
 
 # aurelia.location_id = Location.first
+
+# Bio.create!(image: "image", image: File.open(File.join(Rails.root, 'app/assets/images/tri-cities/erin.jpeg')))
