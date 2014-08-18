@@ -10,15 +10,24 @@ h6 {
 }
 
 h1 {
-  font-size: 1rem;
+  // font-weight: 300;
+  font-size: 1.2rem;
   letter-spacing: .14rem;
 }
 
 h2{
-  font-weight: 400;
-  color: $black;
-  font-size: .8rem;
+  font-size: 1rem;
   letter-spacing: .14rem;
+  margin: auto;
+  padding: .1rem;
+  a {
+    color: $black;
+  }
+}
+
+h3{
+  font-size: .95rem;
+  letter-spacing: .1rem;
   margin: auto;
   padding: .1rem;
   a {
@@ -37,7 +46,7 @@ p{
   letter-spacing: .05rem;
   color: $gray;
   line-weight: .1rem;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
   a{
     font-style: italic;
     color: $gold;
@@ -51,13 +60,19 @@ a {
   text-decoration: none;
 }
 
+.large{
+  font-size: 1rem;
+  line-height: 1.65rem;
+}
+
 .subtitle {
  font-weight: 400;
  color: $pink;
  font-style: italic;
  font-weight: 400;
- font-size: .8rem;
- letter-spacing: .05rem;
+ font-size: .85rem;
+ text-transform: none;
+ letter-spacing: .06rem;
  margin: .35rem 0rem;
 }
 

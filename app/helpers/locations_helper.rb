@@ -1,5 +1,5 @@
 module LocationsHelper
   def image_route(s)
-    "NC.png"
+    "state_map/#{s.parameterize}.png"
   end
 end

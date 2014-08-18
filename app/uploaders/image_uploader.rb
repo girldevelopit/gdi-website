@@ -20,7 +20,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   def default_url
     size = case version_name
            when :thumb then "100x150"
-           else "300x300"
+           else "200x200"
            end
     "holder.js/#{size}/text:#{size}/social"
   end

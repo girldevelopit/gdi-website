@@ -2,7 +2,7 @@
   <div class="container">
     <aside class="chapter-aside">
       <div class="state-container-aside">
-        <%= image_tag("NC.png") %>
+        <%= link_to image_tag(image_route(@location.state)), locations_path %>
       </div>
       <hr>
       <h1><%= @location.location %></h1>
@@ -39,37 +39,24 @@
         <% end %>
       </ul>
 
-      <p><%= link_to "don't be shy", about_path, :class=>"subtitle"%></p>
+      <p><%= link_to "- don't be shy -", about_path, :class=>"subtitle"%></p>
       <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
-    <h2>Sponsors</h2>
-    <% @sponsors.each do |sponsor| %>
-      <% if sponsor.image? %>
-        <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
+      <h2>Sponsors</h2>
+      <% @sponsors.each do |sponsor| %>
+        <% if sponsor.image? %>
+          <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
+        <% end %>
       <% end %>
-    <% end %>
-  </aside>
+    </aside>
 
     <section id="content-section">
       <div id="headline">
         <%= image_tag 'pencil.png' %>
-        <h2>Upcoming Classes</h2>
+        <h2>Upcoming Events</h2>
       </div>
 
       <div class="classes">
-        <h2>Intro To Javascript and jQuery</h2>
-        <p class="subtitle">[ August 7, 2014, 6:30pm to 9:15pm, Cary, NC ]</p>
-        <p>Object-oriented programming is an approach to programming that helps you conceptualize and organize your code in a way that will make it more structured and more easily maintainable. Remember in high school geometry when you learned that all squares are rectangles, but not all rectangles are squares? As a programmer, you can think about that relationship in an object-oriented way: the squares and rectangles are your "objects", and squares "inherit" some of their properties from...<a href="#"> read more</a></p>
-        <a href="" class="button">RSVP</a>
-        <!-- some code to make the meetup API data show up! -->
-      </div>
-
-      <div class="classes">
-        <h2>Intro To HTML and CSS</h2>
-        <p class="subtitle">[ August 20, 2014, 6:30pm to 9:15pm, Durham, NC ]</p>
-        <p>Object-oriented programming is an approach to programming that helps you conceptualize and organize your code in a way that will make it more structured and more easily maintainable. Remember in high school geometry when you learned that all squares are rectangles, but not all rectangles are squares? As a programmer, you can think about that relationship in an object-oriented way: the squares and rectangles are your...<a href="#"> read more</a></p>
-        <a href="" class="button">RSVP</a>
-        <!-- some code to make the meetup API data show up! -->
       </div>
 
       <% if @leaders.count != 0 %>
@@ -83,46 +70,52 @@
         <% @leaders.each do |bio| %>
           <div class="single-profile">
             <div class="profile-img">
-              <% if bio.pic_link? %>
+              <% if bio.image? %>
+                <%= image_tag bio.image %>
+              <% elsif bio.pic_link? %>
                 <%= image_tag bio.pic_link %>
+              <% else %>
+                <%= image_tag "photo-not-available.jpg" %>
               <% end %>
             </div>
-            <div class="profile-content">
-              <h2><%= bio.name %></h2>
-              <p><%= bio.info.html_safe %></p>
-                <ul class="media-links">
-                  <% unless bio.email.to_s == "" %>
-                    <%= mail_to bio.email do %>
-                      <i class="fa fa-envelope"></i>
-                    <% end %>
-                  <% end %>
 
-                  <% unless bio.website.to_s == "" %>
-                    <%= link_to bio.website do %>
-                      <i class="fa fa-globe"></i>
-                    <% end %>
-                  <% end %>
+          <div class="profile-content">
+            <h3><%= bio.name %></h3>
+            <%= bio.info.html_safe %>
 
-                  <% unless bio.twitter.to_s == "" %>
-                    <%= link_to "https://twitter.com/#{bio.twitter}" do %>
-                      <i class="fa fa-twitter"></i>
-                    <% end %>
-                  <% end %>
+            <ul class="media-links">
+              <% unless bio.email.to_s == "" %>
+                <%= mail_to bio.email do %>
+                  <i class="fa fa-envelope"></i>
+                <% end %>
+              <% end %>
 
-                  <% unless bio.linkedin.to_s == "" %>
-                    <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
-                      <i class="fa fa-linkedin"></i>
-                    <% end %>
-                  <% end %>
+              <% unless bio.website.to_s == "" %>
+                <%= link_to bio.website do %>
+                  <i class="fa fa-globe"></i>
+                <% end %>
+              <% end %>
 
-                  <% unless bio.github.to_s == "" %>
-                    <%= link_to "https://www.github.com/#{bio.github}" do %>
-                      <i class="fa fa-github-alt"></i>
-                    <% end %>
-                  <% end %>
-                </ul>
-              </div>
-            <% end %>
+              <% unless bio.twitter.to_s == "" %>
+                <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+                  <i class="fa fa-twitter"></i>
+                <% end %>
+              <% end %>
+
+              <% unless bio.linkedin.to_s == "" %>
+                <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+                  <i class="fa fa-linkedin"></i>
+                <% end %>
+              <% end %>
+
+              <% unless bio.github.to_s == "" %>
+                <%= link_to "https://www.github.com/#{bio.github}" do %>
+                  <i class="fa fa-github-alt"></i>
+                <% end %>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
 
         <% if @instructors.count != 0 %>
           <div id="headline">
@@ -131,55 +124,92 @@
           </div>
         <% end %>
 
-        <div class="profiles">
-          <% @instructors.each do |bio| %>
-            <div class="single-profile">
-              <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image.profile.url %>
-                <% end %>
-              </div>
-              <div class="profile-content">
-                <h2><%= bio.name %></h2>
-                <p><%= bio.info.html_safe %></p>
-                  <ul class="media-links">
-                    <% unless bio.email.to_s == "" %>
-                      <%= mail_to bio.email do %>
-                        <i class="fa fa-envelope"></i>
-                      <% end %>
-                    <% end %>
-
-                    <% unless bio.website.to_s == "" %>
-                      <%= link_to bio.website do %>
-                        <i class="fa fa-globe"></i>
-                      <% end %>
-                    <% end %>
-
-                    <% unless bio.twitter.to_s == "" %>
-                      <%= link_to "https://twitter.com/#{bio.twitter}" do %>
-                        <i class="fa fa-twitter"></i>
-                      <% end %>
-                    <% end %>
-
-
-                    <% unless bio.linkedin.to_s == "" %>
-                      <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
-                        <i class="fa fa-linkedin"></i>
-                      <% end %>
-                    <% end %>
-
-                    <% unless bio.github.to_s == "" %>
-                      <%= link_to "https://www.github.com/#{bio.github}" do %>
-                        <i class="fa fa-github-alt"></i>
-                      <% end %>
-                    <% end %>
-                  </ul>
-              </div>
+        <% @instructors.each do |bio| %>
+          <div class="single-profile">
+            <div class="profile-img">
+              <% if bio.image? %>
+                <%= image_tag bio.image %>
+              <% elsif bio.pic_link? %>
+                <%= image_tag bio.pic_link %>
+              <% else %>
+                <%= image_tag "photo-not-available.jpg" %>
+              <% end %>
             </div>
+
+          <div class="profile-content">
+            <h3><%= bio.name %></h3>
+              <%= bio.info.html_safe %>
+                <ul class="media-links">
+                  <% unless bio.email.to_s == "" %>
+                    <%= mail_to bio.email do %>
+                      <i class="fa fa-envelope"></i>
+                    <% end %>
+                  <% end %>
+
+                <% unless bio.website.to_s == "" %>
+                  <%= link_to bio.website do %>
+                    <i class="fa fa-globe"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.twitter.to_s == "" %>
+                  <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+                    <i class="fa fa-twitter"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.linkedin.to_s == "" %>
+                  <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+                    <i class="fa fa-linkedin"></i>
+                  <% end %>
+                <% end %>
+
+                <% unless bio.github.to_s == "" %>
+                  <%= link_to "https://www.github.com/#{bio.github}" do %>
+                    <i class="fa fa-github-alt"></i>
+                  <% end %>
+                <% end %>
+              </ul>
             </div>
           </div>
         <% end %>
       </div>
+
+      <script type="text/template" id="meetup">
+
+        <h3><a href=" <%%= event_url %>"><%%= name %></a></h3>
+        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%>
+          <%% if(typeof venue !== "undefined") { %>
+          <%%= venue.address_1 %>,
+          <%%= venue.city %>
+          <%% } %>
+         ] </p>
+        <p><%%= description.substring(0, 400) %><a href="<%%= event_url %>">...read more</a></p>
+        <a href="<%%= event_url %>" class="button">RSVP</a>
+      </script>
+
+
+      <script type="text/javascript">
+        var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
+        //console.log(meetup_url);
+        $.getJSON(meetup_url).done(function (classesData){
+            console.log("here are all the classes", classesData);
+
+          if(classesData.length>0) {
+            var classesArr = classesData.slice(0,3);
+            console.log(classesArr);
+            var oneClass = '';
+            var classes = $('#meetup').html();
+              _.each(classesArr, function (one) {
+              //console.log("Here is one class", one);
+              oneClass += _.template(classes, one);
+                $(".classes").html(oneClass);
+            });
+          } else {
+            $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled. <a href=\"http://meetup. com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening.<  /p>")};
+          });
+
+      </script>
     </section>
   </div>
 </section>

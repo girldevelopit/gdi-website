@@ -32,6 +32,8 @@
 #   a.password    = a.password_confirmation = 'password'
 # end
 
+
+
 julia = AdminUser.create! do |a|
             a.email       = 'julia@girldevelopit.com'
             a.password    = a.password_confirmation = 'password'
@@ -84,8 +86,11 @@ instructorbio = Bio.create! do |a|
   a.image     = 'https://s3.amazonaws.com/girl_develop_it/gdi_logo_badge.png'
 end
 
-seed_file = Rails.root.join('db', 'seeds', 'locs2.yml')
-locs = YAML::load_file(seed_file)
+location_seed = Rails.root.join('db', 'seeds', 'locs2.yml')
+
+#board_seed = Rails.root.join('db', 'seeds', 'board.yml')
+locs = YAML::load_file(location_seed)
+#board = YAML::load_file(board_seed) ## come back to this
 locs.each do |l|
   # lat = Random.new.rand(32..43)
   # long = Random.new.rand(-117..-67)
@@ -94,20 +99,37 @@ locs.each do |l|
                   twitter: l["twitter"], linkedin: l["linkedin"], github: l["github"],
                   latitude: l["latitude"], longitude: l["longitude"], state: l["state"],
                   #geo: l["name"],
-                  meetup_id: l["meetup_id"])
+                  meetup_id: l["meetup_id"], email: l["email"])
   l["leaders"].each do |leader|
-    Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"],
-    location_id: newloc.id, twitter: leader["twitter"], email: leader["email"],
-    website: leader["website"], github: leader["github"], pic_link: leader["image"],
-    linkedin: leader["linkedin"])
+    # binding.pry
+    ldr = Bio.new(title: "LEADERS", name: leader["name"], info: leader["bio"],
+    location_id: newloc.id, pic_link: leader["image"])
+    # binding.pry
+    if leader["contact"]
+      leader["contact"].each do |k, v|
+        ldr[k] = v
+      end
+    end
+    # unless leader["contact"] == nil
+    #   ldr.twitter = leader["contact"]["twitter"]
+    #   ldr.email = leader["contact"]["email"]
+    #   ldr.website = leader["contact"]["website"]
+    #   ldr.github = leader["contact"]["github"]
+    #   ldr.linkedin = leader["contact"]["linkedin"]
+    # end
+    ldr.save
   end
+
   l["instructors"].each do |instructor|
-    Bio.create!(title: "INSTRUCTORS", name: instructor["name"],
-    info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"],
-    twitter: instructor["twitter"], email: instructor["email"],
-    website: instructor["website"], github: instructor["github"],
-    linkedin: instructor["linkedin"])
+    inst = Bio.new(title: "INSTRUCTORS", name: instructor["name"],
+    info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"])
+    if instructor["contact"]
+      instructor["contact"].each do |k, v|
+        inst[k] = v
+      end
+    end
+    inst.save
   end
 end
 
-aurelia.location_id = Location.first
+# aurelia.location_id = Location.first

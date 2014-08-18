@@ -1,16 +1,21 @@
 
   <section class="main-container">
   <div class="container">
-    <!-- <h1>This is the Chapter Index</h1> -->
+
+    <div class="underlined-headline">
+      <h2>We're located in 31 cities!</h2>
+      <hr>
+      <p class="subtitle">Don't see your hometown? <a href="">Start a new chapter!</a></p>
+    </div>
 
     <section class="state-index">
       <% @states.each do |s| %>
         <div class="state-container">
-          <div class="state"><%= image_tag(image_route(s)) %></div>
+          <div class="state"><%= image_tag(image_route(s[0])) %></div>
           <hr>
-          <h1><%= s[0] %></h1>
+          <h2><%= s[0] %></h2>
           <% s[1].each do |l| %>
-            <h2><%= link_to l, location_path(l.parameterize) %></h2>
+            <h3 class="large"><%= link_to l, location_path(l.parameterize) %></h3>
           <% end %>
         </div>
     <% end %>
