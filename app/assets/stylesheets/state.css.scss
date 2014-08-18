@@ -4,7 +4,7 @@
 		display: none;
 	}
   	header {
-  		height: 200px;
+  		height: 160px;
   		img {
     		height: 60px;
     		margin-top: 20px;
@@ -33,5 +33,19 @@
   	}
   	.stats-section {
   		float: none;
-  	}
+  	}	
+	footer {
+		height: 150px;
+		position: relative;
+		top: 0px;
+		font-size: 1rem;
+	}
+	.underlined-headline {
+		hr {
+		width: 200px;
+		}
+		.subtitle {
+			
+		}
+	}
 }
