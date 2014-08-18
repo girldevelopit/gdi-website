@@ -5,6 +5,7 @@
     <div class="underlined-headline">
       <h2>We're located in 31 cities!</h2>
       <hr>
+       <p class="subtitle hide">Don't see your hometown? <a href="">Start a new chapter!</a></p>
     </div>
 
     <section class="state-index hide">
@@ -21,5 +22,15 @@
     </section>
   </div>
   </section>
- 
- <p class="subtitle">Don't see your hometown? <a href="">Start a new chapter!</a></p>
+
+  <div>
+    <dl class="accordion">
+      <% @states.each do |s| %>
+        <dt><h2><%= s[0] %></h2></dt>
+        <% s[1].each do |l| %>
+        <dd><%= link_to l, location_path(l.parameterize) %></dd>
+        <% end %>
+        <% end %>
+</dl>
+  </div>
+

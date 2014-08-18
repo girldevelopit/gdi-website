@@ -52,6 +52,38 @@
   }
 }
 
+.accordion {
+   margin: 50px; 
+   margin-top: 0;
+   text-align: center;  
+   dt, dd {
+      padding: 10px;
+      background-color: $pink;
+      border-bottom: 0; 
+      &:last-of-type {
+        border-bottom: 0; 
+      }
+      h2 {
+        display: block;
+        font-weight: bold;
+        color: #FFF;
+      }
+   }
+  dd {
+     border-top: 0; 
+     background-color: $gold;
+     font-size: 1rem;
+     &:last-of-type {
+       border-top: 1px solid white;
+       position: relative;
+       top: -1px;
+     }
+     a {
+      text-decoration: none;
+        color: #FFF;
+     }
+  }
+}
 
 
 
