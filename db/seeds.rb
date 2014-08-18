@@ -109,6 +109,11 @@ locs.each do |l|
     website: instructor["website"], github: instructor["github"],
     linkedin: instructor["linkedin"])
   end
+  l["sponsors"].each do |sponsor|
+    Sponsor.create!(name: sponsor["website"], url: sponsor["website"], location_id: newloc.id,
+    # image: File.open(File.join(Rails.root, "app/assets/images/#{sponsor["logo"]}"))
+    )
+  end
 end
 aurelia.location_id = Location.first
 
