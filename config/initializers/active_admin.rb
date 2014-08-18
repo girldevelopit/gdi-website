@@ -11,6 +11,12 @@ ActiveAdmin::ResourceController.class_eval do
     scoped_collection.find_by! id_field => params[:id]
   end
 end
+
+  module ActiveAdmin::Devise::Controller
+    def root_path
+      "/"  #add your logic
+    end
+  end
   # == Site Title
   #
   # Set the title that is displayed on the main layout
@@ -239,7 +245,7 @@ end
   # Pagination is enabled by default for all resources.
   # You can control the default per page count for all resources here.
   #
-  config.default_per_page = 30
+  config.default_per_page = 50
 
 
   # == Filters
