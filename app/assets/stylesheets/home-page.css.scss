@@ -1,20 +1,22 @@
 .opener {
   text-align: center;
-  // background: url('photo.png') no-repeat center center fixed;
+  // background: url('photo3.png') no-repeat center center fixed;
   background: url('photo.png');
   background-color: $paleblue;
-  // background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
   // background-size: Auto 500px;
   // background-size: 100% auto;
-  -webkit-background-size: cover;
-  background-size: cover;
+  // -webkit-background-size: cover;
+  // background-size: cover;
   // width: 100%;
   height: 400px;
-  h1{
+
+  h1 {
     color: $navy;
     font-size: 3.5rem;
     font-weight: 400;
-    padding-top: 150px;
+    padding-top: 100px;
     height: auto;
     width: 100%;
   }
@@ -28,16 +30,16 @@
      -moz-animation-delay: 1s;
      -ms-animation-delay: 1s;
      -o-animation-delay: 1s;
-     -webkit-animation-duration: 1.4s;
-     -moz-animation-duration: 1.4s;
-     -ms-animation-duration: 1.4s;
-     -o-animation-duration: 1.4s;
+     -webkit-animation-duration: .5s;
+     -moz-animation-duration: .5s;
+     -ms-animation-duration: .5s;
+     -o-animation-duration: .5s;
   }
   .fadeInLeftBig {
-    -webkit-animation-duration: 1.4s;
-     -moz-animation-duration: 1.4s;
-     -ms-animation-duration: 1.4s;
-     -o-animation-duration: 1.4s;
+    -webkit-animation-duration: .5s;
+     -moz-animation-duration: .5s;
+     -ms-animation-duration: .5s;
+     -o-animation-duration: .5s;
   }
 
 .mission-statement {

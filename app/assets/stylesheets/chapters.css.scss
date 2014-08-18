@@ -78,12 +78,14 @@
       width: 100%;
       margin-top: 19px;
       box-shadow: .025rem .025rem .5rem #bdbec0;
+      border-radius: 5px;
+      margin-bottom: 2.5em;
     }
   }
   .profile-content{
     @include span-columns(5 of 8);
     @include omega();
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     h3{
       @extend %dashed-border;
     }

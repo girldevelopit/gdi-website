@@ -5,7 +5,7 @@
 
 //Map
 .map {
-  
+
 }
 
 .mapTooltip {
@@ -13,9 +13,9 @@
   position: fixed;
   font-family: $mainfont;
   padding: 6px;
-  font-size: 1em;
+  font-size: .85em;
   color: #fff;
-  letter-spacing: .05rem;
+  letter-spacing: .06rem;
   font-weight: 300;
 }
 
@@ -52,63 +52,6 @@
   }
 }
 
-header {
-  height: 100px;
-  background-color: $pink;
-  img{
-    height: 60px;
-    margin-top: 15px;
-    float: left;
-  }
-  nav a{
-    color: white;
-    font-style: italic;
-    font-weight: 300;
-    font-size: .9rem;
-    letter-spacing: .05rem;
-    float: right;
-    padding: 3rem 1rem 3rem 1rem;
-    margin-bottom: 0em;
-  }
-  nav a:first-child{
-    margin-right: -1rem
-  }
-  nav a:hover{
-    background-color: $black;
-    color: $blush;
-    box-shadow: .025rem .025rem .5rem $black;
-  }
-}
 
-footer {
-  text-align: center;
-  height: 190px;
-  background-color: $navy;
-  padding: 20px 0px 0px 0px;
-  .navigation {
-    margin-top: 25px;
-    a{
-      color: white;
-      font-style: italic;
-      font-weight: 300;
-      font-size: .9rem;
-      letter-spacing: .05rem;
-      padding: 0 1rem;
-      margin-bottom: 0em;
-      &:hover{
-        color: $gold;
-      }
-      i{
-        color: $gold;
-        &:hover{
-          color: #fff;
-        }
-      }
-    }
-  }
-  .subtitle{
-    color: $paleblue;
-    font-weight: 300;
-    margin-bottom: -1px;
-  }
-}
+
+
