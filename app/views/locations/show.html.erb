@@ -39,8 +39,8 @@
         <% end %>
       </ul>
 
-      <p><%= link_to "- don't be shy -", about_path, :class=>"subtitle"%></p>
-      <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+      <p class="subtitle">- don't be shy -</p>
+      <%= link_to "{ Join Us }", "http://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
     <div class="hide">
       <h2>Sponsors</h2>
@@ -49,7 +49,7 @@
           <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
         <% end %>
       <% end %>
-    </div>  
+    </div>
     </aside>
 
     <section id="content-section">
