@@ -14,25 +14,25 @@
 	}
   	header {
   		height: 160px;
-  		img {
-    		height: 60px;
-    		margin-top: 20px;
-    		margin-left: 100px;
-   			float: none;
-  		}
-  		nav {
-  			float: none;
-  			.fa {
-  				position: relative;
-  				clear: both;
-  			}
-  			a {
-  			  padding: 2rem 0.5rem;
-  			  &:first-child {
-  			  	margin-right: 2rem;
-  			  }
-  			}
-  		}
+  		// img {
+    	// 	height: 60px;
+    	// 	margin-top: 20px;
+    	// 	margin-left: 100px;
+   	// 		float: none;
+  		// }
+  		// nav {
+  		// 	float: none;
+  		// 	.fa {
+  		// 		position: relative;
+  		// 		clear: both;
+  		// 	}
+  		// 	a {
+  		// 	  padding: 2rem 0.5rem;
+  		// 	  &:first-child {
+  		// 	  	margin-right: 2rem;
+  		// 	  }
+  		// 	}
+  		// }
   	}
   	.opener {
   		height: 200px;
@@ -57,7 +57,7 @@
   	}
   	.stats-section {
   		float: none;
-  	}	
+  	}
 	footer {
 		height: 200px;
 		position: relative;
@@ -79,7 +79,7 @@
 		}
 		.subtitle {
 			margin: 0 20px;
-		}	
+		}
 		h2 {
 			margin: 25px 0;
 			font-size: 1em;

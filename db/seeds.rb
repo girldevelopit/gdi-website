@@ -99,7 +99,7 @@ locs.each do |l|
   l["leaders"].each do |leader|
     # binding.pry
     ldr = Bio.new(title: "LEADERS", name: leader["name"], info: leader["bio"],
-    # image: File.open(File.join(Rails.root, "app/assets/images/#{leader["image"]}")),
+    image: File.open(File.join(Rails.root, "app/assets/images/#{leader["image"]}")),
     location_id: newloc.id)
     # binding.pry
     if leader["contact"]
@@ -107,19 +107,19 @@ locs.each do |l|
         ldr[k] = v
       end
     end
-    # unless leader["contact"] == nil
-    #   ldr.twitter = leader["contact"]["twitter"]
-    #   ldr.email = leader["contact"]["email"]
-    #   ldr.website = leader["contact"]["website"]
-    #   ldr.github = leader["contact"]["github"]
-    #   ldr.linkedin = leader["contact"]["linkedin"]
-    # end
+    unless leader["contact"] == nil
+      ldr.twitter = leader["contact"]["twitter"]
+      ldr.email = leader["contact"]["email"]
+      ldr.website = leader["contact"]["website"]
+      ldr.github = leader["contact"]["github"]
+      ldr.linkedin = leader["contact"]["linkedin"]
+    end
     ldr.save
   end
 
   l["instructors"].each do |instructor|
     inst = Bio.new(title: "INSTRUCTORS", name: instructor["name"],
-    # image: File.open(File.join(Rails.root, "app/assets/images/#{instructor["image"]}")),
+    image: File.open(File.join(Rails.root, "app/assets/images/#{instructor["image"]}")),
     info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"])
     if instructor["contact"]
       instructor["contact"].each do |k, v|
