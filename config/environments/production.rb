@@ -1,7 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.assets.version = 1.0
+  config.assets.version = 1.1
 
   # Code is not reloaded between requests.
   config.cache_classes = true
