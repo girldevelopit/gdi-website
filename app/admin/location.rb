@@ -9,8 +9,6 @@ ActiveAdmin.register Location do
   index do
     selectable_column
     column :location
-    column :blurb
-    column :geo
     column :fb
     column :meetup
     column :twitter
@@ -20,8 +18,6 @@ ActiveAdmin.register Location do
   end
 
   filter :location
-  filter :blurb
-  filter :geo
   filter :fb
   filter :meetup
   filter :twitter
@@ -31,14 +27,13 @@ ActiveAdmin.register Location do
 
   form do |f|
     f.inputs "Edit Location" do
-      f.input :location
-      f.input :blurb
-      f.input :geo
-      f.input :fb
-      f.input :meetup
-      f.input :twitter
-      f.input :linkedin
-      f.input :github
+      f.input :location, placeholder: "Los Angeles"
+      f.input :geo, placeholder: "Los Angeles, CA, USA"
+      f.input :fb, placeholder: "GDILosAngeles"
+      f.input :meetup, placeholder: "Girl-Develop-It-Los-Angeles"
+      f.input :twitter, placeholder: "GDILosAngeles"
+      f.input :linkedin, placeholder: "https://www.linkedin.com/groups/Girl-Develop-It-Los-Angeles-9999999"
+      f.input :github, placeholder: "GDILosAngeles"
     end
     f.actions
   end

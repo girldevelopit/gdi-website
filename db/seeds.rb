@@ -97,11 +97,9 @@ locs.each do |l|
                   #geo: l["name"],
                   meetup_id: l["meetup_id"], email: l["email"])
   l["leaders"].each do |leader|
-    # binding.pry
     ldr = Bio.new(title: "LEADERS", name: leader["name"], info: leader["bio"],
-    # image: File.open(File.join(Rails.root, "app/assets/images/#{leader["image"]}")),
+    image: File.open(File.join(Rails.root, "app/assets/images/#{leader["image"]}")),
     location_id: newloc.id)
-    # binding.pry
     if leader["contact"]
       leader["contact"].each do |k, v|
         ldr[k] = v
@@ -119,7 +117,7 @@ locs.each do |l|
 
   l["instructors"].each do |instructor|
     inst = Bio.new(title: "INSTRUCTORS", name: instructor["name"],
-    # image: File.open(File.join(Rails.root, "app/assets/images/#{instructor["image"]}")),
+    image: File.open(File.join(Rails.root, "app/assets/images/#{instructor["image"]}")),
     info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"])
     if instructor["contact"]
       instructor["contact"].each do |k, v|
@@ -130,7 +128,7 @@ locs.each do |l|
   end
   l["sponsors"].each do |sponsor|
     Sponsor.create!(name: sponsor["website"], url: sponsor["website"], location_id: newloc.id,
-    # image: File.open(File.join(Rails.root, "app/assets/images/#{sponsor["logo"]}"))
+    image: File.open(File.join(Rails.root, "app/assets/images/#{sponsor["logo"]}"))
     )
   end
 end
