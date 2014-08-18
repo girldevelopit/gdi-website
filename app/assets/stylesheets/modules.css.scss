@@ -58,32 +58,26 @@
    text-align: center;  
    dt, dd {
       padding: 10px;
-      background-color: $pink;
-      border-bottom: 0; 
+      //border-bottom: 4px double $pink; 
       &:last-of-type {
-        border-bottom: 0; 
+        //border-bottom: 2px double $pink; 
       }
       h2 {
-        display: block;
-        font-weight: bold;
-        color: #FFF;
+        @extend %dashed-border;
       }
    }
   dd {
-     border-top: 0; 
-     background-color: $gold;
+     border-top: 0;
+     padding: 0 0 0 10px; 
+     //background-color: $paleblue;
      font-size: 1rem;
      &:last-of-type {
        border-top: 1px solid white;
        position: relative;
        top: -1px;
      }
-     a {
-      text-decoration: none;
-        color: #FFF;
-     }
+  
   }
 }
-
 
 
