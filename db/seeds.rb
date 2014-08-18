@@ -26,11 +26,7 @@
 #   a.meetup    = 'http://www.meetup.com/girldevelopit/'
 #   a.geo       = 'New York, NY'
 # end
-#
-# AdminUser.create! do |a|
-#   a.email       = 'julia@girldevelopit.com'
-#   a.password    = a.password_confirmation = 'password'
-# end
+
 
 julia = AdminUser.create! do |a|
             a.email       = 'julia@girldevelopit.com'
@@ -102,15 +98,18 @@ locs.each do |l|
     Bio.create!(title: "LEADERS", name: leader["name"], info: leader["bio"],
     location_id: newloc.id, twitter: leader["twitter"], email: leader["email"],
     website: leader["website"], github: leader["github"], pic_link: leader["image"],
+    image: File.open(File.join(Rails.root, "app/assets/images/#{leader["image"]}")),
     linkedin: leader["linkedin"])
   end
   l["instructors"].each do |instructor|
     Bio.create!(title: "INSTRUCTORS", name: instructor["name"],
     info: instructor["bio"], location_id: newloc.id, pic_link: instructor["image"],
+    image: File.open(File.join(Rails.root, "app/assets/images/#{instructor["image"]}")),
     twitter: instructor["twitter"], email: instructor["email"],
     website: instructor["website"], github: instructor["github"],
     linkedin: instructor["linkedin"])
   end
 end
-
 aurelia.location_id = Location.first
+
+# Bio.create!(image: "image", image: File.open(File.join(Rails.root, 'app/assets/images/tri-cities/erin.jpeg')))
