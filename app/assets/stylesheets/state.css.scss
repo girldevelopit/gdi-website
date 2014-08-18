@@ -1,4 +1,96 @@
-//The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS) 
-//https://smacss.com
-
-//STATES: styles for an alternate display of page elements 
+//layout media queries
+@media screen and (max-width: 320px) {
+	.hide {
+		display: none;
+	}
+	.main-container {
+		padding-top: 25px;
+	}
+  	header {
+  		height: 160px;
+  		img {
+    		height: 60px;
+    		margin-top: 20px;
+    		margin-left: 100px;
+   			float: none;
+  		}
+  		nav {
+  			float: none;
+  			.fa {
+  				position: relative;
+  				clear: both;
+  			}
+  			a {
+  			  padding: 2rem 0.5rem;
+  			  &:first-child {
+  			  	margin-right: 2rem;
+  			  }
+  			}
+  		}
+  	}
+  	.stats {
+  		float: none;
+  		img, p {
+  			@include span-columns (3);
+  		}
+  	}
+  	.stats-section {
+  		float: none;
+  	}	
+	footer {
+		height: 150px;
+		position: relative;
+		top: 0px;
+		font-size: 1rem;
+	}
+	#headline {
+		float: none;
+		display: block;
+		width: auto;
+		margin: 25px;
+	}
+	.underlined-headline {
+		hr {
+		width: 220px;
+		}
+		.subtitle {
+			margin: 0 20px;
+		}	
+		h2 {
+			margin: 25px 0;
+			font-size: 1em;
+		}
+	}
+	.state-container {
+		@include span-columns(9);
+		margin-left: 50px;
+	}
+	.classes {
+		h3 {
+			text-align: center;
+		}
+		p {
+			margin: 10px 25px;
+		}
+		p.subtitle {
+			margin: 0.35rem 2.5rem;
+		}
+		.button {
+			margin: 10px 0 55px 20px;
+		}
+	}
+.single-profile {
+	margin-left: 25px;
+	.profile-img {
+		float: none;
+		@include span-columns(5)
+	}
+	.profile-content {
+		@include span-columns(9);
+		margin-left: 20px;
+		p {
+			padding: 0px;
+		}
+	}
+}
+}

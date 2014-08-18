@@ -1,16 +1,19 @@
 .opener {
   text-align: center;
-  // background: url('photo.png') no-repeat center center fixed;
-  background: url('photo.png');
+  background: url('photo.png') no-repeat center center fixed;
+  //background: url('photo.png');
   background-color: $paleblue;
   // background-repeat: no-repeat;
   // background-size: Auto 500px;
   // background-size: 100% auto;
-  -webkit-background-size: cover;
-  background-size: cover;
-  // width: 100%;
-  height: 400px;
-  h1{
+  //-webkit-background-size: cover;
+  //background-size: cover;
+  min-width: 100%;
+  //height: 500px;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  h1 {
     color: $navy;
     font-size: 3.5rem;
     font-weight: 400;
