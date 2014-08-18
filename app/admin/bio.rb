@@ -1,16 +1,16 @@
 ActiveAdmin.register Bio do
 
-
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   permit_params :bio, :user, :title, :name, :info, :admin_user_id, :image,
-                :twitter, :email, :website, :linkedin, :github
+                :twitter, :email, :website, :linkedin, :github, :location_id
 
   show do |ad|
     attributes_table do
       row :id
       row :name
+      row :location
       row :title
       row :info
       row :created_at
@@ -30,15 +30,16 @@ ActiveAdmin.register Bio do
 
   form do |f|
     f.inputs "Edit Bio" do
-      f.input :admin_user, member_label: :email
-      f.input :title
-      f.input :name
+      f.input :admin_user
+      f.input :location, member_label: :location
+      f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS']
+      f.input :name, placeholder: "Jane Doe"
+      f.input :email, placeholder: current_admin_user.email
       f.input :info
-      f.input :twitter
-      f.input :email
-      f.input :website
-      f.input :linkedin
-      f.input :github
+      f.input :website, placeholder: "http://www.your_website.com"
+      f.input :twitter, placeholder: "YourTwitterName"
+      f.input :linkedin, placeholder: "YourLinkedinName"
+      f.input :github, placeholder: "YourGitHubName"
       f.input :image do
         image_tag(ad.image.url)
       end

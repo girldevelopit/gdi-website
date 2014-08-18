@@ -22,7 +22,7 @@ $(document).ready(function(){
 			name : "usa_states",
 			cssClass : "map",
 			tooltip : {
-				cssClass : "mapTooltip" 
+				cssClass : "mapTooltip"
 				},
 			defaultArea : {
 				attrs : {
@@ -30,8 +30,8 @@ $(document).ready(function(){
 					stroke: "#9a9a9a",
 				},
 				attrsHover : {
-					fill : "#fbcfc6",
-					animDuration: 300 
+					fill : "#7a7c7c",
+					animDuration: 300
 				}
 			},
 			defaultPlot : {
@@ -47,8 +47,8 @@ $(document).ready(function(){
 			},
 		},
 
-		plots : plots,		
-		
+		plots : plots,
+
 		})
 	})
 });
