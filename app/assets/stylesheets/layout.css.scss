@@ -6,12 +6,6 @@
   max-width: 100%;
   margin: auto;
   // padding-top: 50px;
-  @media screen and (max-width 320px){
-
-  }
-  @media screen and (max-width 768px){
-  	
-  }
 }
 
 .main-container {
@@ -97,25 +91,25 @@ footer {
   }
 }
 
-.underlined-headline{
+.underlined-headline {
   text-align: center;
-  hr{
+  hr {
     width: 400px;
     border-top: 2px solid $gold;
     border-bottom: 2px solid $gold;
     margin-bottom: 30px;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
     color: $black;
     font-weight: 300;
     letter-spacing: .1rem;
   }
-  .subtitle{
+  .subtitle {
     margin-top: -20px;
-    a{
+    a {
       color: $pink;
-      &:hover{
+      &:hover {
         color: $black;
       }
     }

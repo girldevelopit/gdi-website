@@ -3,6 +3,9 @@
 	.hide {
 		display: none;
 	}
+	.main-container {
+		padding-top: 25px;
+	}
   	header {
   		height: 160px;
   		img {
@@ -40,12 +43,54 @@
 		top: 0px;
 		font-size: 1rem;
 	}
+	#headline {
+		float: none;
+		display: block;
+		width: auto;
+		margin: 25px;
+	}
 	.underlined-headline {
 		hr {
-		width: 200px;
+		width: 220px;
 		}
 		.subtitle {
-			
+			margin: 0 20px;
+		}	
+		h2 {
+			margin: 25px 0;
+			font-size: 1em;
 		}
 	}
+	.state-container {
+		@include span-columns(9);
+		margin-left: 50px;
+	}
+	.classes {
+		h3 {
+			text-align: center;
+		}
+		p {
+			margin: 10px 25px;
+		}
+		p.subtitle {
+			margin: 0.35rem 2.5rem;
+		}
+		.button {
+			margin: 10px 0 55px 20px;
+		}
+	}
+.single-profile {
+	margin-left: 25px;
+	.profile-img {
+		float: none;
+		@include span-columns(5)
+	}
+	.profile-content {
+		@include span-columns(9);
+		margin-left: 20px;
+		p {
+			padding: 0px;
+		}
+	}
+}
 }
