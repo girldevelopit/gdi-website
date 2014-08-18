@@ -105,13 +105,13 @@ locs.each do |l|
         ldr[k] = v
       end
     end
-    # unless leader["contact"] == nil
-    #   ldr.twitter = leader["contact"]["twitter"]
-    #   ldr.email = leader["contact"]["email"]
-    #   ldr.website = leader["contact"]["website"]
-    #   ldr.github = leader["contact"]["github"]
-    #   ldr.linkedin = leader["contact"]["linkedin"]
-    # end
+    unless leader["contact"] == nil
+      ldr.twitter = leader["contact"]["twitter"]
+      ldr.email = leader["contact"]["email"]
+      ldr.website = leader["contact"]["website"]
+      ldr.github = leader["contact"]["github"]
+      ldr.linkedin = leader["contact"]["linkedin"]
+    end
     ldr.save
   end
 
