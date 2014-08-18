@@ -39,15 +39,17 @@
         <% end %>
       </ul>
 
-      <p><%= link_to "- don't be shy -", about_path, :class=>"subtitle"%></p>
-      <%= link_to "{ Join Us }", "https://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+      <p class="subtitle">- don't be shy -</p>
+      <%= link_to "{ Join Us }", "http://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
+    <div class="hide">
       <h2>Sponsors</h2>
       <% @sponsors.each do |sponsor| %>
         <% if sponsor.image? %>
           <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
         <% end %>
       <% end %>
+    </div>
     </aside>
 
     <section id="content-section">
@@ -178,7 +180,7 @@
       <script type="text/template" id="meetup">
 
         <h3><a href=" <%%= event_url %>"><%%= name %></a></h3>
-        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, hh:mm a")%>
+        <p class="subtitle">[ <%%=moment(time).format("MMMM Do YYYY, h:mm a")%>
           <%% if(typeof venue !== "undefined") { %>
           <%%= venue.address_1 %>,
           <%%= venue.city %>
@@ -191,22 +193,19 @@
 
       <script type="text/javascript">
         var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
-        //console.log(meetup_url);
         $.getJSON(meetup_url).done(function (classesData){
             console.log("here are all the classes", classesData);
-
           if(classesData.length>0) {
             var classesArr = classesData.slice(0,3);
             console.log(classesArr);
             var oneClass = '';
             var classes = $('#meetup').html();
               _.each(classesArr, function (one) {
-              //console.log("Here is one class", one);
               oneClass += _.template(classes, one);
                 $(".classes").html(oneClass);
             });
           } else {
-            $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled. <a href=\"http://meetup. com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening.<  /p>")};
+            $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled. <a href=\"http://meetup. com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening.</p>")};
           });
 
       </script>
