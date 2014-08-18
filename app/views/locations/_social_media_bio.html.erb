@@ -1,0 +1,31 @@
+<ul class="media-links">
+  <% if bio.email? %>
+    <%= mail_to bio.email do %>
+      <i class="fa fa-envelope"></i>
+    <% end %>
+  <% end %>
+
+  <% if bio.website? %>
+    <%= link_to bio.website do %>
+      <i class="fa fa-globe"></i>
+    <% end %>
+  <% end %>
+
+  <% if bio.twitter? %>
+    <%= link_to "https://twitter.com/#{bio.twitter}" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  <% end %>
+
+  <% if bio.linkedin? %>
+    <%= link_to "https://www.linkedin.com/#{bio.linkedin}" do %>
+      <i class="fa fa-linkedin"></i>
+    <% end %>
+  <% end %>
+
+  <% if bio.github? %>
+    <%= link_to "https://www.github.com/#{bio.github}" do %>
+      <i class="fa fa-github-alt"></i>
+    <% end %>
+  <% end %>
+</ul>
