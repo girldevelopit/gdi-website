@@ -15,7 +15,7 @@ $gray: #7a7c7c;
 $paleblue: #e4e9e5;
 $navy: #2a4758;
 
-$mobile: new-breakpoint(max-width 320px 4);
+$mobile: new-breakpoint(max-width 420px 4);
 
 * {
   @include box-sizing(border-box);

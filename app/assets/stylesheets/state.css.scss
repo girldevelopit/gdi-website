@@ -1,10 +1,16 @@
 //layout media queries
+.show {
+	display: none;
+}
 @media screen and (max-width: 320px) {
+	.show {
+		display: block;
+	}
 	.hide {
 		display: none;
 	}
 	.main-container {
-		padding-top: 25px;
+		padding: 25px; 
 	}
   	header {
   		height: 160px;
@@ -28,6 +34,21 @@
   			}
   		}
   	}
+  	.opener {
+  		height: 200px;
+  		width: 100%; 
+  		h1 {
+  			font-size: 2.3rem;
+  			padding-top: 75px;
+  		}
+  	}
+  	.mission-statement {
+  		margin-left: 25px;
+  		text-align: left;
+  		p {
+  			font-size: .9rem;
+  		}
+  	}
   	.stats {
   		float: none;
   		img, p {
@@ -38,7 +59,7 @@
   		float: none;
   	}	
 	footer {
-		height: 150px;
+		height: 200px;
 		position: relative;
 		top: 0px;
 		font-size: 1rem;
@@ -47,7 +68,10 @@
 		float: none;
 		display: block;
 		width: auto;
-		margin: 25px;
+		margin: 45px 25px 0 25px;
+		img {
+			display: inline;
+		}
 	}
 	.underlined-headline {
 		hr {
@@ -67,27 +91,22 @@
 	}
 	.classes {
 		h3 {
-			text-align: center;
+			text-align: left;
 		}
 		p {
-			margin: 10px 25px;
-		}
-		p.subtitle {
-			margin: 0.35rem 2.5rem;
+			margin: 0;
 		}
 		.button {
 			margin: 10px 0 55px 20px;
 		}
 	}
 .single-profile {
-	margin-left: 25px;
 	.profile-img {
 		float: none;
-		@include span-columns(5)
+		//@include span-columns(5)
 	}
 	.profile-content {
-		@include span-columns(9);
-		margin-left: 20px;
+		@include span-columns(12);
 		p {
 			padding: 0px;
 		}
