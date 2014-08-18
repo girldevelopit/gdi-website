@@ -1,5 +1,11 @@
 //layout media queries
+.show {
+	display: none;
+}
 @media screen and (max-width: 320px) {
+	.show {
+		display: block;
+	}
 	.hide {
 		display: none;
 	}

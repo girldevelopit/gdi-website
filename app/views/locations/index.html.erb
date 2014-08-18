@@ -5,10 +5,9 @@
     <div class="underlined-headline">
       <h2>We're located in 31 cities!</h2>
       <hr>
-      <p class="subtitle">Don't see your hometown? <a href="">Start a new chapter!</a></p>
     </div>
 
-    <section class="state-index">
+    <section class="state-index hide">
       <% @states.each do |s| %>
         <div class="state-container">
           <div class="state"><%= image_tag(image_route(s[0])) %></div>
@@ -22,3 +21,5 @@
     </section>
   </div>
   </section>
+ 
+ <p class="subtitle">Don't see your hometown? <a href="">Start a new chapter!</a></p>
