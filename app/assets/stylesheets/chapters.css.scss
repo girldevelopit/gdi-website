@@ -72,8 +72,11 @@
 .single-profile{
   @include span-columns(8 of 8);
   @include omega();
+  margin-bottom: 2.5em;
+
   .profile-img{
     @include span-columns(3 of 8);
+    padding: 0px 15px 0 0px;
     img{
       width: 100%;
       margin-top: 19px;

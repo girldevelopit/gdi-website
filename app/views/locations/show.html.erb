@@ -108,7 +108,7 @@
 
 
       <script type="text/javascript">
-        var meetup_url = 'http://localhost:3000/meetups/<%= params[:id] %>.json';
+        var meetup_url = '/meetups/<%= params[:id] %>.json';
         $.getJSON(meetup_url).done(function (classesData){
             console.log("here are all the classes", classesData);
           if(classesData.length>0) {

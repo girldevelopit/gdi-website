@@ -1,4 +1,4 @@
-var locationsURL = "http://localhost:3000/locations.json";
+var locationsURL = "/locations.json";
 
 $(document).ready(function(){
 	var plots = [];
