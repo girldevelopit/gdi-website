@@ -31,7 +31,7 @@
       <div class="classes">
       </div>
 
-      <% if @leaders.count != 0 %>   <!-- BAD -->
+      <% if @leaders.count != 0 %>
         <div id="headline">
           <%= image_tag 'flourish.png' %>
           <h2>Chapter Leaders</h2>
@@ -51,12 +51,13 @@
               <% end %>
             </div>
 
-          <div class="profile-content">
-            <h3><%= bio.name %></h3>
-            <%= bio.info.html_safe %>
+            <div class="profile-content">
+              <h3><%= bio.name %></h3>
+              <%= bio.info.html_safe %>
 
-            <%= render partial: "social_media_bio", locals: {bio: bio} %>
+              <%= render partial: "social_media_bio", locals: {bio: bio} %>
 
+            </div>
           </div>
         <% end %>
 
@@ -79,16 +80,16 @@
               <% end %>
             </div>
 
-          <div class="profile-content">
-            <h3><%= bio.name %></h3>
-            <%= bio.info.html_safe %>
+            <div class="profile-content">
+              <h3><%= bio.name %></h3>
+              <%= bio.info.html_safe %>
 
-            <%= render partial: "social_media_bio", locals: {bio: bio} %>
+              <%= render partial: "social_media_bio", locals: {bio: bio} %>
 
             </div>
           </div>
         <% end %>
-      </div>
+
 
       <script type="text/template" id="meetup">
 
