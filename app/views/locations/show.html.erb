@@ -14,18 +14,11 @@
 
       <div class="hide">
         <h2>Sponsors</h2>
-        <div id="logos">
-        <ul>
         <% @sponsors.each do |sponsor| %>
           <% if sponsor.image? %>
-          <li>
             <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
-          </li>
           <% end %>
         <% end %>
-
-        </ul>
-      </div>
       </div>
     </aside>
 
