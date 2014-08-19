@@ -2,114 +2,80 @@
 .show {
 	display: none;
 }
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 500px) {
 	.show {
 		display: block;
 	}
+
 	.hide {
 		display: none;
 	}
-	.main-container {
-		padding: 25px; 
+
+	.opener {
+		height: 200px;
+		width: 100%;
+		h1 {
+			font-size: 2.3rem;
+			padding-top: 75px;
+		}
 	}
-  	header {
-  		height: 160px;
-  		// img {
-    	// 	height: 60px;
-    	// 	margin-top: 20px;
-    	// 	margin-left: 100px;
-   	// 		float: none;
-  		// }
-  		// nav {
-  		// 	float: none;
-  		// 	.fa {
-  		// 		position: relative;
-  		// 		clear: both;
-  		// 	}
-  		// 	a {
-  		// 	  padding: 2rem 0.5rem;
-  		// 	  &:first-child {
-  		// 	  	margin-right: 2rem;
-  		// 	  }
-  		// 	}
-  		// }
-  	}
-  	.opener {
-  		height: 200px;
-  		width: 100%; 
-  		h1 {
-  			font-size: 2.3rem;
-  			padding-top: 75px;
-  		}
-  	}
-  	.mission-statement {
-  		margin-left: 25px;
-  		text-align: left;
-  		p {
-  			font-size: .9rem;
-  		}
-  	}
-  	.stats {
-  		float: none;
-  		img, p {
-  			@include span-columns (3);
-  		}
-  	}
-  	.stats-section {
-  		float: none;
-  	}
+	.mission-statement {
+		margin-left: 25px;
+		text-align: left;
+		p {
+			font-size: .9rem;
+		}
+	}
+	.stats {
+		float: none;
+		img, p {
+			@include span-columns (3);
+		}
+	}
+	.stats-section {
+		float: none;
+	}
 	footer {
 		height: 200px;
 		position: relative;
 		top: 0px;
 		font-size: 1rem;
 	}
-	#headline {
-		float: none;
-		display: block;
-		width: auto;
-		margin: 45px 25px 0 25px;
-		img {
-			display: inline;
-		}
-	}
+
 	.underlined-headline {
 		hr {
-		width: 220px;
+		width: 80%;
 		}
 		.subtitle {
 			margin: 0 20px;
 		}
 		h2 {
-			margin: 25px 0;
-			font-size: 1em;
+			font-size: 1.2em;
 		}
 	}
-	.state-container {
-		@include span-columns(9);
-		margin-left: 50px;
-	}
-	.classes {
-		h3 {
-			text-align: left;
-		}
-		p {
-			margin: 0;
-		}
-		.button {
-			margin: 10px 0 55px 20px;
+
+	.chapter-aside{
+		.button{
+			margin-bottom: 40px;
 		}
 	}
-.single-profile {
-	.profile-img {
-		float: none;
-		//@include span-columns(5)
-	}
-	.profile-content {
-		@include span-columns(12);
-		p {
-			padding: 0px;
+
+	.single-profile {
+		margin-bottom: 0em;
+		.profile-img {
+			@include span-columns(6);
+			@include shift(3);
+			padding: 5px;
+			img{
+				margin: 20px 0;
+			}
+		}
+		.profile-content {
+			@include span-columns(12);
+			h3{
+				text-align: center;
+			}
 		}
 	}
-}
 }

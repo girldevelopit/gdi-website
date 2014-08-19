@@ -5,12 +5,13 @@
   width: 965px;
   max-width: 100%;
   margin: auto;
-  // padding-top: 50px;
+  @media screen and (max-width: 964px) {
+    padding: 0 25px;
+  }
 }
 
 .main-container {
   padding-top: 50px;
-  // margin-top: 100px;
 }
 
 header {
@@ -18,43 +19,34 @@ header {
   @media screen and (min-width: 500px) {
     height: 100px;
   }
-
   .logo {
     display: block;
     width: 129px;
     margin: 0 auto;
     padding-top: 20px;
-
     @media screen and (min-width: 500px) {
       float: left;
     }
-
     img {
       max-width: 100%;
       height: auto;
     }
   }
-
   nav{
-    margin: 10px 0 20px 0;
-
+    margin: 20px 0 20px 0;
     @media screen and (min-width: 500px) {
       float: right;
       margin: 0;
     }
-
     ul {
       text-align: center;
-
       @media screen and (min-width: 500px) {
         float: left;
       }
     }
-
     li {
       display: inline-block;
     }
-
     a {
       display: block;
       color: white;
@@ -64,13 +56,10 @@ header {
       letter-spacing: .05rem;
       padding: .5rem;
       margin-bottom: 0em;
-
       @media screen and (min-width: 500px) {
         padding: 3rem 1rem 3rem 1rem;
       }
-
       &:hover {
-
         @media screen and (min-width: 500px) {
           background-color: $black;
           color: $blush;
@@ -86,6 +75,11 @@ footer {
   height: 190px;
   background-color: $navy;
   padding: 20px 0px 0px 0px;
+  p.subtitle{
+    @media screen and (max-width: 500px) {
+      font-size: .75em;
+    }
+  }
   .navigation {
     margin-top: 25px;
     a {
