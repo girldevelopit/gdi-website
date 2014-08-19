@@ -12,6 +12,9 @@
 
 .main-container {
   padding-top: 50px;
+  @media screen and (mmax-width: 500px) {
+    padding: 0px 25px;
+  }
 }
 
 header {
@@ -46,6 +49,9 @@ header {
     }
     li {
       display: inline-block;
+    }
+    i{
+      font-size: 1.1rem;
     }
     a {
       display: block;
@@ -94,6 +100,7 @@ footer {
         color: $gold;
       }
       i {
+        font-size: 1.1rem;
         color: $gold;
         &:hover{
           color: #fff;
