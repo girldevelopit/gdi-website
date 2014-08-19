@@ -13,7 +13,10 @@
   // width: 100%;
   height: 400px;
   @media screen and (max-width: 500px) {
-    background-position: top center;
+    background-position: 50% 63%;
+    background-size: 147% auto;
+    background-color: #F8F8F6;
+
   }
   h1 {
     color: $navy;
@@ -22,6 +25,9 @@
     padding-top: 100px;
     height: auto;
     width: 100%;
+    @media screen and (max-width: 500px) {
+    display: inline-block;
+    } 
   }
     img {
       height: 80px;
