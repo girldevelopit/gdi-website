@@ -35,7 +35,7 @@ ActiveAdmin.register Bio do
       f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS']
       f.input :name, placeholder: "Jane Doe"
       f.input :email, placeholder: current_admin_user.email
-      f.input :info
+      f.input :info, placeholder: "Tell us something about yourself."
       f.input :website, placeholder: "http://www.your_website.com"
       f.input :twitter, placeholder: "YourTwitterName"
       f.input :linkedin, placeholder: "YourLinkedinName"
