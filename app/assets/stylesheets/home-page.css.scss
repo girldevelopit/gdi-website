@@ -12,7 +12,9 @@
   // background-size: cover;
   // width: 100%;
   height: 400px;
-
+  @media screen and (max-width: 500px) {
+    background-position: top center;
+  }
   h1 {
     color: $navy;
     font-size: 3.5rem;
@@ -77,31 +79,18 @@
 
 .stats-section {
   text-align: center;
-  // h2{
-  //   background-color: #fff;
-  //   color: $gold;
-  //   position: relative;
-  //   bottom: -25px;
-  // }
-  // hr{
-  //   width: 50%;
-  //   border-top: 2px solid $gold;
-  //   border-bottom: 2px solid $gold;
-  // }
   .stats {
     text-align: center;
+    @include span-columns(4);
+    @include omega(3n);
     img {
       width: 100%;
-      @include span-columns(4 of 12);
-      @include omega(3n);
       padding: 0px 50px;
       margin-top: 60px;
       margin-bottom: 25px;
     }
     p {
-      @include span-columns(4 of 12);
-      @include omega(3n);
-      padding: 0px 30px;;
+      padding: 0px 30px;
       margin-bottom: 60px;
     }
   }
