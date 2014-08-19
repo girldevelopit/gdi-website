@@ -1,7 +1,7 @@
 .opener {
   text-align: center;
   // background: url('photo3.png') no-repeat center center fixed;
-  background: url('photo3.png');
+  background: asset-url('photo3.png');
   background-color: $paleblue;
   background-attachment:fixed;
   background-repeat: no-repeat;
