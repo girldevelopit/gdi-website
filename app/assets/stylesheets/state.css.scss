@@ -35,6 +35,7 @@
 	}
 
 	.stats-section{
+		margin: 20px 0;
 		.stats{
 		@include span-columns(12);
 			img{
@@ -47,18 +48,16 @@
 	}
 
 	.press-logos {
+		height: 160px;
 		img {
 			height: 45px;
 		}
 	}
 
 	.underlined-headline {
-		padding-top: 0px;
 		hr {
-		width: 80%;
-		}
-		.subtitle {
-			margin: 0 20px;
+		width: 90%;
+		margin-bottom: 15px;
 		}
 		h2 {
 			font-size: 1.2em;
