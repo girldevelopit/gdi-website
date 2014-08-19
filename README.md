@@ -1,14 +1,14 @@
 Girl Develop It
 ===============
 
-Rebuild & update website in Rails 4.1.4 and Ruby 2.1.2. 
+Rebuild & update website in Rails 4.1.4 and Ruby 2.1.2.
 
 Docs
 ====
 
-Meetup API key is set as an environment variable. 
+Meetup API key is set as an environment variable.
 
-To run locally: 
+To run locally:
 ```
 $ export MEETUP_API_KEY=[new key]
 ```
