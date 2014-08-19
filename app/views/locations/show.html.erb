@@ -12,14 +12,18 @@
       <p class="subtitle">- don't be shy -</p>
       <%= link_to "{ Join Us }", "http://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
+    <!-- <%# if @location.sponsors.count != 0 %>
       <div class="hide">
+        <div class="sponsors">
         <h2>Sponsors</h2>
-        <% @sponsors.each do |sponsor| %>
-          <% if sponsor.image? %>
-            <p><%= link_to image_tag(sponsor.image.url), sponsor.url %></p>
-          <% end %>
-        <% end %>
+        <%# @sponsors.each do |sponsor| %>
+          <%# if sponsor.image? %>
+            <p><%#= link_to image_tag(sponsor.image.url), sponsor.url %></p>
+          <%# end %>
+        <%# end %>
+        </div>
       </div>
+    <%# end %> -->
     </aside>
 
     <section id="content-section">
