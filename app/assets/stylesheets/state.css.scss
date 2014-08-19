@@ -3,15 +3,20 @@
 	display: none;
 }
 
+.hide-chapters {
+	display: none;
+}
+
 @media screen and (max-width: 500px) {
 	.show {
 		display: block;
 	}
-
+	.show-inline {
+		display: inline;
+	}
 	.hide {
 		display: none;
 	}
-
 	.opener {
 		height: 200px;
 		width: 100%;
@@ -21,29 +26,34 @@
 		}
 	}
 	.mission-statement {
-		margin-left: 25px;
+		@include span-columns(12);
+		@include shift(0);
 		text-align: left;
 		p {
 			font-size: .9rem;
 		}
 	}
-	.stats {
-		float: none;
-		img, p {
-			@include span-columns (3);
+
+	.stats-section{
+		.stats{
+		@include span-columns(12);
+			img{
+				margin-top: 20px;
+			}
+			p{
+				margin-bottom: 20px;
+			}
+  	}
+	}
+
+	.press-logos {
+		img {
+			height: 45px;
 		}
-	}
-	.stats-section {
-		float: none;
-	}
-	footer {
-		height: 200px;
-		position: relative;
-		top: 0px;
-		font-size: 1rem;
 	}
 
 	.underlined-headline {
+		padding-top: 0px;
 		hr {
 		width: 80%;
 		}

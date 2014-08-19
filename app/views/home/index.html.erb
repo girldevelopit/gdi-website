@@ -1,5 +1,5 @@
   <div class="opener">
-    <%#= image_tag("photo2.png") %> 
+    <%#= image_tag("photo2.png") %>
     <h1><span class="animated fadeInLeftBig">Don't be shy</span> <%= image_tag("flourish-med.png" , class: "hide") %> <span class="animated fadeInRightBig">Develop it</span></h1>
   </div>
 
@@ -19,7 +19,8 @@
     	<div class="underlined-headline">
         <h2>We are now in <%= @location.count %> cities!</h2>
         <hr>
-        <p class="subtitle">Don't see your hometown? <a href="">Start a new chapter!</a></p>
+        <p class="subtitle hide">Don't see your hometown? <a href="">Start a new chapter!</a></p>
+        <%=link_to "Find GDI in your hometown!", locations_path, :class=>"show-inline"%>
       </div>
         <div class="us_map hide">
           <div class="map"></div>
@@ -31,11 +32,15 @@
     <div class="container">
       <div class="stats">
         <%= image_tag("stat-25.png") %>
-        <%= image_tag("stat-58.png") %>
-        <%= image_tag("stat-34.png") %>
         <p>Women hold only 25% of the 3,816,000 computing related occupations in the US.</p>
-        <p>Woman obtain 58% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. Compared to 1984, when women earned 37%)</p>
-        <p>Tech companies with more women in management have a 34% higher return of investment. Diverse tech and startup teams are critical for innovation</p>
+      </div>
+      <div class="stats">
+        <%= image_tag("stat-58.png") %>
+        <p>Woman obtain 58% of bachelor’s degrees in the U.S, but less than 18% of those degrees are in computer science. (Compared to 1984, when women earned 37%)</p>
+      </div>
+      <div class="stats">
+        <%= image_tag("stat-34.png") %>
+        <p>Tech companies with more women in management have a 34% higher return of investment. Diverse tech and startup teams are critical for innovation.</p>
       </div>
     </div>
   </section>

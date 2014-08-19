@@ -22,8 +22,8 @@ ActiveAdmin.register Sponsor do
   form do |f|
     f.inputs "Edit Sponsor" do
       f.input :location, member_label: :location
-      f.input :name
-      f.input :url
+      f.input :name, placeholder: "The Iron Yard"
+      f.input :url, placeholder: "http://www.theironyard.com"
       f.input :image
     end
     f.actions
