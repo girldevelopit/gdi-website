@@ -1,0 +1,3791 @@
+@import url(reset.css);
+@import url(reset.css);
+@import url(animate.css);
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700");
+/* line 2, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*!
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/assets/fontawesome-webfont.eot");
+  src: url("/assets/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff") format("woff"), url("/assets/fontawesome-webfont.ttf") format("truetype"), url("/assets/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 19, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 29, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 34, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 37, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 40, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 43, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 46, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* line 50, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+/* line 55, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 58, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+/* line 65, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+/* line 68, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+/* line 73, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.pull-right {
+  float: right;
+}
+
+/* line 76, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.pull-left {
+  float: left;
+}
+
+/* line 79, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 82, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 85, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 92, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 95, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 100, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 103, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 108, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 111, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 116, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 120, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/* line 125, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 133, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 141, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 149, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 157, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 165, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 174, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 180, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 183, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 186, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-inverse {
+  color: #ffffff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 191, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 194, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 197, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 200, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 203, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 206, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 209, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 212, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 215, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 218, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 221, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 224, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 227, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 230, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 233, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 236, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 239, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 242, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 246, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+
+/* line 249, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 252, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 255, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 258, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 261, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 264, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 267, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 270, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 273, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 276, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 280, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 283, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 286, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 289, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 292, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 295, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 298, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 301, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 304, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 307, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 310, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 313, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 316, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 319, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 322, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 325, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 328, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 331, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 334, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 337, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 340, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 343, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 346, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 349, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 352, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 355, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 358, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 362, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 365, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 368, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 373, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 376, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 379, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 382, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 385, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 389, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 392, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 395, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 398, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 401, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 404, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 407, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 410, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 413, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 416, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 419, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 422, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 425, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 428, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 431, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 434, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 437, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 440, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 443, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 446, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 449, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 452, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 455, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 458, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 461, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 464, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 467, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 470, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 473, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 476, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 480, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+
+/* line 483, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 486, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 489, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 492, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 495, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 498, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 501, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 504, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 507, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 510, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 513, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 517, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 520, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 523, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 526, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 529, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 532, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 535, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 538, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 541, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 544, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 547, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 550, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 553, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 556, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 559, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 562, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 565, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 568, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 571, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 575, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 578, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 581, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 584, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 587, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 590, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 593, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 596, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 599, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 602, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 605, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 608, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 611, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 614, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 617, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 620, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 623, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 626, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 629, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 632, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 635, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 638, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 641, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 644, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 647, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 650, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 653, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 656, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 659, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 662, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 665, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 668, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 671, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 674, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 677, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 680, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 683, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 686, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 689, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 692, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 695, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 698, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 701, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 705, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 709, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 712, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 715, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 719, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 723, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 726, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 730, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 733, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 738, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 741, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 744, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 747, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 750, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 753, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 756, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 759, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 762, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 765, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 768, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 771, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 774, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 777, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 780, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 783, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 786, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 789, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 793, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 797, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\f0dd";
+}
+
+/* line 801, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de";
+}
+
+/* line 804, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 807, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 811, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 815, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 819, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 822, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 825, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 829, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 832, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 835, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 839, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 842, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 845, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 848, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 851, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 854, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 857, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 860, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 863, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 866, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 869, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 872, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 875, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 878, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 881, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 884, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 887, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 890, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 893, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 896, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 899, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 902, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 905, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 908, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 911, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 914, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 917, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 920, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 923, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 926, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 929, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 933, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 936, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 939, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 942, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 945, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 948, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 952, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+
+/* line 955, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 958, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 961, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 964, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 967, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 970, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 973, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 976, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 979, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 982, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 985, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 988, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 992, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 997, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 1000, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 1003, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 1006, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 1010, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 1013, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 1016, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 1019, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 1022, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 1025, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 1028, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 1031, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 1034, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 1037, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 1040, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 1043, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 1046, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 1049, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 1052, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 1055, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 1058, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 1061, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 1064, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 1067, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 1070, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 1073, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 1076, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 1079, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 1082, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 1085, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 1088, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 1091, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 1094, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 1097, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 1100, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 1103, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 1106, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 1109, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 1112, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 1115, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 1118, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 1121, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 1125, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 1129, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 1133, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 1137, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+
+/* line 1140, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 1144, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+
+/* line 1148, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+
+/* line 1154, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 1159, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+
+/* line 1163, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+
+/* line 1167, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 1170, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 1173, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 1176, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 1179, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 1182, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 1185, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 1188, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 1191, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 1194, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 1197, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 1200, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 1203, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 1206, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 1209, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 1212, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 1215, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 1218, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 1221, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 1224, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 1227, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 1230, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 1233, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 1236, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 1239, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 1242, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 1245, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 1248, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 1251, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 1254, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 1257, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 1260, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 1263, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 1266, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 1269, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 1272, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 1275, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 1278, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 1281, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 1284, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 1287, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 1290, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 1293, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 1296, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 1299, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 1302, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 1305, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 1308, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 1311, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 1314, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 1317, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 1321, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 1324, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 1327, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 1330, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 1334, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+
+/* line 1337, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/* line 1340, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+
+/* line 1343, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-slack:before {
+  content: "\f198";
+}
+
+/* line 1346, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-envelope-square:before {
+  content: "\f199";
+}
+
+/* line 1349, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wordpress:before {
+  content: "\f19a";
+}
+
+/* line 1352, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-openid:before {
+  content: "\f19b";
+}
+
+/* line 1357, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c";
+}
+
+/* line 1361, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+
+/* line 1364, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-yahoo:before {
+  content: "\f19e";
+}
+
+/* line 1367, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-google:before {
+  content: "\f1a0";
+}
+
+/* line 1370, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-reddit:before {
+  content: "\f1a1";
+}
+
+/* line 1373, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+
+/* line 1376, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+
+/* line 1379, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+
+/* line 1382, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-delicious:before {
+  content: "\f1a5";
+}
+
+/* line 1385, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-digg:before {
+  content: "\f1a6";
+}
+
+/* line 1389, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pied-piper-square:before,
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+
+/* line 1392, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+
+/* line 1395, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-drupal:before {
+  content: "\f1a9";
+}
+
+/* line 1398, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-joomla:before {
+  content: "\f1aa";
+}
+
+/* line 1401, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-language:before {
+  content: "\f1ab";
+}
+
+/* line 1404, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fax:before {
+  content: "\f1ac";
+}
+
+/* line 1407, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-building:before {
+  content: "\f1ad";
+}
+
+/* line 1410, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-child:before {
+  content: "\f1ae";
+}
+
+/* line 1413, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paw:before {
+  content: "\f1b0";
+}
+
+/* line 1416, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spoon:before {
+  content: "\f1b1";
+}
+
+/* line 1419, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cube:before {
+  content: "\f1b2";
+}
+
+/* line 1422, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cubes:before {
+  content: "\f1b3";
+}
+
+/* line 1425, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-behance:before {
+  content: "\f1b4";
+}
+
+/* line 1428, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+
+/* line 1431, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-steam:before {
+  content: "\f1b6";
+}
+
+/* line 1434, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+
+/* line 1437, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-recycle:before {
+  content: "\f1b8";
+}
+
+/* line 1441, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9";
+}
+
+/* line 1445, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba";
+}
+
+/* line 1448, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tree:before {
+  content: "\f1bb";
+}
+
+/* line 1451, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spotify:before {
+  content: "\f1bc";
+}
+
+/* line 1454, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+
+/* line 1457, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+
+/* line 1460, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-database:before {
+  content: "\f1c0";
+}
+
+/* line 1463, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+
+/* line 1466, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+
+/* line 1469, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+
+/* line 1472, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+
+/* line 1477, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5";
+}
+
+/* line 1481, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6";
+}
+
+/* line 1485, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7";
+}
+
+/* line 1489, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8";
+}
+
+/* line 1492, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+
+/* line 1495, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-vine:before {
+  content: "\f1ca";
+}
+
+/* line 1498, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-codepen:before {
+  content: "\f1cb";
+}
+
+/* line 1501, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+
+/* line 1507, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-life-bouy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd";
+}
+
+/* line 1510, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+
+/* line 1514, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0";
+}
+
+/* line 1518, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1";
+}
+
+/* line 1521, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-git-square:before {
+  content: "\f1d2";
+}
+
+/* line 1524, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-git:before {
+  content: "\f1d3";
+}
+
+/* line 1527, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+
+/* line 1530, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+
+/* line 1533, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-qq:before {
+  content: "\f1d6";
+}
+
+/* line 1537, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7";
+}
+
+/* line 1541, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+/* line 1545, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+
+/* line 1548, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-history:before {
+  content: "\f1da";
+}
+
+/* line 1551, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle-thin:before {
+  content: "\f1db";
+}
+
+/* line 1554, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-header:before {
+  content: "\f1dc";
+}
+
+/* line 1557, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+
+/* line 1560, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sliders:before {
+  content: "\f1de";
+}
+
+/* line 1563, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+
+/* line 1566, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+
+/* line 1569, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bomb:before {
+  content: "\f1e2";
+}
+
+/* line 20, /Users/ruthan/gdi-main-site/app/assets/stylesheets/base.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 24, /Users/ruthan/gdi-main-site/app/assets/stylesheets/base.css.scss */
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 30, /Users/ruthan/gdi-main-site/app/assets/stylesheets/base.css.scss */
+hr {
+  border: 0;
+  border-top: 2px solid #f95a61;
+  border-bottom: 2px solid #f95a61;
+  background: transparent;
+  height: 6px;
+}
+
+/* line 6, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+/* line 12, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+h1 {
+  font-size: 1.2rem;
+  letter-spacing: .14rem;
+}
+
+/* line 18, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+h2 {
+  font-size: 1rem;
+  letter-spacing: .14rem;
+  margin: auto;
+  padding: .5rem;
+  line-height: 1.3rem;
+}
+/* line 24, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+h2 a {
+  color: #282828;
+}
+
+/* line 29, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+h3 {
+  font-size: .95rem;
+  letter-spacing: .1rem;
+  margin: auto;
+  padding: .1rem;
+  line-height: 1.3rem;
+}
+/* line 35, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+h3 a {
+  color: #282828;
+}
+
+/* line 40, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+#headline h2, .accordion ul h2, .accordion li h2, .chapter-aside h2, .single-profile .profile-content h3, .profile-left h3, .profile-right h3 {
+  border-bottom: 1px dashed #f95a61;
+  padding-bottom: .2rem;
+}
+
+/* line 45, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+p {
+  font-size: .8rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+  color: #7a7c7c;
+  line-weight: .1rem;
+  line-height: 1.3rem;
+}
+/* line 52, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+p a {
+  font-style: italic;
+  color: #d8ae64;
+}
+/* line 55, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+p a:hover {
+  color: #f95a61;
+}
+
+/* line 61, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 65, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+.large {
+  font-size: 1rem;
+  line-height: 1.65rem;
+}
+
+/* line 70, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+.subtitle {
+  font-weight: 400;
+  color: #f95a61;
+  font-style: italic;
+  font-weight: 400;
+  font-size: .85rem;
+  text-transform: none;
+  letter-spacing: .06rem;
+  margin: .35rem 0rem;
+}
+
+/* line 81, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .14rem;
+  background-color: #d8ae64;
+  padding: .5rem;
+}
+/* line 90, /Users/ruthan/gdi-main-site/app/assets/stylesheets/typography.css.scss */
+.button:hover {
+  background-color: #282828;
+  color: #fbcfc6;
+}
+
+/* line 3, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 965px;
+  max-width: 100%;
+  margin: auto;
+}
+/* line 15, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 964px) {
+  /* line 3, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  .container {
+    padding: 0 25px;
+  }
+}
+
+/* line 13, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.main-container {
+  padding-top: 50px;
+}
+@media screen and (mmax-width: 500px) {
+  /* line 13, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  .main-container {
+    padding: 0px 25px;
+  }
+}
+
+/* line 20, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header {
+  background-color: #f95a61;
+}
+@media screen and (min-width: 500px) {
+  /* line 20, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  header {
+    height: 100px;
+  }
+}
+/* line 25, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header .logo {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+@media screen and (min-width: 500px) {
+  /* line 25, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  header .logo {
+    float: left;
+  }
+}
+/* line 33, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header .logo img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 38, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header nav {
+  margin: 20px 0 20px 0;
+}
+@media screen and (min-width: 500px) {
+  /* line 38, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  header nav {
+    float: right;
+    margin: 0;
+  }
+}
+/* line 44, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header nav ul {
+  text-align: center;
+}
+@media screen and (min-width: 500px) {
+  /* line 44, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  header nav ul {
+    float: left;
+  }
+}
+/* line 50, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header nav li {
+  display: inline-block;
+}
+/* line 53, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header nav i {
+  font-size: 1.1rem;
+}
+/* line 56, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+header nav a {
+  display: block;
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  padding: .5rem;
+  margin-bottom: 0em;
+}
+@media screen and (min-width: 500px) {
+  /* line 56, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  header nav a {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  /* line 68, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  header nav a:hover {
+    background-color: #282828;
+    color: #fbcfc6;
+    box-shadow: 0.025rem 0.025rem 0.5rem #282828;
+  }
+}
+
+/* line 79, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer {
+  text-align: center;
+  height: 190px;
+  background-color: #2a4758;
+  padding: 20px 0px 0px 0px;
+}
+@media screen and (max-width: 500px) {
+  /* line 84, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+  footer p.subtitle {
+    font-size: .75em;
+  }
+}
+/* line 89, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer .navigation {
+  margin-top: 25px;
+}
+/* line 91, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer .navigation a {
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  padding: 0 1rem;
+  margin-bottom: 0em;
+}
+/* line 99, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer .navigation a:hover {
+  color: #d8ae64;
+}
+/* line 102, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer .navigation a i {
+  font-size: 1.1rem;
+  color: #d8ae64;
+}
+/* line 105, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer .navigation a i:hover {
+  color: #fff;
+}
+/* line 111, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+footer .subtitle {
+  color: #e4e9e5;
+  font-weight: 300;
+  margin-bottom: -1px;
+}
+
+/* line 118, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+#headline {
+  text-align: center;
+}
+/* line 120, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+#headline img {
+  height: 35px;
+  display: block;
+  margin: auto;
+}
+/* line 125, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+#headline h2 {
+  font-weight: 300;
+  color: #d8ae64;
+  padding: 0px 5px 6px 5px;
+  display: inline-block;
+  margin: .5rem auto 3rem auto;
+}
+
+/* line 136, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.underlined-headline {
+  text-align: center;
+}
+/* line 138, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.underlined-headline hr {
+  width: 400px;
+  border-top: 2px solid #d8ae64;
+  border-bottom: 2px solid #d8ae64;
+  margin-bottom: 30px;
+}
+/* line 144, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.underlined-headline h2 {
+  font-size: 1.5rem;
+  color: #282828;
+  font-weight: 300;
+  letter-spacing: .1rem;
+}
+/* line 150, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.underlined-headline .subtitle {
+  margin-top: -20px;
+}
+/* line 152, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.underlined-headline .subtitle a {
+  color: #f95a61;
+}
+/* line 154, /Users/ruthan/gdi-main-site/app/assets/stylesheets/layout.css.scss */
+.underlined-headline .subtitle a:hover {
+  color: #282828;
+}
+
+/* line 4, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.mapTooltip {
+  background-color: #f95a61;
+  position: fixed;
+  font-family: "Roboto";
+  padding: 6px;
+  font-size: .85em;
+  color: #fff;
+  letter-spacing: .06rem;
+  font-weight: 300;
+}
+
+/* line 15, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.media-links {
+  padding: 0px;
+  margin: 1em -.45em 1.5em -.45em;
+}
+/* line 18, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.media-links li {
+  display: inline;
+}
+/* line 21, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.media-links a {
+  display: inline-block;
+  font-size: .8em;
+  height: 25px;
+  width: 25px;
+  color: #f95a61;
+  border-radius: 50%;
+  margin: 2px;
+  padding-top: 6px;
+  text-align: center;
+}
+/* line 31, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.media-links a:hover {
+  background: #d8ae64;
+  color: #fff;
+}
+/* line 37, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.media-links.media-links-rounded a {
+  font-size: .8em;
+  color: white;
+  background-color: #d8ae64;
+}
+/* line 41, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.media-links.media-links-rounded a:hover {
+  background-color: #282828;
+  color: #fbcfc6;
+}
+
+/* line 49, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.accordion {
+  margin: 50px;
+  margin-top: 0;
+  text-align: center;
+}
+/* line 53, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.accordion ul, .accordion li {
+  padding: 10px;
+}
+/* line 63, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.accordion li {
+  border-top: 0;
+  padding: 0 0 0 10px;
+  font-size: 1rem;
+}
+/* line 68, /Users/ruthan/gdi-main-site/app/assets/stylesheets/modules.css.scss */
+.accordion li:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+/* line 1, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside {
+  text-align: center;
+}
+@media screen and (min-width: 500px) {
+  /* line 1, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+  .chapter-aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .chapter-aside:last-child {
+    margin-right: 0;
+  }
+}
+/* line 6, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside .state-container-aside {
+  padding-bottom: 14px;
+}
+/* line 8, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside .state-container-aside img {
+  width: 100%;
+  padding: 0em 2em;
+}
+/* line 13, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside hr {
+  width: 60%;
+  margin-bottom: 3px;
+  margin-top: -5px;
+}
+/* line 18, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside h1 {
+  margin-top: 15px;
+}
+/* line 21, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside h2 {
+  width: 115px;
+  margin-top: 3em;
+}
+/* line 26, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.chapter-aside .subtitle {
+  margin-bottom: 5px;
+  margin-top: 30px;
+  display: block;
+}
+
+/* line 33, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+#content-section {
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 500px) {
+  /* line 33, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+  #content-section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  #content-section:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 40, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+#headline {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  margin-right: 0;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+#headline:last-child {
+  margin-right: 0;
+}
+
+/* line 45, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.classes {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.classes:last-child {
+  margin-right: 0;
+}
+/* line 49, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.classes .read-more {
+  color: #d8ae64;
+  font-style: italic;
+}
+/* line 52, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.classes .read-more:hover {
+  color: #f95a61;
+}
+/* line 56, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.classes .button {
+  margin: 10px 0 55px 0;
+  background-color: #e4e9e5;
+  color: #f95a61;
+}
+/* line 60, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.classes .button:hover {
+  background-color: #f95a61;
+  color: white;
+}
+/* line 65, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.classes .uhOh {
+  text-align: center;
+}
+
+/* line 70, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.single-profile {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 2.5em;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.single-profile:last-child {
+  margin-right: 0;
+}
+/* line 74, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.single-profile .profile-img {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 35.26334%;
+  padding: 0px 15px 0 0px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.single-profile .profile-img:last-child {
+  margin-right: 0;
+}
+/* line 77, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.single-profile .profile-img img {
+  width: 100%;
+  margin-top: 25px;
+  box-shadow: .025rem .025rem .5rem #bdbec0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* line 85, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.single-profile .profile-content {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 61.158%;
+  margin-right: 0;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.single-profile .profile-content:last-child {
+  margin-right: 0;
+}
+/* line 91, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.single-profile .profile-content ul {
+  margin-top: -10px;
+}
+/* line 94, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.single-profile .profile-content p {
+  padding: 10px 0px;
+}
+
+/* line 102, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-index {
+  padding-top: 50px;
+}
+
+/* line 105, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  margin-bottom: 3em;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.state-container:last-child {
+  margin-right: 0;
+}
+/* line 52, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.state-container:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 57, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.state-container:nth-child(3n+1) {
+  clear: left;
+}
+/* line 110, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container h2 {
+  margin: 10px 0;
+}
+/* line 113, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container hr {
+  width: 55%;
+}
+/* line 116, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container img {
+  width: 100%;
+  padding: 0em 4em;
+}
+/* line 120, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container h3 {
+  text-transform: none;
+  letter-spacing: .05rem;
+  font-weight: 300;
+}
+/* line 124, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container h3 a {
+  color: #7a7c7c;
+}
+/* line 126, /Users/ruthan/gdi-main-site/app/assets/stylesheets/chapters.css.scss */
+.state-container h3 a:hover {
+  color: #f95a61;
+}
+
+/* line 1, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.opener {
+  text-align: center;
+  background: url("photo3.png");
+  background-color: #e4e9e5;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 400px;
+}
+@media screen and (max-width: 500px) {
+  /* line 1, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+  .opener {
+    background-position: top center;
+  }
+}
+/* line 18, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.opener h1 {
+  color: #2a4758;
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-top: 100px;
+  height: auto;
+  width: 100%;
+}
+/* line 26, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.opener img {
+  height: 80px;
+  margin-bottom: -8px;
+}
+
+/* line 31, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.fadeInRightBig {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  -o-animation-duration: .5s;
+}
+
+/* line 41, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.fadeInLeftBig {
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  -o-animation-duration: .5s;
+}
+
+/* line 48, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.mission-statement {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  text-align: center;
+  position: relative;
+  padding: 0px 0px 50px 0px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.mission-statement:last-child {
+  margin-right: 0;
+}
+/* line 54, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.mission-statement h2 {
+  margin-top: 60px;
+}
+/* line 57, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.mission-statement hr {
+  width: 250px;
+}
+/* line 60, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.mission-statement p {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+/* line 64, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.mission-statement a.subtitle {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* line 70, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.map {
+  background-color: #e4e9e5;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* line 75, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.map h2 {
+  padding-top: 60px;
+}
+
+/* line 80, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.stats-section {
+  text-align: center;
+}
+/* line 82, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.stats-section .stats {
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.stats-section .stats:last-child {
+  margin-right: 0;
+}
+/* line 52, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.stats-section .stats:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 57, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.stats-section .stats:nth-child(3n+1) {
+  clear: left;
+}
+/* line 86, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.stats-section .stats img {
+  width: 100%;
+  padding: 0px 50px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+/* line 92, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.stats-section .stats p {
+  padding: 0px 30px;
+  margin-bottom: 60px;
+}
+
+/* line 99, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.press-logos {
+  height: 180px;
+  background-color: #282828;
+  text-align: center;
+  padding: 30px 0px;
+}
+/* line 104, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.press-logos img {
+  height: 60px;
+}
+/* line 107, /Users/ruthan/gdi-main-site/app/assets/stylesheets/home-page.css.scss */
+.press-logos h3 {
+  color: #d8ae64;
+  margin-bottom: 20px;
+}
+
+/* line 1, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.mission {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.mission:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 1, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .mission {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .mission:last-child {
+    margin-right: 0;
+  }
+}
+/* line 10, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.mission p {
+  color: #282828;
+}
+
+/* line 15, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.vision {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-left: 8.5298%;
+  text-align: right;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.vision:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 15, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .vision {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 40px 0;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .vision:last-child {
+    margin-right: 0;
+  }
+}
+/* line 24, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.vision .subtitle {
+  padding: 0 .2rem .5rem .2rem;
+}
+
+/* line 30, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.values {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-right: 0;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.values:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 30, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .values {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .values:last-child {
+    margin-right: 0;
+  }
+}
+/* line 36, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.values .subtitle {
+  padding: 0 .2rem .5rem .2rem;
+}
+
+/* line 41, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.support {
+  text-align: center;
+  height: 100%;
+  margin: 60px 0;
+  padding: 60px 0;
+  background-image: -webkit-radial-gradient( white, #e4e9e5);
+  background-image: radial-gradient(   white, #e4e9e5);
+}
+/* line 47, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.support p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  color: #282828;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.support p:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 47, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .support p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .support p:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 82, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 80px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding-right: 12px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-left:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 82, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .profile-left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .profile-left:last-child {
+    margin-right: 0;
+  }
+}
+/* line 64, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-left img {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 47.58542%;
+  margin-left: 26.20729%;
+  box-shadow: .025rem .025rem .5rem #bdbec0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-left img:last-child {
+  margin-right: 0;
+}
+/* line 71, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-left h3 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%;
+  text-align: center;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-left h3:last-child {
+  margin-right: 0;
+}
+/* line 76, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-left p {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%;
+  margin-top: 5px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-left p:last-child {
+  margin-right: 0;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-left:last-child {
+  margin-right: 0;
+}
+
+/* line 88, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 80px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+  padding-left: 12px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-right:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 88, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .profile-right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .profile-right:last-child {
+    margin-right: 0;
+  }
+}
+/* line 64, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-right img {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 47.58542%;
+  margin-left: 26.20729%;
+  box-shadow: .025rem .025rem .5rem #bdbec0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-right img:last-child {
+  margin-right: 0;
+}
+/* line 71, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-right h3 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%;
+  text-align: center;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-right h3:last-child {
+  margin-right: 0;
+}
+/* line 76, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.profile-right p {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%;
+  margin-top: 5px;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-right p:last-child {
+  margin-right: 0;
+}
+/* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.profile-right:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 88, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+  .profile-right {
+    padding: 0;
+  }
+}
+
+/* line 98, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.code {
+  padding: 60px 0;
+  background-image: -webkit-radial-gradient( white, #e4e9e5);
+  background-image: radial-gradient(   white, #e4e9e5);
+}
+/* line 101, /Users/ruthan/gdi-main-site/app/assets/stylesheets/about.css.scss */
+.code p {
+  margin-top: 10px;
+  color: #282828;
+}
+
+/* line 2, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+.show {
+  display: none;
+}
+
+/* line 6, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+.hide-chapters {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  /* line 11, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .show {
+    display: block;
+  }
+
+  /* line 14, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .show-inline {
+    display: inline;
+  }
+
+  /* line 17, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .hide {
+    display: none;
+  }
+
+  /* line 20, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .opener {
+    height: 200px;
+    width: 100%;
+  }
+  /* line 23, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .opener h1 {
+    font-size: 2.3rem;
+    padding-top: 75px;
+  }
+
+  /* line 28, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .mission-statement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+    text-align: left;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .mission-statement:last-child {
+    margin-right: 0;
+  }
+  /* line 32, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .mission-statement p {
+    font-size: .9rem;
+  }
+
+  /* line 37, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .map h2 {
+    padding-top: 30px;
+  }
+
+  /* line 42, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .stats-section {
+    margin: 20px 0;
+  }
+  /* line 44, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .stats-section .stats {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .stats-section .stats:last-child {
+    margin-right: 0;
+  }
+  /* line 46, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .stats-section .stats img {
+    margin-top: 20px;
+  }
+  /* line 49, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .stats-section .stats p {
+    margin-bottom: 20px;
+  }
+
+  /* line 55, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .press-logos {
+    height: 160px;
+  }
+  /* line 57, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .press-logos img {
+    height: 45px;
+  }
+
+  /* line 63, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .underlined-headline hr {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  /* line 67, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .underlined-headline h2 {
+    font-size: 1.2em;
+  }
+
+  /* line 73, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .chapter-aside .state-container-aside {
+    margin-top: -20px;
+  }
+  /* line 76, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .chapter-aside .button {
+    margin-bottom: 50px;
+  }
+
+  /* line 81, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .single-profile {
+    margin-bottom: 0em;
+  }
+  /* line 83, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .single-profile .profile-img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    padding: 5px;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .single-profile .profile-img:last-child {
+    margin-right: 0;
+  }
+  /* line 87, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .single-profile .profile-img img {
+    margin: 20px 0;
+  }
+  /* line 91, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .single-profile .profile-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, /Users/ruthan/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .single-profile .profile-content:last-child {
+    margin-right: 0;
+  }
+  /* line 93, /Users/ruthan/gdi-main-site/app/assets/stylesheets/state.css.scss */
+  .single-profile .profile-content h3 {
+    text-align: center;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ *= require base
+ *= require layout
+ *= require modules
+ *= require state
+ *= require reset
+ *= require animate
+ */
