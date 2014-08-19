@@ -2,10 +2,10 @@
   <section class="main-container">
   <div class="container">
 
-    <div class="underlined-headline">
+    <div class="underlined-headline hide">
       <h2>We're located in 31 cities!</h2>
       <hr>
-       <p class="subtitle hide">Don't see your hometown? <a href="">Start a new chapter!</a></p>
+      <p class="subtitle hide">Don't see your hometown? <a href="">Start a new chapter!</a></p>
     </div>
 
     <section class="state-index hide">
@@ -20,22 +20,20 @@
         </div>
     <% end %>
     </section>
+
+    <section id="state-list">
+      <div class="accordion show">
+        <% @states.each do |s| %>
+          <section class="hidden">
+            <h2><%= s[0] %></h2>
+            <ul>
+              <% s[1].each do |l| %>
+                <li><h3><%= link_to l, location_path(l.parameterize) %><h3></li>
+              <% end %>
+            </ul>
+          </section>
+        <% end %>
+      </div>
+    </section>
   </div>
   </section>
-
-  <section id="state-list">
-    <div class="accordion">
-      <% @states.each do |s| %>
-        <section class="hidden">
-          <h2><%= s[0] %></h2>
-          <ul>
-            <% s[1].each do |l| %>
-
-              <li><%= link_to l, location_path(l.parameterize) %></li>
-            <% end %>
-          </ul>
-        </section>
-      <% end %>
-    </div>
-  </section>
-

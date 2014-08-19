@@ -2,7 +2,9 @@
 .show {
 	display: none;
 }
-
+.show-inline {
+	display: none;
+}
 .hide-chapters {
 	display: none;
 }
@@ -35,7 +37,7 @@
 	}
 	.map{
 		h2{
-			padding-top: 30px; 
+			padding-top: 30px;
 		}
 	}
 
