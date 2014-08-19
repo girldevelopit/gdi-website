@@ -3,6 +3,10 @@
   @include shift(1);
   text-align: center;
   margin-bottom: 50px;
+  @media screen and (max-width: 500px){
+    @include span-columns(12);
+    @include shift(0);
+  }
   p{
     color: $black;
   }
@@ -12,14 +16,23 @@
   @include span-columns(5);
   @include shift(1);
   text-align: right;
+  @media screen and (max-width: 500px){
+    @include span-columns(12);
+    text-align: left;
+    margin: 0 0 40px 0;
+  }
   .subtitle{
     padding: 0 .2rem .5rem .2rem;
   }
+
 }
 
 .values{
   @include span-columns(5);
   @include omega();
+  @media screen and (max-width: 500px){
+    @include span-columns(12)
+  }
   .subtitle{
     padding: 0 .2rem .5rem .2rem;
   }
@@ -27,20 +40,27 @@
 
 .support{
   text-align: center;
-  height: 300px;
+  height: 100%;
   margin: 60px 0;
   padding: 60px 0;
-  @include background-image( radial-gradient(#fff, #e4e9e5) );
+  @include background-image( radial-gradient(#fff, #e4e9e5));
   p{
     @include span-columns(10);
     @include shift(1);
     color: $black;
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
   }
 }
 
 @mixin profile{
   @include span-columns(6);
   margin-bottom: 80px;
+  @media screen and (max-width: 500px){
+    @include span-columns(12);
+  }
   img{
     @include span-columns(3 of 6);
     @include shift (1.5);
@@ -70,12 +90,13 @@
   @include span-columns(6);
   @include omega();
   padding-left: 12px;
-
+  @media screen and (max-width: 500px){
+    padding: 0;
+  }
 }
 
 .code{
   padding: 60px 0;
-  // text-align: center;
   @include background-image( radial-gradient(#fff, #e4e9e5) );
   p{
     margin-top: 10px;

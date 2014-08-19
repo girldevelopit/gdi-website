@@ -1,6 +1,6 @@
 //MODULES: styles for reusable page components
 
-//Map
+
 .mapTooltip {
 	background-color: #f95a61;
   position: fixed;
@@ -23,7 +23,7 @@
     font-size: .8em;
     height: 25px;
     width: 25px;
-    color: $black;
+    color: $pink;
     border-radius: 50%;
     margin: 2px;
     padding-top: 6px;
@@ -35,6 +35,7 @@
   }
   &.media-links-rounded{
     a{
+      font-size: .8em;
       color: white;
       background-color: $gold;
       &:hover{
@@ -46,14 +47,14 @@
 }
 
 .accordion {
-   margin: 50px; 
+   margin: 50px;
    margin-top: 0;
-   text-align: center;  
+   text-align: center;
    ul, li {
       padding: 10px;
-      //border-bottom: 4px double $pink; 
+      //border-bottom: 4px double $pink;
       &:last-of-type {
-        //border-bottom: 2px double $pink; 
+        //border-bottom: 2px double $pink;
       }
       h2 {
         @extend %dashed-border;
@@ -61,7 +62,7 @@
    }
   li {
      border-top: 0;
-     padding: 0 0 0 10px; 
+     padding: 0 0 0 10px;
      //background-color: $paleblue;
      font-size: 1rem;
      &:last-of-type {
@@ -69,8 +70,6 @@
        position: relative;
        top: -1px;
      }
-  
+
   }
 }
-
-
