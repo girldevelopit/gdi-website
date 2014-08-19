@@ -1,8 +1,9 @@
   <div class="opener">
     <%#= image_tag("photo2.png") %>
     <h1><span class="animated fadeInLeftBig">Don't be shy</span> <%= image_tag("flourish-med.png" , class: "hide") %> <span class="animated fadeInRightBig">Develop it</span></h1>
-
   </div>
+
+
 
   <div class="container" >
   	<section class="mission-statement">
@@ -18,9 +19,9 @@
   <section class="map">
     <div class="container">
     	<div class="underlined-headline">
-        <h2>We are now in <%= @location.count %> cities!</h2>
+        <h2>We are now in <%= @locations.count %> cities!</h2>
         <hr>
-        <p class="subtitle hide">Don't see your hometown? <a href="">Start a new chapter!</a></p>
+        <p class="subtitle hide">Don't see your hometown? <a href="https://docs.google.com/a/girldevelopit.com/forms/d/1IwGncJ6_69MWa2_rrikO5Q3DLriA04Eq9x0BUnxkwTw/viewform?edit_requested=true#start=invite">Start a new chapter!</a></p>
         <%=link_to "Find GDI in your hometown!", locations_path, :class=>" subtitle show-inline"%>
       </div>
         <div class="us_map hide">
