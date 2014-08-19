@@ -30,7 +30,7 @@ After that, you can run `rails server` to start the server or `rails console` fo
 
 ## Docs
 
-Meetup API key is set as an environment variable. To regester a [new API key](https://secure.meetup.com/meetup_api/key/).
+Meetup API key is set as an environment variable. To register a [new API key](https://secure.meetup.com/meetup_api/key/).
 
 To run locally:
 ```
