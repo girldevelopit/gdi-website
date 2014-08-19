@@ -3,6 +3,10 @@
 	display: none;
 }
 
+.hide-chapters {
+	display: none;
+}
+
 @media screen and (max-width: 500px) {
 	.show {
 		display: block;
@@ -13,128 +17,77 @@
 	.hide {
 		display: none;
 	}
-	.container {
-		padding: 25px; 
-	}
-  	header {
-  		height: 200px;
-  		// img {
-    	// 	height: 60px;
-    	// 	margin-top: 20px;
-    	// 	margin-left: 100px;
-   		// 		float: none;
-  		// }
-  		// nav {
-  		// 	float: none;
-  		// 	.fa {
-  		// 		position: relative;
-  		// 		clear: both;
-  		// 	}
-  		// 	a {
-  		// 	  padding: 2rem 0.5rem;
-  		// 	  &:first-child {
-  		// 	  	margin-right: 2rem;
-  		// 	  }
-  		// 	}
-  		// }
-  	}
-  	.opener {
-  		height: 200px;
-  		width: 100%; 
-  		h1 {
-  			font-size: 2.3rem;
-  			padding-top: 75px;
-  		}
-  	}
-  	.mission-statement {
-  		@include span-columns(12);
-  		@include shift(0);
-  		text-align: left;
-  		p {
-  			font-size: .9rem;
-  			margin: 0px;
-  		}
-  	}
-  	.stats-section {
-  		float: none;
-  		.stats {
-  			float: none;
-  			img {
-  				float: none;
-  				@include span-columns(8);
-  				@include shift(2);
-  			}
-  			p {
-  				@include span-columns (12);
-
-  			}
-  		}
-  	}
-  	
-  	.press-logos {
-  		img {
-  			height: 45px; 
-  		}
-  	}
-	footer {
-		height: 220px;
-		position: relative;
-		top: 0px;
-		font-size: 1rem;
-	}
-	#headline {
-		float: none;
-		display: block;
-		width: auto;
-		margin: 45px 25px 0 25px;
-		img {
-			display: inline;
+	.opener {
+		height: 200px;
+		width: 100%;
+		h1 {
+			font-size: 2.3rem;
+			padding-top: 75px;
 		}
 	}
-	.underlined-headline {
-		padding-top: 0px;
-		hr {
-		width: 220px;
-		}
-		.subtitle {
-			margin: 0 20px;
-		}
-		h2 {
-			margin: 25px 0;
-			font-size: 1em;
-		}
-	}
-
-	.map {
-		h2 {
-			padding-top: 0;
-		}
-	}
-	.state-container {
-		@include span-columns(9);
-		margin-left: 50px;
-	}
-	.classes {
-		h3 {
-			text-align: left;
-		}
-		p {
-			margin: 0;
-		}
-		.button {
-			margin: 10px 0 55px 20px;
-		}
-	}
-.single-profile {
-	.profile-img {
-		float: none;
-		//@include span-columns(5)
-	}
-	.profile-content {
+	.mission-statement {
 		@include span-columns(12);
+		@include shift(0);
+		text-align: left;
 		p {
-			padding: 0px;
+			font-size: .9rem;
 		}
 	}
-}
+
+	.stats-section{
+		margin: 20px 0;
+		.stats{
+		@include span-columns(12);
+			img{
+				margin-top: 20px;
+			}
+			p{
+				margin-bottom: 20px;
+			}
+  	}
+	}
+
+	.press-logos {
+		height: 160px;
+		img {
+			height: 45px;
+		}
+	}
+
+	.underlined-headline {
+		hr {
+		width: 90%;
+		margin-bottom: 15px;
+		}
+		h2 {
+			font-size: 1.2em;
+		}
+	}
+
+	.chapter-aside{
+		.state-container-aside{
+			margin-top: -20px;
+		}
+		.button{
+			margin-bottom: 50px;
+		}
+	}
+
+	.single-profile {
+		margin-bottom: 0em;
+		.profile-img {
+			@include span-columns(6);
+			@include shift(3);
+			padding: 5px;
+			img{
+				margin: 20px 0;
+			}
+		}
+		.profile-content {
+			@include span-columns(12);
+			h3{
+				text-align: center;
+			}
+		}
+	}
 }
