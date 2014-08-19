@@ -2,23 +2,29 @@
 .show {
 	display: none;
 }
-@media screen and (max-width: 320px) {
+.hide-chapters {
+	display: none;
+}
+@media screen and (max-width: 500px) {
 	.show {
 		display: block;
+	}
+	.show-inline {
+		display: inline;
 	}
 	.hide {
 		display: none;
 	}
-	.main-container {
+	.container {
 		padding: 25px; 
 	}
   	header {
-  		height: 160px;
+  		height: 200px;
   		// img {
     	// 	height: 60px;
     	// 	margin-top: 20px;
     	// 	margin-left: 100px;
-   	// 		float: none;
+   		// 		float: none;
   		// }
   		// nav {
   		// 	float: none;
@@ -43,23 +49,37 @@
   		}
   	}
   	.mission-statement {
-  		margin-left: 25px;
+  		@include span-columns(12);
+  		@include shift(0);
   		text-align: left;
   		p {
   			font-size: .9rem;
-  		}
-  	}
-  	.stats {
-  		float: none;
-  		img, p {
-  			@include span-columns (3);
+  			margin: 0px;
   		}
   	}
   	.stats-section {
   		float: none;
+  		.stats {
+  			float: none;
+  			img {
+  				float: none;
+  				@include span-columns(8);
+  				@include shift(2);
+  			}
+  			p {
+  				@include span-columns (12);
+
+  			}
+  		}
+  	}
+  	
+  	.press-logos {
+  		img {
+  			height: 45px; 
+  		}
   	}
 	footer {
-		height: 200px;
+		height: 220px;
 		position: relative;
 		top: 0px;
 		font-size: 1rem;
@@ -74,6 +94,7 @@
 		}
 	}
 	.underlined-headline {
+		padding-top: 0px;
 		hr {
 		width: 220px;
 		}
@@ -83,6 +104,12 @@
 		h2 {
 			margin: 25px 0;
 			font-size: 1em;
+		}
+	}
+
+	.map {
+		h2 {
+			padding-top: 0;
 		}
 	}
 	.state-container {
