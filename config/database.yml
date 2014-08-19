@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: gdi_production
-  username: gdi
-  password: <%= ENV['GDI_DATABASE_PASSWORD'] %>
+  # username: gdi
+  # password: <%= ENV['GDI_DATABASE_PASSWORD'] %>
