@@ -1,13 +1,6 @@
-//The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS)
-//https://smacss.com
-
 //MODULES: styles for reusable page components
 
 //Map
-.map {
-
-}
-
 .mapTooltip {
 	background-color: #f95a61;
   position: fixed;
@@ -56,7 +49,7 @@
    margin: 50px; 
    margin-top: 0;
    text-align: center;  
-   dt, dd {
+   ul, li {
       padding: 10px;
       //border-bottom: 4px double $pink; 
       &:last-of-type {
@@ -66,7 +59,7 @@
         @extend %dashed-border;
       }
    }
-  dd {
+  li {
      border-top: 0;
      padding: 0 0 0 10px; 
      //background-color: $paleblue;
