@@ -16,7 +16,7 @@
         <h2>Sponsors</h2>
         <% @sponsors.each do |sponsor| %>
           <% if sponsor.image? %>
-            <%= link_to image_tag(sponsor.image.thumb.url), sponsor.url %>
+            <p><%= link_to image_tag(sponsor.image.url), sponsor.url %></p>
           <% end %>
         <% end %>
       </div>
