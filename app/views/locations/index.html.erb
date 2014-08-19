@@ -26,7 +26,7 @@
   <section id="state-list">
     <div class="accordion">
       <% @states.each do |s| %>
-        <div class="hide-chapters">
+        <section class="hidden">
           <h2><%= s[0] %></h2>
           <ul>
             <% s[1].each do |l| %>
@@ -34,7 +34,7 @@
               <li><%= link_to l, location_path(l.parameterize) %></li>
             <% end %>
           </ul>
-        </div>
+        </section>
       <% end %>
     </div>
   </section>

@@ -48,16 +48,27 @@
 .accordion {
    margin: 50px; 
    margin-top: 0;
-   text-align: center;  
+   text-align: center; 
+   .hidden {
+        height: 20px;
+      }
+   section {
+      height: 85px;
+      overflow: hidden;
+      transition: height 1s ease-in-out;
+      @extend %dashed-border;
+      }
+      h2 {
+        cursor: pointer;
+      }
+   } 
    ul, li {
       padding: 10px;
       //border-bottom: 4px double $pink; 
       &:last-of-type {
         //border-bottom: 2px double $pink; 
       }
-      h2 {
-        @extend %dashed-border;
-      }
+      
    }
   li {
      border-top: 0;
@@ -71,6 +82,5 @@
      }
   
   }
-}
 
 
