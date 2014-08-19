@@ -23,16 +23,19 @@
   </div>
   </section>
 
-  <div>
-    <dl class="accordion">
+  <section id="state-list">
+    <div class="accordion">
       <% @states.each do |s| %>
-        <dt><h2><%= s[0] %></h2></dt>
+        <div class="hide-chapters">
+          <h2><%= s[0] %></h2>
+          <ul>
+            <% s[1].each do |l| %>
 
-        <% s[1].each do |l| %>
-
-        <dd><%= link_to l, location_path(l.parameterize) %></dd>
-        <% end %>
-        <% end %>
-</dl>
-  </div>
+              <li><%= link_to l, location_path(l.parameterize) %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </section>
 
