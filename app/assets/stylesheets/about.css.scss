@@ -39,11 +39,11 @@
 }
 
 .support{
+  @include background-image( radial-gradient(#fff, #e4e9e5));
   text-align: center;
   height: 100%;
   margin: 60px 0;
   padding: 60px 0;
-  @include background-image( radial-gradient(#fff, #e4e9e5));
   p{
     @include span-columns(10);
     @include shift(1);
@@ -96,8 +96,8 @@
 }
 
 .code{
-  padding: 60px 0;
   @include background-image( radial-gradient(#fff, #e4e9e5) );
+  padding: 60px 0;
   p{
     margin-top: 10px;
     color: $black;
