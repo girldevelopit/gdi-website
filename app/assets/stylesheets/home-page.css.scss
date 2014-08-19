@@ -25,7 +25,9 @@
     padding-top: 100px;
     height: auto;
     width: 100%;
+    @media screen and (max-width: 500px) {
     display: inline-block;
+    } 
   }
     img {
       height: 80px;
