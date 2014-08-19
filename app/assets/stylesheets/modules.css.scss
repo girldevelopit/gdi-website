@@ -46,30 +46,47 @@
   }
 }
 
-.accordion {
-   margin: 50px;
-   margin-top: 0;
-   text-align: center;
-   ul, li {
-      padding: 10px;
-      //border-bottom: 4px double $pink;
-      &:last-of-type {
-        //border-bottom: 2px double $pink;
-      }
-      h2 {
-        @extend %dashed-border;
-      }
-   }
-  li {
-     border-top: 0;
-     padding: 0 0 0 10px;
-     //background-color: $paleblue;
-     font-size: 1rem;
-     &:last-of-type {
-       border-top: 1px solid white;
-       position: relative;
-       top: -1px;
-     }
+//
+// <section id="state-list">
+//   <div class="accordion">
+//     <% @states.each do |s| %>
+//       <section class="hidden">
+//         <h2><%= s[0] %></h2>
+//         <ul>
+//           <% s[1].each do |l| %>
+//
+//             <li><%= link_to l, location_path(l.parameterize) %></li>
+//           <% end %>
+//         </ul>
+//       </section>
+//     <% end %>
+//   </div>
+// </section>
 
+
+.accordion {
+  margin: 0 0 60px 0px;
+  .hidden {
+    height: 38px;
+  }
+  section {
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+    @extend %dashed-border;
+  }
+  h2 {
+    cursor: pointer;
+    color: $black;
+    padding: 15px 0;
+  }
+  a{
+    text-transform: none;
+    letter-spacing: .05rem;
+    font-weight: 300;
+    color: $pink;
+    font-style: italic;
+  }
+  li {
+     padding: 0 0 0 6px;
   }
 }

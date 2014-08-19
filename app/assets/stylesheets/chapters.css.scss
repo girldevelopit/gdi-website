@@ -121,8 +121,9 @@
   @include omega(3n);
   text-align: center;
   margin-bottom: 3em;
-  h2{
-    margin: 10px 0;
+  @media screen and (max-width: 800px){
+    // @include span-columns(6);
+    // @include omega();
   }
   hr{
     width: 55%;

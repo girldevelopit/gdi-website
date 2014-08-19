@@ -20,21 +20,20 @@
         </div>
     <% end %>
     </section>
+
+    <section id="state-list">
+      <div class="accordion show">
+        <% @states.each do |s| %>
+          <section class="hidden">
+            <h2><%= s[0] %></h2>
+            <ul>
+              <% s[1].each do |l| %>
+                <li><h3><%= link_to l, location_path(l.parameterize) %><h3></li>
+              <% end %>
+            </ul>
+          </section>
+        <% end %>
+      </div>
+    </section>
   </div>
-  </section>
-
-  <section id="state-list">
-    <div class="accordion">
-      <% @states.each do |s| %>
-        <div class="hide-chapters">
-          <h2><%= s[0] %></h2>
-          <ul>
-            <% s[1].each do |l| %>
-
-              <li><%= link_to l, location_path(l.parameterize) %></li>
-            <% end %>
-          </ul>
-        </div>
-      <% end %>
-    </div>
   </section>
