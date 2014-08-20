@@ -19,14 +19,6 @@
 	.hide {
 		display: none;
 	}
-	.opener {
-		height: 200px;
-		width: 100%;
-		h1 {
-			font-size: 2.5rem;
-			padding-top: 75px;
-		}
-	}
 	.mission-statement {
 		@include span-columns(12);
 		@include shift(0);

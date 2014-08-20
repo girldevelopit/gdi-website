@@ -46,23 +46,6 @@
   }
 }
 
-//
-// <section id="state-list">
-//   <div class="accordion">
-//     <% @states.each do |s| %>
-//       <section class="hidden">
-//         <h2><%= s[0] %></h2>
-//         <ul>
-//           <% s[1].each do |l| %>
-//
-//             <li><%= link_to l, location_path(l.parameterize) %></li>
-//           <% end %>
-//         </ul>
-//       </section>
-//     <% end %>
-//   </div>
-// </section>
-
 
 .accordion {
   margin: 0 0 60px 0px;
@@ -77,7 +60,7 @@
   h2 {
     cursor: pointer;
     color: $black;
-    padding: 15px 0;
+    padding: 15px 0 7px 0;
   }
   a{
     text-transform: none;
@@ -85,8 +68,5 @@
     font-weight: 300;
     color: $pink;
     font-style: italic;
-  }
-  li {
-     padding: 0 0 0 6px;
   }
 }
