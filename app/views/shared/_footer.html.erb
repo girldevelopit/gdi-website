@@ -2,10 +2,10 @@
 	<div class="container">
 		<div class="footer">
 			<p class="subtitle hide">Don't see your city? Help bring Girl Develop It to your home town.</p>
-			<p class="subtitle">To become a sponsor or for partnership opportunities, email  us at sponsorships@girldevelopit.com</p>
+			<p class="subtitle">To become a sponsor or for partnership opportunities, email  us at <%= mail_to "sponsorships@girldevelopit.com" %> </p>
 			<nav class="navigation">
-				<%= link_to "about", root_path %>
-				<%= link_to "partners", root_path, class: "hide" %>
+				<%= link_to "about", about_path %>
+				<%#= link_to "partners", root_path, class: "hide" %>
 				<a href="http://girldevelopit.tumblr.com/">blog</a>
 				<% if current_admin_user != nil %>
 					<%= link_to "Admin", admin_root_path %>
