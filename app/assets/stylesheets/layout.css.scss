@@ -123,10 +123,10 @@ footer {
     margin: auto;
   }
   h2 {
+    @extend %dashed-border;
     font-weight: 300;
     color: $gold;
     padding: 0px 5px 6px 5px;
-    @extend %dashed-border;
     // border-bottom: solid $black 1px;
     display: inline-block;
     margin: .5rem auto 3rem auto;
