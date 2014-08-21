@@ -2,6 +2,7 @@ class HomeController < ApplicationController
 
   def index
   @locations = Location.all
+  @location = Location.all
 
 #
 #     params = { category: '1',
