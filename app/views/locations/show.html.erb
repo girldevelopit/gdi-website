@@ -63,7 +63,7 @@
               <% if bio.info[0, 3] == "<p>" %>
                 <%= bio.info.html_safe %>
               <% else %>
-                <%= simple_format(bio.info.html_safe) %>
+                <%= auto_link(simple_format(bio.info.html_safe)) %>
               <% end %>
               <%= render partial: "social_media_bio", locals: {bio: bio} %>
             </div>
