@@ -35,7 +35,9 @@ ActiveAdmin.register Bio do
       f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS']
       f.input :name, placeholder: "Jane Doe"
       f.input :email, placeholder: current_admin_user.email
-      f.input :info, placeholder: "Tell us something about yourself."
+      f.input :info, placeholder: "Please fell free to type out your bio in normal text. If you have links you can type them out as normal url text like: www.girldevelopit.com.
+
+If you want to have a second paragraph, just return twice. If you want to control your text in html just put a p tag before everything and the rest will be traditional html."
       f.input :website, placeholder: "http://www.your_website.com"
       f.input :twitter, placeholder: "YourTwitterName"
       f.input :linkedin, placeholder: "YourLinkedinName"

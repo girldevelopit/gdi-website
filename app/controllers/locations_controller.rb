@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+  require 'rails_autolink'
   def index
     @locations = Location.all
     states = {}

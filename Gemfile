@@ -22,6 +22,7 @@ gem 'rolify'
 gem 'momentjs-rails'
 gem 'meetup_client'
 gem 'underscore-rails'
+gem 'rails_autolink'
 
 # for aws cloud storage
 gem 'fog'
