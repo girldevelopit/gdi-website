@@ -10,31 +10,31 @@
   leaders:
   - name: Ronda Bergman
     image: ann-arbor/ronda.jpg
-    bio: ! "Ronda went back to college unsure of what she wanted to do, took
-      a basic programming class as an elective and found her calling! She
-      got her degree in Computer Science from the University of Michigan and
-      has been working as a .Net developer since.  Ronda has worked in Ann
-      Arbor for nine years, the last two with Terumo Cardiovascular Group as
-      a Senior Application Specialist. She is thrilled to
-      help bring GDI to Ann Arbor and is looking forward to being
-      able to \"talk shop\" with other women! In her spare
-      time Ronda can be found either at home with her husband, daughters
-      and dogs or when the weather is nice, riding her motorcycle on
-      the country roads outside Ann Arbor."
+    bio: ! "<p>Ronda went back to college unsure of what she wanted to do,\n                took
+      a basic programming class as an elective and found her calling!\n                She
+      got her degree in Computer Science from the University of Michigan\n                and
+      has been working as a .Net developer since.  Ronda has worked in\n                Ann
+      Arbor for nine years, the last two with Terumo Cardiovascular Group\n                as
+      a Senior Application Specialist.</p>\n\n                <p>She is thrilled to
+      help bring GDI to Ann Arbor and is looking\n                forward to being
+      able to \"talk shop\" with other women!</p>\n\n                <p>In her spare
+      time Ronda can be found either at home with her husband,\n                daughters
+      and dogs or when the weather is nice, riding her motorcycle\n                on
+      the country roads outside Ann Arbor.</p>"
     contact:
       email: ronda@girldevelopit.com
   - name: Julie Cameron
     image: ann-arbor/julie.jpg
-    bio: ! "Julie's played various roles in the web development industryfor
-      several years and is currently working remotely in Ypsilanti as a
-      frontend developer for Articulate. She is extremely passionate about
-      Sass and modular architecture; is an advocate for responsive web
-      design, a student of JavaScript, an open-source developer, an
-      agile proponent, and a self-improvement practitioner. Julie
-      is very excited about bringing the awesomeness of GDI to Ann
-      Arbor and hopes to help establish a strong community of women
-      in tech, provide accessible tech education, and encourage and
-      assist women in moving forward within the industry."
+    bio: ! "<p>Julie's played various roles in the web development industry\n              for
+      several years and is currently working remotely in Ypsilanti as\n                a
+      frontend developer for Articulate. She is extremely passionate\n                about
+      Sass and modular architecture; is an advocate for responsive\n                web
+      design, a student of JavaScript, an open-source developer,\n                an
+      agile proponent, and a self-improvement practitioner.</p>\n\n                <p>Julie
+      is very excited about bringing the awesomeness of GDI\n                to Ann
+      Arbor and hopes to help establish a strong community of\n                women
+      in tech, provide accessible tech education, and encourage\n                and
+      assist women in moving forward within the industry.</p>"
     contact:
       email: jewl@girldevelopit.com
       twitter: jewlofthelotus
@@ -43,42 +43,42 @@
   volunteers:
   - name: Marisa Nicole Ring
     image: ann-arbor/marisa.png
-    bio: ! "Marisa is a game developer specializing in 3D educational games.
-      Her mission is to augment the learning experience with high-tech
-      visualizations, immersive environments, and interactive applications,
-      thereby creating a student-centered approach tailored to each
-      person's individual learning style.  Her technological passions
-      include virtual reality, augmented reality, heuristics, 3D
-      modeling & animation, interactive storytelling, and twenty-first
-      century literacy. When she unplugs, she practices self-development
-      by studying the Arabic language and researching esoteric traditions."
+    bio: ! "<p>Marisa is a game developer specializing in 3D educational games.\n
+      \               Her mission is to augment the learning experience with high-tech\n
+      \               visualizations, immersive environments, and interactive applications,\n
+      \               thereby creating a student-centered approach tailored to each
+      person's\n                individual learning style.  Her technological passions
+      include virtual\n                reality, augmented reality, heuristics, 3D
+      modeling & animation,\n                interactive storytelling, and twenty-first
+      century literacy.\n                When she unplugs, she practices self-development
+      by studying the Arabic\n                language and researching esoteric traditions.</p>"
     contact:
       email: marisa3d19@gmail.com
   - name: Jennifer Sardone
     image: ann-arbor/jennifer.jpg
-    bio: ! "Jennifer Sardone works on the project team at the Kidney Epidemiology
-      and Cost Center (UM-KECC) at the University of Michigan School
-      of Pubic Health. Definitely a beginner when it comes to coding,
-      she gets most of her knowledge from listening to tech podcasts
-      with her husband, and from inserting herself into website projects
-      at the office. She looks forward to learning new skills and
-      making new friends and connections as she works on the GDI
-      organizer team."
+    bio: ! "<p>Jennifer Sardone works on the project team at the Kidney\n                Epidemiology
+      and Cost Center (UM-KECC) at the University of Michigan\n                School
+      of Pubic Health. Definitely a beginner when it comes to\n                coding,
+      she gets most of her knowledge from listening to tech\n                podcasts
+      with her husband, and from inserting herself into\n                website projects
+      at the office. She looks forward to learning\n                new skills and
+      making new friends and connections as she works\n                on the GDI
+      organizer team.</p>"
     contact:
       email: jmsto9@gmail.com
       twitter: jmsto
   - name: Kristi Smythe
     image: ann-arbor/kristi.png
-    bio: ! "Kristi has been working as a Certified eCommerce Web Developer since
-      2004. She also has a combined Bachelors in CS / Digital Modeling and
-      Design. Her Web development skills include Shopping Carts, Wordpress, HTML5,
-      and optimizing customer engagement with tools like Google Analytics. Her
-      focus has expanded since 2009 into mobile development and she's currently
-      incubating and participating in game app development for Android
-      and iOS with a team of onine college students from UAT. Her
-      interests include learning code languages and sharpening her pencil
-      regularly on math skills. She has a passion for mentoring and teaching.
-      She's also an active horsewoman,kayaker and mountain biker."
+    bio: ! "<p>Kristi has been working as a Certified eCommerce Web Developer\n                since
+      2004. She also has a combined Bachelors in CS / Digital Modeling\n                and
+      Design. Her Web development skills include Shopping Carts, Wordpress,\n                HTML5,
+      and optimizing customer engagement with tools like Google Analytics.\n                Her
+      focus has expanded since 2009 into mobile development and she's\n                currently
+      incubating and participating in game app development for\n                Android
+      and iOS with a team of onine college students from UAT.</p>\n                <p>Her
+      interests include learning code languages and sharpening her\n                pencil
+      regularly on math skills. She has a passion for mentoring and\n                teaching.
+      She's also an active horsewoman,kayaker and mountain biker.</p>"
     contact:
       email: kristi.smythe@gmail.com
       twitter: kdezigns99
@@ -93,9 +93,9 @@
   - logo: ann-arbor/articulate.png
     website: http://articulate.com
   logo: ann-arbor/logo.png
-  announcements: Take the Ann Arbor community survey at <a href = "http://www.gdiannarbor.com"
+  announcements: <p>Take the Ann Arbor community survey at <a href = "http://www.gdiannarbor.com"
     target ="_blank">gdiannarbor.com</a> to get involved and help us meet the needs
-    of the community!
+    of the community!</p>
   email: annarbor@girldevelopit.com
   twitter: GDIAnnArbor
   facebook: GirlDevelopItAnnArbor
@@ -111,21 +111,21 @@
   leaders:
   - name: Ashley Price
     image: austin/ashley_price.png
-    bio: Ashley is a software engineer at a startup in Austin where she does full
+    bio: <p>Ashley is a software engineer at a startup in Austin where she does full
       stack development with a specialization in front-end. As a testament to her
       love of teaching, Ashley presented the introductory and data structures recitations
       for the duration of her college career.  She's excited to participate in the
       organization as a local chapter leader and grateful for the opportunity to meet
-      so many wonderful women as a GDI instructor.
+      so many wonderful women as a GDI instructor.</p>
     contact:
       email: ashley@girldevelopit.com
       twitter: classicallygeek
   - name: Cecy Correa
     image: austin/cecy_correa.jpg
-    bio: Cecy is a creative with a heart of code. She is currently obsessed with
+    bio: <p>Cecy is a creative with a heart of code. She is currently obsessed with
       responsive web design and frontend development. She is co-organizer of Refresh
       Austin, where she leads speaker programming. In her spare time, Cecy likes to
-      hang out with her 3 pet bunnies and 2 pet chickens.
+      hang out with her 3 pet bunnies and 2 pet chickens.</p>
     contact:
       email: cecy@girldevelopit.com
       twitter: cecycorrea
@@ -133,50 +133,50 @@
   instructors:
   - name: Garann Means
     image: austin/garann_means.jpg
-    bio: Garann is a JavaScript developer, author, and speaker. She began building
+    bio: <p>Garann is a JavaScript developer, author, and speaker. She began building
       websites back in the 90s, and used to be in charge of volunteers for a whole
       GeoCities neighborhood. After working as a .NET and Java developer, she began
       doing front-end development full-time in 2008, and started dabbling in Node.js
       way back around its 0.2.x release. She also organizes the Austin All-Girl Hack
-      Night, is remodeling a house, and loves tomatoes.
+      Night, is remodeling a house, and loves tomatoes.<p>
     contact:
       email: garann@girldevelopit.com
       twitter: garannm
   - name: Patty Cifra
     image: austin/patty_cifra.jpg
-    bio: Patty is a full stack software engineer with a focus on front end development
+    bio: <p>Patty is a full stack software engineer with a focus on front end development
       at Spanning Cloud Apps. Prior to joining the start up world, she worked at larger
       companies such as IBM and Schlumberger with a wide range of technologies and
       applications. Her current interests include mobile development and reading up
       on the latest web technology hotness. When she is not coding, you will find
       her stuffing her face, booking random trips out of the country and watching
-      horrible shows on tv.
+      horrible shows on tv.</p>
     contact:
       twitter: pncifra
   - name: Sophie Shepherd
     image: austin/sophie_shepherd.png
-    bio: Sophie is designer at Happy Cog's Austin office. Her love of beautiful
+    bio: <p>Sophie is designer at Happy Cog's Austin office. Her love of beautiful
       design is only overshadowed by her passion for websites that are simple, easily
       navigable, and full of necessary, applicable content. When not in front of a
-      screen, Sophie enjoys cooking, riding her bike, road trips, and camping.
+      screen, Sophie enjoys cooking, riding her bike, road trips, and camping.</p>
     contact:
       twitter: sophshepherd
       website: http://sophieshepherd.com/
   - name: Elyse Holladay
     image: austin/elyse_holladay.jpg
-    bio: Elyse is a developer/designer who spends most of her time writing Sass
+    bio: <p>Elyse is a developer/designer who spends most of her time writing Sass
       and HTML. She worked for Bazaarvoice creating standardized CSS templates for
       Ratings & Reviews and is now a Princess of Sass at Square Root building the
       front-end framework for their flagship application. Elyse is a MakerSquare mentor,
       has a GIF for every occasion, loves makeup, shoes, and good wine, and believes
-      there isn't enough purple on the web.
+      there isn't enough purple on the web.</p>
     contact:
       twitter: elyseholladay
   - name: Kassandra Perch
     image: austin/kassandra_perch.png
-    bio: Kassandra is a Javascript/Node.js developer living in Austin, TX. Her
+    bio: <p>Kassandra is a Javascript/Node.js developer living in Austin, TX. Her
       hobbies include crafting, makerbots, and robotics. She is, above all else, an
-      unrepentant javascript addict.
+      unrepentant javascript addict.</p>
     contact:
       twitter: kassandra_perch
   volunteers: []
@@ -196,36 +196,36 @@
   leaders:
   - name: Misty Melton
     image: baltimore/misty.jpg
-    bio: ! "Dabbling in code for fun over the years, Misty Melton likes to joke that
-      she'sdone every job in IT except be a programmer. With a background
-      in implementation, training,process mapping/improvement, and
-      QA/tech writing she set off to find opportunities to expandher
+    bio: ! "<p>Dabbling in code for fun over the years, Misty Melton likes to joke that
+      she's\n              done every job in IT except be a programmer. With a background
+      in implementation, training,\n              process mapping/improvement, and
+      QA/tech writing she set off to find opportunities to expand\n              her
       skillset. With a budding middle school programmer at home, her motivation was
-      two-fold.After finding few opportunities she decided if they
-      don't currently exist, she'll create them!Thus she dove headfirst
-      into bringing GDI to Baltimore and DC.  She also runs coding clubs,including
+      two-fold.\n              After finding few opportunities she decided if they
+      don't currently exist, she'll create them!\n              Thus she dove headfirst
+      into bringing GDI to Baltimore and DC.  She also runs coding clubs,\n              including
       mentoring a Technovation Challenge team, and volunteers with STEM middle school
-      programs.Aside from spreading geek culture as far and
-      wide as she can, Misty spends a ridiculousamount of time reading,
-      hiking, watching Netflix, and drinking coffee."
+      programs.</p>\n              <p>Aside from spreading geek culture as far and
+      wide as she can, Misty spends a ridiculous\n              amount of time reading,
+      hiking, watching Netflix, and drinking coffee.</p>"
     contact:
       email: misty@girldevelopit.com
       twitter: m0onb4by
   - name: Angelique Weger
     image: baltimore/angelique.jpg
-    bio: ! "Angelique writes code for clients, for causes and for her own whims.
-      She runs her ownfront-end web design and development shop and
-      is a collaborator with Left Bank Creative in Detroit.She geeks
-      out about responsive web design, SASS, WordPress and the command line.
-      Angelique got involved in Girl Develop It because she loves
-      sharing the thrill of clean,functioning code and is motivated
-      by the idea of changing the ratio in the tech community.In
+    bio: ! "<p>Angelique writes code for clients, for causes and for her own whims.
+      She runs her own\n              front-end web design and development shop and
+      is a collaborator with Left Bank Creative in Detroit.\n              She geeks
+      out about responsive web design, SASS, WordPress and the command line.</p>\n
+      \             <p>Angelique got involved in Girl Develop It because she loves
+      sharing the thrill of clean,\n              functioning code and is motivated
+      by the idea of changing the ratio in the tech community.</p>\n              <p>In
       addition to Baltimore's tech and entrepreneurship scene, Angelique is also involved
-      inthe city's cultural, nonprofit and DIY organizations, supporting
-      the Creative Alliance andvolunteering with the Maryland Film
-      Festival. When she's not crafting code, she enjoysplaying Euro-style
+      in\n              the city's cultural, nonprofit and DIY organizations, supporting
+      the Creative Alliance and\n              volunteering with the Maryland Film
+      Festival. When she's not crafting code, she enjoys\n              playing Euro-style
       board games, reading comic books, hiking, making messes with paint, knitting
-      andspinning. She is also really into sharks."
+      and\n              spinning. She is also really into sharks.</p>"
     contact:
       email: angelique@girldevelopit.com
       twitter: miscellaneaarts
@@ -246,7 +246,7 @@
   leaders:
   - name: Jane Miceli
     image: boise/jane.jpg
-    bio: Jane Miceli is a Software Engineer and Scrum Master in Boise, Idaho. She
+    bio: <p>Jane Miceli is a Software Engineer and Scrum Master in Boise, Idaho. She
       holds both a Bachelor's and Master's degree in Computer Science from <a href="http://www4.uwm.edu/"
       target="_new">University of Wisconsin - Milwaukee</a>. She has been working
       her brand of skills for over a decade, currently working on build and environment
@@ -256,7 +256,7 @@
       Boise School District's First Robotics Team 2122 and the annual <a href="http://boisecodecamp.com/"
       target="_new">Boise Code Camp</a> conference. Jane is super excited to be a
       part of the first Girl Develop It in Boise and share her enthusiasm for technology
-      with others!
+      with others!</p>
     contact:
       email: jane@girldevelopit.com
       twitter: janemiceli
@@ -265,39 +265,39 @@
       website: http://janemiceli.com/
   - name: Marianna Budnikova
     image: boise/marianna.jpg
-    bio: Marianna is a software engineer in-training currently pursuing her Master's
+    bio: <p>Marianna is a software engineer in-training currently pursuing her Master's
       degree in computer science. She loves mobile development and participates in
       coding events, such as the Bronco Appathon 48-hour mobile app development competition.
       Inspired to create a supportive community where women of all skills and ages
       can discover the magic of code, Marianna is super exited to be a part of Girl
-      Develop It.
+      Develop It.</p>
     contact:
       email: marianna@girldevelopit.com
       github: mariannabudnikova
       linkedin: mbudnikova
   - name: Kelsey Suyehira
     image: boise/kelsey.jpg
-    bio: Kelsey is a Boise native pursuing a BS in computer science at Boise State
+    bio: <p>Kelsey is a Boise native pursuing a BS in computer science at Boise State
       University. After completing a math degree, Kelsey happened upon an online Javascript
       tutorial and fell in love with programming. She is passionate about introducing
       others to the exciting field of computer science, and is especially interested
       in encouraging women to learn since she believes there should be more women
       in involved in technology. Kelsey is thrilled to be a part of the growing technology
-      community in Boise and GDI!
+      community in Boise and GDI!</p>
     contact:
       email: kelsey@girldevelopit.com
       github: kjsuye
       linkedin: ksuyehira
   - name: Nilab Mohammad Mousa
     image: boise/nilab.jpg
-    bio: Nilab is a Software Development Engineer at Clearwater Analytics in Boise,
+    bio: <p>Nilab is a Software Development Engineer at Clearwater Analytics in Boise,
       Idaho. She is passionate about getting women interested in Computer Science
       at an early age. Her efforts include being involved with outreach programs hosted
       by the Mathematics and Computer Science Departments at Boise State University,
       and  serving as one of the coordinators for the Zero Robotics Middle School
       Summer Program. As part of Girl Develop It in Boise, Nilab is devoted to increasing
       the diversity of STEM fields and the promotion of computer science and engineering
-      to young women.
+      to young women.</p>
     contact:
       email: nilab@girldevelopit.com
       github: nmousa
@@ -326,31 +326,31 @@
   leaders:
   - name: Annette Arabasz
     image: boston/annettearabasz.jpg
-    bio: Annette Arabasz is a developer with a background in graphic design. She
+    bio: <p>Annette Arabasz is a developer with a background in graphic design. She
       joined GDI because she wants to show women that coding can be fun, rewarding
       and not scary. She is excited about the idea of creating a community in which
       women of all ages and backgrounds can turn to for knowledge, encouragement and
-      support from other women.She attended Hartford Art School and the University
+      support from other women.</p><p>She attended Hartford Art School and the University
       of Massachusetts Dartmouth, graduating in Graphic Design & Letterform with a
-      Business minor. She is currently a Creative Technologist at Mad*Pow in Boston.
+      Business minor. She is currently a Creative Technologist at Mad*Pow in Boston.</p>
     contact:
       email: annette@girldevelopit.com
       twitter: annettish
       website: http://arabasz.com
   - name: Elizabeth Long
     image: boston/elizabethlong.png
-    bio: Elizabeth Long made the transition into the tech industry in 2014. Her
+    bio: <p>Elizabeth Long made the transition into the tech industry in 2014. Her
       prior to her experience is in legal administration and non-profit management.  After
       taking classes through GDI and completing the intensive product and design program
       at Startup Institute in Boston she's found a job she loves as an Application
       Specialist for MOCA Systems. When she is not at work she can be found at the
-      gym, doing yoga, cooking healthy food and exploring the beautiful city of Boston.
+      gym, doing yoga, cooking healthy food and exploring the beautiful city of Boston.</p>
     contact:
       email: elizabeth@girldevelopit.com
       twitter: redhotliz
   - name: Laura Vecchio
     image: boston/lauravecchio.jpg
-    bio: For Laura Vecchio, web development was love at first sight. After writing
+    bio: <p>For Laura Vecchio, web development was love at first sight. After writing
       her first lines of code while pursuing a Marketing degree from Bentley University,
       she knew she was destined to be a geek. After Bentley, her desire to live at
       the intersection of marketing and technology fueled her to pair her business
@@ -359,36 +359,36 @@
       digital strategist and now works as a front-end engineer at Bose Corporation.
       As the head of curriculum and as a core teacher with Girl Develop It, Laura
       is excited to instill her passion and energy for technology in the women of
-      the Boston area.
+      the Boston area.</p>
     contact:
       twitter: laura_vecchio
       website: http://www.lauravecchio.com
   instructors:
   - name: Amber Stubbs
     image: boston/amberstubbs.jpg
-    bio: Amber Stubbs has a Ph.D in Computer Science and works as a researcher
+    bio: <p>Amber Stubbs has a Ph.D in Computer Science and works as a researcher
       studying how to teach computers to understand human language.  In the fall of
-      2013, she'll be an adjunct professor at Simmons College in Boton.She
+      2013, she'll be an adjunct professor at Simmons College in Boton.</p><p>She
       joined GDI because she loves how much computer programming enables her to do,
       both for work and for fun, and she's excited to have the opportunity to teach
-      women of all ages and backgrounds the skills they need to use computers effectively.
+      women of all ages and backgrounds the skills they need to use computers effectively.</p>
     contact:
       twitter: amber_stubbs
       website: http://amberstubbs.net
   - name: Amanda Cheung
     image: boston/amandacheung.jpg
-    bio: Amanda Cheung is a front end developer at DockYard, a web and mobile web
+    bio: <p>Amanda Cheung is a front end developer at DockYard, a web and mobile web
       app consultancy based in Boston. Amanda grew up in Boston and went to school
       at the University of Wisconsin - Madison where she studied fine arts with concentrations
       in painting and graphic design. After graduating she started taking web development
       classes at night while working as a graphic designer. She has been doing front
       end programming ever since and loves it! She joined GDI because she wants others
-      to have just as much fun doing work as she does.
+      to have just as much fun doing work as she does.</p>
     contact:
       website: http://acacheung.com
   - name: Corina Acosta
     image: boston/corinaacosta.jpg
-    bio: Corina Acosta loved to code the minute she made a turtle move across the
+    bio: <p>Corina Acosta loved to code the minute she made a turtle move across the
       screen with GOTO statements in the 7th grade. Without any female role models
       to encourage her to focus on computers, her love of code remained dormant while
       she went on to pursue a professional career in Dance and Musical Theater. She
@@ -400,19 +400,19 @@
       technology with the hope of closing the gender gap that exists in STEM occupations
       and education. She's excited to be both a Teacher and Leadership Board Member
       at Girl Develop It, encouraging women of all backgrounds to learn technology
-      one line of code at a time.
+      one line of code at a time.</p>
   volunteers:
   - name: Stephanie Viccari
     image: boston/stephanieviccari.png
-    bio: Stephanie studied Entrepreneurship and Business Management in college
+    bio: <p>Stephanie studied Entrepreneurship and Business Management in college
       before deciding to leave a position in marketing and pursue a career in programming.
       Eager to make the transition, she left Florida to attend Launch Academy in Boston
       and currently works for MeYou Health as a Rails Engineer. Her interest in helping
       others discover and share their passion for coding led her to join the Girl
-      Develop It Leadership Team as the coordinator for Community Outreach events.
+      Develop It Leadership Team as the coordinator for Community Outreach events.</p>
   - name: Emily Xie
     image: boston/emilyxie.jpg
-    bio: Emily Xie grew up as a child of the 90s, tinkering with and building hilariously
+    bio: <p>Emily Xie grew up as a child of the 90s, tinkering with and building hilariously
       ugly Geocities sites replete with scrolling marquees, blinking text, and lo-fi
       MIDI soundtracks. She loved coding because it allowed her to channel her creative
       energy into building things with real application. Though she decided to pursue
@@ -421,17 +421,17 @@
       she joined an art tech startup as a product manager, and eventually transitioned
       into software engineering at Wayfair. As a TA and member of the Leadership Team
       at Girl Develop It, Emily is eager to help other women discover their love for
-      coding.
+      coding.</p>
   - name: Jamie Lee Connor
     image: boston/jamieconnor.jpg
-    bio: Jamie is a designer and front-end developer working and living north of
+    bio: <p>Jamie is a designer and front-end developer working and living north of
       Boston. She studied Graphic Design at Massachusetts College of Art & Design
       and began a career within the print world. She eventually got bored and frustrated
       that there was a limit to what she could create - that's when she decided to
       learn to code. Jamie has a passion for building a beautiful and useable web
       and is excited to share this with the amazing members of the GDI community.
       You'll find her helping out with GDI Boston's marketing initiatives, as well
-      as teaching and assisting at various GDI classes.
+      as teaching and assisting at various GDI classes.</p>
   sponsors:
   - name: Custom Made
     logo: boston/logo-custommade.png
@@ -458,7 +458,7 @@
   leaders:
   - name: Cara Jo Miller
     image: boulder/carajo.jpg
-    bio: ! "Cara Jo is a Boulder transplant by way of Detroit, where she helped
+    bio: ! "<p>Cara Jo is a Boulder transplant by way of Detroit, where she helped
       start the Girl Develop It's Detroit chapter. She coded her first website back
       in 1996, which was a gallery for her Pokemon drawings. After moving to Detroit,
       she moved beyond HTML/CSS to PHP and while simultaneous becoming obsessed with
@@ -467,72 +467,72 @@
       great and decided to take the plunge out west. She now wrangles pixels and writes
       code as the Lead Designer for Simple Energy. Getting more women involved in
       tech has always been one of Cara Jo's passions, and that's what she brings to
-      Boulder. <i>In addition to being Boulder's Co-Leader,
+      Boulder.</p>\n               <p><i>In addition to being Boulder's Co-Leader,
       Cara Jo teaches Introduction & Intermediate HTML/CSS classes, &amp; various
-      workshops.</i> "
+      workshops.</i></p> "
     contact:
       twitter: CorrinaJo
       email: carajo@girldevelopit.com
   - name: Kate Bierbaum
     image: boulder/kate.jpg
-    bio: ! "Kate is a software developer who has been writing code for over a decade.
+    bio: ! "<p>Kate is a software developer who has been writing code for over a decade.
       She caught the coding bug in high school making websites for fun and hasn't
       stopped since. After making it formal by studying Computer Science & Mathematics
       at Dickinson College, Kate is now a professional developer who has worked at
       various start-ups in Washington D.C. and Boulder, CO. In her spare time she
-      enjoys hiking with her dog and cycling. <i>In addition
+      enjoys hiking with her dog and cycling.</p>\n               <p><i>In addition
       to being Boulder's Co-Leader, Kate teaches our Introduction to Javascript &amp;
-      jQuery class &amp; also TAs our HTML/CSS classes.</i>"
+      jQuery class &amp; also TAs our HTML/CSS classes.</i></p>"
     contact:
       email: kate@girldevelopit.com
   instructors:
   - name: Rachel Vecchitto
     image: boulder/rachel.jpg
-    bio: ! "Rachel is a web developer who's been building things on the internet
+    bio: ! "<p>Rachel is a web developer who's been building things on the internet
       since 2003. Currently employed by Etsy, she's also worked at Meetup.com, the
       New York Times, and a few startups that didn't start. She moved to Boulder in
       2011 and spends her spare time skiing, climbing and generally hanging out in
-      the mountains <i>Rachel teaches our Introduction to Javascript
-      &amp; jQuery classes, TAs our HTML/CSS classes, &amp; organizes Code &amp; Coffees.</i>"
+      the mountains<p>\n               <p><i>Rachel teaches our Introduction to Javascript
+      &amp; jQuery classes, TAs our HTML/CSS classes, &amp; organizes Code &amp; Coffees.</i></p>"
     contact:
       twitter: rachelv
   - name: Weston Platter
     image: boulder/weston.jpg
-    bio: Weston fell in love with software when his friends showed him how to dream
+    bio: <p>Weston fell in love with software when his friends showed him how to dream
       with code.  He works as a freelance developer in Boulder leveraging Ruby, Javascript,
       iOS, and servers.  He is involved with GDI because he wants to help others dream
-      with code.
+      with code.</p>
     contact:
       twitter: westonplatter
   - name: Nick Lang
     image: boulder/nick.png
-    bio: ! "Nick lives in Pine, Colorado working remotely for Simple Energy, specializing
+    bio: ! "<p>Nick lives in Pine, Colorado working remotely for Simple Energy, specializing
       in the development and deployment of Python web applications using the Django
       web framework. Nick's work sees him contributing open source projects in all
       areas of web development. From Bootstrap CSS scaffold plugins for Django, to
       presenting on using Salt as a configuration management tool with Django deployments.
       Nick has earned experience in all areas of building, deploying and maintaining
-      web sites.          Nick's other great passion is ultra-running,
+      web sites.</p>\n                        <p>Nick's other great passion is ultra-running,
       a pursuit characterized by dedication, determination and a disregard for pain
       and self preservation. So passionate is Nick, that he is the co-founder and
       creator of TreadHub, a web site dedicated to runners to plan, track and share
-      their training."
+      their training.</p>"
     contact:
       twitter: fxdgear
   - name: Debra Zapata
     image: boulder/debra.jpg
-    bio: ! "Debra is originally from Bolivia but loves living in Boulder. She was
+    bio: ! "<p>Debra is originally from Bolivia but loves living in Boulder. She was
       among the many that first learned about building websites back in the 90s (thank
       you Geocities) and continued to learn throughout college moving on to HTML/CSS.
       She recently attended RefactorU to fast track her programming skills and is
       super excited to help out with GDI Boulder. Her other passions include crafting
-      and reading sci-fi/fantasy young adult novels. Bring on the sparkly vampires!
-      <i>Debra Teaches our HTML/CSS Classes</i>"
+      and reading sci-fi/fantasy young adult novels. Bring on the sparkly vampires!</p>\n
+      \                     <p><i>Debra Teaches our HTML/CSS Classes</i></p>"
     contact:
       twitter: debrazapata
   - name: Caitlin McKenna
     image: boulder/caitlin.jpg
-    bio: ! "Caitlin is a Reed College graduate and Boulder native. Her first job
+    bio: ! "<p>Caitlin is a Reed College graduate and Boulder native. Her first job
       updating websites was for the Maria Rogers Oral History Program in Boulder,
       where she cultivated a deep appreciation for the internet as a repository and
       resource. After working as a waitress, at a newspaper, and for USA Rugby, she
@@ -540,25 +540,25 @@
       divides her time between Insight Designs Web Solutions and her own company,
       <a href=\"http://dmck.us\" target=\"blank\">DMCK Designs</a>, which produces
       mathematical scarves for chic geeks. In her free time, Caitlin bakes paleo muffins,
-      plays pool competitively, and takes her hounddog on drags. <i>Caitlin
-      Teaches our Intro to Bootstrap class as well as TAs our HTML/CSS classes.</i>"
+      plays pool competitively, and takes her hounddog on drags.</p>\n               <p><i>Caitlin
+      Teaches our Intro to Bootstrap class as well as TAs our HTML/CSS classes.</i></p>"
     contact:
       twitter: caitlinemckenna
   volunteers:
   - name: Teri Charles
     image: boulder/teri.jpg
     bio: ! "Teri is a Software Tester with over 10+ years experience. In 2013, she
-      made the decision that it was really time to learn how to code
-      (after numerous unsuccessful attempts). Imagine her delight when
-      she heard that a new group called GDIBoulder was starting up. She
+      made the decision\n              that it was really time to learn how to code
+      (after numerous unsuccessful attempts).\n              Imagine her delight when
+      she heard that a new group called GDIBoulder was starting up.\n              She
       attended their first class, \"Beginning HTML/CSS\", and hasn't looked back!
-      Over GDIBoulder's first year, Teri has taken just about every
-      class/workshop they've offered, has learned to build her own
-      website, is now learning JavaScript, and has even taught a GDI workshop
-      on \"Introduction to Programming Concepts (for True Beginners)\"! When
-      not testing software or learning how to code it, Teri loves living in Boulder,
-      hanging out with good friends, loves books, old movies, a rainy
-      day sitting in a coffee shop (which are a precious few in Colorado!),
+      Over\n              GDIBoulder's first year, Teri has taken just about every
+      class/workshop they've offered,\n              has learned to build her own
+      website, is now learning JavaScript, and has even taught a GDI\n              workshop
+      on \"Introduction to Programming Concepts (for True Beginners)\"!\n              When
+      not testing software or learning how to code it, Teri loves living in Boulder,\n
+      \             hanging out with good friends, loves books, old movies, a rainy
+      day sitting in a coffee\n              shop (which are a precious few in Colorado!),
       and believes in never stop learning new things."
     contact:
       twitter: booksrg8
@@ -600,11 +600,11 @@
   leaders:
   - name: Lulu Murphy
     image: bucks-county/lulu.jpg
-    bio: Lulu has a Master's Degree in Computer Information Technology from the
+    bio: <p>Lulu has a Master's Degree in Computer Information Technology from the
       University of Pennsylvania, a Master's Degree in Acting from Carnegie Mellon,
       and a Bachelor's Degree in Computer Science from Temple University.  With over
       20 years of programming experience, Lulu is excited to lead the Bucks County
-      Chapter of GDI!
+      Chapter of GDI!</p>
     contact:
       email: lulu@girldevelopit.com
   instructors: []
@@ -626,14 +626,14 @@
   leaders:
   - name: Lena Levine
     image: buffalo/elenamoiseeva.jpg
-    bio: ! "Lena Levine is a web designer with a passion for beautiful typography,
-      architecture and clean code. While obtaining her degree in Computer
-      Science in Russia, she was always sensitive about the lack of
-      women in technology programs. She is really excited to be a part
-      of GDI team and to share its core goals and values. Her goal
-      is to create a supportive community in Buffalo for women of all ages, and to
-      show that coding can be fun and fascinating, and that it's never
-      \"too late to learn.\" "
+    bio: ! "<p>Lena Levine is a web designer with a passion for beautiful typography,\n
+      \             architecture and clean code. While obtaining her degree in Computer
+      Science in\n              Russia, she was always sensitive about the lack of
+      women in technology programs. She\n              is really excited to be a part
+      of GDI team and to share its core goals and values. Her\n              goal
+      is to create a supportive community in Buffalo for women of all ages, and to\n
+      \             show that coding can be fun and fascinating, and that it's never
+      \"too late to learn.\" </p>"
     contact:
       email: elena@girldevelopit.com
       twitter: elenawebstudio
@@ -641,32 +641,32 @@
   instructors:
   - name: Katie Barnum
     image: buffalo/katie-barnum.jpeg
-    bio: ! "Katie Barnum is a front-end web developer with a background in graphic
-      design and typography. She became interested in development when
-      she was put in charge of the company website at her first job and started
+    bio: ! "<p>Katie Barnum is a front-end web developer with a background in graphic
+      design and typography. \n            She became interested in development when
+      she was put in charge of the company website at her first job and \n            started
       learning HTML and CSS. The rest is history. Katie now works at the University
-      at Buffalo as a web developer, specializing in WordPress. When
+      at Buffalo as a web developer, \n            specializing in WordPress. When
       not in front of the computer, she enjoys rowing, photography, craft beer, and
-      snowboarding."
+      snowboarding.</p>"
   volunteers:
   - name: Jessica Hyejin Lee
     image: buffalo/jessica.jpg
-    bio: Jess is an entrepreneur and a former activist passionate about the connection
+    bio: <p>Jess is an entrepreneur and a former activist passionate about the connection
       between technology and social change. GDI is special to her, as it opened the
       doors to tech community and entrepreneurship for her. She is excited to serve
       as a bridge for fellow women to make dreams happen through technology. She is
       the co-founder of HandStack, a powerful web &amp; mobile application for community
-      organizers. She enjoys rowing in her spare time.
+      organizers. She enjoys rowing in her spare time.</p>
     contact:
       twitter: jessicahyejin
   - name: Wendy Jansson
     image: buffalo/wendy.jpg
-    bio: Wendy is a Buffalo native pursuing a BS in Computer Engineering at SUNY
+    bio: <p>Wendy is a Buffalo native pursuing a BS in Computer Engineering at SUNY
       Buffalo. She's so glad to have the great people in Girl Develop It Buffalo to
       learn alongside-- this group has been a huge source of encouragement, knowledge,
       and fun for her! Helping build this wonderful local tech community for women
       in Buffalo is truly a dream come true. Her volunteer work with Girl Develop
-      It Buffalo focuses on reaching out to students at local universities and colleges.
+      It Buffalo focuses on reaching out to students at local universities and colleges.</p>
   sponsors:
   - logo: buffalo/insight.png
     website: http://insightinternationalusa.com/
@@ -688,37 +688,37 @@
   leaders:
   - name: Maureen McElaney
     image: burlington/maureenmcelaney.jpg
-    bio: Maureen McElaney is a recent transplant to Burlington, VT and fell in
+    bio: <p>Maureen McElaney is a recent transplant to Burlington, VT and fell in
       love with the city because of its ingenuity and beautiful mountain views. She
       is a rabid supporter of Vermont's up and coming tech scene. She's passionate
       about building a welcoming environment where other women will discover the joy
       of code, and is still an active learner herself. She loves Girl Develop It so
       much she even recruited her brother from afar to start teaching for GDI Philly!
       Maureen also loves kitties, cooking, and local Vermont beer and is on the constant
-      search to find Champy (Burlington's very own lake monster!)
+      search to find Champy (Burlington's very own lake monster!)</p>
     contact:
       email: maureen@girldevelopit.com
       twitter: Mo_Mack
   instructors:
   - name: Sarah Pettitt
     image: burlington/sarahpettitt.png
-    bio: Sarah Pettitt is a professor at Champlain College as well as a freelance
+    bio: <p>Sarah Pettitt is a professor at Champlain College as well as a freelance
       web developer. As a visiting fellow at the women's college, Somerville College,
       Oxford, she developed several programs to encourage women to enter the wonderful
       world of technology and computing. She brings this passion to Girl Develop It
       and hopes to help numerous women into this fun and rewarding profession. Sarah
-      is also a co-owner of a Horse and Mule Farm in Grand Isle, VT.
+      is also a co-owner of a Horse and Mule Farm in Grand Isle, VT.</p>
   volunteers:
   - name: Elissa Benedetto
     image: burlington/ElissaBenedetto.jpg
-    bio: Elissa Benedetto is a student at the University of Vermont. She is currently
+    bio: <p>Elissa Benedetto is a student at the University of Vermont. She is currently
       working toward her Bachelors degree in Computer Science while mixing things
       up with a minor in Dance. Before her involvement with the Burlington chapter
       of GDI, Elissa discovered the non-profit while founding a club on her college
       campus dedicated to empowering women in a male-dominated tech industry. Her
       love of coding comes with the knowledge that one can never stop learning, and
       GDI is there to help her grow! In her spare time she enjoys biking, dancing,
-      and petting other people's dogs.
+      and petting other people's dogs.</p>
   sponsors:
   - name: Dealer.com
     logo: burlington/dealerlogo.png
@@ -743,91 +743,93 @@
   leaders:
   - name: Liz Abinante
     image: chicago/liza.jpg
-    bio: Liz Abinante is an engineer for Instructure and co-leader of the Girl
+    bio: <p>Liz Abinante is an engineer for Instructure and co-leader of the Girl
       Develop It Chicago chapter. She is infectiously enthusiastic about web development,
       teaching, learning, and tacos. She enjoys writing and speaking about education,
       diversity, and happiness in engineering. Previously, Liz has worked as a writer,
-      editor, and knitwear designer.
+      editor, and knitwear designer.</p>
     contact:
       website: http://lizabinante.com
       twitter: feministy
       email: liza@girldevelopit.com
   - name: Katy Exline
     image: chicago/katy.jpg
-    bio: Katy Exline is an engineer for Fooda by day and co-leader of Girl Develop
+    bio: <p>Katy Exline is an engineer for Fooda by day and co-leader of Girl Develop
       It Chicago by night. She began her journey into web development by taking a
       GDI Columbus class, which inspired her to attend Dev Bootcamp, where she currently
       serves as a mentor. She worked as a policy researcher and a GIS analyst in a
       previous life. New food, family, scotch, her dog, and maps are just a few of
-      her favorite things.
+      her favorite things.</p>
     contact:
       twitter: Kathryn_Ex
       email: kathryn@girldevelopit.com
   instructors:
   - name: Stephanie Finken
     image: chicago/stephaniefinken.jpg
-    bio: ! "Stephanie is a front-end web developer at GiveForward (<a href = 'http://www.giveforward.com/'
+    bio: ! "<p>Stephanie is a front-end web developer at GiveForward (<a href = 'http://www.giveforward.com/'
       alt = 'GiveForward website' target = '_blank'>http://www.giveforward.com/</a>).
       She studied graphic design and quickly learned she loved the problem solving
       that came with it. She was fortunate enough to be introduced to web design and
       development where she could combine her interests in design and technology.
       She has a passion for learning and giving back to the community. She loves supporting
-      local businesses and restaurants, and enjoys traveling, drawing and zoo visits."
+      local businesses and restaurants, and enjoys traveling, drawing and zoo visits.\n
+      \             </p>"
   - name: Maria Tzeka
     image: chicago/maria.jpeg
-    bio: Maria Tzeka is a part of the Engineering team at MarkITx working on the
+    bio: <p>Maria Tzeka is a part of the Engineering team at MarkITx working on the
       front-end and using frameworks such as Backbone. She is an alumni of the Interactive
       Arts and Media BFA program at Columbia College Chicago and has been previously
       worked for The Field Museum and Mediafly, Inc. Having volunteered for the Adler
       Planetarium's Girls Do Hack event last year, Maria has developed a strong interest
-      in continuing to help out in the community.
+      in continuing to help out in the community. </p>
   - name: Lauren Scott
     image: chicago/lauren.jpeg
-    bio: Lauren is a full-stack web developer, poet, Dev Bootcamp graduate, and
+    bio: <p>Lauren is a full-stack web developer, poet, Dev Bootcamp graduate, and
       general life enthusiast.  She loves programming because it combines her passion
       for creating things with her love of problem solving.  Girl Develop It gave
       her a safe space to throw herself whole-heartedly into web development, and
       she's ready to pay it forward! She's passionate about teaching, learning, coding,
-      feminism, tabletop RPGs and a good dumpling.
+      feminism, tabletop RPGs and a good dumpling. </p>
   - name: Monica Friend
     image: chicago/monica.jpeg
-    bio: Monica is currently a Quality Assurance and Application Operations Support
+    bio: <p>Monica is currently a Quality Assurance and Application Operations Support
       Specialist at Groupon. A little over a year ago, she took her first Girl Develop
       It class and instantly fell in love with all things web. After completing more
       classes, Monica started to TA for GDI and shortly thereafter received a promotion
       to a technical role at Groupon. In her free time, Monica runs half-marathons,
       tends to her dog Leland, dance/walks around Chicago, and babysits her favorite
-      niece and nephew.
+      niece and nephew.</p>
   - name: Meagan Evanoff
     image: chicago/meagan.jpeg
-    bio: Meagan Evanoff, Senior Front End Developer at Organizing for Action. Meagan
-      started out as a designer, and now she spends her time building things.
+    bio: <p>Meagan Evanoff, Senior Front End Developer at Organizing for Action. Meagan
+      started out as a designer, and now she spends her time building things.</p>
   - name: Jen Myers
     image: chicago/jenmyers.png
-    bio: Jen Myers is a web designer/developer and part of the instructor team
+    bio: <p>Jen Myers is a web designer/developer and part of the instructor team
       at Dev Bootcamp in Chicago. In 2011, she founded the Columbus, Ohio chapter
       of Girl Develop It, an organization that provides introductory coding classes
       aimed at women, and currently serves there as an organizational advisor. She
       speaks regularly about design, development and diversity, and focuses on finding
-      new ways to make both technology and technology education accessible to everyone.
+      new ways to make both technology and technology education accessible to everyone.</p>
   volunteers:
   - name: Jen Mozen
     image: chicago/jenmozen.jpg
-    bio: ! "Jen is an entrepreneur and digital media consultant. She studied computer
+    bio: ! "<p>Jen is an entrepreneur and digital media consultant. She studied computer
       science and has spent much of her career leading agile software development
       teams globally. In college, Jen developed a passion for getting girls interested
       in STEM fields and is excited about making software development more accessible
       to everyone. She's a self-confessed learning junkie (Coursera, Codecademy, etc.),
-      avid reader, enthusiastic sports fan and cool aunt.   "
+      avid reader, enthusiastic sports fan and cool aunt.\n                </p>"
     contact:
       twitter: jmozen
   - name: Amanda Powell
     image: chicago/amandapowell.jpg
-    bio: ! "After years of managing technical projects and watching developers
+    bio: ! "<p>After years of managing technical projects and watching developers
       have all the fun, Amanda decided to join the party. She's learning Ruby on Rails
       and contributes to web development projects for nonprofits as a front-end developer.
       Amanda is drawn to programming because there's always something new to discover.
-      Every time she learns something new, she wants to share it with someone else!"
+      Every time she learns something new, she wants to share it with someone else!\n
+      \               </p>"
     contact:
       twitter: CmonPowell
   sponsors:
@@ -848,44 +850,44 @@
   slug: columbus
   leaders:
   - name: Kim Hamper
-    bio: Kim started coding in 2011, after a battle with a Thai waterfall left
+    bio: <p>Kim started coding in 2011, after a battle with a Thai waterfall left
       her with a broken leg and a lot of free time. On a whim, she picked up a book
       on HTML and CSS, started learning, and has yet to turn back. She's now a software
       engineering graduate student, a freelance web designer, an enthusiastic TA for
       GDI's classes, and a chapter leader. But mostly, she's still learning. Kim is
       passionate about building an open, friendly environment where women can discover
-      that same excitement she felt on creating her first website.
+      that same excitement she felt on creating her first website.</p>
     image: columbus/kimhamper.png
     contact:
       twitter: k_alongthewires
       email: kim@girldevelopit.com
   instructors:
   - name: Rachel Slaby
-    bio: Rachel Slaby is a Ruby on Rails Developer at JP Morgan Chase. She loves
+    bio: <p>Rachel Slaby is a Ruby on Rails Developer at JP Morgan Chase. She loves
       learning and sharing that knowledge with others. When she's not attending hack
       nights or playing video games, Rachel's favorite thing to do is research new
       hobbies which currently include bonsai, silver smithing, pysanky, nail art,
-      and crafting cosmetics.
+      and crafting cosmetics.</p>
     image: columbus/rachelslaby.png
   - name: Cindy Payne
-    bio: Cindy is currently an IT Architect with Nationwide Insurance, but spent
+    bio: <p>Cindy is currently an IT Architect with Nationwide Insurance, but spent
       most of her career building websites. Software engineering is her second career,
       after going back to school to get a Computer Science degree 12 years ago. As
       she was encouraged by a programmer long ago, she teaches and TAs to encourage
-      others to pursue careers in IT. It's never too late!.
+      others to pursue careers in IT. It's never too late!.</p>
     image: columbus/cindypayne.png
   - name: Jen Mankin
-    bio: Jen started coding in her friend's basement over 12 years ago. Initially
+    bio: <p>Jen started coding in her friend's basement over 12 years ago. Initially
       more interested in web and print design, she nonetheless quickly found her place
       as a web developer in a Coldfusion shop also becoming familiar with SQL and
       database design. Besides proficiency in a wide range of client and server languages,
       Jen has a firm grasp of object-oriented programming concepts. Girl Develop IT
       combines her love of code with a desire to do meaningful work. She looks forward
-      to meeting fellow females interested in unleashing their inner-geek.
+      to meeting fellow females interested in unleashing their inner-geek.</p>
     image: columbus/jenmankin.png
   volunteers:
   - name: Katia Tenney
-    bio: Hi! I'm Katia Tenney. After I attended the GDI's hack nights I immediately
+    bio: <p>Hi! I'm Katia Tenney. After I attended the GDI's hack nights I immediately
       felt connected with the people in the room, they were friendly and warm. Some
       of the attendees were coding; others were trying to come up with project ideas
       to work on. GDI made me realize how much fun coding and solving problems can
@@ -893,10 +895,10 @@
       technology world and for that reason I wanted to use GDI as tool to communicate
       and help others to get closer to their career and life  goals. For a little
       about me, I enjoy puzzles, international  foods and I am always  willing to
-      learn new things!!!!
+      learn new things!!!!</p>
     image: columbus/katiatenney.png
   - name: Morgan Green
-    bio: Morgan works for a nonprofit arts organization (VSA Ohio) and a letterpress
+    bio: <p>Morgan works for a nonprofit arts organization (VSA Ohio) and a letterpress
       print shop (Igloo Letterpress). As an Outreach Coordinator by day, she was naturally
       curious about how those blog posts she published actually work and where all
       that copy actually goes once she clicks save and continue on the VSA Ohio website.
@@ -904,19 +906,19 @@
       and the overall mission of the organization and wanted to get the word out on
       how women everywhere can get involved. She loves biking and running, ANYTHING
       coffee-related, and the smell of libraries. She is also still perplexed by things
-      like div but hopes to get a better handle on it soon!
+      like div but hopes to get a better handle on it soon! </p>
     image: columbus/morgangreen.png
     contact:
       twitter: agreenmorgan
   - name: Connie Sheehan
-    bio: Hi! I'm Connie Sheehan. As a communication professional, I've always loved
+    bio: <p>Hi! I'm Connie Sheehan. As a communication professional, I've always loved
       the creative side of media but have come to truly appreciate that developing
       great code builds the foundation for sharing powerful ideas. As Outreach Coordinator
       for the Columbus chapter, I look forward to spreading the GDI message throughout
-      the Columbus digital community.
+      the Columbus digital community.</p>
     image: columbus/conniesheehan.png
   - name: Carl Tracy
-    bio: Carl grew up squarely in the rust belt where he started programming on
+    bio: <p>Carl grew up squarely in the rust belt where he started programming on
       his Atari 800. When he's not cooking food for Girl Develop It members, he helps
       manage a horse farm and performs some sort of mysterious, complicated job at
       Nationwide Insurance. You can stop by his house anytime for a ridiculous home
@@ -926,7 +928,7 @@
       rights of all people, bake, play with his kitten, and write bios in the third
       person. He promises a big teary-eyed hug to anyone who actually recognizes what
       his twitter handle means (as long as you're cool with hugs because he realizes
-      not everybody is).
+      not everybody is).</p>
     image: columbus/carltracy.png
     contact:
       twitter: chaos46692
@@ -952,10 +954,10 @@
   leaders:
   - name: Becky Singson
     image: cincinnati/becky2.jpg
-    bio: ! "Becky Singson has spent her career surrounded by developers, currently
+    bio: ! "<p>Becky Singson has spent her career surrounded by developers, currently
       as a Technical Strategy Architect at Rockfish. She takes bizarre pleasure in
       details and technical documentation. She has a passion for all things culinary,
-      memorizing song lyrics, and her boxer Emma.  On
+      memorizing song lyrics, and her boxer Emma. <p>\n                      <p>On
       why I want to lead up this chapter: I have worked in software development or
       digital advertising for the bulk of my professional life - and more often than
       not have been one of few females on my team (if not the only one). Technology
@@ -964,57 +966,57 @@
       equipping women with basic knowledge of how it works can only serve to benefit.
       I have a passion for volunteering and trying to help others where I can, and
       the organization's goals align with my professional expertise so it feels like
-      a perfect fit."
+      a perfect fit.</p>"
     contact:
       twitter: beckysingson
   - name: Becky Sroufe
     image: cincinnati/becky.jpg
-    bio: ! " Becky Sroufe is a designer + front end developer based in Cincinnati,
+    bio: ! "<p> Becky Sroufe is a designer + front end developer based in Cincinnati,
       Ohio. She is a board member of AIGA Cincinnati and currently works as a front
       end developer at a growing startup. She loves drinking too much coffee, indulging
-      in local craft beers, and running around outdoors. <b>Why
+      in local craft beers, and running around outdoors.<p>\n                      <p><b>Why
       GDI is important to me:</b> As a woman working in tech, I am really passionate
       about women getting more involved in tech + development, to increase our strength
-      + presence in the industry and local community. "
+      + presence in the industry and local community. </p>"
     contact:
       twitter: beckysroufe
   instructors:
   - name: Julie Niesen Gosdin
     image: cincinnati/juliegosdin.jpeg
-    bio: ! "Julie Niesen Gosdin has been around the internet before anyone called
-      it that (and way before it was \"social\"). She's the writer of
+    bio: ! "<p>Julie Niesen Gosdin has been around the internet before anyone called
+      it that (and way before it\n            was \"social\"). She's the writer of
       a local food blog, <a href ='http://www.winemedinemecincinnati.com' target=
-      '_blank'>wine me, dine me</a> and a speaker on topics including social
+      '_blank'>wine me, dine me</a> and a speaker on topics including\n            social
       media, educational technology and food. She's particularly passionate about
-      the transformation of learning through technology, and using CMS
-      and LMS systems to that end. She received an M.Ed. from Xavier
+      the transformation of\n            learning through technology, and using CMS
+      and LMS systems to that end. She received an M.Ed. from\n            Xavier
       University and a B.A. from University of Cincinnati, which means she is very
-      confused during the Crosstown Shootout."
+      confused during the\n            Crosstown Shootout.</p>"
   - name: John Back
     image: cincinnati/johnback.png
-    bio: John Back is a web developer based in Cincinnati, OH. He currently works
+    bio: <p>John Back is a web developer based in Cincinnati, OH. He currently works
       as lead developer for Blackbook HR. John is active in the startup community.
       John enjoys living in downtown Cincinnati, competitive kickball, and being a
-      vegetarian.
+      vegetarian.</p>
   - name: Eric Boggs
     image: cincinnati/ericboggs.jpg
-    bio: Eric Boggs is a web developer for Vinimaya, an e-procurement software
+    bio: <p>Eric Boggs is a web developer for Vinimaya, an e-procurement software
       company based in Cincinnati. He spends most of his time developing user interfaces
       and thinking about how people interact with websites. He is a Marine Corps veteran
       and is the organizer of <a href = "http://www.meetup.com/LEAD-Cincy/" alt="Lead
       Cincinnati" target = "_blank">Lead Cincinnati</a>, a local meetup group. When
       he's not working, you can find him growing out his beard and hanging out with
-      his wife and dog.
+      his wife and dog. </p>
   volunteers:
   - name: Angela Lyman
     image: cincinnati/angelalyman.jpeg
-    bio: ! "Angela Lyman is a volunteer for GDI. She has always been a big believer
-      in the value of education and the strength of Girl Power. So becoming
-      a part of the GDI team in Cincinnati was a natural for her. Erin, Heather
+    bio: ! "<p>Angela Lyman is a volunteer for GDI. She has always been a big believer
+      in the value of education and\n            the strength of Girl Power. So becoming
+      a part of the GDI team in Cincinnati was a natural for her. Erin,\n            Heather
       and our wonderful TAs make it easy to be part of the team and they have all
-      contributed to GDI's success in Cincinnati. Angela has a background
-      in training and marketing and has worked in a variety of industries,
-      from automotive to legal to medical devices."
+      contributed to GDI's\n            success in Cincinnati. Angela has a background
+      in training and marketing and has worked in a variety of\n            industries,
+      from automotive to legal to medical devices.</p>"
   sponsors:
   - name: Brandery
     logo: cincinnati/brandery.jpg
@@ -1039,41 +1041,41 @@
   leaders:
   - name: Mina Markham
     image: dallas-fort-worth/mina.jpg
-    bio: Mina is the founder of Girl Develop It DFW. Formally trained in design,
+    bio: <p>Mina is the founder of Girl Develop It DFW. Formally trained in design,
       she now prefers to spend her time hacking at code. By day, she's a front-end
       developer at Parago, building applications for corporate clients and their consumers.
       By night, she's experimenting with new technologies, furthering her own knowledge
       to teach to others. Mina is a Sass lover, Syracuse grad (Go Orange!), an unapologetic
-      feminist and baker of cupcakes.
+      feminist and baker of cupcakes.</p>
     contact:
       email: mina@girldevelopit.com
       twitter: minamarkham
   - name: Leslie Wilson-Wendling
     image: dallas-fort-worth/leslie.jpg
-    bio: Leslie is a web development engineer with over 15 years in all aspects
+    bio: <p>Leslie is a web development engineer with over 15 years in all aspects
       of web development, including consulting, business analysis, e-commerce implementation,
       QA testing, social media management/marketing, user interface and user experience
       development, SEO, analytics, and database and server administration. She is
       currently working as a full-time freelance/contract developer and a part-time
       college professor. She is always looking for new technologies and learning the
       latest. In her free time, when she's not chasing her kids around, you will find
-      her running or playing women's outdoor soccer.
+      her running or playing women's outdoor soccer.</p>
     contact:
       email: leslie@girldevelopit.com
       twitter: lesliewdotcom
   instructors:
   - name: Randy Jenson
     image: dallas-fort-worth/randy.jpg
-    bio:  Randy Jensen is a well-known Dallas-based web developer. He has worked
+    bio: <p> Randy Jensen is a well-known Dallas-based web developer. He has worked
       in everything from freelancing to the startup world to education doing what
       he does best, front-end development. He has also created many popular tools
       on the internet such as <a href='http://css3generator.com'>css3generator.com</a>.
-      Find out more about him at <a href='http://randyjensen.com'>randyjensen.com</a>.
+      Find out more about him at <a href='http://randyjensen.com'>randyjensen.com</a>.</p>
     contact:
       twitter: randyjensen
   - name: Courtney Joy Jemison
     image: dallas-fort-worth/courtney.jpg
-    bio: ! "Courtney Joy was introduced to Photoshop 6 years ago with no intention
+    bio: ! "<p>Courtney Joy was introduced to Photoshop 6 years ago with no intention
       of designing for a hobby or a profession. She was thrown into the fire as a
       designer when the ministry she was working for lost their graphic artist. She'd
       only dabbled in Photoshop a couple of times and seemed to pick up the creative
@@ -1082,9 +1084,9 @@
       completely absorbed into the design world, which later lead to her studying
       HTML, CSS, PHP and Javascript. Courtney is now the Creative Director for Church
       Media Group in Keller, TX where she leads a team of designers in web design
-      and front-end development. When Courtney isn't designing,
+      and front-end development.</p>\n               <p>When Courtney isn't designing,
       developing or leading a team of amazing designers, she enjoys spending time
-      with her husband; loving on her cat, Lady Grey; and working out to stay fit."
+      with her husband; loving on her cat, Lady Grey; and working out to stay fit.</p>"
     contact:
       twitter: courtneyjoy
   volunteers: []
@@ -1110,31 +1112,32 @@
   leaders:
   - name: Misty Melton
     image: baltimore/misty.jpg
-    bio: ! "Dabbling in code for fun over the years, Misty Melton likes to joke
-      that she's done every job in IT except be a programmer. With
-      a background in implementation, training, process mapping/improvement,
-      and QA/tech writing she set off to find opportunities to expand her
+    bio: ! "<p>Dabbling in code for fun over the years, Misty Melton likes to joke
+      that she's\n              done every job in IT except be a programmer. With
+      a background in implementation, training,\n              process mapping/improvement,
+      and QA/tech writing she set off to find opportunities to expand\n              her
       skillset. With a budding middle school programmer at home, her motivation was
-      two-fold. After finding few opportunities she decided if they
-      don't currently exist, she'll create them! Thus she dove headfirst
-      into bringing GDI to Baltimore and DC.  She also runs coding clubs, including
+      two-fold.\n              After finding few opportunities she decided if they
+      don't currently exist, she'll create them!\n              Thus she dove headfirst
+      into bringing GDI to Baltimore and DC.  She also runs coding clubs,\n              including
       mentoring a Technovation Challenge team, and volunteers with STEM middle school
-      programs. Aside from spreading geek culture as far and
-      wide as she can, Misty spends a ridiculous amount of time reading,
-      hiking, watching Netflix, and drinking coffee."
+      programs.</p>\n              <p>Aside from spreading geek culture as far and
+      wide as she can, Misty spends a ridiculous amount of\n              time reading,
+      hiking, watching Netflix, and drinking coffee.</p>"
     contact:
       email: misty@girldevelopit.com
       twitter: m0onb4by
   - name: Amber Stradford
     image: dc/amber.jpg
-    bio: ! "Amber is a Product Manager with a background in digital advertising.
-      She joined GDI because of her passion for helping women interested
-      in web development, like her, find their footing. She is honored
+    bio: ! "<p>Amber is a Product Manager with a background in digital advertising.
+      She joined GDI because\n              of her passion for helping women interested
+      in web development, like her, find their footing. She is\n              honored
       and excited to be involved in an organization that helps women of all different
-      backgrounds gain the training necessary to code. Amberis a Bachelor of
-      Marketing and a Master of Information Technology specializingin Project
-      Management. When not working she enjoys traveling, going to the movies,
-      hanging out with family and friends and anything adventurous."
+      backgrounds\n              gain the training necessary to code.</p>\n\n              <p>Amber
+      is a Bachelor of Marketing and a Master of Information Technology specializing
+      in Project\n              Management.</p>\n\n              <p>When not working
+      she enjoys traveling, going to the movies, hanging out with family and friends\n
+      \             and anything adventurous.</p>"
     contact:
       email: amber@girldevelopit.com
       twitter: amb3rls
@@ -1155,36 +1158,36 @@
   slug: detroit
   leaders:
   - name: Erika Carlson
-    bio: Erika Carlson was studying clinical psychology in 2011, when she wrote
+    bio: <p>Erika Carlson was studying clinical psychology in 2011, when she wrote
       her first line of Python code. She fell in love with programming, decided to
       change paths, and is now a software developer and director of the Developer
       Apprentice Program at <a href='http://www.detroitlabs.com'>Detroit Labs</a>.
       The mission of GDI resonates personally for Erika, and she is deeply passionate
       about creating a community of peers and mentors for women exploring the field
-      of technology for the first time.Erika is passionate about the potential
+      of technology for the first time.</p><p>Erika is passionate about the potential
       of technology to create positive change in the world, and she teaches programming
       and web development to students of all ages. When she's not teaching people
       to write code, she loves traveling, biking, paddleboarding, camping, and hanging
-      out with her corgi, Bella.
+      out with her corgi, Bella.</p>
     image: detroit/erikacarlson.jpg
     contact:
       twitter: eacarlson
       email: erika@girldevelopit.com
   - name: Michelle Srbinovich
-    bio: Michelle Srbinovich is the Co-General Manager of WDET 101.9FM, Detroit's
+    bio: <p>Michelle Srbinovich is the Co-General Manager of WDET 101.9FM, Detroit's
       public radio station. She's passionate about accelerating the growth of Detroit's
       tech industry by building a strong community of female developers and technology
       leaders. Michelle is excited to extend GDI's reach across Southeast Michigan
       and provide women from all walks of life with the opportunity to connect, learn
       code, and be part of moving Detroit forward. She's not only a chapter leader,
-      she's also a student.
+      she's also a student.</p>
     image: detroit/michellesrbinovich.jpg
     contact:
       twitter: MSrbinovich
       email: michelle@girldevelopit.com
   - name: Laura Eagin
     image: detroit/lauraeagin.jpg
-    bio: ! 'Laura is a cheerleader for do-it-yourself-ers and freelancers making
+    bio: ! '<p>Laura is a cheerleader for do-it-yourself-ers and freelancers making
       the work-life balance work for them. She is a freelance web developer who primarily
       builds custom WordPress sites for small businesses. Before becoming a web developer,
       her experience was in graphic design and motion graphics. Laura is a new Michigander.
@@ -1192,28 +1195,28 @@
       France. Little-known fact: Laura once started a business and worked out of a
       VW camper van while road-tripping around the United States. Laura is a Co-Organizer
       and Lead Instructor for GDI Detroit. She mentors new instructors and teaching
-      assistants, and teaches WordPress, HTML, CSS and Responsive Web Design classes.'
+      assistants, and teaches WordPress, HTML, CSS and Responsive Web Design classes.</p>'
     contact:
       twitter: choolaura
   - name: Nicole Exel
     image: detroit/nicoleexel.jpg
-    bio: ! 'Nicole is what we call a designoper. She has background in graphic
+    bio: ! '<p>Nicole is what we call a designoper. She has background in graphic
       design and front-end web development, and has a passion for UX and responsive
       design. Making websites and apps beautiful and easier to use is her thing. She
       especially loves helping students reach that pivotal moment in coding where
-      things. just. click.Nicole is the Assistant Organizer of the Detroit
+      things. just. click.</p><p>Nicole is the Assistant Organizer of the Detroit
       chapter. She also teaches classes in HTML & CSS and responsive design, and is
-      actively involved with the Detroit Women''s Tech Mentoring Group.Some
+      actively involved with the Detroit Women''s Tech Mentoring Group.</p><p>Some
       of Nicole''s favorite things are: riding bikes to sushi dates with her husband,
       walking her Frankweiler (Franny the Rottweiler), and watching her son transform
-      into a good human.'
+      into a good human.</p>'
     contact:
       twitter: gopixelsgo
   - name: Leeann Drees
-    bio: Leeann is a cyclist, cat enthusiast, and a freelance developer specializing
+    bio: <p>Leeann is a cyclist, cat enthusiast, and a freelance developer specializing
       in custom WordPress sites for small businesses and entrepreneurs. She serves
       as the Community Manager for Girl Develop It Detroit and teaches HTML & CSS
-      and WordPress.
+      and WordPress.</p>
     image: detroit/leeanndrees.jpg
     contact:
       twitter: leeanndrees
@@ -1222,22 +1225,22 @@
   instructors:
   - name: Nick DeNardis
     image: detroit/nickdenardis.png
-    bio: Nick DeNardis is the Associate Director of Web Communications at Wayne
+    bio: <p>Nick DeNardis is the Associate Director of Web Communications at Wayne
       State University. As host of the video blog EDU Checkup, he reviews higher education
       sites from the point of view of a first time visitor. He is the curator of EDU
       Snippits, a hand picked selection of inspiring and unique higher education web
       elements. He is a respected speaker at conferences on subjects ranging from
       Web usability, mobile, accessibility, and analytics. He is also one of the directors
-      of TEDxDetroit.
+      of TEDxDetroit.</p>
     contact:
       twitter: nickdenardis
   - name: Julie Cameron
     image: ann-arbor/julie.jpg
-    bio: Julie's played various roles in the web development industry for the last
+    bio: <p>Julie's played various roles in the web development industry for the last
       seven years and is currently working remotely around metro Detroit as a frontender
       for Articulate. She's become very passionate about Sass, CSS3, HTML5, and modular
       architecture, is an advocate for responsive web design, a student of JavaScript,
-      an open-source developer, an agile proponent, and self-improvement practitioner.
+      an open-source developer, an agile proponent, and self-improvement practitioner.</p>
     contact:
       email: jewl@girldevelopit.com
       twitter: jewlofthelotus
@@ -1248,9 +1251,9 @@
     logo: detroit/atomicobject.jpeg
     website: http://www.atomicobject.com
   logo: gdi_logo_badge.png
-  announcements:  Take the Detroit community survey (<a href = "http://www.gdidetroit.com/surveys/community.html"
+  announcements: <p> Take the Detroit community survey (<a href = "http://www.gdidetroit.com/surveys/community.html"
     target ="_blank">http://www.gdidetroit.com/surveys/community.html</a>) if you
-    would like to get involved with the chapter!
+    would like to get involved with the chapter! </p>
   twitter: GDIdet
   facebook: GirlDevelopItDetroit
   email: detroit@girldevelopit.com
@@ -1265,30 +1268,30 @@
   leaders:
   - name: Daun Davids
     image: fort-collins/daun.png
-    bio: ! "Daun absolutely loves to code and has ever since writing her first
-      BASIC program in high school. She continued on to pursue first
-      a degree in Computer Science and recently completed her Master's degree in
-      Computational Science & Robotics. Daun has spent over 20 years
-      in software development as both a corporate employee and as an
-      independent software consultant. She feels strongly that the world needs more
-      women in technology and is excited to use her skills, knowledge
-      and experience to help other women learn to love coding too. Her
+    bio: ! "<p>Daun absolutely loves to code and has ever since writing her first
+      BASIC program in high school.\n            She continued on to pursue first
+      a degree in Computer Science and recently completed her Master's degree in\n
+      \           Computational Science & Robotics.   Daun has spent over 20 years
+      in software development as both a corporate\n            employee and as an
+      independent software consultant.  She feels strongly that the world needs more
+      women in\n            technology and is excited to use her skills, knowledge
+      and experience to help other women learn to love coding too.\n             Her
       favorite free time activities are hanging out with her kids and tracking down
-      the long-lost branches of her family tree."
+      the long-lost branches of her family tree.</p>"
     contact:
       email: daun@girldevelopit.com
       twitter: daunmarie
   - name: Gretchen Kastetter
     image: fort-collins/gretchen.jpg
-    bio: ! "Gretchen is a website designer + front-end developer and owner of Haunted
-      Mesa Design. Her passion is working with business owners to help
-      launch their online web presence by combining all of the things
-      that make up a great website: responsive design, content management, SEO,
+    bio: ! "<p>Gretchen is a website designer + front-end developer and owner of Haunted
+      Mesa Design.\n            Her passion is working with business owners to help
+      launch their online web presence by\n            combining all of the things
+      that make up a great website: responsive design, content management,\n            SEO,
       and social media. A self-proclaimed 'purist' who worked solely in HTML and CSS,
-      Gretchen more recently discovered the joys of working with WordPress.
-      Having lived on both the east and west coasts, Gretchen moved to
+      Gretchen more\n            recently discovered the joys of working with WordPress.
+      Having lived on both the east and west coasts,\n            Gretchen moved to
       Fort Collins in 2011.  When not sitting in front of the computer, she is out
-      with her camera shooting photos for her online gallery."
+      with her\n            camera shooting photos for her online gallery.</p>"
     contact:
       email: gretchen@girldevelopit.com
   instructors: []
@@ -1312,22 +1315,22 @@
   leaders:
   - name: Michelle Brush
     image: kansas-city/michelle.jpg
-    bio: Michelle Brush is a math geek turned computer geek with 13 years of software
+    bio: <p>Michelle Brush is a math geek turned computer geek with 13 years of software
       development experience.  She has developed services, APIs, and algorithms related
       to security, data mining, compression, shortest path-finding algorithms, and
       spatial searching.  Recently, she has switched focus to mentoring and training
       early career software engineers.  She is a Senior Software Architect for Cerner
-      Corporation managing aspects of their software engineer onboarding program.
+      Corporation managing aspects of their software engineer onboarding program.</p>
     contact:
       email: michelleb@girldevelopit.com
       twitter: michellebrush
   - name: Denisse Osorio de Large
     image: kansas-city/denisse.jpg
-    bio: Denisse manages several learning programs at Cerner Corporation, including
+    bio: <p>Denisse manages several learning programs at Cerner Corporation, including
       portions of DevAcademy the Software Engineering Onboarding program. Early in
       her career Denisse worked as a software engineer focusing on web applications.
       She has extensive experience with globalization and translation of software
-      systems. Denisse has two daughters and hopes they will one day become programmers.
+      systems. Denisse has two daughters and hopes they will one day become programmers.</p>
     contact:
       email: denisse@girldevelopit.com
   instructors: []
@@ -1348,26 +1351,26 @@
   leaders:
   - name: Patricia Wakefield
     image: lehigh-valley/tish.jpeg
-    bio: ! "Tish developed her first web page using HTML 2.0 to support her management
-      consulting practice. After 15 years as a researcher, corporate
-      business developer, and management consultant, Tish earned her
-      clinical license. She is currently a seasoned counselor, psychotherapist,
-      and medical social worker.  She's still managing her own websites
-      and currently uses the internet to serve counseling clients around
-      the world using online videoconferencing. "
+    bio: ! "<p>Tish developed her first web page using HTML 2.0 to support her management
+      consulting practice.  \n            After 15 years as a researcher, corporate
+      business developer, and management consultant, \n            Tish earned her
+      clinical license.   She is currently a seasoned counselor, psychotherapist,
+      \n            and medical social worker.  She's still managing her own websites
+      and currently uses the internet \n            to serve counseling clients around
+      the world using online videoconferencing. </p>"
     contact:
       email: tish@girldevelopit.com
       twitter: YouGotBounce
   - name: Erin Allen
     image: lehigh-valley/erin.jpeg
-    bio: ! "Erin learned how to code through Girl Develop It and is now a self
-      proclaimed junkie...(of coding, that is). She has a Master's Degree
-      in Library Science and loves leading the student coding club at
+    bio: ! "<p>Erin learned how to code through Girl Develop It and is now a self
+      proclaimed junkie...\n            (of coding, that is). She has a Master's Degree
+      in Library Science and loves leading the student coding \n            club at
       the high school where she works. When not watching Sherlock and baking delicious
-      goodies, she spends time learning new programming languages and
-      soldering things together.  Erin is passionate about helping women
+      goodies, she spends \n            time learning new programming languages and
+      soldering things together.  Erin is passionate about helping \n            women
       discover the beauty of coding and hopes that one day all libraries can become
-      makerspaces."
+      makerspaces.</p>"
     contact:
       email: erina@girldevelopit.com
       twitter: Erin_MAllen
@@ -1392,7 +1395,7 @@
   leaders:
   - name: Irina Muchnik
     image: los-angeles/irina.jpg
-    bio: ! "Irina has been developing software for over a decade and coded backend,
+    bio: ! "<p>Irina has been developing software for over a decade and coded backend,
       front-end and everything in between. More recently she has been involved in
       development of  Data Science and Analytics products. She works full time as
       a Software Engineer at Zynx Health in Los Angeles. She has always enjoyed teaching
@@ -1400,21 +1403,21 @@
       degree. She is looking forward to teaching Girl Develop It classes and meeting
       new amazing ladies. In addition, she has been yearning for more geeky female
       company at work and is now taking active steps to get more women involved in
-      tech. In her spare time she likes to cook, cycle,
+      tech.</p>\n                      <p>In her spare time she likes to cook, cycle,
       go to barre classes, play with her toddler twins and write tutorial apps for
-      Zynx summer interns."
+      Zynx summer interns.</p>"
     contact:
       email: irina@girldevelopit.com
       twitter: girlDevelopItLA
   - name: Natalie MacLeas
     image: los-angeles/natalie.jpg
-    bio: Natalie MacLees is a front-end web developer and UI designer and is founder
+    bio: <p>Natalie MacLees is a front-end web developer and UI designer and is founder
       + principal of the interactive agency, Purple Pen Productions. In 2012 she published
       jQuery for Designers and has a second edition coming soon. She founded and runs
       the jQuery LA Users' Group and together with Noel Saw she heads up the Southern
       California WordPress User's Group, organizing WordPress meetups, help sessions,
       and workshops. She makes her online home at <a href='http://nataliemac.com'
-      target='blank'>nataliemac.com</a>.
+      target='blank'>nataliemac.com</a>.</p>
     contact:
       email: natalie@girldevelopit.com
       twitter: nataliemac
@@ -1435,10 +1438,10 @@
   leaders:
   - name: Allison Jai O'Dell
     image: miami/allison.jpg
-    bio: Allison Jai O'Dell is a special collections librarian with a passion for
+    bio: <p>Allison Jai O'Dell is a special collections librarian with a passion for
       sharing information in the digital age.  Her professional background focuses
       on data management and front-end design.  She moonlights as a fiber and book
-      artist.
+      artist.</p>
     contact:
       email: allison@girldevelopit.com
       twitter: allisonjaiodell
@@ -1449,9 +1452,9 @@
   logo: gdi_logo_badge.png
   twitter: GDI_Miami
   facebook: gdimiami
-  announcements: Interested in joining Miami as an instructor? Fill out the <a
+  announcements: <p>Interested in joining Miami as an instructor? Fill out the <a
     href="https://docs.google.com/forms/d/14I6_BJY4GK7hk9MBK9imGv2en8wEQS3oL7_jGC5dQ6E/viewform"
-    target="blank">instructor interest form</a>.
+    target="blank">instructor interest form</a>.</p>
 - name: Milwaukee
   latitude:  43.0389025
   longitude: -87.9064736
@@ -1463,7 +1466,7 @@
   leaders:
   - name: Erin Wilbur
     image: milwaukee/erin.jpg
-    bio: After a 3-year hiatus in Tucson's sonoran desert, Erin moved back to Milwaukee
+    bio: <p>After a 3-year hiatus in Tucson's sonoran desert, Erin moved back to Milwaukee
       and has found herself immersed in design and programming on a daily basis with
       her position at Corvisa Services as Sr Interactive Designer.  She spends most
       of her days wrangling code for websites and implementing UX design for various
@@ -1472,7 +1475,7 @@
       eliminate them. Plus she just really wants people to learn cool things in easily
       accessible ways. In her spare time she can be found drawing something weird,
       going for a run in the woods, fine-tuning some math skills or squishing the
-      face of a cute dog.
+      face of a cute dog.</p>
     contact:
       email: erinw@girldevelopit.com
       twitter: likedaang
@@ -1493,13 +1496,13 @@
   leaders:
   - name: Aurelia Moser
     image: new-york/aureliamoser.jpg
-    bio:  Aurelia is a librarian and developer in NYC. In addition leading NYC's
+    bio: <p> Aurelia is a librarian and developer in NYC. In addition leading NYC's
       GDI chapter, she teaches metadata and data visualization courses, and develops
       open source mapping software and data-journo curriculum under current support
       of a Knight-Mozilla fellowship. In her free time, she contributes to art &&
       code community programs and participates in hackathons for Data Kind, Hack n'Jill,
       Art Hack Day and Open Data programs. Full stack from data munging to code monkeying,
-      she's happy to geek for social good where possible.
+      she's happy to geek for social good where possible. </p>
     contact:
       twitter: auremoser
       email: aurelia@girldevelopit.com
@@ -1507,40 +1510,40 @@
   instructors:
   - name: Alexis Goldstein
     image: new-york/alexisgoldstein.jpeg
-    bio: ! "Alexis Goldstein is an entrepreneur, a technical author and a teacher
-      based in Brooklyn, NY. Alexis is the founder and CEO of <a href
+    bio: ! "<p>Alexis Goldstein is an entrepreneur, a technical author and a teacher
+      based in Brooklyn, NY.</p>\n         <p> Alexis is the founder and CEO of <a href
       = \"http://www.autfaciam.com/\" target =\"_blank\" alt =\" aut faciam\">aut
       faciam</a>, a technical training, consulting and software development company.
-      She is the co-author of book HTML5 & CSS3 in The Real Worldle by Sitepoint."
+      She is the co-author of book HTML5 & CSS3 in The Real Worldle by Sitepoint.</p>"
   - name: Bethany Macri
     image: new-york/bethanymacri.jpg
-    bio: Bethany Macri is a Software Engineer on Etsy's Core Platform team. Bethany
+    bio: <p>Bethany Macri is a Software Engineer on Etsy's Core Platform team. Bethany
       studied Literature in college, then discovered programming and never turned
       back. She attended Hacker School in Summer 2012. Bethany loves teaching others
       how to program and feels confident in everyone's ability to learn how to code.
-      She tweets @BethanyMacri.
+      She tweets @BethanyMacri.</p>
   - name: Leo Newball
     image: new-york/leonewball.jpg
-    bio: ! 'Hi, I''m Leo Newball, Jr; and I believe in three things: Development,
+    bio: ! '<p>Hi, I''m Leo Newball, Jr; and I believe in three things: Development,
       Design, and Data. I believe in the power of Web Development, and any solution
       can be conquered using a breadth of web-based tools and technology. I believe
       in the power of great Web Design, believing that both the code and the presentation
       can be well-organized, presented, and provide amazing experiences. I believe
       in the power of asking questions, performing Data Research, analyzing the results,
-      and presenting them in ways best disseminated for public use.'
+      and presenting them in ways best disseminated for public use.</p>'
   - name: Sarah White
     image: new-york/sarahwhite.jpg
-    bio: Sarah has been working with Photoshop for over 10 years. From retouching
+    bio: <p>Sarah has been working with Photoshop for over 10 years. From retouching
       beauty shots for fashion companies to creating quirky photo illustrations for
       Scholastic Magazines, she has learned there is almost nothing you can't do with
       this powerful program, and she teaches as part of the Design for the Web series
-      at GDI NYC.
+      at GDI NYC.</p>
   - name: Brenda Storer
     image: new-york/brendastorer.jpg
-    bio: Brenda is a front-end developer and designer based in New York City, which
+    bio: <p>Brenda is a front-end developer and designer based in New York City, which
       has been her home for 10 years. She was born and raised in the Silicon Valley
       and has also lived in London and Italy, but she currently codes for the Levo
-      League, and teaches women how to code for GDI.
+      League, and teaches women how to code for GDI.</p>
   volunteers: []
   sponsors:
   - name: About.com, hosts
@@ -1579,8 +1582,8 @@
   leaders:
   - name: Gail Carmichael
     image: ottawa/gail.jpeg
-    bio: Computer scientist, educator, blogger. Passionate about showing everyone
-      - especially women and girls - how awesome computer science really is.
+    bio: <p>Computer scientist, educator, blogger. Passionate about showing everyone
+      - especially women and girls - how awesome computer science really is.</p>
     contact:
       email: gail@girldevelopit.com
       twitter: gailcarmichael
@@ -1601,42 +1604,42 @@
   slug: philadelphia
   leaders:
   - name: Yasmine Mustafa
-    bio: ! "As a business person, Yasmine became involved with Girl Develop It
+    bio: ! "<p>As a business person, Yasmine became involved with Girl Develop It
       when she started her software company and quickly determined she needed to learn
       how to code. Soon after, she sold her Company to NetLine Corporation where is
-      currently the Product Marketing Manager. In addition,
+      currently the Product Marketing Manager.</p>\n\n            <p>In addition,
       Yasmine serves on the advisory board of TechGirlz, an organization focused on
-      encouraging middle-school females to pursue careers in technology."
+      encouraging middle-school females to pursue careers in technology.</p>"
     image: philadelphia/yasminemustafa.png
     contact:
       twitter: myasmine
       email: yasmine@girldevelopit.com
       website: http://myasmine.com
   - name: Corinne Warnshuis
-    bio: Corinne is the co-leader of Girl Develop It Philly. She moved to South
+    bio: <p>Corinne is the co-leader of Girl Develop It Philly. She moved to South
       Philadelphia two years ago after graduating from University of California, Santa
       Cruz. She is the Events Coordinator for the Technical.ly news network, an online
       publication that covers technology and hosts regular events in Philly, Baltimore
       and Brooklyn. Previously, she worked in the community relations department at
       WHYY and wrote freelance for Newsworks and Flying Kite. Corinne also sits on
       the Board of Directors for the Prometheus Radio Project. In her spare time,
-      she loves sewing, playing with her cats and watching documentaries.
+      she loves sewing, playing with her cats and watching documentaries.</p>
     image: philadelphia/corinnewarnshuis.jpg
     contact:
       twitter: corinnepw
   - name: Lisa Burgess
-    bio: Lisa Burgess, our newest co-organizer at GDI Philly, works at Uhuru Furniture
+    bio: <p>Lisa Burgess, our newest co-organizer at GDI Philly, works at Uhuru Furniture
       & Collectibles as the Marketing Coordinator. She is pursuing a Web Design &
       Development certificate at the University of the Arts. Joining the Girl Develop
       It team has brought together Lisa's non-profit experience with her love for
       the web. Lisa is also passionate about social justice, social dancing and loves
-      spending time outdoors. Her Twitter handle is appropriately named @CSSLovinn.
+      spending time outdoors. Her Twitter handle is appropriately named @CSSLovinn.</p>
     image: philadelphia/lisaburgess.png
     contact:
       twitter: CSSLovinn
   instructors:
   - name: Jenn Lukas
-    bio: <a href="http://jennlukas.com/" target="blank">Jenn Lukas</a> is a multi-talented
+    bio: <p><a href="http://jennlukas.com/" target="blank">Jenn Lukas</a> is a multi-talented
       front-end consultant and freelancer developer in Philadelphia and is the founder
       of <a href="http://ladiesintech.com/" target="blank">Ladies in Tech</a>. She
       writes for <a href="http://www.thenerdary.net/" target="blank">The Nerdary</a>,
@@ -1649,107 +1652,107 @@
       Director. She was named one of <a href="http://mashable.com/2010/07/28/developer-hacker-women-twitter/"
       target="blank">Mashable's 15 Developer/Hacker Women to Follow on Twitter</a>,
       and you can find <a href="https://twitter.com/jennlukas" target="blank">her
-      on Twitter</a> posting development and cat-related news.
+      on Twitter</a> posting development and cat-related news. </p>
     image: philadelphia/jennlukas.png
     contact:
       twitter: JennLukas
   - name: Pam Selle
-    bio: Pam Selle thought the Internet was basically the coolest thing ever when
+    bio: <p>Pam Selle thought the Internet was basically the coolest thing ever when
       she was younger. She's now a professional developer/software engineer. Pam got
       involved with GDI because she think others should experience the fun of seeing
       something they made appear on the web. In her spare time, she  speaks at conferences,
       writes, practices yoga, rides her bicycle, and is involved in many Philadelphia
       organizations such as Girl Geek Dinners. She blogs at <a href = 'http://TheWebivore.com'
-      target ='_blank' alt = 'TheWebivore.com'>TheWebivore.com</a>.
+      target ='_blank' alt = 'TheWebivore.com'>TheWebivore.com</a>.</p>
     image: philadelphia/pam-selle.jpg
     contact:
       twitter: pamasaur
   - name: Catherine Farman
-    bio: Catherine Farman has been building websites for over half her life, starting
+    bio: <p>Catherine Farman has been building websites for over half her life, starting
       with HTML cobbled together on Geocities. As a Developer at Happy Cog, she builds
       standards-based websites using HTML, CSS and Javascript. Catherine has taught
       responsive web design, Javascript, and Sass courses for Girl Develop It. When
-      she's not at a computer she likes to sew and watch soccer.
+      she's not at a computer she likes to sew and watch soccer.</p>
     image: philadelphia/catherinefarman.jpg
   - name: Elise Wei
-    bio: Elise is a tech lead and front-end engineer at Monetate. Her specialties
+    bio: <p>Elise is a tech lead and front-end engineer at Monetate. Her specialties
       include HTML, JavaScript, and CSS, though she also has experience in PHP, VB,
       and C#. She has been working with Girl Develop It for the past year, teaching
       and assisting in numerous classes. She is a new mom, a crafter, a musician,
       and operates what her husband refers to as the 'gluten-free test kitchen' out
       of their home. You may have seen her fronting a rock band, presenting at the
-      2012 Geek Awards, or volunteering at other women-in-tech events around the city.
+      2012 Geek Awards, or volunteering at other women-in-tech events around the city.</p>
     image: philadelphia/elisewei.jpg
     contact:
       twitter: Not_Pele
   - name: Yesenia Perez-Cruz
-    bio: Yesenia Perez-Cruz is a multidisciplinary designer that has spent the
+    bio: <p>Yesenia Perez-Cruz is a multidisciplinary designer that has spent the
       last three years creating beautiful, functional design systems at Happy Cog.
       She received a BS in Graphic Design at Drexel University. She has spoken about
-      design at AIGA Philadelphia and SXSW Interactive.
+      design at AIGA Philadelphia and SXSW Interactive.</p>
     image: philadelphia/yeseniaperezcruz.jpg
     contact:
       twitter: yeseniaa
   - name: Zoe Rooney
-    bio: Zoe runs a <a href="http://www.zoerooney.com">tiny front-end web development
+    bio: <p>Zoe runs a <a href="http://www.zoerooney.com">tiny front-end web development
       company</a> focused on working with talented designers to create beautiful,
       functional websites. She works mostly with WordPress and Shopify - language-wise,
       that means a lot of HTML, CSS, PHP, Liquid, and jQuery. She is also mom to two
-      little boys, a newbie distance runner, and sometimes <a href="http://www.zoerooney.com/blog">blogger.</a>
+      little boys, a newbie distance runner, and sometimes <a href="http://www.zoerooney.com/blog">blogger.</a></p>
     image: philadelphia/zoerooney.jpg
   - name: Tracy Levesque
-    bio: Tracy is a co-owner of YIKES, Inc., a Philadelphia web design and development
+    bio: <p>Tracy is a co-owner of YIKES, Inc., a Philadelphia web design and development
       shop. She has been designing websites since 1996 and working with WordPress
       since 2006. She spends her days building custom themes for WordPress and seeing
       how much functionality she can add without knowing PHP. When not wrangling HTML
       and CSS, Tracy rides bikes, drinks coffee, eats sushi, chases her 7 year old
       daughter and takes pictures of <a href="http://www.instagram.com/ruinporn">abandoned
-      buildings</a>.
+      buildings</a>.</p>
     image: philadelphia/tracylevesque.jpeg
   - name: Sarah Gray
-    bio: Sarah is a software engineer and general language nerd. After finishing
+    bio: <p>Sarah is a software engineer and general language nerd. After finishing
       her BA in English literature, she fell into a technology job, fell in love,
       and never looked back. She returned to school and got a computer science degree
       from the University of Pennsylvania after working in IT for several years. She
       is now a polyglot programmer and developer at The Neat Company in Philadelphia.
-      You can find out more about her adventures in programming at www.devlogged.com.
+      You can find out more about her adventures in programming at www.devlogged.com.</p>
     image: philadelphia/sarahgray.jpg
   - name: Jessica Ivins
-    bio: While in college, Jessica Ivins took a class devoted to HTML and CSS,
+    bio: <p>While in college, Jessica Ivins took a class devoted to HTML and CSS,
       fell in love, and never looked back. She began her career as a front-end developer,
       and while working in the real world, she fell in love again with the principles
       of user-centered design. She is currently a UX specialist at AWeber. She has
       served as an officer for Philadelphia's UX community PhillyCHI and organizes
       meetings for the Philadelphia UX Book Club. In her spare time, Jess busies herself
       with reading, cooking, and enjoying a fine glass of wine. She's also mildly
-      obsessed with the TV show Forensic Files.
+      obsessed with the TV show Forensic Files.</p>
     image: philadelphia/jessicaivins.jpg
     contact:
       twitter: jessicaivins
   - name: Dana Bauer
-    bio: Dana Bauer is a developer and community advocate with the Developer Relations
+    bio: <p>Dana Bauer is a developer and community advocate with the Developer Relations
       Group at Rackspace. Her team builds the tools that make OpenStack and the Rackspace
       Cloud easy to use for developers. Dana also focuses on outreach to open source
       communities. She is the co-organizer of the Philadelphia Python User Group,
       an instructor with Girl Develop It Philly, and a passionate supporter of diverse
       technical communities. Dana has a background in geography, science, and science
-      writing.
+      writing.</p>
     image: philadelphia/danabauer.jpg
     contact:
       twitter: geography76
   volunteers:
   - name: Ashley Chapokas
-    bio: ! "A year ago, Ashley was a white belt coder. In January, she landed a
-      front-end web developer position at monetate. Her enthusiasm and
+    bio: ! "<p>A year ago, Ashley was a white belt coder. In January, she landed a
+      front-end web developer position at monetate.\n          Her enthusiasm and
       advocacy for GDI paved the way for her new role as Lead Volunteer Coordinator.
-      This position will highlight the needs of all volunteers within GDI
-      as well as the core of our mission, to bolster budding programmers. On
+      This position will highlight the\n          needs of all volunteers within GDI
+      as well as the core of our mission, to bolster budding programmers.</p>\n                    <p>On
       a saturday, Ashley can be found at her favorite cafe in south Philadelphia,
-      Artisan Boulanger, eating a croissant, sipping espresso,
-      and reading her favorite magazine \"The Gentlewoman\". Ashley's
+      Artisan Boulanger, eating a croissant,\n                    sipping espresso,
+      and reading her favorite magazine \"The Gentlewoman\".</p>\n                    <p>Ashley's
       goal is to provide optimal support for GDI, as well as participate in other
-      initiatives that bring tech & development to underserved
-      communities."
+      initiatives that bring tech &\n                    development to underserved
+      communities.</p>"
     image: philadelphia/ashely.jpg
     contact:
       twitter: AChapokas
@@ -1778,11 +1781,11 @@
   leaders:
   - name: Julie Pagano
     image: pittsburgh/juliepagano.jpeg
-    bio: Julie Pagano is a software engineer based in Pittsburgh who specializes
+    bio: <p>Julie Pagano is a software engineer based in Pittsburgh who specializes
       in front-end web development using Ruby and JavaScript. She is passionate about
       diversity in the tech community with a focus on intersectionality. She also
       helps organize <a href = 'http://steelcityrubyconf.org/' target ='_blank'>Steel
-      City Ruby Conf</a>
+      City Ruby Conf</a> <p>
   - name: Lindsey Bieda
     bio: ''
     image: pittsburgh/default-profile-pic.jpg
@@ -1809,71 +1812,71 @@
   leaders:
   - name: Julia Elman
     image: raleigh-durham/julia-elman.jpg
-    bio: ! "Julia Elman is a Designer &amp; Front-End Developer based in
-      Chapel Hill, NC. She has been working her brand of web skills for over
-      a decade, focusing mainly on HTML/CSS markup and Javascript. She
-      is an avid supporter of tech education and recently volunteered at
-      a local Teen Tech Camp in Durham, NC in 2012. Julia is excited to be
-      a part of the first Girl Develop It in North Carolina and share her wealth
-      of knowledge with others."
+    bio: ! "<p>Julia Elman is a Designer &amp; Front-End Developer based\n            in
+      Chapel Hill, NC. She has been working her brand of web skills for\n            over
+      a decade, focusing mainly on HTML/CSS markup and Javascript.\n            She
+      is an avid supporter of tech education and recently volunteered\n            at
+      a local Teen Tech Camp in Durham, NC in 2012. Julia is excited to\n            be
+      a part of the first Girl Develop It in North Carolina and share her\n            wealth
+      of knowledge with others.</p>"
     contact:
       email: julia@girldevelopit.com
       twitter: juliaelman
       website: http://juliaelman.com/
   - name: Sarah Kahn
     image: raleigh-durham/sarah-kahn.jpg
-    bio: ! "Sarah Kahn is a rogue librarian turned UX/UI developer. She
-      went to grad school at the School of Information and Library Science
-      at UNC-Chapel Hill, where she realized that people are more interesting
-      than books.She has been designing and building web application
-      interfaces since 2008. Over the years she has gained a variety
-      of experience in interaction design, usability evaluation, qualitative
-      and quantitative research, and assessing web accessibility.She
-      currently is a Senior UX Designer at Deutsche Bank. Her previous
-      work has been at places like Adzerk, NC LIVE, and Lulu.com. She
-      also is a co-founder at Fogbeam Labs."
+    bio: ! "<p>Sarah Kahn is a rogue librarian turned UX/UI developer.\n              She
+      went to grad school at the School of Information and Library\n              Science
+      at UNC-Chapel Hill, where she realized that people are\n              more interesting
+      than books.</p><p>She has been designing and\n              building web application
+      interfaces since 2008. Over the years\n              she has gained a variety
+      of experience in interaction design,\n              usability evaluation, qualitative
+      and quantitative research,\n              and assessing web accessibility.</p><p>She
+      currently is a Senior\n              UX Designer at Deutsche Bank. Her previous
+      work has been at\n              places like Adzerk, NC LIVE, and Lulu.com. She
+      also is a\n              co-founder at Fogbeam Labs.</p>"
     contact:
       email: sarahk@girldevelopit.com
       twitter: aarahkahak
       website: http://kahnlab.com/
   - name: Sylvia Richardson
     image: raleigh-durham/sylvia-richardson.jpg
-    bio: ! "Sylvia Richardson is a researcher and web developer based in Durham,
-      NC. Her background is in special libraries. She is interested in emerging
-      web technologies, accessibility, and usability. Sylvia loves to
-      help introduce people to new technologies, and is excited about the chance
-      to help more women join the Triangle's vibrant tech community."
+    bio: ! "<p>Sylvia Richardson is a researcher and web developer based in\n            Durham,
+      NC. Her background is in special libraries. She is interested in\n            emerging
+      web technologies, accessibility, and usability. Sylvia loves\n            to
+      help introduce people to new technologies, and is excited about the\n            chance
+      to help more women join the Triangle's vibrant tech community.</p>"
     contact:
       email: sylvia@girldevelopit.com
       twitter: roenok
   instructors:
   - name: Amy Hendrix
     image: raleigh-durham/amy-hendrix.jpg
-    bio: Amy Hendrix is a Front-End Developer and Open-Source advocate based in Durham,
+    bio: <p>Amy Hendrix is a Front-End Developer and Open-Source advocate based in Durham,
       NC. In her years of web work, she has worked with a wide variety of languages
       and technologies, ranging from HTML/CSS and JavaScript to PHP, Ruby and Python.
       Amy is dedicated to building a web that is beautiful, useful, and accessible
       to everyone. She's equally in love with teaching and empowering others to be
-      a part of building it.
+      a part of building it.</p>
     contact:
       twitter: sabreuse
   - name: Caleb Smith
     image: raleigh-durham/caleb-smith.jpg
-    bio: In his youth, Caleb began programming text adventures and RPG's in BASIC.
+    bio: <p>In his youth, Caleb began programming text adventures and RPG's in BASIC.
       More recently, Caleb can be found spending his days writing Python and JavaScript
       for web applications at Caktus Consulting Group LLC. In his spare time, Caleb
       enjoys functional programming, music theory and contributing to free and open
       source software projects. Caleb studied music education in college and especially
-      enjoys mentoring new programmers.
+      enjoys mentoring new programmers.</p>
     contact:
       twitter: calebsmithnc
   - name: Dan Lucas
     image: raleigh-durham/dan-lucas.jpg
-    bio: Dan Lucas is a UI & Front-End developer based in Durham, NC with a background
+    bio: <p>Dan Lucas is a UI & Front-End developer based in Durham, NC with a background
       in multimedia design and information science.  He is obsessed with the interactions
       between people and computers and strives to make those interactions easier and
       more useful.  Dan has worked in education for most of his career and is excited
-      about the opportunity to help even more people to become more tech saavy.
+      about the opportunity to help even more people to become more tech saavy.</p>
     contact:
       twitter: danlucas
       website: http://danlucas.org
@@ -1893,7 +1896,7 @@
   leaders:
   - name: Stacie Farmer
     image: salt-lake-city/stacie.jpg
-    bio: ! "Stacie became enamored with programming when she was waiting for some
+    bio: ! "<p>Stacie became enamored with programming when she was waiting for some
       reporting data and realized that instead of waiting, she could do it for herself!
       Her first love was SQL and has since done hardware support, SQL reporting, web
       development (front & back-end) and is constantly learning new things and honing
@@ -1902,18 +1905,18 @@
       and believes that anyone can learn programming if they just have the desire
       and a little grit. She will feel like her job is done when we live in a world
       where no girl decides not to pursue a degree or job in computer science because
-      it's too hard. Stacie also loves game nights with
-      friends, lazy days with her family, and hiking in the gorgeous Utah mountains."
+      it's too hard.</p>\n                      <p>Stacie also loves game nights with
+      friends, lazy days with her family, and hiking in the gorgeous Utah mountains.</p>"
     contact:
       email: stacie@girldevelopit.com
       twitter: FarmerCode
   - name: Zara Johnson
     image: salt-lake-city/zara.jpg
-    bio: Zara has a background in computer engineering and is currently a QA Manager
+    bio: <p>Zara has a background in computer engineering and is currently a QA Manager
       at a leading home automation company.  She is passionate about empowering women
       in the fields of engineering and technology.  Zara is excited to be a part of
       GDI Salt Lake City and looks forward to sharing her knowledge and experience
-      with others.
+      with others.</p>
     contact:
       email: zara@girldevelopit.com
       twitter: EatReadDestroy
@@ -1941,19 +1944,19 @@
   slug: san-francisco
   leaders:
   - name: Pamela Fox
-    bio: Pamela Fox loves to learn, teach, create, and every combination of those.
+    bio: <p>Pamela Fox loves to learn, teach, create, and every combination of those.
       Most of her time, she works for Khan Academy, creating their computing curriculum.
       Before that, she worked in Google Developer Relations, and graduated from USC's
-      Computer Science Department (Go Trojans!).
+      Computer Science Department (Go Trojans!).</p>
     image: san-francisco/pamelafox.jpg
     contact:
       email: pamela@girldevelopit.com
   - name: Liz Howard
-    bio: Liz Howard is fascinated by how people learn technology, and by how computers
+    bio: <p>Liz Howard is fascinated by how people learn technology, and by how computers
       work. She spends most of her time teaching and mentoring, as well as affiliating
       with various bootcamps around San Francisco. She prefers to hack in Node.js
       and has worked on such things as Fraud Prevention, Tree-Traversal algorithms,
-      and stuff for her dad, who taught her to program when she was little.
+      and stuff for her dad, who taught her to program when she was little.</p>
     image: san-francisco/lizhoward.jpg
     contact:
       email: liz@girldevelopit.com
@@ -1977,53 +1980,53 @@
   leaders:
   - name: Heather Wade
     image: seattle/heatherwade.jpg
-    bio: Heather Wade is a software developer and Director of Product Development
+    bio: <p>Heather Wade is a software developer and Director of Product Development
       for Intego. In her spare time, she mentors and consults on product design and
       development with budding startups. Her first experience with Girl Develop It
       was as an instructor for our  Cincinnati chapter, where her love for helping
-      women learn to code became as great as her love for coding.
+      women learn to code became as great as her love for coding. </p>
     contact:
       email: heather@girldevelopit.com
       twitter: hglennwade
   - name: Marcy Sutton
     image: seattle/marcysutton.jpg
-    bio: Marcy is a developer at Substantial in Seattle. She's passionate about
+    bio: <p>Marcy is a developer at Substantial in Seattle. She's passionate about
       front-end development that's well designed, accessible and mobile friendly.
       With degrees in Photography and Web Design & Multimedia, her approach to problem-solving
       is both creative and technical. She's super excited to share her enthusiasm
-      for coding with the ladies of GirlDevelopIt!
+      for coding with the ladies of GirlDevelopIt!</p>
     contact:
       email: marcy@girldevelopit.com
       twitter: marcysutton
   instructors:
   - name: Cheri Allen
     image: seattle/cheriallen.jpg
-    bio: Cheri Allen is a web developer and educator in Seattle, WA. As Program
+    bio: <p>Cheri Allen is a web developer and educator in Seattle, WA. As Program
       Coordinator at Ada Developers Academy, a nonprofit web development training
       program for women, she works to make the tech community more diverse and vibrant,
       one new developer at a time. In her down time, she does the same, working with
       Girl Develop It, RailsBridge, King County Library System, and other organizations
       to bring educational programming about technology to underrepresented groups.
-      She's also really into dinosaurs.
+      She's also really into dinosaurs. </p>
     contact:
       twitter: cherimarie
   - name: Dallas Tester
     image: seattle/dallastester.jpg
-    bio: Dallas is a web application developer at Starbucks. Prior to joining Starbucks,
+    bio: <p>Dallas is a web application developer at Starbucks. Prior to joining Starbucks,
       Dallas worked for Microsoft as a programmer/writer for Office and a Software
       Development Engineer in Test for Microsoft Games Studios. He was a teaching
       assistant during his college years helping computer science students learn how
       to code. Dallas is passionate about helping to develop talent in the technology
-      community and looks forward to teaching classes with Girl Develop It!
+      community and looks forward to teaching classes with Girl Develop It!</p>
     contact: {}
   - name: Heather Moore
     image: seattle/heathermoore.png
-    bio: ! 'Heather Moore is a software developer and partner at Lightspun.com. She
+    bio: ! '<p>Heather Moore is a software developer and partner at Lightspun.com. She
       loves working with early-stage startups and is passionate about <a href=''http://en.wikipedia.org/wiki/Extreme_programming''>eXtreme
       Programming</a>: testing, pairing and releasing often. Heather first learned
       Ruby in a RailsBridge class five years ago and is excited to bring her experience
       to GDI. When she''s not writing code, she''s either brewing beer or sailing
-      on the Sound.'
+      on the Sound.</p>'
     contact:
       twitter: heathrmoor
   - name: Paige Pauli
@@ -2033,12 +2036,12 @@
       twitter: paigepauli
   - name: Wendy Grus
     image: seattle/wendygrus.jpg
-    bio: Wendy Grus is a Senior Scientist at Knome Inc, a biotech software startup,
+    bio: <p>Wendy Grus is a Senior Scientist at Knome Inc, a biotech software startup,
       where she writes python scripts for genome analysis. She is an active member
       of the Seattle PyLadies chapter. She advocates that it is never too late to
       learn new skills. Through her involvement in organizations like Girl Develop
       It Seattle and Rain City Rock Camp for Girls, she has seen how empowering it
-      can be to develop confidence in women and girls.
+      can be to develop confidence in women and girls.</p>
     contact: {}
   volunteers: []
   sponsors:
@@ -2059,24 +2062,24 @@
   leaders:
   - name: Angel Thomas
     image: toledo/angel.jpg
-    bio: ! "Angel loves code, numbers, puzzles, and finding solutions. She enjoys
+    bio: ! "<p>Angel loves code, numbers, puzzles, and finding solutions. She enjoys
       learning new things, especially in the area of technology. When she is not writing
       code or learning something new, she spends her time with her family, attending
-      meetup groups, or with friends. Angel also loves
+      meetup groups, or with friends.</p>\n                      <p>Angel also loves
       to find ways to give to her community. She maintains the website for Toledo
       Public Schools Parent Congress as well as being a member of the Executive Board.
       She also volunteers her time at her local elementary school. After spending
       some time as a TA for Girl Develop It Detroit, she wanted to help to bring this
-      wonderful organization to her home city of Toledo."
+      wonderful organization to her home city of Toledo.</p>"
     contact:
       email: angel@girldevelopit.com
       twitter: starangel75
   - name: Lindsey Danforth
     image: toledo/lindsey.jpg
-    bio: Lindsey Danforth works for the City of Toledo as a Geospatial Information
+    bio: <p>Lindsey Danforth works for the City of Toledo as a Geospatial Information
       System (GIS) Specialist. She works in JavaScript, VB, and python to deliver
       maps and web applications to internal users as well as the public. Lindsey also
-      was the lead organizer for Startup Weekend Toledo in 2012 and 2013.
+      was the lead organizer for Startup Weekend Toledo in 2012 and 2013.</p>
     contact:
       email: lindsey@girldevelopit.com
       twitter: LindseyDanforth
@@ -2098,21 +2101,21 @@
   leaders:
   - name: Tanya Lasuk
     image: tri-cities/tanya.jpg
-    bio: ! "Tanya Lasuk has a 30 year career as a Software Engineer and IT Analyst.
-      She has done every level of coding there is  and programmed in most
-      popular languages and a few obscure ones (APL, anyone?). Her passion
-      is opening the doors of technology for women and transforming technology
-      so it works for women."
+    bio: ! "<p>Tanya Lasuk has a 30 year career as a Software Engineer and IT Analyst.\n
+      \           She has done every level of coding there is  and programmed in most
+      popular languages\n            and a few obscure ones (APL, anyone?). Her passion
+      is opening the doors of technology\n            for women and transforming technology
+      so it works for women.</p>"
     contact:
       email: tanya@girldevelopit.com
       twitter: ThubtenDolma
   - name: Erin Schmidt
     image: tri-cities/erin.jpeg
-    bio: ! "Erin Schmidt is a graphic designer, artist and entrepreneur. She is an
-      entry level developer passionate about learning code as a new medium
-      to create art. Erin enjoys working with other women to foster a
-      supportive environment where women can feel confident to develop
-      skills together."
+    bio: ! "<p>Erin Schmidt is a graphic designer, artist and entrepreneur. She is an
+      entry\n            level developer passionate about learning code as a new medium
+      to create art.\n            Erin enjoys working with other women to foster a
+      supportive environment where women can\n            feel confident to develop
+      skills together.</p>"
     contact:
       email: erins@girldevelopit.com
       twitter: ErinSchmidt1
