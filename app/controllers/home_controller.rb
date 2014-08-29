@@ -1,9 +1,8 @@
 class HomeController < ApplicationController
 
   def index
-  @locations = Location.all
-  @location = Location.all
-
+  @chapters = Chapter.all
+  @chapter = Chapter.all
   end
 
   def about

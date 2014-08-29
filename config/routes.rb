@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   # Example of regular route:
-  resources :locations, only: [:index, :show]
+  resources :chapters, only: [:index, :show]
   match '/meetups/:slug' => 'meetups#show', via: :get
 
   # resource :meetups, only: [:show]

@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20140813202609) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "bio_id"
-    t.integer  "location_id"
+    t.integer  "chapter_id"
   end
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20140813202609) do
     t.datetime "updated_at"
     t.integer  "admin_user_id"
     t.string   "image"
-    t.integer  "location_id"
+    t.integer  "chapter_id"
     t.string   "twitter"
     t.string   "email"
     t.string   "website"
@@ -76,21 +76,8 @@ ActiveRecord::Schema.define(version: 20140813202609) do
     t.string   "pic_link"
   end
 
-  create_table "friendly_id_slugs", force: true do |t|
-    t.string   "slug",                      null: false
-    t.integer  "sluggable_id",              null: false
-    t.string   "sluggable_type", limit: 50
-    t.string   "scope"
-    t.datetime "created_at"
-  end
-
-  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
-  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
-  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
-  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
-
-  create_table "locations", force: true do |t|
-    t.string   "location"
+  create_table "chapters", force: true do |t|
+    t.string   "chapter"
     t.text     "blurb"
     t.string   "fb"
     t.string   "meetup"
@@ -108,7 +95,20 @@ ActiveRecord::Schema.define(version: 20140813202609) do
     t.string   "slug"
   end
 
-  add_index "locations", ["slug"], name: "index_locations_on_slug", using: :btree
+  add_index "chapters", ["slug"], name: "index_chapters_on_slug", using: :btree
+
+  create_table "friendly_id_slugs", force: true do |t|
+    t.string   "slug",                      null: false
+    t.integer  "sluggable_id",              null: false
+    t.string   "sluggable_type", limit: 50
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"
@@ -124,7 +124,7 @@ ActiveRecord::Schema.define(version: 20140813202609) do
   create_table "sponsors", force: true do |t|
     t.string   "name"
     t.string   "url"
-    t.integer  "location_id"
+    t.integer  "chapter_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"

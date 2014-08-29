@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  location: MyString
+  chapter: MyString
   blurb: MyText
   fb: MyString
   meetup: MyString
   geo: MyString
 
 two:
-  location: MyString
+  chapter: MyString
   blurb: MyText
   fb: MyString
   meetup: MyString

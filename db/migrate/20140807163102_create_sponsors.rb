@@ -4,7 +4,7 @@ class CreateSponsors < ActiveRecord::Migration
       t.string :name
       t.string :url
       t.string :image_url
-      t.integer :location_id
+      t.integer :chapter_id
 
       t.timestamps
     end

@@ -1,14 +1,14 @@
-ActiveAdmin.register Location do
+ActiveAdmin.register Chapter do
 
 
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :location, :blurb, :fb, :meetup, :twitter, :linkedin, :github, :geo, :email, :meetup_id
+  permit_params :chapter, :blurb, :fb, :meetup, :twitter, :linkedin, :github, :geo, :email, :meetup_id
   #
   index do
     selectable_column
-    column :location
+    column :chapter
     column :fb
     column :meetup
     column :twitter
@@ -17,7 +17,7 @@ ActiveAdmin.register Location do
     actions
   end
 
-  filter :location
+  filter :chapter
   filter :fb
   filter :meetup
   filter :twitter
@@ -26,8 +26,8 @@ ActiveAdmin.register Location do
 
 
   form do |f|
-    f.inputs "Edit Location" do
-      f.input :location, placeholder: "Los Angeles"
+    f.inputs "Edit Chapter" do
+      f.input :chapter, placeholder: "Los Angeles"
       f.input :geo, label: "Address", placeholder: "Los Angeles, CA, USA"
       f.input :fb, label: "Facebook", placeholder: "GDILosAngeles"
       f.input :meetup, placeholder: "Girl-Develop-It-Los-Angeles"

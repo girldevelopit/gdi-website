@@ -2,17 +2,17 @@
   <div class="container">
     <aside class="chapter-aside">
       <div class="state-container-aside">
-        <%= link_to image_tag(image_route(@location.state)), locations_path %>
+        <%= link_to image_tag(image_route(@chapter.state)), chapters_path %>
       </div>
       <hr>
-      <h1><%= @location.location %></h1>
+      <h1><%= @chapter.chapter %></h1>
 
-      <%= render partial: "social_media_chapter", locals: {user: @location} %>
+      <%= render partial: "social_media_chapter", locals: {user: @chapter} %>
 
       <p class="subtitle">- don't be shy -</p>
-      <%= link_to "{ Join Us }", "http://www.meetup.com/#{@location.meetup}", :class=>"button" %>
+      <%= link_to "{ Join Us }", "http://www.meetup.com/#{@chapter.meetup}", :class=>"button" %>
 
-      <!-- <% if @location.sponsors.count != 0 %>
+      <!-- <% if @chapter.sponsors.count != 0 %>
         <div class="hide">
           <div class="sponsors">
             <h2>Sponsors</h2>
@@ -133,7 +133,7 @@
                 $(".classes").html(oneClass);
             });
           } else {
-            $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled for this Chapter. <a href=\"http://meetup. com/<%= @location.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening. Thanks for visiting us!</p>")};
+            $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled for this Chapter. <a href=\"http://meetup. com/<%= @chapter.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening. Thanks for visiting us!</p>")};
           });
 
       </script>

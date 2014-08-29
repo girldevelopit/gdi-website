@@ -1,16 +1,16 @@
-var locationsURL = "/locations.json";
+var chaptersURL = "/chapters.json";
 
 $(document).ready(function(){
 	var plots = [];
 
-	$.getJSON(locationsURL).done(function (chapters) {
+	$.getJSON(chaptersURL).done(function (chapters) {
 		_.each(chapters, function (plot) {
 			newobj = {
-				value: plot.location,
+				value: plot.chapter,
 				latitude: plot.latitude,
 				longitude: plot.longitude,
-				tooltip: {content: plot.location},
-				href: "locations/" + plot.slug
+				tooltip: {content: plot.chapter},
+				href: "chapters/" + plot.slug
 			}
 			plots.push(newobj);
 		})

@@ -1,6 +1,6 @@
-class Location < ActiveRecord::Base
+class Chapter < ActiveRecord::Base
   extend FriendlyId
-  friendly_id :location, use: [:slugged, :history]
+  friendly_id :chapter, use: [:slugged, :history]
 
   resourcify
   has_many :admin_users

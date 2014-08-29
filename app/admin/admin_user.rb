@@ -1,6 +1,6 @@
 ActiveAdmin.register AdminUser do
 
-  permit_params :email, :password, :password_confirmation, :location_id, role_ids: []
+  permit_params :email, :password, :password_confirmation, :chapter_id, role_ids: []
 
   index do
     selectable_column
@@ -24,7 +24,7 @@ ActiveAdmin.register AdminUser do
       f.input :email, placeholder: "email@example.com"
       f.input :password
       f.input :password_confirmation
-      f.input :location, member_label: :location
+      f.input :chapter, member_label: :chapter
       f.input :roles
     end
     f.actions

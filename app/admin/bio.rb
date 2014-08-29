@@ -4,13 +4,13 @@ ActiveAdmin.register Bio do
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   permit_params :bio, :user, :title, :name, :info, :admin_user_id, :image,
-                :twitter, :email, :website, :linkedin, :github, :location_id
+                :twitter, :email, :website, :linkedin, :github, :chapter_id
 
   show do |ad|
     attributes_table do
       row :id
       row :name
-      row :location
+      row :chapter
       row :title
       row :info
       row :created_at
@@ -31,7 +31,7 @@ ActiveAdmin.register Bio do
   form do |f|
     f.inputs "Edit Bio" do
       f.input :admin_user
-      f.input :location, member_label: :location
+      f.input :chapter, member_label: :chapter
       f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS']
       f.input :name, placeholder: "Jane Doe"
       f.input :email, placeholder: current_admin_user.email

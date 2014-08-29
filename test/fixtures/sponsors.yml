@@ -4,10 +4,10 @@ one:
   name: MyString
   url: MyString
   image_url: MyString
-  location_id: 1
+  chapter_id: 1
 
 two:
   name: MyString
   url: MyString
   image_url: MyString
-  location_id: 1
+  chapter_id: 1
