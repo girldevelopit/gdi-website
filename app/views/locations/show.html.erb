@@ -12,20 +12,20 @@
       <p class="subtitle">- don't be shy -</p>
       <%= link_to "{ Join Us }", "http://www.meetup.com/#{@location.meetup}", :class=>"button" %>
 
-      <% if @location.sponsors.count != 0 %>
+      <!-- <% if @location.sponsors.count != 0 %>
         <div class="hide">
           <div class="sponsors">
             <h2>Sponsors</h2>
             <div id="logos">
               <% @sponsors.each do |sponsor| %>
                 <% if sponsor.image? %>
-                  <p><%= link_to image_tag(sponsor.image.url), sponsor.url %></p>
+                  <p><%#= link_to image_tag(sponsor.image.url), sponsor.url %></p>
                 <% end %>
               <% end %>
             </div>
           </div>
         </div>
-      <% end %>
+      <% end %> -->
     </aside>
 
     <section id="content-section">
@@ -110,12 +110,12 @@
         <h3><a href=" <%%= event_url %>"><%%= name %></a></h3>
         <p class="subtitle">[ <%%=moment(time).format("dddd, MMMM Do YYYY, h:mm a")%>
           <%% if(typeof venue !== "undefined") { %>
-          <%%= venue.address_1 %>,
-          <%%= venue.city %>
+            , <a href=" http://maps.google.com/?q=<%%= venue.address_1 %>, <%%= venue.city %>, <%%= venue.state %>"><%%= venue.address_1 %>,<%%= venue.city %>,<%%= venue.state %></a>
           <%% } %>
          ] </p>
         <p><%%= description.substring(0, 400) %><a href="<%%= event_url %>">...read more</a></p>
         <a href="<%%= event_url %>" class="button">RSVP</a>
+        <%= render partial: "meetup_map"%>
       </script>
 
 

@@ -9,6 +9,7 @@ class Location < ActiveRecord::Base
 
   geocoded_by :geo
   after_validation :geocode
+  after_validation :geocode, :if => :geo_changed?
 
   reverse_geocoded_by :latitude, :longitude do |obj,results|
     if geocoded = results.first

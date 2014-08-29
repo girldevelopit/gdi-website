@@ -10,20 +10,20 @@
      padding: 0em 2em;
     }
   }
-  .sponsors{
-    img{
-     width: 50%;
-     padding: 1em 2em;
-     opacity: 0.35;
-     -webkit-filter: grayscale(75%);
-     &:hover{
-       width: 51%;
-       padding: 1em 2em;
-       opacity: 1;
-       -webkit-filter: grayscale(0%);
-     }
-   }
-  }
+  // .sponsors{
+  //   img{
+  //    width: 50%;
+  //    padding: 1em 2em;
+  //    opacity: 0.35;
+  //    -webkit-filter: grayscale(75%);
+  //    &:hover{
+  //      width: 51%;
+  //      padding: 1em 2em;
+  //      opacity: 1;
+  //      -webkit-filter: grayscale(0%);
+  //    }
+  //  }
+  // }
   hr{
     width: 60%;
     margin-bottom: 3px;
@@ -55,7 +55,14 @@
   @include span-columns(8 of 8);
   @include omega();
 }
-
+@media screen and (max-width: 500px) {
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+}
 .classes{
   @include span-columns(8 of 8);
   @include omega();
@@ -67,6 +74,17 @@
       color: $pink;
     }
   }
+  .meetup-map{
+    @include span-columns(8 of 8);
+    align: center;
+    padding: 0px 15px 0 0px;
+    img{
+      width: 100%;
+      margin-top: 5px;
+      box-shadow: .025rem .025rem .5rem #bdbec0;
+      margin-bottom: 5px;
+      }
+    }
   .button{
     margin: 10px 0 55px 0;
     background-color: $paleblue;
