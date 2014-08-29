@@ -5,6 +5,6 @@ class AdminUser < ActiveRecord::Base
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
   has_one :bio
-  belongs_to :location
+  belongs_to :chapter
   accepts_nested_attributes_for :roles
 end

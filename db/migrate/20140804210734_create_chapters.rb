@@ -1,7 +1,7 @@
-class CreateLocations < ActiveRecord::Migration
+class CreateChapters < ActiveRecord::Migration
   def change
-    create_table :locations do |t|
-      t.string :location
+    create_table :chapters do |t|
+      t.string :chapter
       t.text :blurb
       t.string :fb
       t.string :meetup

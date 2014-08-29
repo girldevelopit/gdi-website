@@ -9,7 +9,7 @@ class Ability
     if allroles.include? "webmistress"
       can :manage, :all
     elsif allroles.include? "admin"
-      can :manage, user.location
+      can :manage, user.chapter
       can :manage, user.bio
       can :manage, Sponsor
       can :read, :all
