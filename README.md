@@ -1,6 +1,6 @@
 # [Girl Develop It](http://girl-develop-it.herokuapp.com)
 
-Rebuild & update website in Rails 4.1.4 and Ruby 2.1.2.
+This is the repo for the newly updated Girl Develop It website. In this README you'll find helpful resources to get you up and running to start contributing to the code base!
 
 
 ## About
@@ -10,8 +10,7 @@ Girl Develop It is a nonprofit organization that exists to provide affordable an
 
 ## Installation and usage
 
-This application uses Postgres, so you will need it installed on your machine. If on Linux, use your package manager.
-On OS X, if you have Homebrew, run `brew install postgresql`.
+This application uses Postgres for it's database, so you will need it installed on your machine. 
 
 Next, install all required gems:
 
@@ -45,16 +44,29 @@ $ echo $MEETUP_API_KEY
 
 ## Contributing
 
-If you are new to using git and GitHub, follow these directions:
+Great! We're thrilled that you are interested in helping out with the website and contributing your talents to our code base. In this section, you'll learn more about how to go about actually contributing and how to get your local development environment setup.
 
-1. Fork the project.
-2. Clone _your_ copy.
+### Getting familiar with git/Github
+
+If you are unfamiliar with forking, branching or working with git/Github, here are a few things you'll need to do:
+
+- Create a [Github account](https://github.com/join), or sign in to you existing account.
+- Go through the following git/Github tutorial: [https://try.github.io/](https://try.github.io/)
+- Read about Github flow and the process for submitting code: [https://guides.github.com/introduction/flow/index.html](https://guides.github.com/introduction/flow/index.html)
+
+### Setting up your local dev environment
+
+1. Fork this repo into your personal Github account.
+2. Clone _your_ copy to your desktop. Read more about various ways of cloning here: []()
 3. Add another remote:  
-   `git remote add upstream git@github.com:TIYA-Durham-GDI/GDI-rails-4.git`
-4. Make a local branch for your feature.
-5. Write code.
-6. Test it out.
-7. Run `git fetch upstream` and then `git merge upstream/master` in your branch.
-8. Test again.
-9. Push your branch to your repo.
-10. Make a pull request!
+   `git remote add upstream git@github.com:girldevelopit/gdi-new-site.git`
+4. Make a local branch for your feature (e.g. `git branch update-homepage`).
+5. Switch to that new branch (e.g. `git checkout update-homepage`)
+5. Make your changes on your branch.
+6. Test it out locally by running `rails server` and visiting [http://0.0.0.0:3000](http://0.0.0.0:3000) in your favorite browser.
+7. Run `git fetch upstream` and then `git rebase upstream/master` in your branch.
+8. Test again, see step 6.
+9. Push your branch to your repo (e.g. `git push origin update-homepage`)
+10. Make a pull request against the main repos master branch!
+
+We generally check all pull requests every 24-48 hours, but feel free to ping us on [Twitter](http://twitter.com/girldevelopit) if there is an urgent need.
