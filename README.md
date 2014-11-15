@@ -54,6 +54,13 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 - Go through the following git/Github tutorial: [https://try.github.io/](https://try.github.io/)
 - Read about Github flow and the process for submitting code: [https://guides.github.com/introduction/flow/index.html](https://guides.github.com/introduction/flow/index.html)
 
+### Required installations
+* [homebrew](http://brew.sh/)) package manager used to install rvm
+* [rvm](http://rvm.io/) command-line tool to manage ruby versions
+* ruby 2.2.1
+
+*Note:* you may have additional dependencies like xcode. Follow the brew instructions for these with `$ brew update` and `$ brew doctor`
+
 ### Setting up your local dev environment
 
 1. Fork this repo into your personal Github account.
