@@ -57,7 +57,7 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 ### Required installations
 * [homebrew](http://brew.sh/)) package manager used to install rvm
 * [rvm](http://rvm.io/) command-line tool to manage ruby versions
-* ruby 2.2.1
+* ruby 2.1.2
 
 *Note:* you may have additional dependencies like xcode. Follow the brew instructions for these with `$ brew update` and `$ brew doctor`
 
