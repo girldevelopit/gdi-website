@@ -55,9 +55,10 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 - Read about Github flow and the process for submitting code: [https://guides.github.com/introduction/flow/index.html](https://guides.github.com/introduction/flow/index.html)
 
 ### Required installations
-* [homebrew](http://brew.sh/)) package manager used to install rvm
+* [homebrew](http://brew.sh/)) package manager used to install rvm and postgresql
 * [rvm](http://rvm.io/) command-line tool to manage ruby versions
 * ruby 2.1.2
+* PostgreSQL (available as postgresql package through homebrew)
 
 *Note:* you may have additional dependencies like xcode. Follow the brew instructions for these with `$ brew update` and `$ brew doctor`
 
