@@ -43,7 +43,9 @@ Do the following steps:
 1. make sure `~/Library/LaunchAgents` does not include `*.plist`
 2. restart your computer
 3. start PostgreSQL
-4. try `rake` or `createdb` commands again
+4. add this to your ~/.bash_profile: `export PGHOST=localhost`
+5. restart terminal or run `source ~/.bash_profile`
+6. try `rake` or `createdb` commands again
 
 After that, you can run `rails server` to start the server on port `3000` or `rails console` for a REPL.
 
