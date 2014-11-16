@@ -1,19 +1,54 @@
 //The stylesheets for this project are structured using SMACSS (Scalable and Modular Architecture for CSS)
 //https://smacss.com
 
+//Gotham font 
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"), url("fonts/Gotham/gotham-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: local("Gotham-Book"), url("fonts/gotham/Gotham-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Gotham-Italic";
+  src: local("Gotham-Italic"), url("fonts/gotham/Gotham-MediumItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: local("Gotham-Bold"), url("fonts/gotham/Gotham-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: bold; }
+
+@font-face {
+  font-family: "Gotham-Round";
+  src: local("Gotham-Round"), url("fonts/gotham/gothamrnd-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 //BASE: styles for basic page components
 // Custom Styles
-$mainfont: "Roboto";
+$mainfont: "Lato";
+$headfont: "Gotham-Book";
+$basefontsize: 1rem;
 
 //Colors
-$pink: #f95a61;
-$black: #282828;
-$blush: #fbcfc6;
-$gold: #d8ae64;
-$green: #074232;
-$gray: #7a7c7c;
-$paleblue: #e4e9e5;
-$navy: #2a4758;
+$pink: rgb(240,91,98);
+$black: rgb(40,40,40);
+$blush: rgb(249,159,163);
+$gold: rgb(237,171,35);
+$green: rgb(146,187,68);
+$gray: rgb(51,51,51);
+$paleblue: rgb(228,233,229);
+$navy: rgb(42,71,88);
+$blue: rgb(0,169,180);
+$white: rgb(250,250,250);
 
 $mobile: new-breakpoint(max-width 420px 4);
 
