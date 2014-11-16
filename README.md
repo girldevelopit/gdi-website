@@ -26,11 +26,24 @@ Finally, set up the database:
 rake db:create db:migrate db:seed
 ```
 
-If you are setting up a local development environment, ignore rake migration errors. Optionally instead of the `rake` command, you can simply run
+If you are setting up a local development environment, ignore rake migration errors for now. Optionally instead of the `rake` command, you can simply run
 
 ```sh
 createdb
 ```
+
+If you receive the following error:
+
+```sh
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+```
+
+Do the following steps:
+1. make sure `~/Library/LaunchAgents` does not include `*.plist`
+2. restart your computer
+3. start PostgreSQL
+4. try `rake` or `createdb` commands again
 
 After that, you can run `rails server` to start the server on port `3000` or `rails console` for a REPL.
 
@@ -66,7 +79,7 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 * [homebrew](http://brew.sh/)) package manager used to install rvm and postgresql
 * [rvm](http://rvm.io/) command-line tool to manage ruby versions
 * ruby 2.1.2
-* PostgreSQL (available as postgresql package through homebrew)
+* PostgreSQL 9.3.*+ (available as postgresql package through homebrew) *Note:* If you are upgrading from 9.2.*, please see instructions below for upgrading PostgreSQL
 * Optional: PostgreSQL application for [Mac OS X](http://www.postgresql.org/download/macosx/) and click Postgres.app
 
 *Note:* you may have additional dependencies like xcode. Follow the brew instructions for these with `$ brew update` and `$ brew doctor`
@@ -87,3 +100,9 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 10. Make a pull request against the main repos master branch!
 
 We generally check all pull requests every 24-48 hours, but feel free to ping us on [Twitter](http://twitter.com/girldevelopit) if there is an urgent need.
+
+### Upgrading PostgreSQL from 9.2.*
+
+1. Uninstall PostgreSQL
+2. ```sh rm rf /usr/local/var/postgres/ ``` (or wherever you have your postgres/ directory)
+3. Install PostgreSQL 9.3.*
