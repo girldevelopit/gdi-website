@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $headfont;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
@@ -11,12 +12,12 @@ h6 {
 
 h1 {
   // font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   letter-spacing: .14rem;
 }
 
 h2{
-  font-size: 1rem;
+  font-size: 1.8rem;
   letter-spacing: .14rem;
   margin: auto;
   padding: .5rem;
@@ -43,15 +44,14 @@ h3{
 }
 
 p{
-  font-size: .8rem;
-  font-weight: 300;
+  font-size: $basefontsize;
   letter-spacing: .05rem;
   color: $gray;
   line-weight: .1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   a{
     font-style: italic;
-    color: $gold;
+    color: $blue;
     &:hover{
       color: $pink;
     }
@@ -63,8 +63,8 @@ a {
 }
 
 .large{
-  font-size: 1rem;
-  line-height: 1.65rem;
+  font-size: 1.3rem;
+  line-height: 1.85rem;
 }
 
 .subtitle {
@@ -82,10 +82,10 @@ a {
  display: inline-block;
  font-weight: 400;
  color: white;
- font-size: .8rem;
+ font-size: $basefontsize;
  text-transform: uppercase;
  letter-spacing: .14rem;
- background-color: $gold;
+ background-color: $green;
  padding: .5rem;
  &:hover{
   background-color: $black;

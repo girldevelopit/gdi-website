@@ -19,6 +19,8 @@
 
 header {
   background-color: $pink;
+  position: relative; 
+  z-index: 1500;
   @media screen and (min-width: 500px) {
     height: 100px;
   }
@@ -56,9 +58,7 @@ header {
     a {
       display: block;
       color: white;
-      font-style: italic;
-      font-weight: 300;
-      font-size: .9rem;
+      font-size: $basefontsize;
       letter-spacing: .05rem;
       padding: .5rem;
       margin-bottom: 0em;
@@ -68,7 +68,7 @@ header {
       &:hover {
         @media screen and (min-width: 500px) {
           background-color: $black;
-          color: $blush;
+          color: $green;
           box-shadow: .025rem .025rem .5rem $black;
         }
       }
@@ -115,7 +115,7 @@ footer {
   }
 }
 
-#headline{
+.headline{
   text-align: center;
   img{
     height: 35px;
@@ -125,7 +125,7 @@ footer {
   h2 {
     @extend %dashed-border;
     font-weight: 300;
-    color: $gold;
+    color: $navy;
     padding: 0px 5px 6px 5px;
     // border-bottom: solid $black 1px;
     display: inline-block;
@@ -137,8 +137,8 @@ footer {
   text-align: center;
   hr {
     width: 400px;
-    border-top: 2px solid $gold;
-    border-bottom: 2px solid $gold;
+    border-top: 2px solid $green;
+    border-bottom: 2px solid $green;
     margin-bottom: 30px;
   }
   h2 {
