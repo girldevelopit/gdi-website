@@ -18,13 +18,21 @@ Next, install all required gems:
 bundle install
 ```
 
+Next, start postgres with command-line interface OR with PostgreSQL Mac OS X GUI. Make sure it is running before proceeding to next steps.
+
 Finally, set up the database:
 
 ```sh
 rake db:create db:migrate db:seed
 ```
 
-After that, you can run `rails server` to start the server or `rails console` for a REPL.
+If you are setting up a local development environment, ignore rake migration errors. Optionally instead of the `rake` command, you can simply run
+
+```sh
+createdb
+```
+
+After that, you can run `rails server` to start the server on port `3000` or `rails console` for a REPL.
 
 
 ## Docs
@@ -59,6 +67,7 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 * [rvm](http://rvm.io/) command-line tool to manage ruby versions
 * ruby 2.1.2
 * PostgreSQL (available as postgresql package through homebrew)
+* Optional: PostgreSQL application for [Mac OS X](http://www.postgresql.org/download/macosx/) and click Postgres.app
 
 *Note:* you may have additional dependencies like xcode. Follow the brew instructions for these with `$ brew update` and `$ brew doctor`
 
