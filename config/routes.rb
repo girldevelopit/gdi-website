@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   # resource :meetups, only: [:show]
 
   get 'about', to: 'home#about'
+  get 'code-of-conduct', to: 'home#code-of-conduct'
+  
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
