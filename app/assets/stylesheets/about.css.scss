@@ -96,8 +96,7 @@
 }
 
 .code{
-  @include background-image( radial-gradient(#fff, #e4e9e5) );
-  padding: 60px 0;
+  padding-bottom: 80px;
   p{
     margin-top: 10px;
     color: $black;

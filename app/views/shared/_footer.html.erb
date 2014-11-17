@@ -5,11 +5,12 @@
 			<p class="subtitle">To become a sponsor or for partnership opportunities, email  us at <%= mail_to "sponsorships@girldevelopit.com" %> </p>
 			<nav class="navigation">
 				<%= link_to "about", about_path %>
+				<%= link_to "code of conduct", code_of_conduct_path %>
 				<%#= link_to "partners", root_path, class: "hide" %>
 				<a href="http://girldevelopit.tumblr.com/">blog</a>
 				<% if current_admin_user != nil %>
-					<%= link_to "Admin", admin_root_path %>
-					<%= link_to "Logout", destroy_admin_user_session_path %>
+					<%= link_to "admin", admin_root_path %>
+					<%= link_to "logout", destroy_admin_user_session_path %>
 				<% end %>
 			</nav>
 			<nav class="navigation">
