@@ -105,6 +105,40 @@
         <% end %>
       </div>
 
+      <div class="profiles">
+        <% if @volunteers.count != 0 %>
+          <div id="headline">
+            <%= image_tag 'apple.png' %>
+            <h2>The Volunteers</h2>
+          </div>
+        <% end %>
+
+        <% @volunteers.each do |bio| %>
+          <div class="single-profile">
+            <div class="profile-img">
+              <% if bio.image? %>
+                <%= image_tag bio.image %>
+              <% elsif bio.pic_link? %>
+                <%= image_tag bio.pic_link %>
+              <% else %>
+                <%= image_tag "photo-not-available.jpg" %>
+              <% end %>
+            </div>
+
+            <div class="profile-content">
+              <h3><%= bio.name %></h3>
+              <% if bio.info[0, 3] == "<p>" %>
+                <%= bio.info.html_safe %>
+              <% else %>
+                <%= simple_format(bio.info.html_safe) %>
+              <% end %>
+              <%= render partial: "social_media_bio", locals: {bio: bio} %>
+
+            </div>
+          </div>
+        <% end %>
+      </div>
+
       <script type="text/template" id="meetup">
 
         <h3><a href=" <%%= event_url %>"><%%= name %></a></h3>

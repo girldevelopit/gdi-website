@@ -32,7 +32,7 @@ ActiveAdmin.register Bio do
     f.inputs "Edit Bio" do
       f.input :admin_user
       f.input :chapter, member_label: :chapter
-      f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS']
+      f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS', 'VOLUNTEERS']
       f.input :name, placeholder: "Jane Doe"
       f.input :email, placeholder: current_admin_user.email
       f.input :info, placeholder: "Please fell free to type out your bio in normal text. If you have links you can type them out as normal url text like: www.girldevelopit.com.
