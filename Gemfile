@@ -27,7 +27,9 @@ gem 'rails_autolink'
 # for aws cloud storage
 gem 'fog'
 # photo resizing
-gem "mini_magick"
+gem 'mini_magick'
+# make worky with heroku
+gem 'rmagick'
 # file upload solution
 gem 'carrierwave'
 
