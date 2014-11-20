@@ -1101,6 +1101,30 @@
   twitter: gdidfw
   facebook: gdidfw
 
+- name: Houston
+  latitude:  29.817178
+  longitude: -95.4012915
+  chapter: Houston
+  state: Texas
+  meetup_url: Girl-Develop-It-Houston
+  meetup_id: '1981461'
+  slug: houston
+  leaders:
+  - name: Stacey Turnage
+  - name: Josh Medeski
+    image: houston/josh_medeski.jpg
+    bio: <p>Josh started as a graphic designer and became a front-end developer. He was a freelancer for many years and is now a Senior Reviewer with ThemeForest. Josh is a contributor and long time user of Zurb's Foundation. He also likes talking about Sass, CSS guidelines, version control and code organization. On the side, he runs his own podcast and blog about personal productivity.</p>
+    contact:
+      email: josh.gdihouston@gmail.com
+      twitter: joshmedeski
+      website: http://joshmedeski.com/
+  instructors:
+  volunteers: []
+  sponsors: []
+  twitter: gdihouston
+  email: htx@girldevelopit.com
+  logo: houston/logo.png
+
 - name: Washington DC
   latitude:  38.9071923
   longitude: -77.0368707
