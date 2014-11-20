@@ -29,6 +29,7 @@ end
     @bios = @chapter.bios
     @leaders = @bios.where(title: "LEADERS")
     @instructors = @bios.where(title: "INSTRUCTORS")
+    @volunteers = @bios.where(title: "VOLUNTEERS")
 
     api = MeetupApi.new
     @events = api.events(group_id: @chapter.meetup_id)
