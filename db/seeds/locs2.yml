@@ -1112,7 +1112,7 @@
   leaders:
   - name: Stacey Turnage
     image: houston/stacey_turnage.jpg
-    bio: <p>Stacey is the founder of Girl Develop It Houston.  Formally a vice president of mortgage banking operations, she now prefers to spend her time learning code, empowering women, and changing the world.  She’s a full-time student pursuing a Bachelors of Science Degree in Sociology at the University of Houston (Go Coogs). When she’s not knee deep in Sociological statistics she’s learning new development languages and furthering Girl Develop It’s mission to teach women to develop software.  Stacey is a lover of shoes, all things technology, an unapologetic foodie, and a coffee enthusiast.</p>
+    bio: <p>Stacey is the founder of Girl Develop It Houston.  Formally a vice president of mortgage banking operations, she now prefers to spend her time learning code, empowering women, and changing the world.  She’s a full-time student pursuing a Bachelors of Science Degree in Sociology at the University of Houston (#gocoogs). When she’s not knee deep in Sociological statistics she’s learning new development languages and furthering Girl Develop It’s mission to teach women to develop software.  Stacey is a lover of shoes, all things technology, an unapologetic foodie, and a coffee enthusiast.</p>
   - name: Nona Durham
     image: houston/nona_durham.jpg
     bio: <p>Nona is a well-rounded backend and front-end application developer with over 10 year experience working in the Oil & Gas industry.  Having worked in a corporate environment, she’s well versed in C# and .Net technologies.  She has always wanted to teach and is very excited to work with GDI Houston Chapter to spread her love and passion for coding.  Nona has been married to her husband Josh for 2 years and is “mom” to a 12 year old Schnoodle named Kristy and a 10 year old black cat named Kitty.</p>
@@ -1127,6 +1127,7 @@
   volunteers: []
   sponsors: []
   twitter: gdihouston
+  facebook: gdihouston
   email: htx@girldevelopit.com
   logo: houston/logo.png
 
