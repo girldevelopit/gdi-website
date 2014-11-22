@@ -1126,7 +1126,7 @@
       email: josh.gdihouston@gmail.com
       twitter: joshmedeski
       website: http://joshmedeski.com/
-  instructors:
+  instructors: []
   volunteers: []
   sponsors: []
   twitter: gdihouston
@@ -1823,14 +1823,13 @@
       <a href="http://railsgirls.com/pittsburgh" target='_blank'>Rails Girls Pittsburgh</a>
       in 2013.</p>
   - name: Val Head
-    image: pittsburgh/valhead.jpg
-    bio: <p><a href="http://www.twitter.com/vlh">Val Head is a <a href="http://www.valhead.com">designer</a> 
-      based in lovely Pittsburgh, PA. Her work ranges from projects on the web to interactive installations 
-      to print. She is the author of <a href="http://www.fivesimplesteps.com/products/css-animations">The 
-      Pocket Guide to CSS Animations</a>, teaches 
-      <a href="http://www.lynda.com/CSS-tutorials/CSS-Animations/115434-2.html?utm_medium=ldc-partner&utm_source=SSPRC&utm_content=524&utm_campaign=CD14926&bid=524&aid=CD14926&opt=">CSS Animations</a> 
-      on Lynda.com, and hosts the <a href="http://alltherightmoves.valhead.com">All The Right Moves</a> 
-      tutorial screencast. She also founded the popular <a href="http://www.webdesignday">Web Design Day</a> 
+    bio: <p><a href="http://www.twitter.com/vlh">Val Head is a <a href="http://www.valhead.com">designer</a>
+      based in lovely Pittsburgh, PA. Her work ranges from projects on the web to interactive installations
+      to print. She is the author of <a href="http://www.fivesimplesteps.com/products/css-animations">The
+      Pocket Guide to CSS Animations</a>, teaches
+      <a href="http://www.lynda.com/CSS-tutorials/CSS-Animations/115434-2.html?utm_medium=ldc-partner&utm_source=SSPRC&utm_content=524&utm_campaign=CD14926&bid=524&aid=CD14926&opt=">CSS Animations</a>
+      on Lynda.com, and hosts the <a href="http://alltherightmoves.valhead.com">All The Right Moves</a>
+      tutorial screencast. She also founded the popular <a href="http://www.webdesignday">Web Design Day</a>
       conference, and leads workshops around the world on <a href="http://www.valhead.com/workshops/">UI animation</a>
       and <a href="http://seb.ly/training/">creative coding</a>.</p>
   instructors: []
