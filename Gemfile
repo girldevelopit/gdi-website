@@ -41,6 +41,8 @@ group :development do
   gem 'quiet_assets'
   gem 'guard-livereload', require: false
   gem 'guard'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 gem 'unicorn'
 gem 'rails_12factor', group: :production
