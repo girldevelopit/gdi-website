@@ -6,19 +6,19 @@ julia = AdminUser.create! do |a|
             a.password    = a.password_confirmation = 'password'
           end
 
-webmistress = Role.create! do |a|
-                a.name = 'webmistress'
+admin = Role.create! do |a|
+                a.name = 'admin'
                 a.resource_id = 1
               end
 
-admin = Role.create! do |a|
-                a.name = 'admin'
+leader = Role.create! do |a|
+                a.name = 'leader'
                 a.resource_id = 2
               end
 
 adminfirst = AdminUser.first
-adminfirst.roles << webmistress
 adminfirst.roles << admin
+adminfirst.roles << leader
 
 chapter_seed = Rails.root.join('db', 'seeds', 'locs2.yml')
 
