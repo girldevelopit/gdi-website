@@ -6,9 +6,9 @@ class Ability
     user.roles.each do |r|
       allroles << r.name
     end
-    if allroles.include? "webmistress"
+    if allroles.include? "admin"
       can :manage, :all
-    elsif allroles.include? "admin"
+    elsif allroles.include? "leader"
       can :manage, user.chapter
       can :manage, user.bio
       can :manage, Sponsor
