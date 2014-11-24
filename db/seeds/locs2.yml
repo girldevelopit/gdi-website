@@ -1116,9 +1116,7 @@
     contact:
       email: stacey@girldevelopit.com
       twitter: gdihouston
-  - name: Nona Durham
-    image: houston/nona_durham.jpg
-    bio: <p>Nona is a well-rounded backend and front-end application developer with over 10 year experience working in the Oil & Gas industry.  Having worked in a corporate environment, she’s well versed in C# and .Net technologies.  She has always wanted to teach and is very excited to work with GDI Houston Chapter to spread her love and passion for coding.  Nona has been married to her husband Josh for 2 years and is “mom” to a 12 year old Schnoodle named Kristy and a 10 year old black cat named Kitty.</p>
+  instructors:
   - name: Josh Medeski
     image: houston/josh_medeski.jpg
     bio: <p>Josh started as a graphic designer and became a front-end developer. He was a freelancer for many years and is now a Senior Reviewer with ThemeForest. Josh is a contributor and long time user of Zurb's Foundation. He also likes talking about Sass, CSS guidelines, version control and code organization. On the side, he runs his own podcast and blog about personal productivity.</p>
@@ -1126,7 +1124,9 @@
       email: josh.gdihouston@gmail.com
       twitter: joshmedeski
       website: http://joshmedeski.com/
-  instructors: []
+  - name: Nona Durham
+    image: houston/nona_durham.jpg
+    bio: <p>Nona is a well-rounded backend and front-end application developer with over 10 year experience working in the Oil & Gas industry.  Having worked in a corporate environment, she’s well versed in C# and .Net technologies.  She has always wanted to teach and is very excited to work with GDI Houston Chapter to spread her love and passion for coding.  Nona has been married to her husband Josh for 2 years and is “mom” to a 12 year old Schnoodle named Kristy and a 10 year old black cat named Kitty.</p>
   volunteers: []
   sponsors: []
   twitter: gdihouston
@@ -1814,12 +1814,12 @@
   leaders:
   - name: Marylou Lenhart
     image: pittsburgh/maryloulenhart.jpg
-    bio: <p><a href="http://www.twitter.com/maryloulenhart">Marylou Lenhart</a> 
-      is a software developer and yoga teacher in Pittsburgh, PA. 
-      She works remotely at a California-based web security company, and teaches at 
-      <a href="http://www.urbanpranayoga.com" target='_blank'>Urban Prana Yoga</a>. 
+    bio: <p><a href="http://www.twitter.com/maryloulenhart">Marylou Lenhart</a>
+      is a software developer and yoga teacher in Pittsburgh, PA.
+      She works remotely at a California-based web security company, and teaches at
+      <a href="http://www.urbanpranayoga.com" target='_blank'>Urban Prana Yoga</a>.
       She helps organize <a href = 'http://steelcityrubyconf.org/' target ='_blank'>
-      Steel City Ruby Conf</a>, and was a mentor and speaker at 
+      Steel City Ruby Conf</a>, and was a mentor and speaker at
       <a href="http://railsgirls.com/pittsburgh" target='_blank'>Rails Girls Pittsburgh</a>
       in 2013.</p>
   - name: Val Head
