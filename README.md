@@ -29,6 +29,56 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 
 **Note:** If you are upgrading from 9.2., please see instructions below for "Upgrading PostgreSQL from 9.2."
 
+### Ubuntu installation instructions
+* Install RVM [Website Instructions](http://rvm.io/rvm/install)
+  * Install the pgp key for rvm
+  ```sh
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+  ```
+  * Install rvm, make sure to not run this as sudo, RVM should be installed on your user
+  ```sh
+  curl -sSL https://get.rvm.io | bash -s stable
+  ```
+  * Source the RVM scripts (the output from the install command has instructions for how to set this up permanently)
+  ```sh
+  source ~/.rvm/scripts/rvm
+  ``` 
+* Install Ruby
+```sh
+rvm install 2.1.2
+```
+* Create a new Gemset
+```sh
+rvm gemset use gdi-new-site --create
+```
+* Install some system prereqs
+```sh
+sudo apt-get install build-essential libpq-dev  imagemagick libmagickwand-dev nodejs
+```
+* Install and Configure Postgres [Website Instructions](http://www.postgresql.org/download/linux/ubuntu/)
+  * Simple install (Try first, if it fails follow complex install)
+  ```sh
+  sudo apt-get install postgresql-9.3
+  ```
+  * Complex install
+  **Note:** Change precise to match the name of your ubuntu distribution (12.04 = precise, 14.04 = trusty)
+
+    ```sh
+    echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
+    sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get install postgresql-9.3
+    ```
+  * Configure [Source](https://stackoverflow.com/questions/11092807/installing-postgresql-on-ubuntu-for-ruby-on-rails)
+  **Note:** Change <username> to your ubuntu username
+
+    ```sh
+	  sudo su postgres -c psql
+	  postgres=# CREATE ROLE <username> SUPERUSER LOGIN;
+      postgres=# \q
+	 ```
+
 ### Setting up your local dev environment
 
 - Fork this repo into your personal Github account.
