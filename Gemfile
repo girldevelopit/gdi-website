@@ -44,6 +44,12 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
+group :test do
+  gem "rspec"
+  gem "rspec-rails", "~>3.1.0"
+  # For test coverage
+  gem "simplecov-rcov", "~>0.2.3"
+end
 gem 'unicorn'
 gem 'rails_12factor', group: :production
 gem 'friendly_id'
