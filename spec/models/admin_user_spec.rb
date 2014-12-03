@@ -7,7 +7,6 @@ describe AdminUser do
     expect(AdminUser.ancestors).to include(::Rolify::Role)
   end
 
-
   describe 'includes devise' do
     it '.' do
       expect(AdminUser.ancestors).to include(::Devise::Models)
@@ -35,7 +34,7 @@ describe AdminUser do
 
   end
 
-  it 'reponds to bio' do
+  it 'responds to bio' do
     expect(AdminUser.create).to respond_to(:bio)
   end
 
