@@ -102,3 +102,11 @@
     color: $black;
   }
 }
+.board, .contact {
+  float: left;
+  display: block;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
