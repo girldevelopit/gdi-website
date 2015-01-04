@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.1.2
+before_install: "bundle config build.nokogiri --use-system-libraries"
+addons:
+  postgresql: "9.3"
+before_script:
+  - psql -c 'create database gdi_test;' -U postgres
