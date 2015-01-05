@@ -83,6 +83,28 @@ $ echo $MEETUP_API_KEY
 
 We generally check all pull requests every 24-48 hours, but feel free to ping us on [Twitter](http://twitter.com/girldevelopit) if there is an urgent need.
 
+### Running the tests
+1. Make sure that you've run bundle install to get all the gems required installed
+2. In the root directory of the project run `rspec`
+
+To run the tests in a single file run `rspec spec/#{path_to_file}`
+To run just one test, or one group of tests run `rspec -e 'the name of the test'`
+
+For more information on testing with rspec you may want to check these resources:
+
+General Testing:
+[Unit Testing](http://martinfowler.com/bliki/UnitTest.html)
+[Definition of Terms](https://programmers.stackexchange.com/questions/48237/what-is-an-integration-test-exactly)
+
+Rspec info:
+[Better Specs Website](http://betterspecs.org/)
+[Rspec Documentation](http://rspec.info/)
+
+Testing Ruby on Rails:
+[Everyday Rails Testing Book](https://leanpub.com/everydayrailsrspec)
+[General Overview of Testing Rails Apps](http://robots.thoughtbot.com/how-we-test-rails-applications)
+
+
 ### Deploying to Heroku
 
 If you are an owner and/or have been approved by one of the [Project Leads](https://github.com/girldevelopit/gdi-new-site/blob/master/CONTRIBUTORS.md#project-leads), than this section is relevant to you!
