@@ -16,9 +16,12 @@ leader = Role.create! do |a|
                 a.resource_id = 2
               end
 
-adminfirst = AdminUser.first
-adminfirst.roles << admin
-adminfirst.roles << leader
+# adminfirst = AdminUser.first
+# adminfirst.roles << admin
+# adminfirst.roles << leader
+
+admin.admin_users << julia
+
 
 chapter_seed = Rails.root.join('db', 'seeds', 'locs2.yml')
 
