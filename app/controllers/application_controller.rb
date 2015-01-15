@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
 
   def access_denied(exception)
-    redirect_to admin_path, :alert => exception.message
+    redirect_to root_path, :alert => exception.message
   end
 
 
