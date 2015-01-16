@@ -1,11 +1,6 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 
-julia = AdminUser.create! do |a|
-            a.email       = 'julia@girldevelopit.com'
-            a.password    = a.password_confirmation = 'password'
-          end
-
 admin = Role.create! do |a|
                 a.name = 'admin'
                 a.resource_id = 1
@@ -16,6 +11,7 @@ leader = Role.create! do |a|
                 a.resource_id = 2
               end
 
+#give role privileges to default admin user created by Devise
 adminfirst = AdminUser.first
 adminfirst.roles << admin
 adminfirst.roles << leader
