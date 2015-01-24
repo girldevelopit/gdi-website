@@ -9,4 +9,4 @@ Girl Develop It is a nonprofit organization that exists to provide affordable an
 
 ## Documentation
 
-We have migrated our documentation over to Read The Docs! Learn more about how to contribute to our code base by following along here: [https://readthedocs.org/projects/gdi-new-site/](https://readthedocs.org/projects/gdi-new-site/).
+We have migrated our documentation over to Read The Docs! Learn more about how to contribute to our code base by following along here: [http://gdi-new-site.readthedocs.org/](http://gdi-new-site.readthedocs.org/).
