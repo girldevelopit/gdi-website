@@ -11,5 +11,5 @@ Girl Develop It is a nonprofit organization that exists to provide affordable an
 
 We have created two different sets of local installation guidelines for you to follow: website and documentation. If you are wanting to contribute to either just the website and/or the docs, be sure to follow the corresponding instructions.
 
-- [Installation for Website changes](installation.md)
-- [Installation for Docs changes](installation_docs.md)
+- [Installation for Website changes](sources/installation.md)
+- [Installation for Docs changes](sources/installation_docs.md)
