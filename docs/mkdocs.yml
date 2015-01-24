@@ -5,10 +5,8 @@ theme: readthedocs
 docs_dir: sources
 
 pages:
-
-- [index.md, Home]
-- [installation.md, Installation (Website)]
-- [installation_docs.md, Installation (Docs)]
-- [contribution.md, Contribution Guidelines]
-- [deploying.md, Deploying to Heroku]
-- [faq.md, Frequently Asked Questions]
+- ['installation.md', 'Installation (Website)']
+- ['installation_docs.md', 'Installation (Docs)']
+- ['contribution.md', 'Contribution Guidelines']
+- ['deploying.md', 'Deploying to Heroku']
+- ['faq.md', 'Frequently Asked Questions']
