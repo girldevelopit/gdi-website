@@ -1,6 +1,11 @@
 site_name: Girl Develop It
+
 theme: readthedocs
+
+docs_dir: sources
+
 pages:
+
 - [index.md, Home]
 - [installation.md, Installation (Website)]
 - [installation_docs.md, Installation (Docs)]
