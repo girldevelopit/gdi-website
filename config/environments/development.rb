@@ -3,7 +3,28 @@ Rails.application.configure do
 
    config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
+   config.action_mailer.delivery_method = :smtp
+   
+  # THIS IS SENDGRID
+  # config.action_mailer.smtp_settings = {
+  #   :user_name => 'kristen@girldevelopit.com',
+  #   :password => 'gc3CfScU)^?,64p',
+  #   :domain => 'girl-develop-it.herokuapp.com',
+  #   :address => 'smtp.sendgrid.net',
+  #   :port => 587,
+  #   :authentication => :plain,
+  #   :enable_starttls_auto => true
+  # }
 
+  # THIS IS MANDRILL
+  config.action_mailer.smtp_settings = {
+    :user_name => 'app28236699@heroku.com',
+    :password => 'VblU43FdRCyahN_lqLBuMw',
+    :address => 'smtp.mandrillapp.com',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
