@@ -19,7 +19,7 @@ ActiveAdmin.register Sponsor do
     end
   end
 
-  form do |f|
+  form(:html => { :multipart => true }) do |f|
     f.inputs "Edit Sponsor" do
       f.input :chapter, member_label: :chapter
       f.input :name, placeholder: "The Iron Yard"

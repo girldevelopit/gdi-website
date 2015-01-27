@@ -28,7 +28,7 @@ ActiveAdmin.register Bio do
     active_admin_comments
   end
 
-  form do |f|
+  form(:html => { :multipart => true }) do |f|
     f.inputs "Edit Bio" do
       f.input :admin_user
       f.input :chapter, member_label: :chapter
