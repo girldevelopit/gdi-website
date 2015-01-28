@@ -1,0 +1,31 @@
+module Byebug
+  #
+  # Show history of byebug commands.
+  #
+  class HistoryCommand < Command
+    def regexp
+      /^\s* hist(?:ory)? (?:\s+(?<num_cmds>.+))? \s*$/x
+    end
+
+    def execute
+      history = @state.interface.history
+
+      if @match[:num_cmds]
+        size, _ = get_int(@match[:num_cmds], 'history', 1, history.size)
+        return errmsg(err) unless size
+      end
+
+      puts history.to_s(size)
+    end
+
+    class << self
+      def names
+        %w(history)
+      end
+
+      def description
+        %(hist[ory] [num_cmds]        Show byebug's command history.)
+      end
+    end
+  end
+end

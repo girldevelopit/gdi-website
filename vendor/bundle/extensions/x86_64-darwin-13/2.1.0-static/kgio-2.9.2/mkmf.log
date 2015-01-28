@@ -1,0 +1,1060 @@
+have_macro: checking for CLOCK_MONOTONIC in time.h... -------------------- no
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+conftest.c:6:3: error: 
+# error
+  ^
+conftest.c:7:1: error: expected identifier or '('
+|:/ === CLOCK_MONOTONIC undefined === /:|
+^
+2 errors generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <time.h>
+4: /*top*/
+5: #ifndef CLOCK_MONOTONIC
+6: # error
+7: |:/ === CLOCK_MONOTONIC undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_func: checking for CLOCK_MONOTONIC() in time.h... -------------------- no
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:15:57: error: use of undeclared identifier 'CLOCK_MONOTONIC'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))CLOCK_MONOTONIC; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))CLOCK_MONOTONIC; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:15:15: warning: implicit declaration of function 'CLOCK_MONOTONIC' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { CLOCK_MONOTONIC(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+Undefined symbols for architecture x86_64:
+  "_CLOCK_MONOTONIC", referenced from:
+      _t in conftest-b76620.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { CLOCK_MONOTONIC(); return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for clockid_t in time.h... -------------------- no
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+conftest.c:6:9: error: unknown type name 'clockid_t'; did you mean 'clock_t'?
+typedef clockid_t conftest_type;
+        ^~~~~~~~~
+        clock_t
+/usr/include/sys/_types/_clock_t.h:30:33: note: 'clock_t' declared here
+typedef __darwin_clock_t        clock_t;
+                                ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <time.h>
+4: 
+5: /*top*/
+6: typedef clockid_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_library: checking for clock_gettime() in -lrt... -------------------- no
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lrt  -lpthread -ldl -lobjc "
+conftest.c:15:57: error: use of undeclared identifier 'clock_gettime'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))clock_gettime; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))clock_gettime; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lrt  -lpthread -ldl -lobjc "
+conftest.c:15:15: warning: implicit declaration of function 'clock_gettime' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { clock_gettime(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { clock_gettime(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for t_open() in -lnsl... -------------------- no
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lnsl  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 't_open'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))t_open; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))t_open; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lnsl  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 't_open' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { t_open(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+ld: library not found for -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { t_open(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for socket() in -lsocket... -------------------- no
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lsocket  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'socket'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))socket; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))socket; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation -lsocket  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'socket' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { socket(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { socket(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for poll() in poll.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <poll.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))poll; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getaddrinfo() in sys/types.h,sys/socket.h,netdb.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <sys/socket.h>
+ 5: #include <netdb.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getaddrinfo; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getnameinfo() in sys/types.h,sys/socket.h,netdb.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/types.h>
+ 4: #include <sys/socket.h>
+ 5: #include <netdb.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     printf("%p", &t);
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getnameinfo; return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for struct sockaddr_storage in sys/types.h,sys/socket.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+4: #include <sys/socket.h>
+5: 
+6: /*top*/
+7: typedef struct sockaddr_storage conftest_type;
+8: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_func: checking for accept4() in sys/socket.h... -------------------- no
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:15:57: error: use of undeclared identifier 'accept4'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))accept4; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/socket.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))accept4; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:15:15: warning: implicit declaration of function 'accept4' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { accept4(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+Undefined symbols for architecture x86_64:
+  "_accept4", referenced from:
+      _t in conftest-6fe075.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/socket.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { accept4(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for sys/select.h... -------------------- yes
+
+"gcc -E -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/select.h>
+/* end */
+
+--------------------
+
+have_func: checking for writev() in sys/uio.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/uio.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))writev; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for ruby/io.h... -------------------- yes
+
+"gcc -E -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/io.h>
+/* end */
+
+--------------------
+
+have_struct_member: checking for rb_io_t.fd in ruby.h,ruby/io.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: #include <ruby/io.h>
+ 5: 
+ 6: /*top*/
+ 7: int s = (char *)&((rb_io_t*)0)->fd - (char *)0;
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   return 0;
+11: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for rb_io_t.mode in ruby.h,ruby/io.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: #include <ruby/io.h>
+ 5: 
+ 6: /*top*/
+ 7: int s = (char *)&((rb_io_t*)0)->mode - (char *)0;
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   return 0;
+11: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for rb_io_t.pathv in ruby.h,ruby/io.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: #include <ruby/io.h>
+ 5: 
+ 6: /*top*/
+ 7: int s = (char *)&((rb_io_t*)0)->pathv - (char *)0;
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   return 0;
+11: }
+/* end */
+
+--------------------
+
+have_type: checking for struct RFile in ruby.h,ruby/io.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: #include <ruby/io.h>
+5: 
+6: /*top*/
+7: typedef struct RFile conftest_type;
+8: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+check_sizeof: checking size of struct RFile in ruby.h,ruby/io.h... -------------------- 24
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+conftest.c:9:20: error: 'conftest_const' declared as an array with a negative size
+int conftest_const[(sizeof((*rbcv_ptr_)) < 0) ? 1 : -1];
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: #include <ruby/io.h>
+5: typedef struct RFile rbcv_typedef_;
+6: static rbcv_typedef_ *rbcv_ptr_;
+7: 
+8: /*top*/
+9: int conftest_const[(sizeof((*rbcv_ptr_)) < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: #include <ruby/io.h>
+ 5: typedef struct RFile rbcv_typedef_;
+ 6: static rbcv_typedef_ *rbcv_ptr_;
+ 7: 
+ 8: #include <stdio.h>
+ 9: /*top*/
+10: typedef unsigned
+11: #ifdef PRI_LL_PREFIX
+12: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+13: LONG_LONG
+14: #else
+15: #define PRI_CONFTEST_PREFIX "l"
+16: long
+17: #endif
+18: conftest_type;
+19: conftest_type conftest_const = (conftest_type)(sizeof((*rbcv_ptr_)));
+20: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+have_type: checking for struct RObject... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: typedef struct RObject conftest_type;
+5: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+check_sizeof: checking size of struct RObject... -------------------- 40
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+conftest.c:7:20: error: 'conftest_const' declared as an array with a negative size
+int conftest_const[(sizeof((*rbcv_ptr_)) < 0) ? 1 : -1];
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: typedef struct RObject rbcv_typedef_;
+4: static rbcv_typedef_ *rbcv_ptr_;
+5: 
+6: /*top*/
+7: int conftest_const[(sizeof((*rbcv_ptr_)) < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: typedef struct RObject rbcv_typedef_;
+ 4: static rbcv_typedef_ *rbcv_ptr_;
+ 5: 
+ 6: #include <stdio.h>
+ 7: /*top*/
+ 8: typedef unsigned
+ 9: #ifdef PRI_LL_PREFIX
+10: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+11: LONG_LONG
+12: #else
+13: #define PRI_CONFTEST_PREFIX "l"
+14: long
+15: #endif
+16: conftest_type;
+17: conftest_type conftest_const = (conftest_type)(sizeof((*rbcv_ptr_)));
+18: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+check_sizeof: checking size of int... -------------------- 4
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+conftest.c:7:20: error: 'conftest_const' declared as an array with a negative size
+int conftest_const[(sizeof((*rbcv_ptr_)) < 0) ? 1 : -1];
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: typedef int rbcv_typedef_;
+4: static rbcv_typedef_ *rbcv_ptr_;
+5: 
+6: /*top*/
+7: int conftest_const[(sizeof((*rbcv_ptr_)) < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: typedef int rbcv_typedef_;
+ 4: static rbcv_typedef_ *rbcv_ptr_;
+ 5: 
+ 6: #include <stdio.h>
+ 7: /*top*/
+ 8: typedef unsigned
+ 9: #ifdef PRI_LL_PREFIX
+10: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+11: LONG_LONG
+12: #else
+13: #define PRI_CONFTEST_PREFIX "l"
+14: long
+15: #endif
+16: conftest_type;
+17: conftest_type conftest_const = (conftest_type)(sizeof((*rbcv_ptr_)));
+18: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+have_func: checking for rb_io_ascii8bit_binmode()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_ascii8bit_binmode; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_update_max_fd()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_update_max_fd; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_fd_fix_cloexec()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_fd_fix_cloexec; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_cloexec_open()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_cloexec_open; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for ruby/thread.h... -------------------- yes
+
+"gcc -E -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/thread.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_without_gvl() in ruby/thread.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby/thread.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:57: warning: 'rb_thread_blocking_region' is deprecated [-Wdeprecated-declarations]
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+                                                        ^
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/intern.h:870:18: note: 'rb_thread_blocking_region' has been explicitly marked deprecated here
+DEPRECATED(VALUE rb_thread_blocking_region(rb_blocking_function_t *func, void *data1,
+                 ^
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0/ruby/config.h:114:52: note: expanded from macro 'DEPRECATED'
+#define DEPRECATED(x) __attribute__ ((deprecated)) x
+                                                   ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_io_blocking_region()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'rb_thread_io_blocking_region'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_io_blocking_region; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_io_blocking_region; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'rb_thread_io_blocking_region' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { rb_thread_io_blocking_region(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { rb_thread_io_blocking_region(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_set_len()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_set_len; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_time_interval()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_time_interval; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_wait_for_single_fd()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'rb_wait_for_single_fd'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'rb_wait_for_single_fd' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { rb_wait_for_single_fd(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { rb_wait_for_single_fd(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_subseq()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_subseq; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_ary_subseq()... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE -DPOSIX_C_SOURCE=1-D_POSIX_C_SOURCE=200112L -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_ary_subseq; return 0; }
+/* end */
+
+--------------------
+

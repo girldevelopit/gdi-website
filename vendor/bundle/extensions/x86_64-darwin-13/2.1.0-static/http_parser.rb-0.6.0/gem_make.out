@@ -1,0 +1,14 @@
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 ruby_http_parser.bundle ./.gem.20150128-59616-1doftm8
+installing default ruby_http_parser libraries

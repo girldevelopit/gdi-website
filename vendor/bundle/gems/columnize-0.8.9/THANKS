@@ -1,0 +1,8 @@
+I am indebted to:
+
+Mark Moseley:
+     the initial port from 1.8 to 1.9
+Martin Davis:
+       how to extend into Array classes and set options from there
+David Rodríguez de Dios:
+      Miscellaneous portability fixes and doggedness to get out a new release

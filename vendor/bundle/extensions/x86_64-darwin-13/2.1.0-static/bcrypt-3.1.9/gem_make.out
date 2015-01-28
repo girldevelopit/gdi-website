@@ -1,0 +1,17 @@
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.bundle
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bcrypt_ext.bundle ./.gem.20150128-59616-18wvsu4
+installing default bcrypt_ext libraries

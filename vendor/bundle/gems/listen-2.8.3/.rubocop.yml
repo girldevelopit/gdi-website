@@ -1,0 +1,20 @@
+inherit_from:
+  - vendor/hound/config/style_guides/ruby.yml
+  - .rubocop_todo.yml
+
+# Rails cops
+AllCops:
+  RunRailsCops: true
+
+# Files you want to exclude
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - Gemfile
+    - Guardfile
+    - Rakefile
+
+# TODO: put your overrides here:
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+  Enabled: true

@@ -1,0 +1,60 @@
+= Issues
+
+mailto:unicorn-public@bogomips.org is the best place to report bugs,
+submit patches and/or obtain support after you have searched the
+{email archives}[http://bogomips.org/unicorn-public/] and
+{documentation}[http://unicorn.bogomips.org/].
+
+* No subscription will ever be required to email the public inbox.
+* Please Cc: all participants in a thread, as there are no subscribers
+* Do not {top post}[http://catb.org/jargon/html/T/top-post.html] in replies
+* Quote as little as possible of the message you're replying to
+* Do not send HTML mail, it will likely be flagged as spam
+
+If your issue is of a sensitive nature or you're just shy in public,
+then feel free to email us privately at mailto:unicorn@bogomips.org
+instead and your issue will be handled discreetly.
+
+If you don't get a response within a few days, we may have forgotten
+about it so feel free to ask again.
+
+== Submitting Patches
+
+See the HACKING document (and additionally, the
+{SubmittingPatches}[https://git.kernel.org/cgit/git/git.git/tree/Documentation/SubmittingPatches]
+document distributed with git) on guidelines for patch submission.
+
+== Contact Info
+
+* public: mailto:unicorn-public@bogomips.org
+* private: mailto:unicorn@bogomips.org
+
+We operate a {public-inbox}[http://public-inbox.org/].
+You may subscribe using {ssoma}[http://ssoma.public-inbox.org/]:
+
+	URL=git://bogomips.org/unicorn-public
+	LISTNAME=unicorn
+
+	# to initialize a maildir (this may be a new or existing maildir,
+	# ssoma will not touch existing messages)
+	# If you prefer mbox, use mbox:/path/to/mbox as the last argument
+	# You may also use imap://$MAILSERVER/INBOX for an IMAP account
+	# or imaps:// for an IMAPS account, as well.
+	ssoma add $LISTNAME $URL maildir:/path/to/maildir
+
+	# read with your favorite MUA (only using mutt as an example)
+	mutt -f /path/to/maildir # (or /path/to/mbox)
+
+	# to keep your mbox or maildir up-to-date, periodically run the following:
+	ssoma sync $LISTNAME
+
+	# your MUA may modify and delete messages from the maildir or mbox,
+	# this does not affect ssoma functionality at all
+
+	# to sync all your ssoma subscriptions
+	ssoma sync
+
+	# You may wish to sync in your cronjob
+	ssoma sync --cron
+
+HTML archives are available here: http://bogomips.org/unicorn-public/

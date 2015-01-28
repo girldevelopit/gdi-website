@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    simplecov-rcov (0.2.1)
+      simplecov (>= 0.4.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    mocha (0.9.12)
+    rake (0.9.2)
+    simplecov (0.4.2)
+      simplecov-html (~> 0.4.4)
+    simplecov-html (0.4.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (>= 1.0.0.rc.6)
+  mocha
+  rake
+  simplecov-rcov!

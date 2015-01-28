@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 1.9.3
+  - 2.0.0
+gemfile:
+  - Gemfile
+  - gemfiles/Gemfile-rails.3.2.x
+notifications:
+  email: false
+  campfire:
+    on_success: change
+    on_failure: always
+    rooms:
+      - secure: "kysymH2KAtGgNLcWPaNLVENtghORHJC6yUxGzJ5y+JrzUwkr4gTOv0nMyw5k\nsHCN1F1mJtbiXxFOZpxDaWMSGVhP7ThRy0esovkfzkAHihbyPClX241eJcyD\nI3f7/BZN4gfiR+Mbml2frLKHOtEtrm2h0gIEsXJ/YL+Ysf0nxHw="

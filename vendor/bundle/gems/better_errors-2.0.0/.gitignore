@@ -1,0 +1,8 @@
+*.gem
+/tmp
+/Gemfile.lock
+/coverage
+/.yardoc
+/doc
+/.bundle
+/vendor/gems

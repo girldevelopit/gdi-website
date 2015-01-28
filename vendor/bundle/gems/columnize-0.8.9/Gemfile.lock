@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    columnize (0.8.9)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json (1.8.0)
+    rake (10.0.4)
+    rdoc (4.0.1)
+      json (~> 1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  columnize!
+  rake
+  rdoc
