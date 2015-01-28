@@ -1,0 +1,5 @@
+Gemfile.lock
+gemfiles/*.lock
+pkg
+doc/*
+.yardoc

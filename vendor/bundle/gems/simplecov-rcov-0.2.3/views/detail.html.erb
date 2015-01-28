@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title><%= shortened_filename(file) %></title>
+    <link href="<%= assets_path('screen.css')%>" media="all" rel="stylesheet" type="text/css" />
+    <link href="<%= assets_path('print.css')%>" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="<%= assets_path('rcov.js')%>"></script>
+  </head>
+  <body>
+    <h1><%= "#{project_name} C0 Coverage Information - Simploco - RCov" %></h1>
+    <h2><%= shortened_filename(file) %></h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="<%= relative_filename(shortened_filename(file)) %>"><%= shortened_filename(file) %></a></td>
+            <td class='right_align'><tt><%= file.lines.count %></tt></td>
+            <td class='right_align'><tt><%= file.covered_lines.count + file.missed_lines.count %></tt></td>
+            <td class="left_align"><%= code_coverage_html(total_coverage_for_report(file)) %></td>
+            <td class="left_align"><%= code_coverage_html(file.covered_percent) %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <%- file.lines.each do |line| -%>
+        <tr class="<%= line_css_for(line.coverage) %>">
+          <td><pre><a name="line<%= line.number.next %>"><%= line.number.next %></a> <%= CGI::escapeHTML(line.src.chomp) %></pre></td>
+        </tr>
+        <%- end -%>
+      </tbody>
+    </table>
+
+    <p>Generated on <%= generated_on %> with <a href="<%= SimpleCov::Formatter::RcovFormatter::UPSTREAM_URL %>">SimpleCov-RCov <%= SimpleCov::Formatter::RcovFormatter::VERSION %></a></p>
+
+  </body>
+</html>

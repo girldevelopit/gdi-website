@@ -1,0 +1,195 @@
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/bin/ruby extconf.rb 
+checking for Ruby version >= 1.8.5... yes
+checking for gcc... yes
+checking for Magick-config... yes
+checking for ImageMagick version >= 6.4.9... yes
+checking for stdint.h... yes
+checking for sys/types.h... yes
+checking for wand/MagickWand.h... yes
+checking for snprintf() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AcquireImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AffinityImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AffinityImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AutoGammaImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AutoLevelImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for BlueShiftImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ColorMatrixImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ConstituteComponentTerminus() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DeskewImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DestroyConstitute() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for EncipherImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for EqualizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for EvaluateImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for FloodfillPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for FunctionImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetAuthenticIndexQueue() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetMagickFeatures() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetVirtualPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LevelImageColors() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LevelColorsImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LevelizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LiquidRescaleImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for MagickLibAddendum() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for OpaquePaintImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for QueueAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RemapImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RemapImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RemoveImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RotationalBlurImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RotationalBlurImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SelectiveBlurImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SetImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SetMagickMemoryMethods() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SparseColorImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for StatisticImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SyncAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for TransformImageColorspace() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for TransparentPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for TransparentPaintImageChroma() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for QueryMagickColorname() new signature... yes
+checking for Image.type in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.kerning in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.interline_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.interword_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DitherMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for MagickFunction in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ImageLayerMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for long double in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AlphaChannelType.CopyAlphaChannel... yes
+checking for AlphaChannelType.BackgroundAlphaChannel... yes
+checking for CompositeOperator.BlurCompositeOp... yes
+checking for CompositeOperator.DistortCompositeOp... yes
+checking for CompositeOperator.LinearBurnCompositeOp... yes
+checking for CompositeOperator.LinearDodgeCompositeOp... yes
+checking for CompositeOperator.MathematicsCompositeOp... yes
+checking for CompositeOperator.PegtopLightCompositeOp... yes
+checking for CompositeOperator.PinLightCompositeOp... yes
+checking for CompositeOperator.VividLightCompositeOp... yes
+checking for CompressionType.DXT1Compression... yes
+checking for CompressionType.DXT3Compression... yes
+checking for CompressionType.DXT5Compression... yes
+checking for CompressionType.ZipSCompression... yes
+checking for CompressionType.PizCompression... yes
+checking for CompressionType.Pxr24Compression... yes
+checking for CompressionType.B44Compression... yes
+checking for CompressionType.B44ACompression... yes
+checking for DistortImageMethod.BarrelDistortion... yes
+checking for DistortImageMethod.BarrelInverseDistortion... yes
+checking for DistortImageMethod.BilinearForwardDistortion... yes
+checking for DistortImageMethod.BilinearReverseDistortion... yes
+checking for DistortImageMethod.DePolarDistortion... yes
+checking for DistortImageMethod.PolarDistortion... yes
+checking for DistortImageMethod.PolynomialDistortion... yes
+checking for DistortImageMethod.ShepardsDistortion... yes
+checking for DitherMethod.NoDitherMethod... yes
+checking for FilterTypes.KaiserFilter... yes
+checking for FilterTypes.WelshFilter... yes
+checking for FilterTypes.ParzenFilter... yes
+checking for FilterTypes.LagrangeFilter... yes
+checking for FilterTypes.BohmanFilter... yes
+checking for FilterTypes.BartlettFilter... yes
+checking for FilterTypes.SentinelFilter... yes
+checking for MagickEvaluateOperator.PowEvaluateOperator... yes
+checking for MagickEvaluateOperator.LogEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdBlackEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdWhiteEvaluateOperator... yes
+checking for MagickEvaluateOperator.GaussianNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.ImpulseNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.LaplacianNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.MultiplicativeNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.PoissonNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.UniformNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.CosineEvaluateOperator... yes
+checking for MagickEvaluateOperator.SineEvaluateOperator... yes
+checking for MagickEvaluateOperator.AddModulusEvaluateOperator... yes
+checking for MagickFunction.ArcsinFunction... yes
+checking for MagickFunction.ArctanFunction... yes
+checking for MagickFunction.PolynomialFunction... yes
+checking for MagickFunction.SinusoidFunction... yes
+checking for ImageLayerMethod.FlattenLayer... yes
+checking for ImageLayerMethod.MergeLayer... yes
+checking for ImageLayerMethod.MosaicLayer... yes
+checking for ImageLayerMethod.TrimBoundsLayer... yes
+checking for VirtualPixelMethod.HorizontalTileVirtualPixelMethod... yes
+checking for VirtualPixelMethod.VerticalTileVirtualPixelMethod... yes
+checking for VirtualPixelMethod.HorizontalTileEdgeVirtualPixelMethod... yes
+checking for VirtualPixelMethod.VerticalTileEdgeVirtualPixelMethod... yes
+checking for VirtualPixelMethod.CheckerTileVirtualPixelMethod... yes
+checking for ruby/io.h... yes
+checking for rb_frame_this_func() in ruby.h,ruby/io.h... yes
+creating extconf.h
+creating Makefile
+
+
+======================================================================
+Wed 28Jan15 15:00:21
+This installation of RMagick 2.13.4 is configured for
+Ruby 2.1.2 (x86_64-darwin13.0) and ImageMagick 
+======================================================================
+
+
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling rmagick.c
+compiling rmdraw.c
+rmdraw.c:315:15: warning: comparison of constant 100 with expression of type 'WeightType' is always true [-Wtautological-constant-out-of-range-compare]
+        if (w < 100 || w > 900)
+            ~ ^ ~~~
+rmdraw.c:315:26: warning: comparison of constant 900 with expression of type 'WeightType' is always false [-Wtautological-constant-out-of-range-compare]
+        if (w < 100 || w > 900)
+                       ~ ^ ~~~
+2 warnings generated.
+compiling rmenum.c
+rmenum.c:450:13: warning: 5 enumeration values not handled in switch: 'DivideSrcCompositeOp', 'MinusSrcCompositeOp', 'DarkenIntensityCompositeOp'... [-Wswitch]
+    switch (op)
+            ^
+rmenum.c:565:13: warning: enumeration values 'LZMACompression', 'JBIG1Compression', and 'JBIG2Compression' not handled in switch [-Wswitch]
+    switch (ct)
+            ^
+rmenum.c:674:12: warning: 9 enumeration values not handled in switch: 'SincFastFilter', 'LanczosSharpFilter', 'Lanczos2Filter'... [-Wswitch]
+    switch(type)
+           ^
+rmenum.c:922:12: warning: 5 enumeration values not handled in switch: 'Average9InterpolatePixel', 'Average16InterpolatePixel', 'BlendInterpolatePixel'... [-Wswitch]
+    switch(interpolate)
+           ^
+4 warnings generated.
+compiling rmfill.c
+compiling rmilist.c
+compiling rmimage.c
+rmimage.c:3937:5: warning: 'ConstituteComponentTerminus' is deprecated [-Wdeprecated-declarations]
+    DestroyConstitute();
+    ^
+./rmagick.h:162:33: note: expanded from macro 'DestroyConstitute'
+#define DestroyConstitute(void) ConstituteComponentTerminus(void)
+                                ^
+/usr/local/Cellar/imagemagick/6.8.9-5/include/ImageMagick-6/magick/deprecate.h:326:3: note: 'ConstituteComponentTerminus' has been explicitly marked deprecated here
+  ConstituteComponentTerminus(void) magick_attribute((deprecated)),
+  ^
+rmimage.c:10731:13: warning: incompatible pointer to integer conversion returning 'Image *' (aka 'struct _Image *') from a function with result type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
+      return((Image *) NULL);
+            ^~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling rminfo.c
+compiling rmmain.c
+compiling rmmontage.c
+compiling rmpixel.c
+compiling rmstruct.c
+compiling rmutil.c
+rmutil.c:1612:43: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    rb_raise(Class_FatalImageMagickError, GetLocaleExceptionMessage(severity, reason));
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rmutil.c:1652:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        rb_warning(msg);
+                   ^~~
+2 warnings generated.
+linking shared-object RMagick2.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 RMagick2.bundle ./.gem.20150128-59616-1robxxq
+installing default RMagick2 libraries

@@ -1,0 +1,15 @@
+tmp
+pkg
+doc
+coverage
+
+.gdb_history
+.bundle
+.tags
+.byebugrc
+.byebug_hist
+
+Gemfile.lock
+
+lib/byebug/byebug.so
+lib/byebug/byebug.bundle

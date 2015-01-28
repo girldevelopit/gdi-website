@@ -1,0 +1,62 @@
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/bin/ruby extconf.rb 
+checking for CLOCK_MONOTONIC in time.h... no
+checking for CLOCK_MONOTONIC() in time.h... no
+checking for clockid_t in time.h... no
+checking for clock_gettime() in -lrt... no
+checking for t_open() in -lnsl... no
+checking for socket() in -lsocket... no
+checking for poll() in poll.h... yes
+checking for getaddrinfo() in sys/types.h,sys/socket.h,netdb.h... yes
+checking for getnameinfo() in sys/types.h,sys/socket.h,netdb.h... yes
+checking for struct sockaddr_storage in sys/types.h,sys/socket.h... yes
+checking for accept4() in sys/socket.h... no
+checking for sys/select.h... yes
+checking for writev() in sys/uio.h... yes
+checking for ruby/io.h... yes
+checking for rb_io_t.fd in ruby.h,ruby/io.h... yes
+checking for rb_io_t.mode in ruby.h,ruby/io.h... yes
+checking for rb_io_t.pathv in ruby.h,ruby/io.h... yes
+checking for struct RFile in ruby.h,ruby/io.h... yes
+checking size of struct RFile in ruby.h,ruby/io.h... 24
+checking for struct RObject... yes
+checking size of struct RObject... 40
+checking size of int... 4
+checking for rb_io_ascii8bit_binmode()... yes
+checking for rb_update_max_fd()... yes
+checking for rb_fd_fix_cloexec()... yes
+checking for rb_cloexec_open()... yes
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... yes
+checking for rb_thread_io_blocking_region()... yes
+checking for rb_str_set_len()... yes
+checking for rb_time_interval()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_str_subseq()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling accept.c
+compiling autopush.c
+compiling connect.c
+compiling kgio_ext.c
+compiling poll.c
+In file included from poll.c:5:
+./broken_system_compat.h:17:10: warning: implicit declaration of function 'gettimeofday' is invalid in C99 [-Wimplicit-function-declaration]
+        int r = gettimeofday(&tv, NULL);
+                ^
+1 warning generated.
+compiling read.c
+compiling tryopen.c
+compiling wait.c
+compiling write.c
+compiling writev.c
+linking shared-object kgio_ext.bundle
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 kgio_ext.bundle ./.gem.20150128-59616-1tqryrl
+installing default kgio_ext libraries

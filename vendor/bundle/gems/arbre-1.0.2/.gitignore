@@ -1,0 +1,10 @@
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+benchmarks
+.rvmrc
+.ruby-version
+.ruby-gemset
+tags
+.DS_Store

@@ -1,0 +1,5 @@
+HostBasedAuthentication no
+PasswordAuthentication no
+PubKeyAuthentication no
+ChallengeResponseAuthentication no
+KbdInteractiveAuthentication no

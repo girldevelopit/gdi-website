@@ -1,0 +1,113 @@
+have_macro: checking for SIZEOF_OFF_T in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: /*top*/
+5: #ifndef SIZEOF_OFF_T
+6: # error
+7: |:/ === SIZEOF_OFF_T undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_macro: checking for SIZEOF_SIZE_T in ruby.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: /*top*/
+5: #ifndef SIZEOF_SIZE_T
+6: # error
+7: |:/ === SIZEOF_SIZE_T undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_macro: checking for SIZEOF_LONG in ruby.h... -------------------- yes
+
+"gcc -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe  -arch x86_64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: /*top*/
+5: #ifndef SIZEOF_LONG
+6: # error
+7: |:/ === SIZEOF_LONG undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_set_len() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_set_len; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gmtime_r() in time.h... -------------------- yes
+
+"gcc -o conftest -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/coreydavis/.rvm/rubies/ruby-2.1.2/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/travis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.7 -pipe conftest.c  -L. -L/Users/coreydavis/.rvm/rubies/ruby-2.1.2/lib -L. -L/Users/travis/.sm/pkg/active/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))gmtime_r; return 0; }
+/* end */
+
+--------------------
+

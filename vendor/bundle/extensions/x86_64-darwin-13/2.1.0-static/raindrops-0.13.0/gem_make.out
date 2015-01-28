@@ -1,0 +1,22 @@
+/Users/coreydavis/.rvm/rubies/ruby-2.1.2/bin/ruby extconf.rb 
+checking for mmap() in sys/mman.h... yes
+checking for munmap() in sys/mman.h... yes
+checking for mremap() in sys/mman.h... no
+checking for getpagesize() in unistd.h... yes
+checking for rb_thread_blocking_region()... yes
+checking for rb_thread_io_blocking_region()... yes
+checking for GCC 4+ atomic builtins... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling linux_inet_diag.c
+compiling linux_tcp_info.c
+compiling raindrops.c
+linking shared-object raindrops_ext.bundle
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 raindrops_ext.bundle ./.gem.20150128-59616-1yqr7nk
+installing default raindrops_ext libraries
