@@ -22,7 +22,9 @@ default: &default
   pool: 5
 
 development:
-  <<: *default
+  adapter: sqlite3
+  encoding: unicode
+  pool: 5
   database: gdi_development
 
   # The specified database role being used to connect to postgres.
