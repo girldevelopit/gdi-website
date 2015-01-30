@@ -8,7 +8,7 @@ People on this list are those who have volunteered to be the main supports and c
 
 [Cara Jo Miller](https://github.com/Cara-Jo)
 
-[Corrine Warnshuis](https://github.com/corinnepw)
+[Corinne Warnshuis](https://github.com/corinnepw)
 
 [Julia Elman](https://github.com/juliaelman)
 
@@ -35,6 +35,8 @@ This is list of those who have contributed to this code base through pull reques
 [Mina Markham](https://github.com/minamarkham)
 
 [Irina Muchnik](https://github.com/imuchnik)
+
+[Kristen Curtze](https://github.com/kstack7)
 
 
 
