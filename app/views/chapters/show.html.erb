@@ -1,3 +1,4 @@
+<% provide(:title, "#{@chapter.chapter}") %>
 <section class="main-container">
   <div class="container">
     <aside class="chapter-aside">
@@ -154,7 +155,7 @@
       </script>
 
       <script type="text/javascript">
-        
+
         var meetup_url = '/meetups/<%= params[:id] %>.json';
         var classesArr = null;
         $.getJSON(meetup_url).done(function (classesData){
