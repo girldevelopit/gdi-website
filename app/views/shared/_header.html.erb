@@ -4,10 +4,9 @@
       <%= link_to image_tag("gdi-logo.png"), root_path, class:"logo" %>
       <nav class="navigation">
         <ul>
-           <li><%= link_to "donate", donate_path %></li>
-           <li><%= link_to "home", root_path %></li>
-          <li><%= link_to "about", about_path %></li>
-          <li><%= link_to "chapters", chapters_path %></li>
+          <li><%= link_to "donate", donate_path, class:active_page(donate_path) %></li>
+          <li><%= link_to "about", about_path, class:active_page(about_path) %></li>
+          <li><%= link_to "chapters", chapters_path, class:active_page(chapters_path) %></li>
           <li><%#=link_to "resources", resources_path %></li>
         </ul>
         <ul>
