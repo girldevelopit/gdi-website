@@ -72,6 +72,12 @@ header {
           box-shadow: .025rem .025rem .5rem $black;
         }
       }
+      &.active-nav{
+        background-color: $black;
+        color: $blush;
+        box-shadow: .025rem .025rem .5rem $black;
+      }
+
     }
   }
 }
