@@ -22,7 +22,9 @@ default: &default
   pool: 5
 
 development:
-  <<: *default
+  adapter: sqlite3
+  encoding: unicode
+  pool: 5
   database: gdi_development
 
   # The specified database role being used to connect to postgres.
@@ -56,7 +58,9 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: sqlite3
+  encoding: unicode
+  pool: 5
   database: gdi_test
 
 # As with config/secrets.yml, you never want to store sensitive information,

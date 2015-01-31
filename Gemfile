@@ -35,7 +35,9 @@ gem 'carrierwave'
 
 gem "geocoder"
 
+
 group :development do
+  gem 'sqlite3'
   gem 'pry-byebug'
   gem 'spring'
   gem 'quiet_assets'
@@ -45,6 +47,7 @@ group :development do
   gem 'binding_of_caller'
 end
 group :test do
+  gem 'sqlite3'
   gem "rspec"
   gem "rspec-rails", "~>3.1.0"
   # For test coverage
