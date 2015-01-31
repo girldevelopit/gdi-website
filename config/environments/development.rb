@@ -5,18 +5,7 @@ Rails.application.configure do
 
    config.action_mailer.delivery_method = :smtp
    
-  # THIS IS SENDGRID
-  # config.action_mailer.smtp_settings = {
-  #   :user_name => 'kristen@girldevelopit.com',
-  #   :password => 'gc3CfScU)^?,64p',
-  #   :domain => 'girl-develop-it.herokuapp.com',
-  #   :address => 'smtp.sendgrid.net',
-  #   :port => 587,
-  #   :authentication => :plain,
-  #   :enable_starttls_auto => true
-  # }
-
-  # THIS IS MANDRILL
+  # Mandrill smtp settings
   config.action_mailer.smtp_settings = {
     :user_name => 'app28236699@heroku.com',
     :password => 'VblU43FdRCyahN_lqLBuMw',
