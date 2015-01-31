@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise',  '~> 3.2.0'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'bourbon'
 gem 'neat'
 gem 'cancan'
@@ -45,10 +45,10 @@ group :development do
   gem 'binding_of_caller'
 end
 group :test do
-  gem "rspec"
-  gem "rspec-rails", "~>3.1.0"
+  gem 'rspec'
+  gem 'rspec-rails', '~>3.1.0'
   # For test coverage
-  gem "simplecov-rcov", "~>0.2.3"
+  gem 'simplecov-rcov', '~>0.2.3'
 end
 gem 'unicorn'
 gem 'rails_12factor', group: :production
