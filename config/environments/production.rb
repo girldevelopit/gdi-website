@@ -24,7 +24,7 @@ Rails.application.configure do
     :user_name => ENV['MANDRILL_USERNAME'],
     :password => ENV['MANDRILL_APIKEY'],
     :address => 'smtp.mandrillapp.com',
-    :domain => 'heroku.com',
+    :domain => 'girl-develop-it.herokuapp.com',
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
