@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+include ChaptersHelper
 
 describe Chapter do
 
@@ -45,5 +46,7 @@ describe Chapter do
 
   it 'tests post validation geocoding'
 
-
+  it 'can parameterize the image route name' do
+    expect(image_route('Pig Farmers')).to eq('state_map/pig-farmers.png')
+  end
 end
