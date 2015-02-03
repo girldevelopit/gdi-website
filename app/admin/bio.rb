@@ -4,7 +4,7 @@ ActiveAdmin.register Bio do
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   permit_params :bio, :user, :title, :name, :info, :admin_user_id, :image,
-                :twitter, :email, :website, :linkedin, :github, :chapter_id
+                :twitter, :email, :website, :linkedin, :github, :chapter_id, :chapter
 
   show do |ad|
     attributes_table do
@@ -30,8 +30,15 @@ ActiveAdmin.register Bio do
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Edit Bio" do
-      f.input :admin_user
-      f.input :chapter, member_label: :chapter
+      #if user only has one role and it is leader...
+      if current_admin_user.roles.count == 1 and current_admin_user.roles.first.name == "leader"
+        #...then set the chapter_id to the leader's chapter_id
+        f.input :chapter_id, :input_html => { :value => current_admin_user.chapter_id }, as: :hidden
+      else
+        #otherwise, admin can pick the chapter for the new bio using dropdown list :chapter
+        f.input :chapter, member_label: :chapter
+      end
+      #f.input :admin_user
       f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS', 'VOLUNTEERS']
       f.input :name, placeholder: "Jane Doe"
       f.input :email, placeholder: current_admin_user.email
