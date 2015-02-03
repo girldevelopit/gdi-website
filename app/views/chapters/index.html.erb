@@ -15,6 +15,7 @@
 
     <section class="state-index hide">
       <% @states.each do |s| %>
+      <% p s[1] %>
         <div class="state-container">
           <div class="state"><%= image_tag(image_route(s[0])) %></div>
           <hr>

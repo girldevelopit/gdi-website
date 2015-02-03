@@ -110,6 +110,21 @@ ActiveRecord::Schema.define(version: 20140813202609) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
+  create_table "materials", force: true do |t|
+    t.string   "title",             limit: 50
+    t.string   "slug",              limit: 30
+    t.string   "short_description", limit: 120
+    t.text     "long_description"
+    t.string   "github_link",       limit: 250
+    t.text     "slides"
+    t.text     "practice_files"
+    t.string   "icon",              limit: 500
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "materials", ["slug"], name: "index_materials_on_slug", unique: true, using: :btree
+
   create_table "roles", force: true do |t|
     t.string   "name"
     t.integer  "resource_id"
