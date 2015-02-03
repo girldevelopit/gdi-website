@@ -1,0 +1,9 @@
+<% provide(:title, "#{@material.title}") %>
+<section class="main-container">
+  <div class="container">
+    <h2><%= @material.title %></h2>
+    <hr>
+    <p><%= @material.long_description %></p>
+    <img src="<%= @material.icon %>" width="150" />
+  </div>
+</section>
