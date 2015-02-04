@@ -12,13 +12,14 @@
     <section class="state-index hide">
       <% @materials.each do |s| %>
         <div class="state-container">
+        <%= image_tag s.icon %>
         <h2><%= link_to s.title, course_url(slug: s.slug) %></h2>
         <p><%= s.short_description %></p>
         </div>
     <% end %>
     </section>
 
-    <section id="state-list">
+    <section id="materials-list">
       <div class="accordion show">
         <% @materials.each do |s| %>
           <section class="hidden">
