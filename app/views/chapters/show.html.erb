@@ -148,9 +148,9 @@
             , <a href=" http://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>,<%%= course.venue.city %>,<%%= course.venue.state %></a>
           <%% } %>
           ] </p>
+          <%= render partial: "meetup_map"%>
          <p><%%= course.description.substring(0, 400) %><a href="<%%= course.event_url %>">...read more</a></p>
          <a href="<%%= course.event_url %>" class="button">RSVP</a>
-        <%= render partial: "meetup_map"%>
        <%% }); %>
       </script>
 
