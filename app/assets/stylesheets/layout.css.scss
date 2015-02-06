@@ -163,3 +163,9 @@ footer {
     }
   }
 }
+
+.fork-me {
+  @media screen and (max-width: 1250px) {
+    display: none;
+  }
+}
