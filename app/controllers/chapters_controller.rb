@@ -2,7 +2,6 @@ class ChaptersController < ApplicationController
   require 'rails_autolink'
   def index
     @chapters = Chapter.order("chapter ASC").all
-    p @chapters
     states = {}
     @chapters.each do |l|
       if states[l.state]
@@ -11,8 +10,6 @@ class ChaptersController < ApplicationController
         states[l.state] = [l.chapter]
       end
     end
-
-    #@states = states.to_a.sort
     @states = states.to_a.sort
 
   respond_to do |format|
