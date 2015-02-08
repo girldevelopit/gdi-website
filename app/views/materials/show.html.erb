@@ -4,7 +4,11 @@
   	<section>
 	    <h1><%= @material.title %></h1>
 	    <hr>
-	    <img src="<%= @material.icon %>" width="150" />
+      <% if @material.icon? %>
+         <img src="<%= @material.icon %>" width="150" />
+      <% else %>
+        <%= image_tag("materials-icon-not-available.png") %>
+      <% end %>
 	    <p><%= @material.long_description %></p>
 	</section>
 	

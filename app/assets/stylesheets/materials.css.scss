@@ -1,0 +1,75 @@
+#content-section{
+ @media screen and (min-width: 500px) {
+   @include span-columns(8);
+ }
+ margin-bottom: 80px;
+}
+
+#headline{
+  @include span-columns(8 of 8);
+  @include omega();
+}
+@media screen and (max-width: 500px) {
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+}
+.materials{
+  @include span-columns(8 of 8);
+  @include omega();
+  margin-bottom: 20px;
+  .read-more{
+    color: $gold;
+    font-style: italic;
+    &:hover{
+      color: $pink;
+    }
+  }
+  .button{
+    margin: 10px 0 55px 0;
+    background-color: $paleblue;
+    color: $pink;
+    &:hover{
+      background-color: $pink;
+      color: white;
+    }
+  }
+  .uhOh {
+    text-align: center;
+  }
+}
+
+//Materials Index
+.material-index{
+  padding-top: 50px;
+}
+.material-container{
+  @include span-columns(6);
+  @include omega(2n);
+  text-align: center;
+  margin-bottom: 3em;
+  h2{
+    margin: 10px 0 0 0;
+  }
+  hr{
+    width: 55%;
+  }
+  img{
+    width: 60%;
+    padding: 0em 4em;
+  }
+  h3{
+    text-transform: none;
+    letter-spacing: .05rem;
+    font-weight: 300;
+    a{
+      color: $gray;
+      &:hover{
+        color: $pink;
+      }
+    }
+  }
+}
