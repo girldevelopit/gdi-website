@@ -9,16 +9,23 @@
       <p class="large">All curriculum developed by GDI can be licensed under fair use Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). You are free tos hare and adapt these materials.</p>
     </div>
 
-    <section class="state-index hide">
+    <section class="material-index hide">
       <% @materials.each do |s| %>
-        <div class="state-container">
+        <div class="material-container">
+        <div class="material-icon">
+          <% if s.icon? %>
+            <%= link_to(image_tag(s.icon), course_url(slug: s.slug)) %>
+          <% else %>
+            <%= link_to(image_tag("materials-icon-not-available.png"), course_url(slug: s.slug)) %>
+          <% end %>
+        </div>
         <h2><%= link_to s.title, course_url(slug: s.slug) %></h2>
         <p><%= s.short_description %></p>
         </div>
     <% end %>
     </section>
 
-    <section id="state-list">
+    <section id="materials-list">
       <div class="accordion show">
         <% @materials.each do |s| %>
           <section class="hidden">

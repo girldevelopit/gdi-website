@@ -1,9 +1,34 @@
 <% provide(:title, "#{@material.title}") %>
 <section class="main-container">
   <div class="container">
-    <h2><%= @material.title %></h2>
-    <hr>
-    <p><%= @material.long_description %></p>
-    <img src="<%= @material.icon %>" width="150" />
+  	<section>
+	    <h1><%= @material.title %></h1>
+	    <hr>
+      <% if @material.icon? %>
+         <img src="<%= @material.icon %>" width="150" />
+      <% else %>
+        <%= image_tag("materials-icon-not-available.png") %>
+      <% end %>
+	    <p><%= @material.long_description %></p>
+	</section>
+	
+	<section>
+      <div>
+        <h2>Class Slides</h2>
+        <%= @material.slides.html_safe %>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Exercises and Practice Files</h2>
+        <%= @material.practice_files.html_safe %>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <a href="<%= @material.github_link %>" target="_blank">Fork this curriculum on Github</a>
+      </div>
+    </section>
   </div>
 </section>
