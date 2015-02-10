@@ -87,10 +87,13 @@
 }
 .github-fork{
   background-color: #f95a61;
-  padding: 1em;
+  padding: .5em;
   margin: 2em 0;
   color: #fff;
   a{
     color:#fff;
+  }
+  img{
+    vertical-align:middle;
   }
 }
