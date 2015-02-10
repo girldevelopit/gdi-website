@@ -4,29 +4,27 @@
   	<section>
 	    <h1><%= @material.title %></h1>
 	    <hr>
-      <% if @material.icon? %>
-         <img src="<%= @material.icon %>" width="150" />
-      <% else %>
-        <%= image_tag("materials-icon-not-available.png") %>
-      <% end %>
 	    <p><%= @material.long_description %></p>
 	</section>
 	
 	<section>
-      <div>
-        <h2>Class Slides</h2>
+      <div class="class-slides">
+        <h3>Class Slides</h3>
         <%= @material.slides.html_safe %>
       </div>
     </section>
+    
+    <% if @material.practice_files? %>
     <section>
-      <div>
-        <h2>Exercises and Practice Files</h2>
+      <div class="practice-files">
+        <h3>Exercises and Practice Files</h3>
         <%= @material.practice_files.html_safe %>
       </div>
     </section>
+    <% end %>
 
     <section>
-      <div>
+      <div class="github-fork">
         <a href="<%= @material.github_link %>" target="_blank">Fork this curriculum on Github</a>
       </div>
     </section>

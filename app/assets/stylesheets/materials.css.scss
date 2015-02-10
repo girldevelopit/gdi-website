@@ -50,7 +50,9 @@
   @include span-columns(6);
   @include omega(2n);
   text-align: center;
-  margin-bottom: 3em;
+  background-color:#e1e1e1;
+  padding:10px;
+  margin-bottom: 2em;
   h2{
     margin: 10px 0 0 0;
   }
@@ -58,12 +60,11 @@
     width: 55%;
   }
   img{
-    width: 60%;
-    padding: 0em 4em;
+    float:left;
   }
   h3{
     text-transform: none;
-    letter-spacing: .05rem;
+    letter-spacing: .08rem;
     font-weight: 300;
     a{
       color: $gray;
@@ -71,5 +72,25 @@
         color: $pink;
       }
     }
+  }
+}
+.material-icon{
+  float:left;
+}
+.class-slides, .practice-files{
+  a{
+    color:#2d2e2e;
+  }
+  h3{
+    line-height:3rem;
+  }
+}
+.github-fork{
+  background-color: #f95a61;
+  padding: 1em;
+  margin: 2em 0;
+  color: #fff;
+  a{
+    color:#fff;
   }
 }
