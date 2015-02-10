@@ -12,15 +12,15 @@
     <section class="material-index hide">
       <% @materials.each do |s| %>
         <div class="material-container">
-        <div class="material-icon">
           <% if s.icon? %>
-            <%= link_to(image_tag(s.icon), course_url(slug: s.slug)) %>
+            <%= link_to(image_tag(s.icon,:height => 80), course_url(slug: s.slug)) %>
           <% else %>
-            <%= link_to(image_tag("materials-icon-not-available.png"), course_url(slug: s.slug)) %>
+            <%= link_to(image_tag("materials-icon-not-available.png", :height=>80), course_url(slug: s.slug)) %>
           <% end %>
-        </div>
-        <h2><%= link_to s.title, course_url(slug: s.slug) %></h2>
-        <p><%= s.short_description %></p>
+       
+          <h2><%= link_to s.title, course_url(slug: s.slug) %></h2>
+          <p><%= s.short_description %></p>
+ 
         </div>
     <% end %>
     </section>
