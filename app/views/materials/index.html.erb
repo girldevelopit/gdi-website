@@ -5,22 +5,23 @@
     <div class="underlined-headline">
       <h2>Materials</h2>
       <hr>
-      <p class="large">Girl Develop It materials are built by our community, which is made up of industry-leading technologists, instructors, and leaders.</p>
-      <p class="large">All curriculum developed by GDI can be licensed under fair use Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). You are free tos hare and adapt these materials.</p>
+      <p class="large">Girl Develop It materials are built by our community, which is made up of industry-leading technologists, instructors, and leaders. All curriculum developed by GDI can be licensed under fair use <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>. You are free to share and adapt these materials.</p>
     </div>
 
     <section class="material-index hide">
       <% @materials.each do |s| %>
         <div class="material-container">
-          <% if s.icon? %>
-            <%= link_to(image_tag(s.icon,:height => 80), course_url(slug: s.slug)) %>
-          <% else %>
-            <%= link_to(image_tag("materials-icon-not-available.png", :height=>80), course_url(slug: s.slug)) %>
-          <% end %>
-       
+          <div class="material-icon">
+            <% if s.icon? %>
+              <%= link_to(image_tag(s.icon,:height => 80), course_url(slug: s.slug)) %>
+            <% else %>
+              <%= link_to(image_tag("materials/materials-icon-not-available.png", :height=>80), course_url(slug: s.slug)) %>
+            <% end %>
+          </div>
+          <div class="material-title">
           <h2><%= link_to s.title, course_url(slug: s.slug) %></h2>
-          <p><%= s.short_description %></p>
- 
+              <p><%= s.short_description %></p>
+          </div>
         </div>
     <% end %>
     </section>
