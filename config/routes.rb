@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get 'about', to: 'home#about'
   get 'code-of-conduct', to: 'home#code-of-conduct'
+  get 'sponsors', to: 'home#sponsors'
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
