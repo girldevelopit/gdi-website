@@ -1,0 +1,99 @@
+#content-section{
+ @media screen and (min-width: 500px) {
+   @include span-columns(8);
+ }
+ margin-bottom: 80px;
+}
+
+#headline{
+  @include span-columns(8 of 8);
+  @include omega();
+}
+@media screen and (max-width: 500px) {
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+}
+.materials{
+  @include span-columns(8 of 8);
+  @include omega();
+  margin-bottom: 20px;
+  .read-more{
+    color: $gold;
+    font-style: italic;
+    &:hover{
+      color: $pink;
+    }
+  }
+  .button{
+    margin: 10px 0 55px 0;
+    background-color: $paleblue;
+    color: $pink;
+    &:hover{
+      background-color: $pink;
+      color: white;
+    }
+  }
+  .uhOh {
+    text-align: center;
+  }
+}
+
+//Materials Index
+.material-index{
+  padding-top: 50px;
+}
+.material-container{
+  @include span-columns(6);
+  @include omega(2n);
+  text-align: center;
+  background-color:#e1e1e1;
+  padding:10px;
+  margin-bottom: 2em;
+  h2{
+    margin: 10px 0 0 0;
+  }
+  hr{
+    width: 55%;
+  }
+  img{
+    float:left;
+  }
+  h3{
+    text-transform: none;
+    letter-spacing: .08rem;
+    font-weight: 300;
+    a{
+      color: $gray;
+      &:hover{
+        color: $pink;
+      }
+    }
+  }
+}
+.material-icon{
+  float:left;
+}
+.class-slides, .practice-files{
+  a{
+    color:#2d2e2e;
+  }
+  h3{
+    line-height:3rem;
+  }
+}
+.github-fork{
+  background-color: #f95a61;
+  padding: .5em;
+  margin: 2em 0;
+  color: #fff;
+  a{
+    color:#fff;
+  }
+  img{
+    vertical-align:middle;
+  }
+}

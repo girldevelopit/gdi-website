@@ -43,12 +43,12 @@ h3{
 }
 
 p{
-  font-size: .8rem;
+  font-size: 1.025rem;
   font-weight: 300;
   letter-spacing: .05rem;
   color: $gray;
-  line-weight: .1rem;
-  line-height: 1.3rem;
+  line-weight: .3rem;
+  line-height: 1.5rem;
   a{
     font-style: italic;
     color: $gold;
@@ -63,7 +63,7 @@ a {
 }
 
 .large{
-  font-size: 1rem;
+  font-size: 1.035rem;
   line-height: 1.65rem;
 }
 
@@ -90,5 +90,13 @@ a {
  &:hover{
   background-color: $black;
   color: $blush;
+  }
+ &.donate-button {
+    border: 0;
+    background: $pink;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
   }
 }

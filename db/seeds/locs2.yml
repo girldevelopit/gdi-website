@@ -1101,6 +1101,39 @@
   twitter: gdidfw
   facebook: gdidfw
 
+- name: Houston
+  latitude:  29.817178
+  longitude: -95.4012915
+  chapter: Houston
+  state: Texas
+  meetup_url: Girl-Develop-It-Houston
+  meetup_id: '16229892'
+  slug: houston
+  leaders:
+  - name: Stacey Turnage
+    image: houston/stacey_turnage.jpg
+    bio: <p>Stacey is the founder of Girl Develop It Houston.  Formally a vice president of mortgage banking operations, she now prefers to spend her time learning code, empowering women, and changing the world.  She’s a full-time student pursuing a Bachelors of Science Degree in Sociology at the University of Houston (#gocoogs). When she’s not knee deep in Sociological statistics she’s learning new development languages and furthering Girl Develop It’s mission to teach women to develop software.  Stacey is a lover of shoes, all things technology, an unapologetic foodie, and a coffee enthusiast.</p>
+    contact:
+      email: stacey@girldevelopit.com
+      twitter: gdihouston
+  - name: Nona Durham
+    image: houston/nona_durham.jpg
+    bio: <p>Nona is a well-rounded backend and front-end application developer with over 10 year experience working in the Oil & Gas industry.  Having worked in a corporate environment, she’s well versed in C# and .Net technologies.  She has always wanted to teach and is very excited to work with GDI Houston Chapter to spread her love and passion for coding.  Nona has been married to her husband Josh for 2 years and is “mom” to a 12 year old Schnoodle named Kristy and a 10 year old black cat named Kitty.</p>
+  - name: Josh Medeski
+    image: houston/josh_medeski.jpg
+    bio: <p>Josh started as a graphic designer and became a front-end developer. He was a freelancer for many years and is now a Senior Reviewer with ThemeForest. Josh is a contributor and long time user of Zurb's Foundation. He also likes talking about Sass, CSS guidelines, version control and code organization. On the side, he runs his own podcast and blog about personal productivity.</p>
+    contact:
+      email: josh.gdihouston@gmail.com
+      twitter: joshmedeski
+      website: http://joshmedeski.com/
+  instructors: []
+  volunteers: []
+  sponsors: []
+  twitter: gdihouston
+  facebook: gdihouston
+  email: htx@girldevelopit.com
+  logo: houston/logo.png
+
 - name: Washington DC
   latitude:  38.9071923
   longitude: -77.0368707
@@ -1779,16 +1812,27 @@
   meetup_id: '4076772'
   slug: pittsburgh
   leaders:
-  - name: Julie Pagano
-    image: pittsburgh/juliepagano.jpeg
-    bio: <p>Julie Pagano is a software engineer based in Pittsburgh who specializes
-      in front-end web development using Ruby and JavaScript. She is passionate about
-      diversity in the tech community with a focus on intersectionality. She also
-      helps organize <a href = 'http://steelcityrubyconf.org/' target ='_blank'>Steel
-      City Ruby Conf</a> <p>
-  - name: Lindsey Bieda
-    bio: ''
-    image: pittsburgh/default-profile-pic.jpg
+  - name: Marylou Lenhart
+    image: pittsburgh/maryloulenhart.jpg
+    bio: <p><a href="http://www.twitter.com/maryloulenhart">Marylou Lenhart</a> 
+      is a software developer and yoga teacher in Pittsburgh, PA. 
+      She works remotely at a California-based web security company, and teaches at 
+      <a href="http://www.urbanpranayoga.com" target='_blank'>Urban Prana Yoga</a>. 
+      She helps organize <a href = 'http://steelcityrubyconf.org/' target ='_blank'>
+      Steel City Ruby Conf</a>, and was a mentor and speaker at 
+      <a href="http://railsgirls.com/pittsburgh" target='_blank'>Rails Girls Pittsburgh</a>
+      in 2013.</p>
+  - name: Val Head
+    image: pittsburgh/valhead.jpg
+    bio: <p><a href="http://www.twitter.com/vlh">Val Head is a <a href="http://www.valhead.com">designer</a>
+      based in lovely Pittsburgh, PA. Her work ranges from projects on the web to interactive installations
+      to print. She is the author of <a href="http://www.fivesimplesteps.com/products/css-animations">The
+      Pocket Guide to CSS Animations</a>, teaches
+      <a href="http://www.lynda.com/CSS-tutorials/CSS-Animations/115434-2.html?utm_medium=ldc-partner&utm_source=SSPRC&utm_content=524&utm_campaign=CD14926&bid=524&aid=CD14926&opt=">CSS Animations</a>
+      on Lynda.com, and hosts the <a href="http://alltherightmoves.valhead.com">All The Right Moves</a>
+      tutorial screencast. She also founded the popular <a href="http://www.webdesignday">Web Design Day</a>
+      conference, and leads workshops around the world on <a href="http://www.valhead.com/workshops/">UI animation</a>
+      and <a href="http://seb.ly/training/">creative coding</a>.</p>
   instructors: []
   volunteers: []
   sponsors:

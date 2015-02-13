@@ -20,3 +20,12 @@
 
 # Ignore meetup API key
 /config/initializers/meetup_client.rb
+
+# Ignore ReadTheDocs site style
+/docs/site
+
+# Ignore Travis CI coverage folder
+/coverage/
+
+# Ignore .DS_Store files
+*.DS_Store

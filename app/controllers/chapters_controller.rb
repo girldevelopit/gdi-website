@@ -1,7 +1,7 @@
 class ChaptersController < ApplicationController
   require 'rails_autolink'
   def index
-    @chapters = Chapter.all
+    @chapters = Chapter.order("chapter ASC").all
     states = {}
     @chapters.each do |l|
       if states[l.state]

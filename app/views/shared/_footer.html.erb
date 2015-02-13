@@ -6,16 +6,17 @@
 			<nav class="navigation">
 				<%= link_to "about", about_path %>
 				<%= link_to "code of conduct", code_of_conduct_path %>
+				<%= link_to "sponsors", sponsors_path %>
 				<%#= link_to "partners", root_path, class: "hide" %>
-				<a href="http://girldevelopit.tumblr.com/">blog</a>
+				<a target="_blank" href="http://girldevelopit.tumblr.com/">blog</a>
 				<% if current_admin_user != nil %>
 					<%= link_to "Admin", admin_root_path %>
 					<%= link_to "Logout", destroy_admin_user_session_path %>
 				<% end %>
 			</nav>
 			<nav class="navigation">
-				<a href="https://twitter.com/girldevelopit"><i class="fa fa-twitter"></i></a>
-			  <a href="https://www.facebook.com/girldevelopit"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" href="https://twitter.com/girldevelopit"><i class="fa fa-twitter"></i></a>
+			  <a target="_blank" href="https://www.facebook.com/girldevelopit"><i class="fa fa-facebook"></i></a>
 			</nav>
 		</div>
 	</div>

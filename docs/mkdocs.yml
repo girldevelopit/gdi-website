@@ -1,0 +1,12 @@
+site_name: Girl Develop It
+
+theme: readthedocs
+
+docs_dir: sources
+
+pages:
+- ['installation.md', 'Installation (Website)']
+- ['installation_docs.md', 'Installation (Docs)']
+- ['contribution.md', 'Contribution Guidelines']
+- ['deploying.md', 'Deploying to Heroku']
+- ['faq.md', 'Frequently Asked Questions']
