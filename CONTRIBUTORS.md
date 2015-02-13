@@ -12,6 +12,10 @@ People on this list are those who have volunteered to be the main supports and c
 
 [Julia Elman](https://github.com/juliaelman)
 
+[Kristen Curtze](https://github.com/kstack7)
+
+[Sylvia Richardon](https://github.com/roenok)
+
 [Vanessa Hurst](https://github.com/DBNess)
 
 ## Core Contributor(s)
@@ -35,11 +39,3 @@ This is list of those who have contributed to this code base through pull reques
 [Mina Markham](https://github.com/minamarkham)
 
 [Irina Muchnik](https://github.com/imuchnik)
-
-[Kristen Curtze](https://github.com/kstack7)
-
-
-
-
-
-
