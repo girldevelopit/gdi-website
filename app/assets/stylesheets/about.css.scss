@@ -38,7 +38,7 @@
   }
 }
 
-.support{
+.support,.story{
   @include background-image( radial-gradient(#fff, #e4e9e5));
   text-align: center;
   height: 100%;
@@ -54,6 +54,9 @@
   }
 }
 
+.story{
+  margin:60px 0;
+}
 @mixin profile{
   @include span-columns(6);
   margin-bottom: 80px;
