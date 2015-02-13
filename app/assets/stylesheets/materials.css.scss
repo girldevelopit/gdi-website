@@ -49,10 +49,15 @@
 .material-container{
   @include span-columns(6);
   @include omega(2n);
-  text-align: center;
-  background-color:#e1e1e1;
+  background-color:$paleblue;
   padding:10px;
   margin-bottom: 2em;
+  -moz-transition: background, .5s;
+  -webkit-transition: background, .5s;
+  transition: background, .5s;
+  &:hover {
+    background-color: $blush;
+  }
   h2{
     margin: 10px 0 0 0;
   }
@@ -73,25 +78,36 @@
       }
     }
   }
+
 }
 .material-icon{
   float:left;
+  width: auto;
+  margin-right: 1em;
 }
+
 .class-slides, .practice-files{
-  a{
-    color:#2d2e2e;
-  }
   h3{
     line-height:3rem;
+    margin-top: .5em;
+  }
+  a {
+    color: $gray;
+    &:hover {
+      color:$pink;
+    }
+  }
+  li {
+    padding: .5em 0 ;
   }
 }
 .github-fork{
-  background-color: #f95a61;
+  background-color: $pink;
   padding: .5em;
   margin: 2em 0;
-  color: #fff;
+  color: $white;
   a{
-    color:#fff;
+    color: $white;
   }
   img{
     vertical-align:middle;
