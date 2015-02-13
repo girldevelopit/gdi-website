@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'sponsors', to: 'home#sponsors'
   # Donation page
   get 'donate', to:'home#donate'
+  # Errors (must be last rule)
+  get "*any", via: :all, to: "errors#404"
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
