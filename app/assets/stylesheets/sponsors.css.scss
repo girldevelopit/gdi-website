@@ -1,5 +1,5 @@
 .sponsors{
-  margin-bottom: 50px;
+  margin: 0 -30px 50px;
   .large {
     text-align: center;
     margin-bottom: 20px;
@@ -9,16 +9,18 @@
   }
 }
 
+.sponsor-logos {
+  text-align: center;
+  margin: 2em 0;
+  img {
+    margin: 0 1em;
+  }
+}
+
 .partners {
   @extend .sponsors;
 }
 
-.logo-placeholder {
-  position: relative;
-  padding: 3em 1em;
-  border-radius: 5px;
-  border: 1px dashed #F95A61;
-  color: #BBCDC2;
-  text-transform: uppercase;
-  text-align: center;
+.partner-logos {
+  @extend .sponsor-logos;
 }
