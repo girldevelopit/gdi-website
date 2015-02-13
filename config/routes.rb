@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'codeofconduct', to: redirect('code-of-conduct')
   get 'materials', to: 'materials#index'
   get 'curriculum', to: redirect('materials')
+  get 'sponsors', to: 'home#sponsors'
   # Donation page
   get 'donate', to:'home#donate'
   # Example of named route that can be invoked with purchase_url(id: product.id)

@@ -1,0 +1,26 @@
+.sponsors{
+  margin: 0 -30px 50px;
+  .large {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p{
+    color: $black;
+  }
+}
+
+.sponsor-logos {
+  text-align: center;
+  margin: 2em 0;
+  img {
+    margin: 0 1em;
+  }
+}
+
+.partners {
+  @extend .sponsors;
+}
+
+.partner-logos {
+  @extend .sponsor-logos;
+}
