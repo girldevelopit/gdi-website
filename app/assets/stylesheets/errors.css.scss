@@ -1,0 +1,37 @@
+.errors {
+  text-align: center;
+  background: asset-url('photo3.png');
+  background-color: $paleblue;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 400px;
+  @media screen and (max-width: 500px) {
+    height: 200px;
+    width: 100%;
+    background-position: 50% 39%;
+    background-size: 141% auto;
+    background-color: #F8F8F6;
+  }
+  h1 {
+    color: $navy;
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+    @media screen and (max-width: 500px) {
+      font-size: 2.5rem;
+      padding-top: 50px;
+    }
+  }
+    img {
+      height: 80px;
+      margin-bottom: -8px;
+    }
+    a {
+      border-bottom: 1px dashed #F95A61;
+      padding-bottom: 0.2rem;
+      &:hover {color: #F95A61;}
+    }
+  }
