@@ -145,7 +145,7 @@
         <h3><a href="<%%= course.event_url %>"><%%= course.name %></a></h3>
         <p class="subtitle">[ <%%= moment(course.time).format("dddd, MMMM Do YYYY, h:mm a") %>
         <%% if(typeof course.venue !== "undefined") { %>
-            , <a href=" http://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>,<%%= course.venue.city %>,<%%= course.venue.state %></a>
+            , <a href=" https://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>,<%%= course.venue.city %>,<%%= course.venue.state %></a>
           <%% } %>
           ] </p>
           <%= render partial: "meetup_map"%>
