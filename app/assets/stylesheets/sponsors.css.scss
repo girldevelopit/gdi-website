@@ -1,5 +1,4 @@
 .sponsors{
-  margin: 0 -30px 50px;
   .large {
     text-align: center;
     margin-bottom: 20px;
@@ -11,9 +10,10 @@
 
 .sponsor-logos {
   text-align: center;
-  margin: 2em 0;
+  //margin: 0 -30px 50px;
   img {
-    margin: 0 1em;
+    margin: 1em;
+    max-width: 100%;
   }
 }
 
