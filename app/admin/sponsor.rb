@@ -19,6 +19,13 @@ ActiveAdmin.register Sponsor do
     end
   end
 
+  filter :roles
+  filter :chapter, member_label: :chapter
+  filter :name
+  filter :url
+  filter :created_at
+  filter :updated_at
+
   form(:html => { :multipart => true }) do |f|
   f.inputs "Edit Sponsor" do
       #if user only has one role and it is leader...

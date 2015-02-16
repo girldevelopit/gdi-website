@@ -3,7 +3,7 @@ ActiveAdmin.register Bio do
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :bio, :user, :title, :name, :info, :admin_user_id, :image,
+  permit_params :bio, :user, :title, :name, :info, :admin_user_id, :admin_user, :image,
                 :twitter, :email, :website, :linkedin, :github, :chapter_id, :chapter
 
   show do |ad|
@@ -27,6 +27,16 @@ ActiveAdmin.register Bio do
     end
     active_admin_comments
   end
+
+  filter :roles
+  filter :chapter, member_label: :chapter
+  filter :name
+  filter :title
+  filter :info
+  filter :email
+  filter :website
+  filter :created_at
+  filter :updated_at
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Edit Bio" do
