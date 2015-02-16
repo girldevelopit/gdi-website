@@ -18,7 +18,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  config.action_mailer.default_url_options = { host: 'girl-develop-it.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'girldevelopit.com' }
   
   # Mandrill smtp settings
   config.action_mailer.delivery_method = :smtp
@@ -26,7 +26,7 @@ Rails.application.configure do
     :user_name => ENV['MANDRILL_USERNAME'],
     :password => ENV['MANDRILL_APIKEY'],
     :address => 'smtp.mandrillapp.com',
-    :domain => 'girl-develop-it.herokuapp.com',
+    :domain => 'girldevelopit.com',
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
