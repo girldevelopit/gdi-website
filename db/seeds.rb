@@ -52,7 +52,7 @@ locs.each do |l|
     inst.save
   end
   l["sponsors"].each do |sponsor|
-    Sponsor.create!(name: sponsor["website"], url: sponsor["website"], chapter_id: newloc.id,
+    Sponsor.create!(name: sponsor["name"], url: sponsor["website"], chapter_id: newloc.id,
     image: File.open(File.join(Rails.root, "app/assets/images/#{sponsor["logo"]}"))
     )
   end

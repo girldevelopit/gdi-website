@@ -10,20 +10,25 @@
      padding: 0em 2em;
     }
   }
-  // .sponsors{
-  //   img{
-  //    width: 50%;
-  //    padding: 1em 2em;
-  //    opacity: 0.35;
-  //    -webkit-filter: grayscale(75%);
-  //    &:hover{
-  //      width: 51%;
-  //      padding: 1em 2em;
-  //      opacity: 1;
-  //      -webkit-filter: grayscale(0%);
-  //    }
-  //  }
-  // }
+  .sponsors {
+    .logos {margin-top: 1em;}
+    figure {
+      opacity: 0.35;
+      -webkit-filter: grayscale(75%);
+      &:hover{
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+      }      
+      img {
+        width: 50%;
+        padding: 1em;
+        &:hover{
+          width: 50%;
+          padding: 1em;
+        }
+      }
+    }
+  }
   hr{
     width: 60%;
     margin-bottom: 3px;
@@ -38,8 +43,6 @@
     margin-top: 3em;
   }
   .subtitle {
-    margin-bottom: 5px;
-    margin-top: 30px;
     display: block;
   }
 }
