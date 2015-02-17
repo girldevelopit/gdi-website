@@ -11,22 +11,16 @@
     }
   }
   .sponsors {
-    .logos {margin-top: 1em;}
-    figure {
+    .logos {margin-top: 1.5em;}
+    img {
+      width: 50%;
       opacity: 0.35;
+      margin-bottom: 1.5em;
       -webkit-filter: grayscale(75%);
       &:hover{
         opacity: 1;
         -webkit-filter: grayscale(0%);
       }      
-      img {
-        width: 50%;
-        padding: 1em;
-        &:hover{
-          width: 50%;
-          padding: 1em;
-        }
-      }
     }
   }
   hr{

@@ -20,12 +20,9 @@
             <div class="logos">
               <% @sponsors.each do |sponsor| %>
                 <% if sponsor.image? %>
-                  <figure>
-                    <%= link_to image_tag(sponsor.image.url), sponsor.url %>
-                    <% if sponsor.name? %>
-                      <figcaption class="subtitle">{ <%= sponsor.name %> }</figcaption>
-                    <% end %>
-                  </figure>
+                  <%= link_to image_tag(sponsor.image.url), sponsor.url %>
+                <% elsif sponsor.name? %>
+                  <span class="subtitle">{ <%= sponsor.name %> }</span>
                 <% end %>
               <% end %>
             </div>
