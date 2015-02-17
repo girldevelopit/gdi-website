@@ -14,8 +14,17 @@
     .logos {margin-top: 1.5em;}
     img {
       width: 50%;
-      opacity: 0.35;
       margin-bottom: 1.5em;
+      opacity: 0.35;
+      -webkit-filter: grayscale(75%);
+      &:hover{
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+      }      
+    }
+    .subtitle {
+      margin-bottom: 1.5em;
+      opacity: 0.35;
       -webkit-filter: grayscale(75%);
       &:hover{
         opacity: 1;
