@@ -74,25 +74,42 @@
       color: $pink;
     }
   }
+  .meetup-overview {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
   .meetup-map{
-    @include span-columns(8 of 8);
+    float: left;
     align: center;
     padding: 0px 15px 0 0px;
-    img{
+    @media screen and (max-width: 500px) {
+      float: none;
       width: 100%;
+    }
+    img{
       margin-top: 5px;
       box-shadow: .025rem .025rem .5rem #bdbec0;
       margin-bottom: 5px;
+      border-radius: 5px;
+      @media screen and (max-width: 500px) {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
       }
     }
+  }
   .button{
-    margin: 10px 0 55px 0;
-    background-color: $paleblue;
-    color: $pink;
+    margin: 10px 0;
+    background-color: $pink;
+    color: $white;
+    display: block;
+    font-size: 120%;
+    text-align: center;
     &:hover{
-      background-color: $pink;
-      color: white;
+      background-color: darken($pink, 5%);
+      color: $white;
     }
+    
   }
   .uhOh {
     text-align: center;
