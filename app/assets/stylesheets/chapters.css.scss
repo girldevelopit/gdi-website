@@ -68,9 +68,14 @@
   @include omega();
   margin-bottom: 20px;
   .read-more{
-    color: $gold;
+    color: $linkcolor;
     font-style: italic;
     &:hover{
+      color: $pink;
+    }
+  }
+  .subtitle {
+    a {
       color: $pink;
     }
   }

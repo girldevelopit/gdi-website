@@ -51,7 +51,8 @@ p{
   line-height: 1.5rem;
   a{
     font-style: italic;
-    color: $gold;
+    text-decoration: underline;
+    color: $linkcolor;
     &:hover{
       color: $pink;
     }

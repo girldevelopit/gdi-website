@@ -58,7 +58,7 @@ header {
       color: white;
       font-style: italic;
       font-weight: 300;
-      font-size: .9rem;
+      font-size: 1.1rem;
       letter-spacing: .05rem;
       padding: .5rem;
       margin-bottom: 0em;
@@ -91,17 +91,21 @@ footer {
     @media screen and (max-width: 500px) {
       font-size: .75em;
     }
+    a {
+      color: $white;
+    }
   }
   .navigation {
     margin-top: 25px;
     a {
-      color: white;
+      color: $white;
       font-style: italic;
       font-weight: 300;
       font-size: .9rem;
       letter-spacing: .05rem;
       padding: 0 1rem;
       margin-bottom: 0em;
+      text-decoration: underline;
       &:hover {
         color: $gold;
       }
