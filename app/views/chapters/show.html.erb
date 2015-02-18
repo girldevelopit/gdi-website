@@ -20,9 +20,9 @@
             <div class="logos">
               <% @sponsors.each do |sponsor| %>
                 <% if sponsor.image? %>
-                  <%= link_to image_tag(sponsor.image.url), sponsor.url %>
+                  <%= link_to image_tag(sponsor.image.url), sponsor.url, target: "_blank" %>
                 <% elsif sponsor.name? %>
-                  <%= link_to sponsor.url, :class=>"subtitle" do %>
+                  <%= link_to sponsor.url, target: "_blank", :class=>"subtitle" do %>
                     { <%= sponsor.name %> }
                   <% end %>
                 <% end %>
