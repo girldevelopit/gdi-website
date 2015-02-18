@@ -1,5 +1,5 @@
  <p class="meetup-map hide">
-  <%% if( typeof course.venue !== "undefined" && course.venue.lat !== 0) { %>
+  <%% if( typeof course.venue !== "undefined" && course.visibility === "public" && course.venue.lat !== 0) { %>
     <img src= "https://maps.google.com/maps/api/staticmap?size=800x450&sensor=false&zoom=16&markers=<%%= course.venue.lat %>%2C<%%= course.venue.lon %>" alt="chapter map">
   <%% } %>
 </p>

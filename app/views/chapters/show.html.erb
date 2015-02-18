@@ -144,7 +144,7 @@
       <%% _.each( classesArr,function(course){ %>
         <h3><a href="<%%= course.event_url %>"><%%= course.name %></a></h3>
         <p class="subtitle">[ <%%= moment(course.time).format("dddd, MMMM Do YYYY, h:mm a") %>
-        <%% if(typeof course.venue !== "undefined") { %>
+        <%% if(typeof course.venue !== "undefined" && course.visibility === "public") { %>
             , <a href=" https://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>,<%%= course.venue.city %>,<%%= course.venue.state %></a>
           <%% } %>
           ] </p>
