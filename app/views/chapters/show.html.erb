@@ -13,20 +13,24 @@
       <p class="subtitle">- don't be shy -</p>
       <%= link_to "{ Join Us }", "http://www.meetup.com/#{@chapter.meetup}", :class=>"button" %>
 
-      <!-- <% if @chapter.sponsors.count != 0 %>
+      <% if @chapter.sponsors.count != 0 %>
         <div class="hide">
           <div class="sponsors">
             <h2>Sponsors</h2>
-            <div id="logos">
+            <div class="logos">
               <% @sponsors.each do |sponsor| %>
                 <% if sponsor.image? %>
-                  <p><%#= link_to image_tag(sponsor.image.url), sponsor.url %></p>
+                  <%= link_to image_tag(sponsor.image.url), sponsor.url, target: "_blank" %>
+                <% elsif sponsor.name? %>
+                  <%= link_to sponsor.url, target: "_blank", :class=>"subtitle" do %>
+                    { <%= sponsor.name %> }
+                  <% end %>
                 <% end %>
               <% end %>
             </div>
           </div>
         </div>
-      <% end %> -->
+      <% end %>
     </aside>
 
     <section id="content-section">
