@@ -125,6 +125,29 @@ footer {
   }
 }
 
+a#skipnav {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: #da141e;
+    background: transparent;
+    @include transition(top 1s ease-out, background 1s linear);
+    z-index: 100;
+    &:focus {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: white;
+      outline: 0;  
+      @include transition(top .1s ease-in, background .5s linear);
+    }
+}
+
+#main-content {
+    outline: 0;
+}
+
 #headline{
   text-align: center;
   img{
