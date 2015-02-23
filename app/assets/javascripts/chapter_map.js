@@ -14,7 +14,6 @@ $(document).ready(function(){
 			}
 			plots.push(newobj);
 		})
-		console.log("yey!");
 	}).done(function () {
 		$(".us_map").mapael({
 
