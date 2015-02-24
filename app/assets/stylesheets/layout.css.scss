@@ -84,9 +84,9 @@ header {
 
 footer {
   text-align: center;
-  height: 190px;
+  min-height: 190px;
   background-color: $navy;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0;
   p.subtitle{
     @media screen and (max-width: 500px) {
       font-size: .75em;
