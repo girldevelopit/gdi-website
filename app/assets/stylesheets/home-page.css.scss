@@ -36,22 +36,98 @@
       margin-bottom: -8px;
     }
   }
-  .fadeInRightBig {
-     -webkit-animation-delay: .5s;
-     -moz-animation-delay: .5s;
-     -ms-animation-delay: .5s;
-     -o-animation-delay: .5s;
-     -webkit-animation-duration: .5s;
-     -moz-animation-duration: .5s;
-     -ms-animation-duration: .5s;
-     -o-animation-duration: .5s;
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
   }
-  .fadeInLeftBig {
-    -webkit-animation-duration: .5s;
-     -moz-animation-duration: .5s;
-     -ms-animation-duration: .5s;
-     -o-animation-duration: .5s;
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  -o-animation-duration: .5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -ms-animation-delay: .5s;
+  -o-animation-delay: .5s;
+  animation-delay: .5s;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
 
 .mission-statement {
   @include span-columns(10);
