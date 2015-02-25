@@ -1,20 +1,26 @@
-  <header>
-
-    <div class="container">
-      <%= link_to image_tag("gdi-logo.png"), root_path, class:"logo" %>
-      <nav class="navigation">
-        <ul>
-          <li><%= link_to "donate", donate_path, class:active_page(donate_path) %></li>
-          <li><%= link_to "about", about_path, class:active_page(about_path) %></li>
-          <li><%= link_to "chapters", chapters_path, class:active_page(chapters_path) %></li>
-          <li><%= link_to "materials", materials_path, class:active_page(materials_path)%></li>
-          <li><%= link_to "sponsors", sponsors_path, class:active_page(sponsors_path) %></li>
-        </ul>
-        <ul>
-          <li><a target="_blank" href="https://twitter.com/girldevelopit"><i class="fa fa-twitter"></i></a></li>
-          <li><a target="_blank" href="https://www.facebook.com/girldevelopit"><i class="fa fa-facebook"></i></a></li>
-        </ul>
-      </nav>
-
-    <div>
-  </header>
+<header>
+  <div class="container">
+    <%= link_to image_tag("gdi-logo.png"), root_path, class:"logo" %>
+    <nav class="navigation">
+      <ul>
+        <li><%= link_to "donate", donate_path, class:active_page(donate_path) %></li>
+        <li><%= link_to "about", about_path, class:active_page(about_path) %></li>
+        <li><%= link_to "chapters", chapters_path, class:active_page(chapters_path) %></li>
+        <li><%= link_to "materials", materials_path, class:active_page(materials_path)%></li>
+        <li><%= link_to "sponsors", sponsors_path, class:active_page(sponsors_path) %></li>
+      </ul>
+      <ul>
+        <li>
+          <a target="_blank" href="https://twitter.com/girldevelopit">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/girldevelopit">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
