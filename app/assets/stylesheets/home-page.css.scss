@@ -36,22 +36,100 @@
       margin-bottom: -8px;
     }
   }
-  .fadeInRightBig {
-     -webkit-animation-delay: .5s;
-     -moz-animation-delay: .5s;
-     -ms-animation-delay: .5s;
-     -o-animation-delay: .5s;
-     -webkit-animation-duration: .5s;
-     -moz-animation-duration: .5s;
-     -ms-animation-duration: .5s;
-     -o-animation-duration: .5s;
+
+.animated {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
   }
-  .fadeInLeftBig {
-    -webkit-animation-duration: .5s;
-     -moz-animation-duration: .5s;
-     -ms-animation-duration: .5s;
-     -o-animation-duration: .5s;
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  -ms-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  animation-delay: .8s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
 
 .mission-statement {
   @include span-columns(10);
