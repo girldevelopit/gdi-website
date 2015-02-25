@@ -38,8 +38,6 @@
   }
 
 .animated {
-  -webkit-animation-duration: 1.2s;
-  animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -77,10 +75,10 @@
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  -webkit-animation-duration: .5s;
-  -moz-animation-duration: .5s;
-  -ms-animation-duration: .5s;
-  -o-animation-duration: .5s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
@@ -118,16 +116,16 @@
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  -webkit-animation-delay: .5s;
-  -moz-animation-delay: .5s;
-  -ms-animation-delay: .5s;
-  -o-animation-delay: .5s;
-  animation-delay: .5s;
-  -webkit-animation-duration: .5s;
-  -moz-animation-duration: .5s;
-  -ms-animation-duration: .5s;
-  -o-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  -ms-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  animation-delay: .8s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
