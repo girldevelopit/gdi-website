@@ -145,17 +145,21 @@
       </div>
 
       <script type="text/template" id="meetup">
-      <%% _.each( classesArr,function(course){ %>
-        <h3><a href="<%%= course.event_url %>"><%%= course.name %></a></h3>
-        <p class="subtitle">[ <%%= moment(course.time).format("dddd, MMMM Do YYYY, h:mm a") %>
-        <%% if(typeof course.venue !== "undefined" && course.visibility === "public") { %>
-            , <a href=" https://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>,<%%= course.venue.city %>,<%%= course.venue.state %></a>
-          <%% } %>
-          ] </p>
-          <%= render partial: "meetup_map"%>
-         <p><%%= course.description.substring(0, 400) %><a href="<%%= course.event_url %>">...read more</a></p>
-         <a href="<%%= course.event_url %>" class="button">RSVP</a>
-       <%% }); %>
+        <%% _.each( classesArr,function(course){ %>
+          <div class="meetup-overview">
+            <h3><a href="<%%= course.event_url %>"><%%= course.name %></a></h3>
+            <p class="subtitle">[ <%%= moment(course.time).format("dddd, MMMM Do YYYY, h:mm a") %>
+            <%% if(typeof course.venue !== "undefined" ) { %>
+                , <a href=" https://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %></a>
+              <%% } %>
+              ] </p>
+              <%= render partial: "meetup_map"%>
+             <p><%%= course.description.substring(0, 400) %><a href="<%%= course.event_url %>"> &hellip;read more</a></p>
+             <%% if( typeof course.venue !== "undefined" ) { } else { %>
+                <p><a href="<%%= course.event_url %>" class="button">RSVP</a></p>
+              <%% } %>
+          </div>
+        <%% }); %>
       </script>
 
       <script type="text/javascript">
