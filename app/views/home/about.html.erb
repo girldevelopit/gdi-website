@@ -29,7 +29,7 @@
         <h2>Our Story</h2>
         <hr>
       </div>
-      <p class="large">“Girl, Develop It!” began as a call to action for women, by women who were tired of the low representation of women in tech, and wanted to make a difference. Girl Develop It was founded in New York City in 2010 by Vanessa Hurst and Sara Chipps. Find out our more about their current projects below. Today, there are Girl Develop It chapters building strong communities in 45 US cities (and growing), representing 29,000 members nationwide who are changing their lives through learning to code with us. </p>
+      <p class="large">“Girl, Develop It!” began as a call to action for women, by women who were tired of the low representation of women in tech, and wanted to make a difference. The organization was founded in New York City in 2010 by <%= link_to("Vanessa Hurst", "http://vanessahurst.com/") %> and <%= link_to("Sara Chipps", "http://sarajchipps.com/") %>. Today, Girl Develop It chapters are building strong, empowered communities in 46 cities, representing 35,000+ members nationwide who are changing their lives through learning to code with us.</p>
     </div>
   </section>
 
@@ -44,18 +44,18 @@
 
       <div class="profile-left">
           <%= image_tag 'board/corinnewarnshuis.jpg' %>
-          <h3>Corinne Warnshuis, EXECUTIVE DIRECTOR</h3>
+          <h3>Corinne Warnshuis, Executive Director</h3>
           <p>Corinne is a passionate advocate for community-centered movements and their power to change the world. She is the Executive Director of Girl Develop It. For two years prior to becoming the first ED of Girl Develop It, she co-lead the organization’s Philadelphia chapter to become one of the largest and most active.</p>
-          <p>Previously she worked with the <a href="http://technical.ly/" target="_blank">Technical.ly</a> news network producing large-scale technology conferences like <a href="http://phillytechweek.com/" target="_blank">Philly Tech Week</a> and Baltimore Innovation Week. In that role, Corinne promoted diversity initiatives and helped build relationships among the respective local tech communities of Philadelphia, Baltimore and Brooklyn.</p>
-          <p>A native Californian, Corinne moved to Philadelphia after studying Sociology and Film &amp; Digital Media at University of California – Santa Cruz, and worked in the newsroom and in community relations at <a href="http://whyy.org/" target="_blank">WHYY</a>, Philadelphia’s NPR and PBS affiliate for two years thereafter. Corinne has also written freelance for various publications and is active on the Board of Directors for the <a href="http://www.prometheusradio.org/" target="_blank">Prometheus Radio Project</a>.</p>
+          <p>Previously she worked with the <%= link_to("Technical.ly", "http://technical.ly/", target: "_blank") %>  news network producing large-scale technology conferences like <%= link_to("Philly Tech Week", "http://phillytechweek.com/", target: "_blank") %> and Baltimore Innovation Week. In that role, Corinne promoted diversity initiatives and helped build relationships among the respective local tech communities of Philadelphia, Baltimore and Brooklyn.</p>
+          <p>A native Californian, Corinne moved to Philadelphia after studying Sociology and Film &amp; Digital Media at University of California – Santa Cruz, and worked in the newsroom and in community relations at <%= link_to("WHYY", "http://whyy.org/", target: "_blank") %>, Philadelphia’s NPR and PBS affiliate for two years thereafter. Corinne has also written freelance for various publications and is active on the Board of Directors for the <%= link_to("Prometheus Radio Project", "http://www.prometheusradio.org/", target: "_blank") %>.</p>
       </div>
 
 
       <div class="profile-right">
           <%= image_tag 'board/vanessahurst.jpg' %>
           <h3>Vanessa Hurst, Co-founder, Advisor</h3>
-          <p><a href="http://vanessahurst.com/" target="_blank">Vanessa</a> believes every person should be empowered to use technology to make the world a better place. She started Girl Develop It to provide judgment-free learning opportunities with a focus on results, and to support women teaching and learning from one another. She’s a lifetime Girl Scout, a teacher, and a passionate supporter of open source software.</p>
-          <p>Vanessa is currently building <a href="https://www.codemontage.com/" target="_blank">CodeMontage</a> to help people improve their software skills while improving the world. She also founded and organizes <a href="http://developersforgood.org/" target="_blank">Developers for Good</a> to connect technologists who want to use their skills to make an impact with organizations that need help. Previously, Vanessa led the database and analytics efforts at <a href="https://www.paperlesspost.com/" target="_blank">Paperless Post</a>.</p>
+          <p><%= link_to("Vanessa", "http://vanessahurst.com/", target: "_blank") %> believes every person should be empowered to use technology to make the world a better place. She started Girl Develop It to provide judgment-free learning opportunities with a focus on results, and to support women teaching and learning from one another. She’s a lifetime Girl Scout, a teacher, and a passionate supporter of open source software.</p>
+          <p>Vanessa is currently building <%= link_to("CodeMontage", "https://www.codemontage.com/", target: "_blank") %> to help people improve their software skills while improving the world. She also founded and organizes <%= link_to("Developers for Good", "http://developersforgood.org/", target: "_blank") %> to connect technologists who want to use their skills to make an impact with organizations that need help. Previously, Vanessa led the database and analytics efforts at <%= link_to("Paperless Post", "https://www.paperlesspost.com/", target: "_blank") %>.</p>
       </div>
 
       <div id="headline">
@@ -75,9 +75,9 @@
         <h2>Contact Us</h2>
       </div>
       <section class="contact">
-        <p class="large">For general inquiries: <a href="mailto:info@girldevelopit.com" >info@girldevelopit.com</a></p>
-        <p class="large">For partnership opportunities: <a href="mailto:partnerships@girldevelopit.com" >partnerships@girldevelopit.com</a></p>
-        <p class="large">For sponsorships: <a href="mailto:sponsorships@girldevelopit.com" >sponsorships@girldevelopit.com</a></p>
+        <p class="large">For general inquiries: <%= mail_to "info@girldevelopit.com" %></p>
+        <p class="large">For partnership opportunities: <%= mail_to "partnerships@girldevelopit.com" %></p>
+        <p class="large">To learn about supporting GDI as a sponsor: <%= mail_to "sponsorships@girldevelopit.com" %></p>
       </section>
 
 
