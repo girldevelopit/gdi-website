@@ -85,24 +85,43 @@
       color: $pink;
     }
   }
+  .meetup-overview {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    float: left;
+    border-bottom: 1px dashed #F95A61;
+    &:last-child {border: none;}
+  }
   .meetup-map{
-    @include span-columns(8 of 8);
+    @include span-columns(3 of 8);
     align: center;
     padding: 0px 15px 0 0px;
     img{
-      width: 100%;
+      max-width: 100%;
       margin-top: 5px;
       box-shadow: .025rem .025rem .5rem #bdbec0;
       margin-bottom: 5px;
+    }
+    .button{
+      background-color: $pink;
+      color: $white;
+      width: 100%;
+      margin-top: 1rem;
+      text-align: center;
+      text-decoration: none;
+      &:hover{
+        background-color: darken($pink, 5%);
       }
     }
+  }
   .button{
-    margin: 10px 0 55px 0;
-    background-color: $paleblue;
-    color: $pink;
+    margin-top: 1rem;
+    background-color: $pink;
+    color: $white;
+    padding: .5rem 1rem;
+    text-decoration: none;
     &:hover{
-      background-color: $pink;
-      color: white;
+      background-color: darken($pink, 5%);
     }
   }
   .uhOh {
@@ -171,4 +190,13 @@
       }
     }
   }
+}
+
+.closed {
+  display: inline-block;
+  background: $gold;
+  color: $white;
+  line-height: 1;
+  padding: 0.5em;
+  font-size: 0.6em;
 }
