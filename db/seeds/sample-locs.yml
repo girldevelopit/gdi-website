@@ -1,0 +1,198 @@
+# Here are a couple chapters to seed your development db. 
+# If you'd like to add your own chapter back in to your development seeds, 
+# you can copy its yml from here:
+# https://raw.githubusercontent.com/girldevelopit/gdi-new-site/175d81d8f88be79d8f10b30bdb77a8f8744ee47f/db/seeds/locs2.yml
+---
+- name: Chicago
+  latitude:  41.8781136
+  longitude: -87.6297982
+  chapter: Chicago
+  state: Illinois
+  meetup_url: Girl-Develop-It-Chicago-IL
+  meetup_id: '7208502'
+  slug: chicago
+  leaders:
+  - name: Liz Abinante
+    image: chicago/liza.jpg
+    bio: <p>Liz Abinante is an engineer for Instructure and co-leader of the Girl
+      Develop It Chicago chapter. She is infectiously enthusiastic about web development,
+      teaching, learning, and tacos. She enjoys writing and speaking about education,
+      diversity, and happiness in engineering. Previously, Liz has worked as a writer,
+      editor, and knitwear designer.</p>
+    contact:
+      website: http://lizabinante.com
+      twitter: feministy
+      email: liza@girldevelopit.com
+  - name: Katy Exline
+    image: chicago/katy.jpg
+    bio: <p>Katy Exline is an engineer for Fooda by day and co-leader of Girl Develop
+      It Chicago by night. She began her journey into web development by taking a
+      GDI Columbus class, which inspired her to attend Dev Bootcamp, where she currently
+      serves as a mentor. She worked as a policy researcher and a GIS analyst in a
+      previous life. New food, family, scotch, her dog, and maps are just a few of
+      her favorite things.</p>
+    contact:
+      twitter: Kathryn_Ex
+      email: kathryn@girldevelopit.com
+  instructors:
+  - name: Stephanie Finken
+    image: chicago/stephaniefinken.jpg
+    bio: ! "<p>Stephanie is a front-end web developer at GiveForward (<a href = 'http://www.giveforward.com/'
+      alt = 'GiveForward website' target = '_blank'>http://www.giveforward.com/</a>).
+      She studied graphic design and quickly learned she loved the problem solving
+      that came with it. She was fortunate enough to be introduced to web design and
+      development where she could combine her interests in design and technology.
+      She has a passion for learning and giving back to the community. She loves supporting
+      local businesses and restaurants, and enjoys traveling, drawing and zoo visits.\n
+      \             </p>"
+  - name: Maria Tzeka
+    image: chicago/maria.jpeg
+    bio: <p>Maria Tzeka is a part of the Engineering team at MarkITx working on the
+      front-end and using frameworks such as Backbone. She is an alumni of the Interactive
+      Arts and Media BFA program at Columbia College Chicago and has been previously
+      worked for The Field Museum and Mediafly, Inc. Having volunteered for the Adler
+      Planetarium's Girls Do Hack event last year, Maria has developed a strong interest
+      in continuing to help out in the community. </p>
+  - name: Lauren Scott
+    image: chicago/lauren.jpeg
+    bio: <p>Lauren is a full-stack web developer, poet, Dev Bootcamp graduate, and
+      general life enthusiast.  She loves programming because it combines her passion
+      for creating things with her love of problem solving.  Girl Develop It gave
+      her a safe space to throw herself whole-heartedly into web development, and
+      she's ready to pay it forward! She's passionate about teaching, learning, coding,
+      feminism, tabletop RPGs and a good dumpling. </p>
+  - name: Monica Friend
+    image: chicago/monica.jpeg
+    bio: <p>Monica is currently a Quality Assurance and Application Operations Support
+      Specialist at Groupon. A little over a year ago, she took her first Girl Develop
+      It class and instantly fell in love with all things web. After completing more
+      classes, Monica started to TA for GDI and shortly thereafter received a promotion
+      to a technical role at Groupon. In her free time, Monica runs half-marathons,
+      tends to her dog Leland, dance/walks around Chicago, and babysits her favorite
+      niece and nephew.</p>
+  - name: Meagan Evanoff
+    image: chicago/meagan.jpeg
+    bio: <p>Meagan Evanoff, Senior Front End Developer at Organizing for Action. Meagan
+      started out as a designer, and now she spends her time building things.</p>
+  - name: Jen Myers
+    image: chicago/jenmyers.png
+    bio: <p>Jen Myers is a web designer/developer and part of the instructor team
+      at Dev Bootcamp in Chicago. In 2011, she founded the Columbus, Ohio chapter
+      of Girl Develop It, an organization that provides introductory coding classes
+      aimed at women, and currently serves there as an organizational advisor. She
+      speaks regularly about design, development and diversity, and focuses on finding
+      new ways to make both technology and technology education accessible to everyone.</p>
+  volunteers:
+  - name: Jen Mozen
+    image: chicago/jenmozen.jpg
+    bio: ! "<p>Jen is an entrepreneur and digital media consultant. She studied computer
+      science and has spent much of her career leading agile software development
+      teams globally. In college, Jen developed a passion for getting girls interested
+      in STEM fields and is excited about making software development more accessible
+      to everyone. She's a self-confessed learning junkie (Coursera, Codecademy, etc.),
+      avid reader, enthusiastic sports fan and cool aunt.\n                </p>"
+    contact:
+      twitter: jmozen
+  - name: Amanda Powell
+    image: chicago/amandapowell.jpg
+    bio: ! "<p>After years of managing technical projects and watching developers
+      have all the fun, Amanda decided to join the party. She's learning Ruby on Rails
+      and contributes to web development projects for nonprofits as a front-end developer.
+      Amanda is drawn to programming because there's always something new to discover.
+      Every time she learns something new, she wants to share it with someone else!\n
+      \               </p>"
+    contact:
+      twitter: CmonPowell
+  sponsors:
+  - name: Dev Bootcamp
+    website: http://devbootcamp.com/
+    logo: new-york/devBootcamp.png
+  email: chicago@girldevelopit.com
+  logo: gdi_logo_badge.png
+  twitter: gdichicago
+- name: New York
+  latitude:  40.7127837
+  longitude: -74.0059413
+  chapter: New York
+  state: New York
+  meetup_url: girldevelopit
+  meetup_id: '1669000'
+  slug: new-york
+  leaders:
+  - name: Aurelia Moser
+    image: new-york/aureliamoser.jpg
+    bio: <p> Aurelia is a librarian and developer in NYC. In addition leading NYC's
+      GDI chapter, she teaches metadata and data visualization courses, and develops
+      open source mapping software and data-journo curriculum under current support
+      of a Knight-Mozilla fellowship. In her free time, she contributes to art &&
+      code community programs and participates in hackathons for Data Kind, Hack n'Jill,
+      Art Hack Day and Open Data programs. Full stack from data munging to code monkeying,
+      she's happy to geek for social good where possible. </p>
+    contact:
+      twitter: auremoser
+      email: aurelia@girldevelopit.com
+      website: http://www.aureliamoser.com
+  instructors:
+  - name: Alexis Goldstein
+    image: new-york/alexisgoldstein.jpeg
+    bio: ! "<p>Alexis Goldstein is an entrepreneur, a technical author and a teacher
+      based in Brooklyn, NY.</p>\n         <p> Alexis is the founder and CEO of <a href
+      = \"http://www.autfaciam.com/\" target =\"_blank\" alt =\" aut faciam\">aut
+      faciam</a>, a technical training, consulting and software development company.
+      She is the co-author of book HTML5 & CSS3 in The Real Worldle by Sitepoint.</p>"
+  - name: Bethany Macri
+    image: new-york/bethanymacri.jpg
+    bio: <p>Bethany Macri is a Software Engineer on Etsy's Core Platform team. Bethany
+      studied Literature in college, then discovered programming and never turned
+      back. She attended Hacker School in Summer 2012. Bethany loves teaching others
+      how to program and feels confident in everyone's ability to learn how to code.
+      She tweets @BethanyMacri.</p>
+  - name: Leo Newball
+    image: new-york/leonewball.jpg
+    bio: ! '<p>Hi, I''m Leo Newball, Jr; and I believe in three things: Development,
+      Design, and Data. I believe in the power of Web Development, and any solution
+      can be conquered using a breadth of web-based tools and technology. I believe
+      in the power of great Web Design, believing that both the code and the presentation
+      can be well-organized, presented, and provide amazing experiences. I believe
+      in the power of asking questions, performing Data Research, analyzing the results,
+      and presenting them in ways best disseminated for public use.</p>'
+  - name: Sarah White
+    image: new-york/sarahwhite.jpg
+    bio: <p>Sarah has been working with Photoshop for over 10 years. From retouching
+      beauty shots for fashion companies to creating quirky photo illustrations for
+      Scholastic Magazines, she has learned there is almost nothing you can't do with
+      this powerful program, and she teaches as part of the Design for the Web series
+      at GDI NYC.</p>
+  - name: Brenda Storer
+    image: new-york/brendastorer.jpg
+    bio: <p>Brenda is a front-end developer and designer based in New York City, which
+      has been her home for 10 years. She was born and raised in the Silicon Valley
+      and has also lived in London and Italy, but she currently codes for the Levo
+      League, and teaches women how to code for GDI.</p>
+  volunteers: []
+  sponsors:
+  - name: About.com, hosts
+    website: http://www.about.com/
+    logo: new-york/about.png
+  - name: AOL
+    website: http://www.aol.com/
+    logo: new-york/aol.png
+  - name: Dev Bootcamp
+    website: http://devbootcamp.com/
+    logo: new-york/devBootcamp.png
+  - name: Etsy
+    website: https://www.etsy.com/
+    logo: new-york/etsy.png
+  - name: Meetup
+    website: http://www.meetup.com/
+    logo: new-york/meetup.jpg
+  - name: Patch
+    website: http://patch.com
+    logo: new-york/patch.png
+  - name: Startup Institute
+    website: http://startupinstitute.com/
+    logo: new-york/startupinstitute.png
+  facebook: girldevelopit
+  twitter: girldevelopit
+  email: nyc@girldevelopit.com
+  logo: gdi_logo_square.png

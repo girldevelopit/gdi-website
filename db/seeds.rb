@@ -16,7 +16,7 @@ adminfirst = AdminUser.first
 adminfirst.roles << admin
 adminfirst.roles << leader
 
-chapter_seed = Rails.root.join('db', 'seeds', 'locs2.yml')
+chapter_seed = Rails.root.join('db', 'seeds', 'sample-locs.yml')
 
 #board_seed = Rails.root.join('db', 'seeds', 'board.yml')
 locs = YAML::load_file(chapter_seed)

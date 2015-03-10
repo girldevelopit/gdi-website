@@ -32,7 +32,7 @@ Finally, set up the database:
 rake db:create db:migrate db:seed
 ```
 
-If you are setting up a local development environment, ignore rake migration errors for now. Optionally instead of the `rake` command, you can simply run
+This will build your database and populate it with some test data. If you are setting up a local development environment, ignore rake migration errors for now. Optionally instead of the `rake` command, you can simply run
 
 ```sh
 createdb
