@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150203193036) do
+ActiveRecord::Schema.define(version: 20150310040256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150203193036) do
     t.string   "linkedin"
     t.string   "github"
     t.string   "pic_link"
+    t.integer  "sort_order",    default: 1
   end
 
   create_table "chapters", force: true do |t|
@@ -121,6 +122,7 @@ ActiveRecord::Schema.define(version: 20150203193036) do
     t.string   "icon"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sort_order",        default: 1
   end
 
   add_index "materials", ["slug"], name: "index_materials_on_slug", using: :btree
@@ -143,6 +145,7 @@ ActiveRecord::Schema.define(version: 20150203193036) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
+    t.integer  "sort_order", default: 1
   end
 
 end
