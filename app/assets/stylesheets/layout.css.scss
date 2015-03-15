@@ -19,7 +19,7 @@
 
 header {
   background-color: $pink;
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 793px) {
     height: 100px;
   }
   .logo {
@@ -27,7 +27,7 @@ header {
     width: 129px;
     margin: 0 auto;
     padding-top: 20px;
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 785px) {
       float: left;
     }
     img {
@@ -36,14 +36,13 @@ header {
     }
   }
   nav{
-    margin: 20px 0 20px 0;
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 785px) {
       float: right;
       margin: 0;
     }
     ul {
       text-align: center;
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 785px) {
         float: left;
       }
     }
@@ -60,9 +59,9 @@ header {
       font-weight: 300;
       font-size: 1.1rem;
       letter-spacing: .05rem;
-      padding: .5rem;
+      padding: 1.5rem;
       margin-bottom: 0em;
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 785px) {
         padding: 3rem 1rem 3rem 1rem;
       }
       &:hover {
