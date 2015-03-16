@@ -31,4 +31,4 @@
 *.DS_Store
 
 # Allow individual contributors to customize their own seed data
-/db/seeds/seed-locs.yml
+/db/seeds/sample-locs.yml
