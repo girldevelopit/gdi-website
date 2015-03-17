@@ -29,3 +29,6 @@
 
 # Ignore .DS_Store files
 *.DS_Store
+
+# Allow individual contributors to customize their own seed data
+/db/seeds/sample-locs.yml
