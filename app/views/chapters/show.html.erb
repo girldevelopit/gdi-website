@@ -14,7 +14,6 @@
       <%= link_to "{ Join Us }", "http://www.meetup.com/#{@chapter.meetup}", :class=>"button" %>
 
       <% if @chapter.sponsors.count != 0 %>
-        <div class="hide">
           <div class="sponsors">
             <h2>Sponsors</h2>
             <div class="logos">
@@ -29,7 +28,6 @@
               <% end %>
             </div>
           </div>
-        </div>
       <% end %>
     </aside>
 
