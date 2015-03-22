@@ -14,7 +14,6 @@
       <%= link_to "{ Join Us }", "http://www.meetup.com/#{@chapter.meetup}", :class=>"button" %>
 
       <% if @chapter.sponsors.count != 0 %>
-        <div class="hide">
           <div class="sponsors">
             <h2>Sponsors</h2>
             <div class="logos">
@@ -29,7 +28,6 @@
               <% end %>
             </div>
           </div>
-        </div>
       <% end %>
     </aside>
 
@@ -173,6 +171,7 @@
             //instead send classesArr to template where _.each is waiting...
             //idea seen here: http://stackoverflow.com/questions/4778881/how-to-use-underscore-js-as-a-template-engine
             $(".classes").html(_.template(classes,classesArr));
+            $(".classes").append("<p><a href=\"http://meetup.com/<%= @chapter.meetup %>\">More Events</a>");
           } else {
             $(".classes").html("<p class=\"uhOh\">Sadly, no meetups are currently scheduled for this Chapter. <a href=\"http://meetup.com/<%= @chapter.meetup %>\">Join our meetup group</a> to be notified when a new meetup is happening. Thanks for visiting us!</p>")};
           });
