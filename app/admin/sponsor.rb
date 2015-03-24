@@ -4,11 +4,12 @@ ActiveAdmin.register Sponsor do
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :sponsor, :name, :url, :name, :chapter, :chapter_id, :image
+  permit_params :sponsor, :name, :sort_order, :url, :name, :chapter, :chapter_id, :image
 
   show do |ad|
     attributes_table do
       row :name
+      row :sort_order
       row :url
       row :created_at
       row :updated_at
@@ -37,6 +38,7 @@ ActiveAdmin.register Sponsor do
         f.input :chapter, member_label: :chapter
       end
       f.input :name, placeholder: "The Iron Yard"
+      f.input :sort_order, as: :select, collection: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], include_blank: false
       f.input :url, placeholder: "http://www.theironyard.com"
       f.input :image
     end
