@@ -16,10 +16,10 @@ If you are unfamiliar with forking, branching or working with git/Github, here a
 2. Switch to that new branch (e.g. `git checkout update-homepage`)
 3. Make your changes on your branch.
 4. Test it out locally by running `rails s` and visiting [http://0.0.0.0:3000](http://0.0.0.0:3000) in your favorite browser.
-5. Run `git fetch upstream` and then `git rebase upstream/master` in your branch.
+5. Run `git fetch upstream` and then `git rebase upstream/production` in your branch.
 6. Test again, see step 4.
 7. Push your branch to your repo (e.g. `git push origin update-homepage`)
-8. Make a pull request against the main repos master branch!
+8. Make a pull request against the main repos staging branch!
 
 We generally check all pull requests every 24-48 hours, but feel free to ping us on [Twitter](http://twitter.com/girldevelopit) if there is an urgent need.
 

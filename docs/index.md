@@ -1,5 +1,5 @@
 # Welcome to the [Girl Develop It Website](http://girl-develop-it.herokuapp.com) Documentation!
-[![Build Status](https://travis-ci.org/imuchnik/gdi-new-site.svg?branch=master)](https://travis-ci.org/imuchnik/gdi-new-site)
+[![Build Status](https://travis-ci.org/imuchnik/gdi-new-site.svg?branch=production)](https://travis-ci.org/imuchnik/gdi-new-site)
 
 This is the repo for the newly updated Girl Develop It website. In this README you'll find helpful resources to get you up and running to start contributing to the code base!
 
