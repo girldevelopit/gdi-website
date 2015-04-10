@@ -1,7 +1,7 @@
 class MaterialsController < ApplicationController
   require 'rails_autolink'
   def index
-    @materials = Material.all
+    @materials = Material.order("sort_order ASC").all
 
   respond_to do |format|
     format.html # index.html.erb

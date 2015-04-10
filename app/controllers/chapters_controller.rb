@@ -24,12 +24,12 @@ end
       redirect_to @chapter, status: :moved_permanently
     end
     @users = @chapter.admin_users
-    @sponsors = @chapter.sponsors
+    @sponsors = @chapter.sponsors.order("sort_order ASC")
 
     @bios = @chapter.bios
-    @leaders = @bios.where(title: "LEADERS")
-    @instructors = @bios.where(title: "INSTRUCTORS")
-    @volunteers = @bios.where(title: "VOLUNTEERS")
+    @leaders = @bios.where(title: "LEADERS").order("sort_order ASC")
+    @instructors = @bios.where(title: "INSTRUCTORS").order("sort_order ASC")
+    @volunteers = @bios.where(title: "VOLUNTEERS").order("sort_order ASC")
 
     api = MeetupApi.new
     @events = api.events(group_id: @chapter.meetup_id)
