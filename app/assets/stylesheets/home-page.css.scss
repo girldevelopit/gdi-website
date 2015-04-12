@@ -1,16 +1,17 @@
 .opener {
   text-align: center;
   // background: url('photo3.png') no-repeat center center fixed;
-  background: asset-url('photo3.png');
+  background: asset-url('girls-coding.jpg');
   background-color: $paleblue;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: top center;
   // background-size: Auto 500px;
-  background-position: 30% 3%;
+  background-position: center top;
   // -webkit-background-size: cover;
   // background-size: cover;
-  // width: 100%;
+  background-size: 100%;
+  width: 100%;
   height: 400px;
 
   @media screen and (max-width: 800px) {
@@ -29,7 +30,7 @@
     color: $navy;
     font-size: 3.5rem;
     font-weight: 400;
-    padding-top: 100px;
+    padding-top: 410px;
     height: auto;
     width: 100%;
     @media screen and (max-width: 500px) {
@@ -142,7 +143,7 @@
   @include shift(1);
   text-align: center;
   position: relative;
-  padding: 0px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
   h2{
     margin-top: 60px;
   }
