@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
   background-position: top center;
   // background-size: Auto 500px;
-  background-position: 30% 3%;
+  //background-position: 30% 3%;
+  background-position: 50% 0%;
   // -webkit-background-size: cover;
   // background-size: cover;
   // width: 100%;
@@ -16,13 +17,13 @@
   @media screen and (max-width: 800px) {
     height: 300px;
     width: 100%;
-    background-position: 30% 80%;
+    background-position: 30% 0%;
   }
   @media screen and (max-width: 500px) {
     height: 200px;
     width: 100%;
-    background-position: 30% 70%;
-    background-size: 141% auto;
+    background-position: 25% 10%;
+    background-size: auto 45%;
     background-color: #F8F8F6;
   }
   h1 {
