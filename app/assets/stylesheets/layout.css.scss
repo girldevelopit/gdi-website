@@ -68,13 +68,13 @@ header {
         @media screen and (min-width: 500px) {
           background-color: $black;
           color: $blush;
-          box-shadow: .025rem .025rem .5rem $black;
+          /*box-shadow: .025rem .025rem .5rem $black;*/
         }
       }
       &.active-nav{
         background-color: $black;
         color: $blush;
-        box-shadow: .025rem .025rem .5rem $black;
+        /*box-shadow: .025rem .025rem .5rem $black;*/
       }
 
     }
