@@ -147,7 +147,7 @@
           <div class="meetup-overview">
             <h3>
               <a href="<%%= course.event_url %>"><%%= course.name %></a>
-              <%% if( typeof course.yes_rsvp_count !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { %><span class="closed">sold out</span>
+              <%% if( typeof course.rsvp_limit !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { %><span class="closed">sold out</span>
               <%% } %>
             </h3>
             <p class="subtitle">[ <%%= moment(course.time).format("dddd, MMMM Do YYYY, h:mm a") %>
@@ -157,7 +157,7 @@
               ] </p>
               <%= render partial: "meetup_map"%>
              <p><%%= course.description.substring(0, 400) %><a href="<%%= course.event_url %>"> &hellip;read more</a></p>
-             <%% if( typeof course.venue !== "undefined" ||  course.yes_rsvp_count !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { } else { %>
+             <%% if( typeof course.venue !== "undefined" ||  course.rsvp_limit !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { } else { %>
                 <p><a href="<%%= course.event_url %>" class="button">RSVP</a></p>
               <%% } %>
           </div>
