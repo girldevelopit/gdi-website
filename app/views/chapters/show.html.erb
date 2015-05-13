@@ -145,7 +145,11 @@
       <script type="text/template" id="meetup">
         <%% _.each( classesArr,function(course){ %>
           <div class="meetup-overview">
-            <h3><a href="<%%= course.event_url %>"><%%= course.name %></a></h3>
+            <h3>
+              <a href="<%%= course.event_url %>"><%%= course.name %></a>
+              <%% if( typeof course.yes_rsvp_count !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { %><span class="closed">sold out</span>
+              <%% } %>
+            </h3>
             <p class="subtitle">[ <%%= moment(course.time).format("dddd, MMMM Do YYYY, h:mm a") %>
             <%% if(typeof course.venue !== "undefined" ) { %>
                 , <a href=" https://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %></a>
@@ -153,7 +157,7 @@
               ] </p>
               <%= render partial: "meetup_map"%>
              <p><%%= course.description.substring(0, 400) %><a href="<%%= course.event_url %>"> &hellip;read more</a></p>
-             <%% if( typeof course.venue !== "undefined" ) { } else { %>
+             <%% if( typeof course.venue !== "undefined" ||  course.yes_rsvp_count !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { } else { %>
                 <p><a href="<%%= course.event_url %>" class="button">RSVP</a></p>
               <%% } %>
           </div>
