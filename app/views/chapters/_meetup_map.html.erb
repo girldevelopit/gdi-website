@@ -1,7 +1,9 @@
 <%% if( typeof course.venue !== "undefined" && course.venue.lat !== 0) { %>
   <div class="meetup-map hide">
     <img src= "https://maps.google.com/maps/api/staticmap?size=250x250&sensor=false&zoom=14&markers=<%%= course.venue.lat %>%2C<%%= course.venue.lon %>" alt="chapter map">
-    <p><a href="<%%= course.event_url %>" class="button">RSVP</a></p>
+    <%% if( typeof course.rsvp_limit !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { } else { %>
+      <p><a href="<%%= course.event_url %>" class="button">RSVP</a></p>
+    <%% } %>
   </div>
 <%% } %>
 

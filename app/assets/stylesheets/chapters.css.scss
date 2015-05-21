@@ -195,8 +195,11 @@
 .closed {
   display: inline-block;
   background: $gold;
-  color: $white;
+  color: white;
   line-height: 1;
-  padding: 0.5em;
-  font-size: 0.6em;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: -4px 1em 0;
 }

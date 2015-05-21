@@ -17,7 +17,8 @@ Rails.application.routes.draw do
   get 'codeofconduct', to: redirect('code-of-conduct')
   get 'materials', to: 'materials#index'
   get 'curriculum', to: redirect('materials')
-  get 'sponsors', to: 'home#sponsors'
+  get 'supporters', to: 'home#supporters'
+  get 'sponsors', to: redirect('supporters')
   # Donation page
   get 'donate', to:'home#donate'
   # Errors (must be last rule)
