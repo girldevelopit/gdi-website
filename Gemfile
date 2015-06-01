@@ -45,8 +45,8 @@ group :development do
   # gem 'capistrano-rails'
 end
 
-group :test do
-  gem "rspec"
+group :development, :test do
+  gem 'rspec'
   gem 'rspec-rails'
   gem 'simplecov-rcov'
 end
