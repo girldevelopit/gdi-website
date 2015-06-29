@@ -1,4 +1,4 @@
-ruby '2.1.2'
+ruby '2.1.5'
 
 source 'https://rubygems.org'
 
@@ -12,7 +12,7 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
+gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'bourbon'
@@ -45,8 +45,8 @@ group :development do
   # gem 'capistrano-rails'
 end
 
-group :test do
-  gem "rspec"
+group :development, :test do
+  gem 'rspec'
   gem 'rspec-rails'
   gem 'simplecov-rcov'
 end
