@@ -15,10 +15,13 @@
 .vision{
   @include span-columns(5);
   @include shift(1);
-  text-align: right;
+  text-align: center;
+  width: 80%;
+  margin: 0px 10%;
+  margin-bottom: 50px;
   @media screen and (max-width: 500px){
     @include span-columns(12);
-    text-align: left;
+    text-align: center;
     margin: 0 0 40px 0;
   }
   .subtitle{
@@ -30,8 +33,13 @@
 .values{
   @include span-columns(5);
   @include omega();
+  text-align: center;
+  width: 80%;
+  margin: 0px 10%;
   @media screen and (max-width: 500px){
-    @include span-columns(12)
+    @include span-columns(12);
+    margin: 0px;
+    text-align: center;
   }
   .subtitle{
     padding: 0 .2rem .5rem .2rem;
