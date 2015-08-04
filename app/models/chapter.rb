@@ -2,6 +2,8 @@ class Chapter < ActiveRecord::Base
   extend FriendlyId
   friendly_id :chapter, use: [:slugged, :history]
 
+  validates :geo, :chapter, presence: true
+
   resourcify
   has_many :admin_users
   has_many :sponsors
@@ -16,5 +18,7 @@ class Chapter < ActiveRecord::Base
       obj.state = geocoded.state
     end
   end
+
   after_validation :reverse_geocode
+  
 end
