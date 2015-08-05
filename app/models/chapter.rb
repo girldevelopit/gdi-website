@@ -19,6 +19,20 @@ class Chapter < ActiveRecord::Base
     end
   end
 
+  #check that state field is set
+  def is_state_null
+    if self.state?
+      return true
+    else
+      #otherwise, throw error under "address" field in AA
+      errors.add(:geo, "Please enter a valid location (example: \"Los Angeles, CA, USA\")")
+      return false
+    end
+  end
+
+  #make sure we have a state after geocode process
+  before_save :is_state_null
+
   after_validation :reverse_geocode
   
 end
