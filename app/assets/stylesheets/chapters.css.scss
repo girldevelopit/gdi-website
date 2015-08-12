@@ -203,3 +203,44 @@
   vertical-align: middle;
   margin: -4px 1em 0;
 }
+
+/* 3. Progressive collapsibles */
+
+.collapsible {
+
+  h3 {
+      color: #282828;
+      padding: 15px 0 7px 0;
+      border-bottom: 1px dashed #f95a61;
+      padding-bottom: .2rem;
+  }
+  h3 + [aria-hidden] {
+    display: none;
+  }
+  h3 + [aria-hidden="false"] {
+    display: block;
+  }
+  a{
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: .05rem;
+    font-weight: 300;
+    color: #f95a61;
+    font-style: italic;
+    font-size: medium;
+  }
+}
+
+h3 [aria-expanded] {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: inherit;
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

@@ -27,16 +27,19 @@
     </section>
 
     <section id="state-list">
-      <div class="accordion show">
+      <div class="collapsible show">
+    
         <% @states.each do |s| %>
-          <section class="hidden">
-            <h2><%= s[0] %></h2>
-            <ul>
-              <% s[1].each do |l| %>
-                <li><h3><%= link_to l, chapter_path(l.parameterize) %><h3></li>
+          <h3>
+             <%= s[0] %>
+          </h3>
+          <div>
+          
+            <% s[1].each do |l| %>
+                <p><%= link_to l, chapter_path(l.parameterize) %></p>
               <% end %>
-            </ul>
-          </section>
+          
+          </div>
         <% end %>
       </div>
     </section>
