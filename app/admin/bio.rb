@@ -30,7 +30,7 @@ ActiveAdmin.register Bio do
   end
 
   filter :roles
-  filter :chapter, member_label: :chapter
+  filter :chapter, member_label: :chapter, collection: proc { Chapter.order(:chapter) }
   filter :name
   filter :title
   filter :info
