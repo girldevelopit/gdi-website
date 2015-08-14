@@ -21,7 +21,7 @@ ActiveAdmin.register Sponsor do
   end
 
   filter :roles
-  filter :chapter, member_label: :chapter
+  filter :chapter, member_label: :chapter, collection: proc { Chapter.order(:chapter) }
   filter :name
   filter :url
   filter :created_at
