@@ -113,3 +113,14 @@
     vertical-align:middle;
   }
 }
+
+.wrap {
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.materials-link {
+  text-align: center;
+}
