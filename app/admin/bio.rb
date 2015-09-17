@@ -47,7 +47,7 @@ ActiveAdmin.register Bio do
         f.input :chapter_id, :input_html => { :value => current_admin_user.chapter_id }, as: :hidden
       else
         #otherwise, admin can pick the chapter for the new bio using dropdown list :chapter
-        f.input :chapter, member_label: :chapter
+        f.input :chapter, member_label: :chapter, :collection => Chapter.order("chapter ASC").all
       end
       #f.input :admin_user
       f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS', 'VOLUNTEERS']
