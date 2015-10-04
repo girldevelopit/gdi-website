@@ -36,7 +36,7 @@ $(document).ready(function(){
 			defaultPlot : {
 				type : "circle",
 				href : "#",
-				size : 15,
+				size : 10,
 				attrs: {
 					fill : "#f95a61"
 				},
