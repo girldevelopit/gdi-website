@@ -1,4 +1,4 @@
-ruby '2.1.7'
+ruby '2.2.1'
 
 source 'https://rubygems.org'
 
@@ -34,6 +34,7 @@ gem 'carrierwave'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'geocoder'
 gem 'friendly_id'
+gem 'coveralls', require: false
 
 group :development do
   gem 'pry-byebug'
