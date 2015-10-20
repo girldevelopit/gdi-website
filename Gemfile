@@ -1,4 +1,4 @@
-ruby '2.1.5'
+ruby '2.1.7'
 
 source 'https://rubygems.org'
 
@@ -7,12 +7,13 @@ gem 'rails', '4.1.9'
 gem 'pg'
 gem 'sass-rails', '~> 4.0'
 gem 'uglifier', '>= 1.3'
+gem 'coffee-script-source', '1.8.0', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'coffee-rails', '~> 4.0'
 gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'bourbon'
@@ -30,7 +31,7 @@ gem 'fog'
 gem 'mini_magick'
 # file upload solution
 gem 'carrierwave'
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'geocoder'
 gem 'friendly_id'
 
@@ -45,13 +46,15 @@ group :development do
   # gem 'capistrano-rails'
 end
 
-group :development, :test do
-  gem 'rspec'
+group :test do
+  gem "rspec"
   gem 'rspec-rails'
   gem 'simplecov-rcov'
 end
 
 group :production do
   gem 'rails_12factor'
-  gem 'unicorn'
+  platforms :ruby do
+    gem 'unicorn'
+  end
 end
