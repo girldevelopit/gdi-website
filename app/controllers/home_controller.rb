@@ -16,4 +16,5 @@ class HomeController < ApplicationController
   def supporters
   	@chapter_count = Chapter.active.count
   end
+  
 end
