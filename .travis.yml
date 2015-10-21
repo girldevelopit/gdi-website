@@ -5,8 +5,14 @@ rvm:
 
 before_install: "bundle config build.nokogiri --use-system-libraries"
 
+install:
+  - pip install coveralls
+
 addons:
   postgresql: "9.3"
 
 before_script:
   - psql -c 'create database gdi_test;' -U postgres
+
+after_success:
+  - coveralls
