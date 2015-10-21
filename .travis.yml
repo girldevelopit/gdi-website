@@ -5,9 +5,6 @@ rvm:
 
 before_install: "bundle config build.nokogiri --use-system-libraries"
 
-install:
-  - pip install coveralls
-
 addons:
   postgresql: "9.3"
 
