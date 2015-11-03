@@ -26,7 +26,7 @@ locs.each do |l|
   newloc = Chapter.create!(chapter: l["name"], fb: l["facebook"], meetup: l["meetup_url"],
                   twitter: l["twitter"], linkedin: l["linkedin"], github: l["github"],
                   latitude: l["latitude"], longitude: l["longitude"], state: l["state"],
-                  #geo: l["name"],
+                  geo: l["name"]+", "+l["state"]+", USA",
                   meetup_id: l["meetup_id"], email: l["email"])
   l["leaders"].each do |leader|
     ldr = Bio.new(title: "LEADERS", name: leader["name"], info: leader["bio"],
