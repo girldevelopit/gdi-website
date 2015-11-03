@@ -1,3 +1,6 @@
+h3.nocaps {
+  text-transform: capitalize;
+}
 .mission{
   @include span-columns(10);
   @include shift(1);
