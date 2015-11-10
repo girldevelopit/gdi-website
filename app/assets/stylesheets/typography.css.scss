@@ -79,12 +79,16 @@ a {
  margin: .35rem 0rem;
 }
 
-.button {
+.button,
+a.button,
+p a.button {
  display: inline-block;
  font-weight: 400;
  color: white;
  font-size: .8rem;
+ font-style: inherit;
  text-transform: uppercase;
+ text-decoration: none;
  letter-spacing: .14rem;
  background-color: $gold;
  padding: .5rem;

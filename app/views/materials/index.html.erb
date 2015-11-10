@@ -10,7 +10,7 @@
 
     <section class="material-index hide">
       <% @materials.each do |s| %>
-         
+
          <div class="material-container">
          <%= link_to(course_url(slug: s.slug)) do %>
           <div class="material-icon">
@@ -26,7 +26,7 @@
           </div>
         <% end %>
         </div>
-      
+
     <% end %>
     </section>
 
@@ -42,7 +42,7 @@
     <section id="materials-other">
     <div class="materials-link wrap">
       <p class="large">
-        <a target="_blank" href="http://girldevelopit.github.io/gdi-curriculum-site/">Additional Materials</a>
+        <a target="_blank" class="button" href="http://girldevelopit.github.io/gdi-curriculum-site/">Additional Materials</a>
       </p>
     </div>
   </section>
