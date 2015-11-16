@@ -20,7 +20,7 @@
       &:hover{
         opacity: 1;
         -webkit-filter: grayscale(0%);
-      }      
+      }
     }
     .subtitle {
       margin-bottom: 1.5em;
@@ -29,7 +29,7 @@
       &:hover{
         opacity: 1;
         -webkit-filter: grayscale(0%);
-      }      
+      }
     }
   }
   hr{
@@ -207,6 +207,7 @@
 /* 3. Progressive collapsibles */
 
 .collapsible {
+  margin-bottom: 2rem;
 
   h3 {
       color: #282828;
