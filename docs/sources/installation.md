@@ -17,11 +17,16 @@ Here are some requirements and guides to contributing to the Girl Develop It web
 ### Setting up your local dev environment
 
 - Fork this repo into your personal Github account.
-- Clone _your_ copy to your desktop.
+- Clone _your_ copy to your desktop, then navigate to that directory.
 - Next, install all required gems:
 
 ```sh
 bundle install
+```
+
+- If you run into an error `-bash: bundle: command not found`, install the `bundle` gem, then try again.
+```sh
+gem install bundle; bundle install
 ```
 
 - Next, start postgres with command-line interface OR with PostgreSQL Mac OS X GUI. Make sure it is running before proceeding to next steps.
