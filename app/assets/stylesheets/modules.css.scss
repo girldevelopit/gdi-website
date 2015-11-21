@@ -93,12 +93,9 @@
   .number {
     font-size: 3rem;    
   }
-  .desc {
-    line-height: 1.4;
-  }
   @media screen and (max-width: 500px) {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20%;
     float: none;
     &:first-of-type {
       padding-top: 40px;
