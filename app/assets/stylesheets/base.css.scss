@@ -35,3 +35,11 @@ hr {
   background: transparent;
   height: 6px;
 }
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
