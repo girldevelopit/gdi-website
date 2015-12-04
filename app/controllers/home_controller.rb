@@ -6,6 +6,7 @@ class HomeController < ApplicationController
   end
 
   def about
+  	@chapter_count = Chapter.count
   end
 
   def donate

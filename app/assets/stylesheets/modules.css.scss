@@ -70,3 +70,38 @@
     font-style: italic;
   }
 }
+
+
+.ig-row {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  @extend .clearfix;
+}
+
+.ig-item {
+  padding: 60px 0;
+  display: inline-block;
+  width: 30%;
+  font-weight: 300;
+  &:first-of-type {
+    float: left;
+  }
+  &:last-of-type {
+    float: right;
+  } 
+  .number {
+    font-size: 3rem;    
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 20px 20%;
+    float: none;
+    &:first-of-type {
+      padding-top: 40px;
+    }
+    &:last-of-type {
+      padding-bottom: 40px;
+    }
+  }
+}
