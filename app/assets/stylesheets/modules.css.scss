@@ -82,7 +82,7 @@
     padding-bottom: 60px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 640px) {
     padding: 0 10%;    
     &:last-of-type {
       padding-bottom: 40px;
@@ -99,6 +99,10 @@
   width: 25%;
   font-weight: 300;
 
+  &.no-padding {
+    padding: 0;
+  }
+
   .col-3 & {
     &:first-of-type {
       float: left;
@@ -107,13 +111,34 @@
       float: right;
     }      
   }
+  .col-1 & {
+    width: 80%;   
+    img {
+      width: 60%;
+    }
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  h3 {
+      margin-bottom: 10px;    
+      color: $pink; 
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: none;
+      letter-spacing: .05rem;       
+  }   
 
   .number {
     font-weight: 100;
     font-size: 3rem;    
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 640px) {
     width: 100%;
     float: none;
     img {
