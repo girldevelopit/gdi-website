@@ -3,31 +3,21 @@ ActiveAdmin.register_page "Dashboard" do
   menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }
 
   content title: proc{ I18n.t("active_admin.dashboard") } do
-    div class: "blank_slate_container", id: "dashboard_default_message" do
-      span class: "blank_slate" do
-        span I18n.t("active_admin.dashboard_welcome.welcome")
-        small I18n.t("active_admin.dashboard_welcome.call_to_action")
+
+    columns do
+      column do
+        panel "Info" do
+            @user_chapter = Chapter.where(id: current_admin_user.chapter_id)
+            @user_chapter.each do |c|
+                if c.is_active == 1
+                    para "Welcome to Girl Develop It's Web Admin portal. Please contact the web admin team via Slack (#website) or by emailing website@girldevelopit.com if you have any questions."
+                else
+                    para "Your chapter has been deactivated."
+                end
+            end
+        end
       end
     end
 
-    # Here is an example of a simple dashboard with columns and panels.
-    #
-    # columns do
-    #   column do
-    #     panel "Recent Posts" do
-    #       ul do
-    #         Post.recent(5).map do |post|
-    #           li link_to(post.title, admin_post_path(post))
-    #         end
-    #       end
-    #     end
-    #   end
-
-    #   column do
-    #     panel "Info" do
-    #       para "Welcome to ActiveAdmin."
-    #     end
-    #   end
-    # end
   end # content
 end

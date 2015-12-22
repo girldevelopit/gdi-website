@@ -14,7 +14,8 @@ leader = Role.create! do |a|
 #give role privileges to default admin user created by Devise
 adminfirst = AdminUser.first
 adminfirst.roles << admin
-adminfirst.roles << leader
+#only need admin role for all-access
+#adminfirst.roles << leader
 
 chapter_seed = Rails.root.join('db', 'seeds', 'sample-locs.yml')
 

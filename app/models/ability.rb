@@ -29,5 +29,15 @@ class Ability
     else
       can :view, :all
     end
+
+    #check if user's chapter is active
+    #if not, only let them see Dashboard with information about deactivation
+    @user_chapter = Chapter.where(id: user.chapter_id)
+    @user_chapter.each do |c|
+      if c.is_active != 1
+        cannot :read, :all
+        can :read, ActiveAdmin::Page, name: 'Dashboard'
+      end
+    end
   end
 end
