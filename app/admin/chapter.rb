@@ -1,10 +1,9 @@
 ActiveAdmin.register Chapter do
 
-
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :chapter, :blurb, :fb, :meetup, :twitter, :linkedin, :github, :geo, :email, :meetup_id
+  permit_params :chapter, :blurb, :fb, :meetup, :twitter, :linkedin, :github, :geo, :email, :meetup_id, :is_active
   #
   index do
     selectable_column
@@ -27,6 +26,10 @@ ActiveAdmin.register Chapter do
 
   form do |f|
     f.inputs "Edit Chapter" do
+      if current_admin_user.admin?
+        #admin users can activate/deactivate chapters as needed
+        f.input :is_active, as: :radio, :collection => { "Yes" => true, "No" => false}, label: "Active?", include_blank: false
+      end
       f.input :chapter, placeholder: "Los Angeles"
       f.input :geo, label: "Address", placeholder: "Los Angeles, CA, USA"
       f.input :fb, label: "Facebook", placeholder: "GDILosAngeles"
@@ -47,6 +50,5 @@ ActiveAdmin.register Chapter do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-
 
 end

@@ -30,7 +30,7 @@ ActiveAdmin.register Bio do
   end
 
   filter :roles
-  filter :chapter, member_label: :chapter, collection: proc { Chapter.order(:chapter) }
+  filter :chapter, member_label: :chapter, collection: proc { Chapter.active.order(:chapter) }
   filter :name
   filter :title
   filter :info
@@ -41,13 +41,12 @@ ActiveAdmin.register Bio do
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Edit Bio" do
-      #if user only has one role and it is leader...
-      if current_admin_user.roles.count == 1 and current_admin_user.roles.first.name == "leader"
-        #...then set the chapter_id to the leader's chapter_id
+      if current_admin_user.admin?
+        #if user is admin, show chapter list dropdown
+        f.input :chapter, member_label: :chapter, :collection => Chapter.active.order("chapter ASC")
+      else 
+        #...else user is leader so set the chapter_id to the leader's chapter_id
         f.input :chapter_id, :input_html => { :value => current_admin_user.chapter_id }, as: :hidden
-      else
-        #otherwise, admin can pick the chapter for the new bio using dropdown list :chapter
-        f.input :chapter, member_label: :chapter, :collection => Chapter.order("chapter ASC").all
       end
       #f.input :admin_user
       f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS', 'VOLUNTEERS']

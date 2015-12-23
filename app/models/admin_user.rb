@@ -7,4 +7,9 @@ class AdminUser < ActiveRecord::Base
   has_one :bio
   belongs_to :chapter
   accepts_nested_attributes_for :roles
+
+	def admin?
+    roles.any?{|role| role.name == "admin"}
+	end
+  
 end
