@@ -41,8 +41,8 @@ ActiveAdmin.register Bio do
 
   form(:html => { :multipart => true }) do |f|
     f.inputs "Edit Bio" do
-      #if user is admin, show dropdown
       if current_admin_user.admin?
+        #if user is admin, show chapter list dropdown
         f.input :chapter, member_label: :chapter, :collection => Chapter.active.order("chapter ASC")
       else 
         #...else user is leader so set the chapter_id to the leader's chapter_id
