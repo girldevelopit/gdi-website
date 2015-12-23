@@ -29,13 +29,12 @@ ActiveAdmin.register Sponsor do
 
   form(:html => { :multipart => true }) do |f|
   f.inputs "Edit Sponsor" do
-      #if user only has one role and it is leader...
-      if current_admin_user.has_one_role? && current_admin_user.leader?
-        #...then set the chapter_id to the leader's chapter_id
-        f.input :chapter_id, :input_html => { :value => current_admin_user.chapter_id }, as: :hidden
-      else
-        #otherwise, admin can pick the chapter for the new sponsor using dropdown list :chapter
+      if current_admin_user.admin?
+        #admin can pick the chapter for the new sponsor using dropdown list :chapter
         f.input :chapter, member_label: :chapter, :collection => Chapter.active.order("chapter ASC")
+      else
+        #...else set the chapter_id to the leader's chapter_id
+        f.input :chapter_id, :input_html => { :value => current_admin_user.chapter_id }, as: :hidden
       end
       f.input :name, placeholder: "The Iron Yard"
       f.input :sort_order, as: :select, collection: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], include_blank: false

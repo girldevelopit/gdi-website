@@ -8,15 +8,8 @@ class AdminUser < ActiveRecord::Base
   belongs_to :chapter
   accepts_nested_attributes_for :roles
 
-  	def has_one_role?
-	  roles.count == 1
-	end
-
 	def admin?
-	  roles.first.name == "admin"
+    roles.any?{|role| role.name == "admin"}
 	end
-
-	def leader?
-	  roles.first.name == "leader"
-	end
+  
 end
