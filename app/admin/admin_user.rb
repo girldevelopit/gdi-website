@@ -27,7 +27,7 @@ ActiveAdmin.register AdminUser do
       f.input :email, placeholder: "email@example.com"
       f.input :password
       f.input :password_confirmation
-      f.input :chapter, member_label: :chapter, :collection => Chapter.where("is_active = 1").order("chapter ASC")
+      f.input :chapter, member_label: :chapter, :collection => Chapter.active.order("chapter ASC")
       f.input :roles
     end
     f.actions

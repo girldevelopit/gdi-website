@@ -27,9 +27,9 @@ ActiveAdmin.register Chapter do
   form do |f|
     f.inputs "Edit Chapter" do
       #if user only has one role and it is leader...
-      if current_admin_user.roles.count == 1 and current_admin_user.roles.first.name == "admin"
+      if current_admin_user.has_one_role? && current_admin_user.admin?
         #admin users can activate/deactivate chapters as needed
-        f.input :is_active, as: :radio, :collection => { "Yes" => 1, "No" => 0}, label: "Active?", include_blank: false
+        f.input :is_active, as: :radio, :collection => { "Yes" => true, "No" => false}, label: "Active?", include_blank: false
       end
       f.input :chapter, placeholder: "Los Angeles"
       f.input :geo, label: "Address", placeholder: "Los Angeles, CA, USA"

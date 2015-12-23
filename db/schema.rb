@@ -94,7 +94,7 @@ ActiveRecord::Schema.define(version: 20151221234035) do
     t.string   "state"
     t.string   "email"
     t.string   "slug"
-    t.integer  "is_active",  default: 1
+    t.boolean  "is_active",  default: true
   end
 
   add_index "chapters", ["slug"], name: "index_chapters_on_slug", using: :btree

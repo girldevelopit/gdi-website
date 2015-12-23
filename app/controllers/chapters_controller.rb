@@ -1,7 +1,7 @@
 class ChaptersController < ApplicationController
   require 'rails_autolink'
   def index
-    @chapters = Chapter.where("is_active = 1").order("chapter ASC")
+    @chapters = Chapter.active.order("chapter ASC")
     states = {}
     @chapters.each do |l|
       if states[l.state]
@@ -20,8 +20,8 @@ end
 
   def show
     @chapter = Chapter.friendly.find(params[:id])
-    #Make sure the chapter is active...
-    if @chapter.is_active != 1
+    #Make sure the chapter is active otherwise redirect to index
+    if !@chapter.is_active
       redirect_to({ action: 'index' }, alert: @chapter.chapter + " is no longer an active chapter.")
     end
     if request.path != chapter_path(@chapter)

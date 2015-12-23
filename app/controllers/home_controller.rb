@@ -1,14 +1,18 @@
 class HomeController < ApplicationController
 
   def index
-  @chapters = Chapter.where("is_active = 1")
-  @chapter = Chapter.where("is_active = 1")
+  @chapters = Chapter.active
+  @chapter = Chapter.active
   end
 
   def about
-  	@chapter_count = Chapter.where("is_active = 1").count
+  	@chapter_count = Chapter.active.count
   end
 
   def donate
+  end
+
+  def supporters
+  	@chapter_count = Chapter.active.count
   end
 end

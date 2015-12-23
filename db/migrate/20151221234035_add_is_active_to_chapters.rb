@@ -1,5 +1,5 @@
 class AddIsActiveToChapters < ActiveRecord::Migration
   def change
-    add_column :chapters, :is_active, :integer, :default => 1
+    add_column :chapters, :is_active, :boolean, default: true
   end
 end

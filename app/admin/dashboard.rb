@@ -9,7 +9,7 @@ ActiveAdmin.register_page "Dashboard" do
         panel "Info" do
             @user_chapter = Chapter.where(id: current_admin_user.chapter_id)
             @user_chapter.each do |c|
-                if c.is_active == 1
+                if c.is_active?
                     para "Welcome to Girl Develop It's Web Admin portal. Please contact the web admin team via Slack (#website) or by emailing website@girldevelopit.com if you have any questions."
                 else
                     para "Your chapter has been deactivated."
