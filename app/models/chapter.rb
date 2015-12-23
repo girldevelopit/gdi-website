@@ -35,4 +35,6 @@ class Chapter < ActiveRecord::Base
 
   after_validation :reverse_geocode
   
+  scope :active, -> { where(is_active: true) }
+  
 end
