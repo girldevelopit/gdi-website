@@ -1,0 +1,39 @@
+.infographic {
+	margin-bottom: 0;
+}
+
+.ig-item {
+  .ig-map & {
+  	float: none;
+    width: 80%;
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }    
+    img {
+      width: 60%;
+    }
+  }
+  .ig-community-events & {
+  	float: none;
+    position: relative;
+    width: 400px;
+    margin: 50px 0 30px 0;
+    padding: 10px 0;
+    img {
+      width: 15%;
+      &:first-of-type {
+        @include position(absolute, 0px null null 0px);
+      }
+      &:last-of-type {
+        @include position(absolute, 0px 0px null null);
+      }
+    }
+    .number {
+      margin-bottom: 5px;
+    }
+  }
+}
