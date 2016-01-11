@@ -1,21 +1,18 @@
 <% provide(:title, "Donate") %>
 <section class="main-container">
-
   <div class="container">
-    <section class="infographic">
+    <section class="donate-section infographic">
       <div class="underlined-headline">
         <h2>Help Us Change the World</h2>
         <hr>
       </div>
-
       <div class="ig-body">
         <div class="ig-row ig-map">
-          <div class="ig-item no-padding">      
-            <%= image_tag 'infographic/ig-today-0-map.svg' %> 
+          <div class="ig-item no-padding">
+            <%= image_tag 'infographic/ig-today-0-map.svg' %>
             <p>Girl Develop It is the leading nonprofit organization providing accessible learning programs for adult women. Our reach, membership and impact are unparalleled. Today, GDI is a nationwide movement in 52 cities, representing over 50,000 members.</p>
           </div>
         </div>
-
         <div class="ig-row desktop-only">
           <div class="ig-item">
             <div class="number">54</div>
@@ -33,7 +30,6 @@
             <p>CHAPTER LEADERS &amp;<br>VOLUNTEER ORGANIZERS</p>
           </div>
         </div>
-
         <div class="ig-row desktop-only">
           <div class="ig-item">
             <div class="number">57,861+</div>
@@ -50,31 +46,74 @@
             <%= image_tag 'infographic/ig-today-6-cost.svg' %>
             <p>AVERAGE COST PER CLASS</p>
           </div>
-        </div> 
-
+        </div>
         <div class="ig-row ig-community-events desktop-only">
           <div class="ig-item no-padding">
             <%= image_tag 'infographic/ig-today-7-events-l.svg' %>
-            <div class="number">1,166</div>          
+            <div class="number">1,166</div>
             <p>FREE COMMUNITY EVENTS</p>
-            <%= image_tag 'infographic/ig-today-7-events-r.svg' %>          
+            <%= image_tag 'infographic/ig-today-7-events-r.svg' %>
           </div>
         </div>
       </div>
     </section>
   </div>
 
-  <section class="support">
+  <!-- NEW -->
+  <section class="donate-section donate-bg-grey">
+    <div class="container">
+      <div class="underlined-headline">
+        <h2>Why Support Girl Develop It?</h2>
+        <hr>
+      </div>
+      <p>When you donate to Girl Develop It, you're supporting our mission to provide affordable, welcoming and culturally accessible educational opportunities for adult women from diverse backgrounds to learn software development skills.</p>
+      <p>Support the expansion of the work we've done since 2010 to create sustainable communities that foster women’s continued engagement in developing software and improving their technology skills.</p>
+      <div class="donate-col donate-col--first">
+        <div id="headline">
+          <%= image_tag 'flourish.png' %>
+          <h2>Our Impact</h2>
+        </div>
+        <p>Girl Develop It empowers more than 1,000 students per month with coding skills. Our community-centered learning environments support women progressing from students to teachers to leaders and technical professionals over time. These women are changing the face of tech culture today and mentoring the young women technical leaders of tomorrow.</p>
+      </div>
+      <div class="donate-col donate-col--last">
+        <div id="headline">
+          <%= image_tag 'flourish.png' %>
+          <h2>Help Us Grow</h2>
+        </div>
+        <p>Your donation will support a cost-effective avenue for women to gain technical knowledge. Support for Girl Develop It means it's never too late to learn — our students range in age from 18 to 180. We firmly believe in creating avenues for women to benefit from the opportunities and rewards of learning web development. With your ​donation​, Girl Develop It ​will​ expand to ​new cities​, empowering more ​women.</p>
+      </div>
+    </div>
+  </section>
+  <section class="donate-section donate-section--celebrate">
+    <div class="container">
+      <div class="underlined-headline">
+        <h2>​Celebrate <a target="_gdiday" href="https://twitter.com/search?q=%23GDIDay&src=typd">#GDIday</a> and Five Years of Girl Develop It!</h2>
+        <hr>
+      </div>
+      <p>If you donate between January​ ​12th - February 13th,​ you'll be entered to win some special gifts as part of our celebration of Girl Develop It's five year anniversary, including a custom-made Always Be Coding sweatshirt, a Girl Develop It water bottle, or a Girl Develop It sticker!</p>
+      <div class="ig-row">
+        <div class="ig-item">
+          <%= image_tag "donate/gift_abc.jpg" %>
+        </div>
+        <div class="ig-item">
+          <%= image_tag "donate/gift_wb.jpg" %>
+        </div>
+        <div class="ig-item">
+          <%= image_tag "donate/gift_sticker.jpg" %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="donate-section support">
     <div class="container">
       <div class="underlined-headline">
         <h2>Donate</h2>
         <hr>
       </div>
-      <p class="large">
+      <p>
         If you want to support women in technology and women transitioning into tech careers today, you can help us improve the technology industry's diversity problem now.
-
         We appreciate all contributions from individuals and companies of any amount, and we put them to good use to grow the amount of and impact on our students. All donations are 501c3 tax-deductible.
-
+        <br><br>
         By supporting Girl Develop It, you are supporting the ideal that it’s never too late to learn. Girl Develop It engages students from age 18-70, and we firmly believe that there should be avenues for women of all ages to benefit from the opportunities and rewards provided by learning web development.
       </p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -83,8 +122,15 @@
         <input type="submit" border="0" name="submit" value="Donate Now" class="button donate-button">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-
+      <br>
+      <div id="headline">
+        <%= image_tag 'flourish.png' %>
+        <h2>Other Ways to Support</h2>
+      </div>
+      <p class="subtitle">Corporate sponsorships:</p> <p>Please reach out to <a href="mailto:sponsorships@girldevelopit.com">sponsorships@girldevelopit.com</a> for more information.<br><br></p>
+      <p class="subtitle">Checks made payable to Girl Develop It can be sent by mail to:</p>
+      <p>1522 Cole St.<br>Enumclaw, WA<br>98022<br><br></p>
+      <p class="subtitle">Girl Develop It is a 501(c3) not for profit organization, and all donations are tax-deductible.</p>
     </div>
   </section>
-
 </section>

@@ -12,7 +12,7 @@
         width: 100%;
         margin-bottom: 20px;
       }
-    }    
+    }
     img {
       width: 60%;
     }
@@ -36,4 +36,30 @@
       margin-bottom: 5px;
     }
   }
+}
+
+.ig-item > img {
+	width: 100%;
+	height: auto;
+}
+
+.donate-section {
+	padding: 80px 0;
+	h3 { text-align: center; }
+	form { padding-bottom: 60px; }
+
+	&.donate-section--celebrate {
+		.underlined-headline a { font-weight: 400;}
+	}
+}
+
+.donate-bg-grey { @include background-image( radial-gradient(#fff, #e4e9e5)); }
+
+.donate-col {
+	display: inline-block;
+	width: 49%;
+	margin-top: 60px;
+	vertical-align: top;
+	&.donate-col--first { padding-right: 60px;}
+	&.donate-col--last  { padding-left: 60px;}
 }
