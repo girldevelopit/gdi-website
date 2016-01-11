@@ -45,12 +45,23 @@
 	vertical-align: top;
 	&.donate-col--first { padding-right: 60px;}
 	&.donate-col--last  { padding-left: 60px;}
+
+	@media screen and (max-width: 640px) {
+		width: 100%;
+		&.donate-col--first,
+		&.donate-col--last
+		{
+			padding: 0;
+		}
+	}
 }
 
 
 .donate-section { padding: 80px 0; }
 
 .donate-section--celebrate {
+	p { text-align: center; }
+
 	.underlined-headline a { font-weight: 400; }
 
 	.ig-item {
