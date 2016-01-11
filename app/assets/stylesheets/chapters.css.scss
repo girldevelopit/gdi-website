@@ -50,14 +50,14 @@
   }
 }
 
-#content-section{
+#content-section {
  @media screen and (min-width: 500px) {
    @include span-columns(8);
  }
  margin-bottom: 80px;
 }
 
-#headline{
+.headline {
   @include span-columns(8 of 8);
   @include omega();
 }
