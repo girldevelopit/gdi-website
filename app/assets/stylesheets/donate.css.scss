@@ -46,8 +46,6 @@
 .donate-section {
 	padding: 80px 0;
 	h3 { text-align: center; }
-	form { padding-bottom: 60px; }
-
 	&.donate-section--celebrate {
 		.underlined-headline a { font-weight: 400;}
 	}
@@ -62,4 +60,11 @@
 	vertical-align: top;
 	&.donate-col--first { padding-right: 60px;}
 	&.donate-col--last  { padding-left: 60px;}
+}
+
+.donate-form {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	&.donate-form--top { margin: 0; }
 }
