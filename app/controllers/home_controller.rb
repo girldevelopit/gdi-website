@@ -10,6 +10,7 @@ class HomeController < ApplicationController
   end
 
   def donate
+    @chapter_count = Chapter.active.count
   end
 
   def supporters
