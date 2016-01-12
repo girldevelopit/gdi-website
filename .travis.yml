@@ -12,4 +12,4 @@ before_script:
   - psql -c 'create database gdi_test;' -U postgres
 
 after_success:
-  - coveralls
+ # - coveralls
