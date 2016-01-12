@@ -5,7 +5,7 @@
  margin-bottom: 80px;
 }
 
-#headline{
+.headline{
   @include span-columns(8 of 8);
   @include omega();
 }

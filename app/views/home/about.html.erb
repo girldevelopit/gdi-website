@@ -31,21 +31,25 @@
       </div>
       <p class="large">“Girl, Develop It!” began as a call to action for women, by women who were tired of the low representation of women in tech, and wanted to make a difference.</p>
 
-      <div class="ig-row">
-        <div class="ig-item">
-          <div class="number">2010</div>
-          <%= image_tag 'infographic/ig-beginning-1-founded.svg' %>
-          <p>GDI was founded 2010 in NYC</p>
-        </div>
-        <div class="ig-item">
-          <div class="number">1</div>
-          <%= image_tag 'infographic/ig-beginning-2-class.svg' %>
-          <p>It started with just 1 class</p>
-        </div>
-        <div class="ig-item">
-          <div class="number">24h</div>
-          <%= image_tag 'infographic/ig-beginning-3-soldout.svg' %>
-          <p>...which sold out in 24 hours</p>
+      <div class="ig-body">
+        <div class="ig-row">
+          <div class="ig-item">
+            <div class="number">2010</div>
+            <%= image_tag 'infographic/ig-beginning-1-founded.svg', alt: 'GDI was founded 2010 in NYC' %>
+            <p>GDI was founded 2010 in NYC</p>
+          </div>
+
+          <div class="ig-item">
+            <div class="number">1</div>
+            <%= image_tag 'infographic/ig-beginning-2-class.svg', alt: 'It started with just 1 class' %>
+            <p>It started with just 1 class</p>
+          </div>
+
+          <div class="ig-item">
+            <div class="number">24h</div>
+            <%= image_tag 'infographic/ig-beginning-3-soldout.svg', alt: '...which sold out in 24 hours' %>
+            <p>...which sold out in 24 hours</p>
+          </div>
         </div>
       </div>
 
@@ -57,28 +61,29 @@
   <div class="container">
 
 
-      <div id="headline">
+      <div class="headline">
         <%= image_tag 'flourish.png' %>
         <h2>Our Team</h2>
       </div>
 
-      <div class="profile-left">
-          <%= image_tag 'board/corinnewarnshuis.jpg' %>
-          <h3 class="nocaps">Corinne Warnshuis, Executive Director</h3>
-          <p>Corinne is a passionate advocate for community-centered movements and their power to change the world. She is the Executive Director of Girl Develop It. For two years prior to becoming the first ED of Girl Develop It, she co-lead the organization’s Philadelphia chapter to become one of the largest and most active.</p>
-          <p>Previously she worked with the <%= link_to("Technical.ly", "http://technical.ly/", target: "_blank") %>  news network producing large-scale technology conferences like <%= link_to("Philly Tech Week", "http://phillytechweek.com/", target: "_blank") %> and Baltimore Innovation Week. In that role, Corinne promoted diversity initiatives and helped build relationships among the respective local tech communities of Philadelphia, Baltimore and Brooklyn.</p>
-          <p>A native Californian, Corinne moved to Philadelphia after studying Sociology and Film &amp; Digital Media at University of California – Santa Cruz, and worked in the newsroom and in community relations at <%= link_to("WHYY", "http://whyy.org/", target: "_blank") %>, Philadelphia’s NPR and PBS affiliate for two years thereafter. Corinne has also written freelance for various publications and is active on the Board of Directors for the <%= link_to("Prometheus Radio Project", "http://www.prometheusradio.org/", target: "_blank") %>.</p>
+      <div class="profile profile-left">
+        <%= image_tag 'board/corinnewarnshuis.jpg', alt: 'Corinne Warnshuis' %>
+        <h3 class="nocaps">Corinne Warnshuis, Executive Director</h3>
+        <p>Corinne is a passionate advocate for community-centered movements and their power to change the world. Prior to becoming the first Executive Director of Girl Develop It, she co-led the organization’s Philadelphia chapter to become one of the organization's largest and most active.</p>
+        <p>She has previously held positions with the <%= link_to("Technical.ly", "http://technical.ly/", target: "_blank") %> news network, producing large-scale technology conferences like <%= link_to("Philly Tech Week", "http://phillytechweek.com/", target: "_blank") %> and Baltimore Innovation Week, and at <%= link_to("WHYY", "http://whyy.org/", target: "_blank") %>, Philadelphia’s NPR and PBS affiliate, in community relations.</p>
+        <p>Corinne has spoken at the White House, Dreamforce, Lesbians Who Tech Summit, Code Conf, OSCON and more.</p>
+        <p>A native Californian, Corinne moved to Philadelphia after graduating from University of California — Santa Cruz with a degree in Sociology and Film &amp; Digital Media. </p>
       </div>
 
 
-      <div class="profile-right">
-          <%= image_tag 'board/vanessahurst.jpg' %>
-          <h3 class="nocaps">Vanessa Hurst, Co-founder, Advisor</h3>
-          <p><%= link_to("Vanessa", "http://vanessahurst.com/", target: "_blank") %> believes every person should be empowered to use technology to make the world a better place. She started Girl Develop It to provide judgment-free learning opportunities with a focus on results, and to support women teaching and learning from one another. She’s a lifetime Girl Scout, a teacher, and a passionate supporter of open source software.</p>
-          <p>Vanessa is currently building <%= link_to("CodeMontage", "https://www.codemontage.com/", target: "_blank") %> to help people improve their software skills while improving the world. She also founded and organizes <%= link_to("Developers for Good", "http://developersforgood.org/", target: "_blank") %> to connect technologists who want to use their skills to make an impact with organizations that need help. Previously, Vanessa led the database and analytics efforts at <%= link_to("Paperless Post", "https://www.paperlesspost.com/", target: "_blank") %>.</p>
+      <div class="profile profile-right">
+        <%= image_tag 'board/vanessahurst.jpg', alt: 'Vanessa Hurst' %>
+        <h3 class="nocaps">Vanessa Hurst, Co-founder, Advisor</h3>
+        <p><%= link_to("Vanessa", "http://vanessahurst.com/", target: "_blank") %> believes every person should be empowered to use technology to make the world a better place. She started Girl Develop It to provide judgment-free learning opportunities with a focus on results, and to support women teaching and learning from one another. She’s a lifetime Girl Scout, a teacher, and a passionate supporter of open source software.</p>
+        <p>Vanessa is currently building <%= link_to("CodeMontage", "https://www.codemontage.com/", target: "_blank") %> to help people improve their software skills while improving the world. She also founded and organizes <%= link_to("Developers for Good", "http://developersforgood.org/", target: "_blank") %> to connect technologists who want to use their skills to make an impact with organizations that need help. Previously, Vanessa led the database and analytics efforts at <%= link_to("Paperless Post", "https://www.paperlesspost.com/", target: "_blank") %>.</p>
       </div>
 
-      <div id="headline">
+      <div class="headline">
         <%= image_tag 'flourish.png' %>
         <h2>Our Board</h2>
       </div>
@@ -90,7 +95,7 @@
           <h3 class="nocaps">Erynn Petersen, SVP Strategic Mobile Development, TIME Inc.</h3>
       </section>
 
-      <div id="headline">
+      <div class="headline">
         <%= image_tag 'flourish.png' %>
         <h2>Contact Us</h2>
       </div>
