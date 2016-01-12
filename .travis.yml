@@ -8,6 +8,11 @@ before_install: "bundle config build.nokogiri --use-system-libraries"
 addons:
   postgresql: "9.3"
 
+script: 
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec spec/
+
 before_script:
   - psql -c 'create database gdi_test;' -U postgres
 
