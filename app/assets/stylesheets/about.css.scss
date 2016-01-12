@@ -1,7 +1,8 @@
 h3.nocaps {
   text-transform: capitalize;
 }
-.mission{
+
+.mission {
   @include span-columns(10);
   @include shift(1);
   text-align: center;
@@ -15,7 +16,7 @@ h3.nocaps {
   }
 }
 
-.vision{
+.vision {
   @include span-columns(5);
   @include shift(1);
   text-align: center;
@@ -33,7 +34,7 @@ h3.nocaps {
 
 }
 
-.values{
+.values {
   @include span-columns(5);
   @include omega();
   text-align: center;
@@ -49,7 +50,8 @@ h3.nocaps {
   }
 }
 
-.support,.story{
+.support,
+.story {
   @include background-image( radial-gradient(#fff, #e4e9e5));
   text-align: center;
   height: 100%;
@@ -65,50 +67,49 @@ h3.nocaps {
   }
 }
 
-.story{
+.story {
   margin:60px 0;
 }
-@mixin profile{
-  @include span-columns(6);
+
+.profile {
+  display: inline-block;
+  width: 48%;
   margin-bottom: 80px;
-  @media screen and (max-width: 500px){
-    @include span-columns(12);
+  vertical-align: top;
+
+  &.profile-left { margin-right: 1.75%; }
+  &.profile-right { margin-left: 1.75%; }
+
+  @media screen and (max-width: 860px) {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+
+    &.profile-left,
+    &.profile-right {
+      margin: 0 auto 80px;
+    }
   }
-  img{
-    @include span-columns(3 of 6);
-    @include shift (1.5);
+
+  img {
+    display: block;
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 20px;
     box-shadow: .025rem .025rem .5rem #bdbec0;
-    margin-bottom: 20px;
     border-radius: 5px;
   }
-  h3{
-    @include span-columns(6 of 6);
+
+  h3 {
+    width: 100%;
+    margin-bottom: 5px;
     text-align: center;
     @extend %dashed-border;
   }
-  p{
-    @include span-columns(6 of 6);
-    margin-top: 5px;
-  }
 }
 
-.profile-left{
-  @include profile;
-  @include span-columns(6);
-  padding-right: 12px;
-}
-
-.profile-right{
-  @include profile;
-  @include span-columns(6);
-  @include omega();
-  padding-left: 12px;
-  @media screen and (max-width: 500px){
-    padding: 0;
-  }
-}
-
-.code{
+.code {
   padding-bottom: 80px;
   p{
     margin-top: 10px;

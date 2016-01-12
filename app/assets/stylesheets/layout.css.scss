@@ -146,7 +146,7 @@ a#skipnav {
       left: 0px;
       top: 0px;
       background: white;
-      outline: 0;  
+      outline: 0;
       @include transition(top .1s ease-in, background .5s linear);
     }
 }
@@ -155,7 +155,7 @@ a#skipnav {
     outline: 0;
 }
 
-#headline{
+.headline {
   text-align: center;
   img{
     height: 35px;
@@ -186,6 +186,7 @@ a#skipnav {
     color: $black;
     font-weight: 300;
     letter-spacing: .1rem;
+    line-height: 1.8rem;
   }
   .subtitle {
     margin-top: -20px;
