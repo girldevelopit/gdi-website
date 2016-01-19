@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'about', to: 'home#about'
   get 'code-of-conduct', to: 'home#code-of-conduct'
   get 'codeofconduct', to: redirect('code-of-conduct')
+  get 'faq', to: 'home#faq'
   get 'materials', to: 'materials#index'
   get 'curriculum', to: redirect('materials')
   get 'supporters', to: 'home#supporters'
