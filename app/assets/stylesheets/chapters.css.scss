@@ -232,14 +232,14 @@
   }
 
   .chevron-closed{
-    background: transparent url('../assets/chevron-closed.png') no-repeat;
+    background: transparent url('chevron-closed.png') no-repeat;
     padding: 0px 8px;
   }
   .chevron-opened{
-    background: transparent url('../assets/chevron-opened.png') no-repeat;
+    background: transparent url('chevron-opened.png') no-repeat;
     padding: 0px 8px;
   }
-  
+
 }
 
 h3 [aria-expanded] {
