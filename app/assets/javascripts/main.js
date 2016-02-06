@@ -30,6 +30,11 @@ $(function(){
 	      var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 	      $(this).attr('aria-expanded', state);
 	      panel.attr('aria-hidden', !state);
+	      if(state){
+			    $(this).parent().find(".chevron-closed").removeClass("chevron-closed").addClass("chevron-opened");
+			}else{
+			    $(this).parent().find(".chevron-opened").removeClass("chevron-opened").addClass("chevron-closed");   
+			}
 	    });
 
 	});
