@@ -1,7 +1,6 @@
 //Accordion for mobile chapter index
 $(function() {
   $('#state-list .accordion').on('click', 'h2', function() {
-  	console.log(this);
       $(this).parent().removeClass("hidden").siblings().addClass("hidden");
   });
 });
@@ -36,6 +35,14 @@ $(function(){
 			    $(this).parent().find(".chevron-opened").removeClass("chevron-opened").addClass("chevron-closed");   
 			}
 	    });
+
+	    //Allow default open on chosen rows by setting h3 class to 'display-open'
+
+	    if($this.hasClass('display-open')){
+
+	    	// Trigger click to open
+	    	$this.children("button").click()
+	    }
 
 	});
 });
