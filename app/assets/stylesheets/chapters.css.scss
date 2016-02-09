@@ -230,6 +230,18 @@
     font-style: italic;
     font-size: medium;
   }
+
+  .chevron-closed{
+    background: asset-url('chevron-closed.png');
+    background-repeat: no-repeat;
+    padding: 0px 8px;
+  }
+  .chevron-opened{
+    background: asset-url('chevron-opened.png');
+    background-repeat: no-repeat;
+    padding: 0px 8px;
+  }
+
 }
 
 h3 [aria-expanded] {

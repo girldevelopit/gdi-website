@@ -189,6 +189,28 @@
   }
 }
 
+.jobs, .faq{
+
+  min-height:500px;
+
+  h5{
+    padding-top:15px;
+  }
+  ul{
+    list-style:inherit;
+  }
+  li{
+    margin-left:25px;
+    font-weight:300;
+    letter-spacing:.05rem;
+    line-height:1.5em;
+  }
+  .large{
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
 .press-logos {
   height: 180px;
   background-color: $black;

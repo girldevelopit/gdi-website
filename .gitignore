@@ -32,3 +32,6 @@
 
 # Allow individual contributors to customize their own seed data
 /db/seeds/sample-locs.yml
+
+# Ignore RubyMine IDE files
+.idea/
