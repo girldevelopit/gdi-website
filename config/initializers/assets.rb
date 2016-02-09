@@ -4,6 +4,5 @@
 Rails.application.config.assets.version = '1.1'
 
 # Precompile additional assets.
-# application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 
-Rails.application.config.assets.precompile += %w( main.js chapter_map.js jquery.mapael.js raphael-min.js usa_states.js reset.css.scss favicon.ico)
+Rails.application.config.assets.precompile += %w( raphael-min.js jquery.mapael.js usa_states.js chapter_map.js main.js reset.css.scss favicon.ico)

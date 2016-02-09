@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all'  %>
+    <%= javascript_include_tag 'application' %>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/google_analytics' %>
@@ -25,8 +26,6 @@
 
     <!-- load footer partial -->
   	<%= render "shared/footer" %>
-
-  <%= javascript_include_tag 'application' %>
 
   </body>
 </html>
