@@ -49,7 +49,7 @@ ActiveAdmin.register Bio do
         f.input :chapter_id, :input_html => { :value => current_admin_user.chapter_id }, as: :hidden
       end
       #f.input :admin_user
-      f.input :title, as: :select, collection: ['LEADERS', 'INSTRUCTORS', 'VOLUNTEERS']
+      f.input :title, as: :select, collection: ['LEADERS', 'COORDINATORS', 'INSTRUCTORS', 'VOLUNTEERS']
       f.input :name, placeholder: "Jane Doe"
       f.input :sort_order, as: :select, collection: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], include_blank: false
       f.input :email, placeholder: current_admin_user.email
