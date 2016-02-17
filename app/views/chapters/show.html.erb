@@ -47,7 +47,6 @@
         </div>
 
         <div class="profiles">
-
           <% @leaders.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
@@ -75,12 +74,12 @@
       <% end %>
 
       <% if @coordinators.count != 0 %>
-        <div class="profiles">
-          <div class="headline">
-            <%= image_tag 'apple.png' %>
-            <h2>The Coordinators</h2>
-          </div>
+        <div class="headline">
+          <%= image_tag 'apple.png' %>
+          <h2>The Coordinators</h2>
+        </div>
 
+        <div class="profiles">
           <% @coordinators.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
@@ -109,12 +108,12 @@
       <% end %>
 
       <% if @instructors.count != 0 %>
-        <div class="profiles">
           <div class="headline">
             <%= image_tag 'apple.png' %>
             <h2>The Instructors</h2>
           </div>
 
+          <div class="profiles">
           <% @instructors.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
@@ -143,12 +142,12 @@
       <% end %>
 
       <% if @volunteers.count != 0 %>
-        <div class="profiles">
           <div class="headline">
             <%= image_tag 'apple.png' %>
             <h2>The Volunteers</h2>
           </div>
 
+          <div class="profiles">
           <% @volunteers.each do |bio| %>
             <div class="single-profile">
               <div class="profile-img">
