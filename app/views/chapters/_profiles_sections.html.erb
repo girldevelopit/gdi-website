@@ -1,0 +1,30 @@
+<div class="headline">
+  <%= image_tag 'flourish.png' %>
+  <h2><%= title %></h2>
+</div>
+
+<div class="profiles">
+  <% bios.each do |bio| %>
+    <div class="single-profile">
+      <div class="profile-img">
+        <% if bio.image? %>
+          <%= image_tag bio.image %>
+        <% elsif bio.pic_link? %>
+          <%= image_tag bio.pic_link %>
+        <% else %>
+          <%= image_tag "photo-not-available.jpg" %>
+        <% end %>
+      </div>
+
+      <div class="profile-content">
+        <h3><%= bio.name %></h3>
+        <% if bio.info[0, 3] == "<p>" %>
+          <%= bio.info.html_safe %>
+        <% else %>
+          <%= auto_link(simple_format(bio.info.html_safe)) %>
+        <% end %>
+        <%= render partial: "social_media_bio", locals: {bio: bio} %>
+      </div>
+    </div>
+  <% end %>
+</div>
