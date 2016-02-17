@@ -41,138 +41,19 @@
       </div>
 
       <% if @leaders.count != 0 %>
-        <div class="headline">
-          <%= image_tag 'flourish.png' %>
-          <h2>Chapter Leaders</h2>
-        </div>
-
-        <div class="profiles">
-          <% @leaders.each do |bio| %>
-            <div class="single-profile">
-              <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image %>
-                <% elsif bio.pic_link? %>
-                  <%= image_tag bio.pic_link %>
-                <% else %>
-                  <%= image_tag "photo-not-available.jpg" %>
-                <% end %>
-              </div>
-
-              <div class="profile-content">
-                <h3><%= bio.name %></h3>
-                <% if bio.info[0, 3] == "<p>" %>
-                  <%= bio.info.html_safe %>
-                <% else %>
-                  <%= auto_link(simple_format(bio.info.html_safe)) %>
-                <% end %>
-                <%= render partial: "social_media_bio", locals: {bio: bio} %>
-              </div>
-            </div>
-          <% end %>
-        </div>
+       <%= render partial: "profiles_sections", locals: {title: 'The Leaders', bios: @leaders} %>
       <% end %>
 
       <% if @coordinators.count != 0 %>
-        <div class="headline">
-          <%= image_tag 'apple.png' %>
-          <h2>The Coordinators</h2>
-        </div>
-
-        <div class="profiles">
-          <% @coordinators.each do |bio| %>
-            <div class="single-profile">
-              <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image %>
-                <% elsif bio.pic_link? %>
-                  <%= image_tag bio.pic_link %>
-                <% else %>
-                  <%= image_tag "photo-not-available.jpg" %>
-                <% end %>
-              </div>
-
-              <div class="profile-content">
-                <h3><%= bio.name %></h3>
-                <% if bio.info[0, 3] == "<p>" %>
-                  <%= bio.info.html_safe %>
-                <% else %>
-                  <%= simple_format(bio.info.html_safe) %>
-                <% end %>
-                <%= render partial: "social_media_bio", locals: {bio: bio} %>
-
-              </div>
-            </div>
-          <% end %>
-        </div>
+        <%= render partial: "profiles_sections", locals: {title: 'The Coordinators', bios: @coordinators} %>
       <% end %>
 
       <% if @instructors.count != 0 %>
-          <div class="headline">
-            <%= image_tag 'apple.png' %>
-            <h2>The Instructors</h2>
-          </div>
-
-          <div class="profiles">
-          <% @instructors.each do |bio| %>
-            <div class="single-profile">
-              <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image %>
-                <% elsif bio.pic_link? %>
-                  <%= image_tag bio.pic_link %>
-                <% else %>
-                  <%= image_tag "photo-not-available.jpg" %>
-                <% end %>
-              </div>
-
-              <div class="profile-content">
-                <h3><%= bio.name %></h3>
-                <% if bio.info[0, 3] == "<p>" %>
-                  <%= bio.info.html_safe %>
-                <% else %>
-                  <%= simple_format(bio.info.html_safe) %>
-                <% end %>
-                <%= render partial: "social_media_bio", locals: {bio: bio} %>
-
-              </div>
-            </div>
-          <% end %>
-        </div>
+        <%= render partial: "profiles_sections", locals: {title: 'The Instructors', bios: @instructors} %>
       <% end %>
 
       <% if @volunteers.count != 0 %>
-          <div class="headline">
-            <%= image_tag 'apple.png' %>
-            <h2>The Volunteers</h2>
-          </div>
-
-          <div class="profiles">
-          <% @volunteers.each do |bio| %>
-            <div class="single-profile">
-              <div class="profile-img">
-                <% if bio.image? %>
-                  <%= image_tag bio.image %>
-                <% elsif bio.pic_link? %>
-                  <%= image_tag bio.pic_link %>
-                <% else %>
-                  <%= image_tag "photo-not-available.jpg" %>
-                <% end %>
-              </div>
-
-              <div class="profile-content">
-                <h3><%= bio.name %></h3>
-                <% if bio.info[0, 3] == "<p>" %>
-                  <%= bio.info.html_safe %>
-                <% else %>
-                  <%= simple_format(bio.info.html_safe) %>
-                <% end %>
-                <%= render partial: "social_media_bio", locals: {bio: bio} %>
-
-              </div>
-            </div>
-          <% end %>
-        </div>
+        <%= render partial: "profiles_sections", locals: {title: 'The Volunteers', bios: @volunteers} %>
       <% end %>
 
 
