@@ -32,6 +32,17 @@ Rails.application.configure do
     :enable_starttls_auto => true
   }
 
+  # SparkPost smtp settings
+  # config.action_mailer.smtp_settings = {
+  #   :user_name => ENV['SPARKPOST_SMTP_USERNAME'],
+  #   :password => ENV['SPARKPOST_SMTP_PASSWORD'],
+  #   :address => ENV['SPARKPOST_SMTP_HOST'],
+  #   :domain => 'girldevelopit.com',
+  #   :port => ENV['SPARKPOST_SMTP_PORT'],
+  #   :authentication => :login,
+  #   :enable_starttls_auto => true
+  # }
+
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.
