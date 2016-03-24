@@ -8,25 +8,25 @@ Rails.application.configure do
    config.action_mailer.delivery_method = :smtp
    
   # Mandrill smtp settings
-  config.action_mailer.smtp_settings = {
-    :user_name => ENV['MANDRILL_USERNAME'],
-    :password => ENV['MANDRILL_APIKEY'],
-    :address => 'smtp.mandrillapp.com',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
-
-  # SparkPost smtp settings
   # config.action_mailer.smtp_settings = {
-  #   :user_name => ENV['SPARKPOST_SMTP_USERNAME'],
-  #   :password => ENV['SPARKPOST_SMTP_PASSWORD'],
-  #   :address => ENV['SPARKPOST_SMTP_HOST'],
-  #   :domain => 'girldevelopit.com',
-  #   :port => ENV['SPARKPOST_SMTP_PORT'],
-  #   :authentication => :login,
+  #   :user_name => ENV['MANDRILL_USERNAME'],
+  #   :password => ENV['MANDRILL_APIKEY'],
+  #   :address => 'smtp.mandrillapp.com',
+  #   :port => 587,
+  #   :authentication => :plain,
   #   :enable_starttls_auto => true
   # }
+
+  # SparkPost smtp settings
+  config.action_mailer.smtp_settings = {
+    :user_name => ENV['SPARKPOST_SMTP_USERNAME'],
+    :password => ENV['SPARKPOST_SMTP_PASSWORD'],
+    :address => ENV['SPARKPOST_SMTP_HOST'],
+    :domain => 'girldevelopit.com',
+    :port => ENV['SPARKPOST_SMTP_PORT'],
+    :authentication => :login,
+    :enable_starttls_auto => true
+  }
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
