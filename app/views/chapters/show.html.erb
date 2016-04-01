@@ -44,8 +44,8 @@
        <%= render partial: "profiles_sections", locals: {title: 'The Leaders', bios: @leaders} %>
       <% end %>
 
-      <% if @coordinators.count != 0 %>
-        <%= render partial: "profiles_sections", locals: {title: 'The Coordinators', bios: @coordinators} %>
+      <% if @organizers.count != 0 %>
+        <%= render partial: "profiles_sections", locals: {title: 'The Organizers', bios: @organizers} %>
       <% end %>
 
       <% if @instructors.count != 0 %>
