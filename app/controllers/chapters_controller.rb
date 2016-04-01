@@ -32,7 +32,7 @@ end
 
     @bios = @chapter.bios
     @leaders = @bios.where(title: "LEADERS").order("sort_order ASC")
-    @coordinators = @bios.where(title: "COORDINATORS").order("sort_order ASC")
+    @organizers = @bios.where(title: "ORGANIZERS").order("sort_order ASC")
     @instructors = @bios.where(title: "INSTRUCTORS").order("sort_order ASC")
     @volunteers = @bios.where(title: "VOLUNTEERS").order("sort_order ASC")
 
