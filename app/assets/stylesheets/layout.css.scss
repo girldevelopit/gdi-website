@@ -130,6 +130,13 @@ footer {
     margin-top:.35em;
     cursor:pointer;
   }
+  .footnote {
+    margin-top: 1rem;
+    p {
+      color: $blush;
+      font-size: .7rem;  
+    }
+  }
 }
 
 a#skipnav {
