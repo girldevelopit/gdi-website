@@ -116,6 +116,13 @@ h3.nocaps {
     color: $black;
   }
 }
+
+.faq{
+  h3 [aria-expanded] {
+    text-transform:none;
+  }
+}
+
 .board, .contact, .faqs {
   float: left;
   display: block;
