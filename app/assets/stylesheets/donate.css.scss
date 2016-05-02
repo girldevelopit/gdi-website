@@ -57,8 +57,24 @@
 }
 
 
-.donate-section { padding: 80px 0; }
+.donate-section { 
+  padding: 80px 0; 
+}
 
+.donate-bg-white{
+  text-align: center;
+  height: 100%;
+  padding: 60px 0;
+  p{
+    @include span-columns(10);
+    @include shift(1);
+    color: $black;
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
+  }
+}
 .donate-section--celebrate {
 	p { text-align: center; }
 
