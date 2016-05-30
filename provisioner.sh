@@ -12,7 +12,10 @@ apt-get update -y >>/tmp/provision-script.log 2>&1
 apt-get install ruby2.1.7 -y >>/tmp/provision-script.log 2>&1
 
 # install postgres
-apt-get install postgresql postgresql-contrib -y >>/tmp/provision-script.log 2>&1
+apt-get install postgresql-9.3 postgresql-contrib -y >>/tmp/provision-script.log 2>&1
+
+# install other project dependencies
+apt-get install build-essential libpq-dev  imagemagick libmagickwand-dev nodejs
 
 # install bundler
 gem install bundler
