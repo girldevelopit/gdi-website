@@ -8,11 +8,11 @@
     <div class="single-profile">
       <div class="profile-img">
         <% if bio.image? %>
-          <%= image_tag bio.image %>
+          <%= image_tag bio.image, alt: bio.name %>
         <% elsif bio.pic_link? %>
-          <%= image_tag bio.pic_link %>
+          <%= image_tag bio.pic_link, alt: bio.name %>
         <% else %>
-          <%= image_tag "photo-not-available.jpg" %>
+          <%= image_tag "photo-not-available.jpg", alt: "Photo not available" %>
         <% end %>
       </div>
 
