@@ -48,12 +48,14 @@ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo ap
 sudo apt-get -y update
 sudo apt-get -y install postgresql-9.3
 sudo apt-get -y install postgresql-contrib-9.3
-sudo su -c 'createuser -s vagrant with password "vagrant"'  postgres
+sudo su -c 'createuser -s vagrant'  postgres
+
 
 sudo sed -ibk \
     -re "s/[#]*listen_addresses = '.*'(.*)/listen_addresses = '*'\1/" \
     /etc/postgresql/9.3/main/postgresql.conf
 echo "host    all   vagrant   10.0.2.2/32  trust" | sudo tee -a /etc/postgresql/9.3/main/pg_hba.conf
+sudo su postgres -c "psql -c \"CREATE ROLE vagrant SUPERUSER LOGIN PASSWORD 'vagrant'\" "
 sudo service postgresql restart
 
 
@@ -61,7 +63,6 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 echo 'installing Bundler'
 gem install bundler
 
-gem uninstall pg -3
 # Remove any leftovers
 apt-get -y autoremove
 
