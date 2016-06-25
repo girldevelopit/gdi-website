@@ -35,3 +35,6 @@
 
 # Ignore RubyMine IDE files
 .idea/
+
+# Ignore local .vagrant directory
+.vagrant
