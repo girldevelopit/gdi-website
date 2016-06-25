@@ -24,14 +24,14 @@ apt-get install -yfV         \
   nginx                      \
 
 # get and compile Ruby
-echo "Getting & compiling Ruby...This will take a few minutes."
+echo "Getting & compiling Ruby from source...This will take a LONG TIME. Fear not!"
 curl -LSso /tmp/ruby-2.1.7.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.7.tar.gz
 tar -zxf /tmp/ruby-2.1.7.tar.gz -C /tmp
 
 cd /tmp/ruby-2.1.7 && \
-  ./configure && \
+  ./configure --disable-install-doc && \
   make && \
-  sudo make install > /dev/null
+  sudo make install
 
 # install nodejs
 echo "Installing NodeJS"
@@ -48,8 +48,6 @@ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo ap
 sudo apt-get -y update
 sudo apt-get -y install postgresql-9.3
 sudo apt-get -y install postgresql-contrib-9.3
-sudo su -c 'createuser -s vagrant'  postgres
-
 
 sudo sed -ibk \
     -re "s/[#]*listen_addresses = '.*'(.*)/listen_addresses = '*'\1/" \
@@ -57,7 +55,6 @@ sudo sed -ibk \
 echo "host    all   vagrant   10.0.2.2/32  trust" | sudo tee -a /etc/postgresql/9.3/main/pg_hba.conf
 sudo su postgres -c "psql -c \"CREATE ROLE vagrant SUPERUSER LOGIN PASSWORD 'vagrant'\" "
 sudo service postgresql restart
-
 
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 echo 'installing Bundler'
@@ -67,6 +64,3 @@ gem install bundler
 apt-get -y autoremove
 
 sudo service nginx restart
-
-cd ../opt/gdi/development
-bundle install
