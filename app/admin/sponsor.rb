@@ -4,7 +4,7 @@ ActiveAdmin.register Sponsor do
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :sponsor, :name, :sort_order, :url, :name, :chapter, :chapter_id, :image
+  permit_params :sponsor, :name, :sort_order, :url, :name, :chapter, :chapter_id, :image, :is_active
 
   show do |ad|
     attributes_table do
@@ -29,6 +29,7 @@ ActiveAdmin.register Sponsor do
 
   form(:html => { :multipart => true }) do |f|
   f.inputs "Edit Sponsor" do
+      f.input :is_active, as: :radio, :collection => { "Yes" => true, "No" => false}, label: "Active?", include_blank: false
       if current_admin_user.admin?
         #admin can pick the chapter for the new sponsor using dropdown list :chapter
         f.input :chapter, member_label: :chapter, :collection => Chapter.active.order("chapter ASC")
