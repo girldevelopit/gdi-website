@@ -64,3 +64,6 @@ gem install bundler
 apt-get -y autoremove
 
 sudo service nginx restart
+
+cp /opt/gdi/development/motd.sh /etc/update-motd.d/99-gdi
+chmod 755 /etc/update-motd.d/99-gdi
