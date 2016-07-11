@@ -87,13 +87,16 @@ h3.nocaps {
 }
 
 .profile {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   display: inline-block;
-  width: 48%;
+  width: 33%;
   margin-bottom: 80px;
   vertical-align: top;
 
-  &.profile-left { margin-right: 1.75%; }
-  &.profile-right { margin-left: 1.75%; }
+  &.profile-left { padding-right: 1.75%; }
+  &.profile-center { padding-right: 1.75%; padding-left: 1.75% }
+  &.profile-right { padding-left: 1.75%; }
 
   @media screen and (max-width: 860px) {
     display: block;
