@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151221234035) do
+ActiveRecord::Schema.define(version: 20160621025651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -147,6 +147,7 @@ ActiveRecord::Schema.define(version: 20151221234035) do
     t.datetime "updated_at"
     t.string   "image"
     t.integer  "sort_order", default: 1
+    t.boolean  "is_active",  default: true
   end
 
 end

@@ -28,7 +28,7 @@ end
       redirect_to @chapter, status: :moved_permanently
     end
     @users = @chapter.admin_users
-    @sponsors = @chapter.sponsors.order("sort_order ASC")
+    @sponsors = @chapter.sponsors.active.order("sort_order ASC")
 
     @bios = @chapter.bios
     @leaders = @bios.where(title: "LEADERS").order("sort_order ASC")

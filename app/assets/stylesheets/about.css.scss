@@ -71,6 +71,21 @@ h3.nocaps {
   margin:60px 0;
 }
 
+.chapter-leader-img {
+  margin: 0 auto 80px;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 860px) {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 .profile {
   display: inline-block;
   width: 48%;
@@ -79,6 +94,7 @@ h3.nocaps {
 
   &.profile-left { margin-right: 1.75%; }
   &.profile-right { margin-left: 1.75%; }
+  &.profile-center { margin-left: 25%; margin-right: 25%; }
 
   @media screen and (max-width: 860px) {
     display: block;
@@ -86,7 +102,8 @@ h3.nocaps {
     max-width: 500px;
 
     &.profile-left,
-    &.profile-right {
+    &.profile-right,
+    &.profile-center {
       margin: 0 auto 80px;
     }
   }
