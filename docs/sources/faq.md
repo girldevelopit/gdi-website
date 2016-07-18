@@ -21,6 +21,6 @@ After that, you can run `rails server` to start the server on port `3000` or `ra
 
 ### Upgrading PostgreSQL from 9.2.*
 
-1. Uninstall PostgreSQL. 
+1. Uninstall PostgreSQL.
 2. ```sh rm rf /usr/local/var/postgres/ ``` (or wherever you have your postgres/ directory).
 3. Install PostgreSQL 9.3.

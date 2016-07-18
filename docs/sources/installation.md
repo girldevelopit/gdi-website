@@ -2,17 +2,20 @@
 
 Here are some requirements and guides to contributing to the Girl Develop It website code base. Be sure to review this when trying to install a local development environment! Be sure to reach out to us at [website@girldevelopit.com](mailto:website@girldevelopit.com) with questions.
 
+---
 
 ### Required installations
 * [homebrew](http://brew.sh/), a package manager for Mac OS X.
 * [rvm](http://rvm.io/), a command-line tool to manage different versions of Ruby.
 * ruby 2.1.7
 * PostgreSQL 9.3.+
-  * Install with homebrew using `brew install postgres` and follow the brew instructions for these with `brew update` and `brew doctor`. 
+  * Install with homebrew using `brew install postgres` and follow the brew instructions for these with `brew update` and `brew doctor`.
   * **OR**
   * Using [Postgres.app for Mac OS X](http://www.postgresql.org/download/macosx/) (recommended).
 
 **Note:** If you are upgrading from 9.2., please see instructions below for "Upgrading PostgreSQL from 9.2."
+
+---
 
 ### Setting up your local dev environment
 
@@ -59,6 +62,8 @@ $ echo $MEETUP_API_KEY
    `git remote add upstream git@github.com:girldevelopit/gdi-new-site.git`
 - Now test your local dev environment by running `rails s` and visiting http://0.0.0.0:3000. You should now see a local copy of the live website! \o/
 
+---
+
 ### Ubuntu installation instructions
 * Install RVM [Website Instructions](http://rvm.io/rvm/install)
   * Install the pgp key for rvm
@@ -72,7 +77,7 @@ $ echo $MEETUP_API_KEY
   * Source the RVM scripts (the output from the install command has instructions for how to set this up permanently)
   ```sh
   source ~/.rvm/scripts/rvm
-  ``` 
+  ```
 * Install Ruby
 ```sh
 rvm install 2.1.7
@@ -108,3 +113,52 @@ sudo apt-get install build-essential libpq-dev  imagemagick libmagickwand-dev no
 	  postgres=# CREATE ROLE <username> SUPERUSER LOGIN;
       postgres=# \q
 	 ```
+
+---
+
+### How to Vagrant
+
+<!-- To set up the Vagrant environment locally:
+
+1. Install VirtualBox
+2. Install Vagrant
+3. clone the git repository
+4. `$ vagrant up`
+5. `$ vagrant ssh`
+6. `$ cd /opt/gdi/development`
+7. `$ bundle install`
+8. `$ rake db:create db:migrate db:seed`
+9. `$ bin/rails s`
+10. Point your browser to `localhost:3000`
+11. DEVELOP IT! \o/ -->
+
+#### 1. Install VirtualBox
+VirtualBox is a cross-platform virtualization application (see: [the VirtualBox manual](https://www.virtualbox.org/manual/ch01.html)). That means it can install multiple virtual machines at the same time, which is great for development. You can download the latest version on [the VirtualBox website](https://www.virtualbox.org/wiki/Downloads).
+
+#### 2. Install Vagrant
+Vagrant is a wonderful tool to help you build complete development environments. Download the latest version on [the Vagrant website](https://www.vagrantup.com/downloads.html).
+
+#### 3. Clone the gdi-website Git repository
+Clone the Git repository into your local development folder: `git@github.com:girldevelopit/gdi-website.git`
+
+#### 4. Start Vagrant
+Depending on your machine, this could take a while.
+
+```
+$ vagrant up
+$ vagrant ssh
+```
+
+#### 6. Install and initialize the development environment
+
+Run the following:
+
+```
+$ cd /opt/gdi/development
+$ bundle install
+$ rake db:create db:migrate db:seed
+$ bin/rails s
+```
+
+#### 7. View website
+Test your connection in a browser: `localhost:3000`
