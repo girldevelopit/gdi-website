@@ -124,6 +124,10 @@ h3.nocaps {
     text-align: center;
     @extend %dashed-border;
   }
+
+  p {
+    padding: 10px 0px;
+  }
 }
 
 .code {
