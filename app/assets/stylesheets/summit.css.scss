@@ -6,7 +6,7 @@
   }
 
   i {
-    color: $legacyGreen2;
+    color: $legacyGreen;
     padding-right: 10px;
   }
 
@@ -74,7 +74,7 @@
       @include shift(0);
     }
     h3 {
-      color: $legacyBlue2;
+      color: $legacyBlue;
       margin-top: 20px;
       &:nth-of-type(odd){
         color: $legacyPink;
@@ -96,7 +96,9 @@
       margin-top: 20px;
     }
     ul {
-      margin-left: 30px;
+      margin-left: 2em;
+      text-indent: -1em;
+      padding-left: 2em;
     }
     li {
       margin: 10px 0;
