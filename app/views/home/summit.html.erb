@@ -41,11 +41,11 @@
         </div>
       </div>
     </div>
+    <div class="text-block">
+      <p>The goal of the Summit is to provide our leaders with opportunities to connect, and to receive training and support in order to empower them to continue as ambassadors of GDI's mission. The Summit features workshops on marketing, inclusive outreach, building a leadership team, and effective storytelling.</p>
+    </div>
   </section>
 
-  <section class="about-summit text-block">
-    <p>The goal of the Summit is to provide our leaders with opportunities to connect, and to receive training and support in order to empower them to continue as ambassadors of GDI's mission. The Summit features workshops on marketing, inclusive outreach, building a leadership team, and effective storytelling.</p>
-  </section>
 
   <section class="summit-video">
     <div class="video-container">
@@ -59,21 +59,21 @@
       <hr>
     </div>
     <div class="sponsorship-options">
-      <h3> LA CASA DE GDI​​ | $25k</h3>
+      <h3> LA CASA DE GDI​​ <span>| $25k</span></h3>
         <p>GDI is taking over downtown Austin! 45 hotel rooms to be exact. Help us cover the cost of home base for our leaders for the weekend.</p>
-      <h3>GIRL, BBQ IT! ​| $10k</h3>
+      <h3>GIRL, BBQ IT! ​<span>| $10k</span></h3>
         <p>A girl’s gotta eat! This sponsorship covers our Friday night team celebration dinner, where our goal is to fill our bellies, celebrate our collective strides, and recharge for the next day. This support also covers Saturday’s on-site conference meals: a blissful breakfast, luscious lunch, and an afternoon sweet treat.</p>
-      <h3>HOT SAUCE IN OUR BAG, SWAG​​ | $10k</h3>
+      <h3>HOT SAUCE IN OUR BAG, SWAG​​ <span>| $10k</span></h3>
         <p>T-shirts, water bottles, tote bags, stickers...nothing says we love you to our leaders more than cold hard swag. Especially swag they can use post-summit to spread the mission of GDI!</p>
-      <h3>WELCOME TO AUSTIN HOEDOWN ​| $5k</h3>
+      <h3>WELCOME TO AUSTIN HOEDOWN ​<span>| $5k</span></h3>
         <p>It’s our first time hosting the Summit in Austin! We want to show our leaders what this southern gem of a city is all about. This event will be on the first night of the Summit, welcoming ourtravelers from all over with local specialties and beverages!</p>
-      <h3>FAREWELL FUN BRUNCH​​ | $5k</h3>
+      <h3>FAREWELL FUN BRUNCH​​ <span>| $5k</span></h3>
         <p>On Sunday, our leaders will say say goodbye and head back to their chapters. Let’s send them off right to their respective cities feeling the momentum of the conference! The plan: sharing favorite summit moments over bottomless mimosas and coffee.</p>
-      <h3>GEEKS ON A BUS ​| $5k</h3>
+      <h3>GEEKS ON A BUS ​<span>| $5k</span></h3>
         <p>We’re bringing 85 chapter leaders from across the country — from Burlington, VT to Los Angeles, CA — to join us in Austin! Help us shuttle them around while in town!</p>
-      <h3>RODEO QUEEN GLAMOUR SHOTS​​ | $2.5k</h3>
+      <h3>RODEO QUEEN GLAMOUR SHOTS​​ <span>| $2.5k</span></h3>
         <p>It’s a rare thing to have all of our leaders in the same place at once! Help us get head shots to show off our amazing leaders on girldevelopit.com and get a big group shot to commemorate the Summit.</p>
-      <h3>LIVE-STREAM &amp; VIDEO​​ | $2.5k</h3>
+      <h3>LIVE-STREAM &amp; VIDEO​​ <span>| $2.5k</span></h3>
         <p>Help our leaders who can’t make it to Austin participate in the conference real-time from home, and help us create a recap to share with everyone!</p>
     </div>
   </section>
@@ -126,18 +126,22 @@
   </section>
 
   <section class="sponsors">
-    <div class="underlined-headline">
+    <div class="headline">
+      <%= image_tag 'flourish.png'%>
       <h2>Sponsors</h2>
-      <hr>
     </div>
-    <%= image_tag 'sponsors/indeed.png', alt: 'Indeed' %>
+      <div class="sponsor-logos">
+        <%= link_to image_tag('sponsors/indeed.png' , alt: 'Indeed.com'), 'http://www.indeed.com/' %>
+      </div>
   </section>
 
   <section class="contact-us">
-    <div class="underlined-headline">
+    <div class="headline">
+      <%= image_tag 'flourish.png'%>
       <h2>Contact Us</h2>
-      <hr>
     </div>
-    <p>Have other ideas in mind? Please reach out to sponsorships@girldevelopit.com to discuss further. All donations are 501(c)3 tax deductible.</p>
+    <div class="text-block">
+      <p>Have other ideas in mind? Please reach out to sponsorships@girldevelopit.com to discuss further. All donations are 501(c)3 tax deductible.</p>
+    </div>
   </section>
 </div>

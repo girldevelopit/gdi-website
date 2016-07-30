@@ -25,6 +25,7 @@
   }
 
   section.divider {
+    padding: 15px 0;
      img{
       height: 35px;
       margin: 0 auto;
@@ -34,36 +35,44 @@
 
   .summit-hero {
     margin-top:25px;
+    padding-bottom: 0;
+    div.chapter-leader-img {
+      margin: 0 auto 30px;
+    }
   }
 
   .summit-infographics {
-    display: flex;
-    flex-direction: row;
+    @include background-image( radial-gradient(#FFF, $paleblue));
+    padding-bottom: 30px;
   }
 
-  .ig-item img {
-    height: 200px;
+  .ig-item {
+    max-height: 200px;
+    img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-top: 15px;
+    }
   }
 
   .text-block {
     @include span-columns(10);
     @include shift(1);
+    float: none;
     text-align: center;
-    margin-bottom: 50px;
+    padding-bottom: 30px;
     @media screen and (max-width: 500px){
+      float: none;
+      display: inline-block;
       @include span-columns(12);
       @include shift(0);
     }
   }
 
 
-  div.underlined-headline {
-    margin-top: 50px;
-  }
-
   section.get-involved {
-    @include background-image( radial-gradient(#FFF, $paleblue));
-    padding-bottom: 50px;
+    padding: 30px 0 50px;
   }
 
   div.sponsorship-options {
@@ -85,6 +94,11 @@
     }
   }
 
+  section.support-levels-perks {
+    padding: 30px 0;
+    @include background-image( radial-gradient(#FFF, $paleblue));
+  }
+
   div.sponsorship-levels {
     @include span-columns(8);
     @include shift(2);
@@ -96,9 +110,10 @@
       margin-top: 20px;
     }
     ul {
+      line-height: 20px;
       margin-left: 2em;
-      text-indent: -1em;
       padding-left: 2em;
+      text-indent: -1em;
     }
     li {
       margin: 10px 0;
@@ -106,11 +121,25 @@
   }
 
   section.contact-us {
+    padding-top: 30px;
     margin-bottom: 50px;
+  }
 
+  section.sponsors {
+    padding-top: 30px;
+  }
+
+  .sponsor-logos {
+    text-align: center;
+    img {
+      max-height: 75px;
+    }
   }
 }
 
+section.summit-video {
+  padding-bottom: 0;
+}
 // source: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
 .video-container {
   position: relative;
@@ -125,4 +154,6 @@
   width: 100%;
   height: 100%;
 }
+
+
 
