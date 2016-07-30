@@ -1,0 +1,126 @@
+.summit {
+
+  section {
+    display: inline-block;
+    width: 100%;
+  }
+
+  i {
+    color: $legacyGreen2;
+    padding-right: 10px;
+  }
+
+  a {
+    color: $linkcolor;
+    &:hover{
+      color: $pink;
+    }
+  }
+
+  h3 {
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $textGray;
+  }
+
+  section.divider {
+     img{
+      height: 35px;
+      margin: 0 auto;
+      display: block;
+     }
+  }
+
+  .summit-hero {
+    margin-top:25px;
+  }
+
+  .summit-infographics {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ig-item img {
+    height: 200px;
+  }
+
+  .text-block {
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    margin-bottom: 50px;
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
+  }
+
+
+  div.underlined-headline {
+    margin-top: 50px;
+  }
+
+  section.get-involved {
+    @include background-image( radial-gradient(#FFF, $paleblue));
+    padding-bottom: 50px;
+  }
+
+  div.sponsorship-options {
+    @include span-columns(8);
+    @include shift(2);
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
+    h3 {
+      color: $legacyBlue2;
+      margin-top: 20px;
+      &:nth-of-type(odd){
+        color: $legacyPink;
+      }
+    }
+    span {
+      color: $textGray;
+    }
+  }
+
+  div.sponsorship-levels {
+    @include span-columns(8);
+    @include shift(2);
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    ul {
+      margin-left: 30px;
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  section.contact-us {
+    margin-bottom: 50px;
+
+  }
+}
+
+// source: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
