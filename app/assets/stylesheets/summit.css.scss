@@ -52,25 +52,37 @@
     padding-top: 15px;
   }
 
-
   .summit-infographics {
     @include background-image( radial-gradient(#FFF, $paleblue));
-    padding-bottom: 30px;
-  }
-
-  .ig-item {
-    width: auto;
+    padding: 50px 0 30px;
+    text-align: center;
+  .summit-graphic {
+    text-align: center;
+    @include span-columns(4);
+    @include omega(3n);
     img {
-      max-height: 150px;
-      margin-top: 15px;
-      width: initial;
-      @media screen and (max-width: 500px){
-        width: 100%;
-        max-width: 200px;
-        max-height: none;
+      width: 100%;
+      padding: 0px 25px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .number {
+      font-weight: 100;
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      margin-bottom: 20px;
+      img{
+        margin-top: 15px;
+      }
+      .number {
+        font-weight: 100;
+        font-size: 3rem;
       }
     }
   }
+}
 
   .text-block {
     @include span-columns(10);
