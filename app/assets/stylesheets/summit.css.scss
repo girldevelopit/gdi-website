@@ -24,6 +24,21 @@
     color: $textGray;
   }
 
+  .summit-hero {
+    margin-top:25px;
+    padding-bottom: 0;
+    div.chapter-leader-img {
+      margin: 0 auto 30px;
+    }
+  }
+
+  section.about-gdi {
+    padding: 20px 0 30px;
+    @media screen and (max-width: 500px){
+      padding-right: 10px;
+    }
+  }
+
   section.divider {
     padding: 15px 0;
      img{
@@ -33,13 +48,10 @@
      }
   }
 
-  .summit-hero {
-    margin-top:25px;
-    padding-bottom: 0;
-    div.chapter-leader-img {
-      margin: 0 auto 30px;
-    }
+  section.about-summit {
+    padding-top: 15px;
   }
+
 
   .summit-infographics {
     @include background-image( radial-gradient(#FFF, $paleblue));
@@ -47,12 +59,16 @@
   }
 
   .ig-item {
-    max-height: 200px;
+    width: auto;
     img {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
+      max-height: 150px;
       margin-top: 15px;
+      width: initial;
+      @media screen and (max-width: 500px){
+        width: 100%;
+        max-width: 200px;
+        max-height: none;
+      }
     }
   }
 
@@ -61,18 +77,23 @@
     @include shift(1);
     float: none;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     @media screen and (max-width: 500px){
       float: none;
       display: inline-block;
       @include span-columns(12);
       @include shift(0);
+      margin: 0 5px;
+      padding-right: 10px;
     }
   }
 
 
   section.get-involved {
     padding: 30px 0 50px;
+    @media screen and (max-width: 500px){
+      padding: 30px 10px 50px;
+    }
   }
 
   div.sponsorship-options {
@@ -95,7 +116,7 @@
   }
 
   section.support-levels-perks {
-    padding: 30px 0;
+    padding: 30px 0 50px;
     @include background-image( radial-gradient(#FFF, $paleblue));
   }
 
@@ -117,6 +138,8 @@
     }
     li {
       margin: 10px 0;
+      font-weight: 300;
+      letter-spacing: .05rem;
     }
   }
 
