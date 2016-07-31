@@ -1,0 +1,144 @@
+<% provide(:title, "Girl Develop It 2016 Leadership Summit") %>
+
+<div class= "summit">
+
+  <section class="summit-hero">
+    <div class="underlined-headline">
+        <h2>Girl Develop It 2016 Leadership Summit</h2>
+        <hr>
+      </div>
+    <div class="chapter-leader-img">
+    <%= image_tag 'chapter-leader-summit.jpg', alt: 'Girl Develop It Chapter Leaders at 2015 Annual Leadership Summit' %>
+    </div>
+  </section>
+
+  <section class="about-gdi text-block">
+    <p>Girl Develop It is a 501(c)3 nonprofit that provides affordable and accessible opportunities to women who want to learn web and software development through hands-on instruction. Since our founding in 2010, Girl Develop It has led the nationwide movement to provide women with avenues to participate in the technology industry today.</p>
+  </section>
+
+  <section class="divider">
+    <%= image_tag 'flourish.png'%>
+  </section>
+
+  <section class="about-summit text-block">
+    <p>On October 6th-9th in Austin, TX, the annual Girl Develop It Leadership Summit will bring together 55 industry-leading technical women from our 50+ chapters across the country, representing more than 68,000 Girl Develop It members nationwide.</p>
+  </section>
+
+  <section class="summit-infographics infographic">
+    <div class="container">
+        <div class="summit-graphic">
+        	<div class="number">68,437</div>
+          <%= image_tag 'infographic/members.png', alt: 'GDI Members' %>
+        </div>
+        <div class="summit-graphic">
+        	<div class="number">201</div>
+          <%= image_tag 'infographic/leaders-volunteers.png', alt: 'GDI Leaders' %>
+        </div>
+        <div class="summit-graphic">
+        	<div class="number"><%= @chapter_count %></div>
+          <%= image_tag 'infographic/chapters.png', alt: 'GDI chapters' %>
+        </div>
+    </div>
+    <div class="text-block">
+      <p>The goal of the Summit is to provide our leaders with opportunities to connect, and to receive training and support in order to empower them to continue as ambassadors of GDI's mission. The Summit features workshops on marketing, inclusive outreach, building a leadership team, and effective storytelling.</p>
+    </div>
+  </section>
+
+
+  <section class="summit-video">
+    <div class="video-container">
+      <%= raw VideoPlayer::player("https://vimeo.com/149221166") %>
+    </div>
+   </section>
+
+  <section class="get-involved">
+    <div class="underlined-headline">
+      <h2>Get Involved<h2>
+      <hr>
+    </div>
+    <div class="sponsorship-options">
+      <h3>LA CASA DE GDI​​ <span>| $25k</span></h3>
+        <p>GDI is taking over downtown Austin! 45 hotel rooms to be exact. Help us cover the cost of home base for our leaders for the weekend.</p>
+      <h3>GIRL, BBQ IT! ​<span>| $10k</span></h3>
+        <p>A girl’s gotta eat! This sponsorship covers our Friday night team celebration dinner, where our goal is to fill our bellies, celebrate our collective strides, and recharge for the next day. This support also covers Saturday’s on-site conference meals: a blissful breakfast, luscious lunch, and an afternoon sweet treat.</p>
+      <h3>HOT SAUCE IN OUR BAG, SWAG​​ <span>| $10k</span></h3>
+        <p>T-shirts, water bottles, tote bags, stickers...nothing says we love you to our leaders more than cold hard swag. Especially swag they can use post-summit to spread the mission of GDI!</p>
+      <h3>WELCOME TO AUSTIN SHINDIG ​<span>| $5k</span></h3>
+        <p>It’s our first time hosting the Summit in Austin! We want to show our leaders what this southern gem of a city is all about. This event will be on the first night of the Summit, welcoming our travelers from all over with local specialties and beverages!</p>
+      <h3>FAREWELL FUN BRUNCH​​ <span>| $5k</span></h3>
+        <p>On Sunday, our leaders will say say goodbye and head back to their chapters. Let’s send them off right to their respective cities feeling the momentum of the conference! The plan: sharing favorite summit moments over bottomless mimosas and coffee.</p>
+      <h3>GEEKS ON A BUS ​<span>| $5k</span></h3>
+        <p>We’re bringing 85 chapter leaders from across the country — from Burlington, VT to Los Angeles, CA — to join us in Austin! Help us shuttle them around while in town!</p>
+      <h3>RODEO QUEEN GLAMOUR SHOTS​​ <span>| $2.5k</span></h3>
+        <p>It’s a rare thing to have all of our leaders in the same place at once! Help us get head shots to show off our amazing leaders on girldevelopit.com and get a big group shot to commemorate the Summit.</p>
+      <h3>LIVE-STREAM &amp; VIDEO​​ <span>| $2.5k</span></h3>
+        <p>Help our leaders who can’t make it to Austin participate in the conference real-time from home, and help us create a recap to share with everyone!</p>
+    </div>
+  </section>
+
+  <section class="support-levels-perks">
+    <div class="underlined-headline">
+      <h2>Levels &amp; Perks For Supporting</h2>
+      <hr>
+    </div>
+    <div class="sponsorship-levels">
+      <h3>$25k</h3>
+        <ul>
+          <li><%= fa_icon "star" %>Opportunity to send a company representative to address leaders during Saturday lunch</li>
+          <li><%= fa_icon "star" %>Company logo/link on <%= link_to 'GDI Website Supporters page', :supporters %></li>
+          <li><%= fa_icon "star" %>Company logo/link included in 09/2016 launch of new national newsletter</li>
+          <li><%= fa_icon "star" %>Individual recognition/Thank You via social media: Four (4) tweets (56k followers); four (4) Facebook posts (15k followers)</li>
+          <li><%= fa_icon "star" %>Company logo/link with headline placement on Leadership Summit landing page</li>
+          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
+          <li><%= fa_icon "star" %>Verbal recognition in Summit remarks</li>
+          <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
+        </ul>
+
+      <h3>$10k</h3>
+        <ul>
+          <li><%= fa_icon "star" %>Company logo/link on Leadership Summit landing page</li>
+          <li><%= fa_icon "star" %>Company logo/link on <%= link_to 'GDI Website Supporters page', :supporters %></li>
+          <li><%= fa_icon "star" %>Company logo/link included in 09/2016 launch of new national newsletter (68k mailing list)</li>
+          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
+          <li><%= fa_icon "star" %>Individual recognition via social media: Two (2) tweets (56k followers); two (2) Facebook posts (15k followers)</li>
+          <li><%= fa_icon "star" %>Verbal recognition in Summit opening remarks</li>
+          <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
+        </ul>
+
+      <h3>$5k</h3>
+        <ul>
+          <li><%= fa_icon "star" %>Company logo/link on Leadership Summit landing page</li>
+          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
+          <li><%= fa_icon "star" %>Recognition via social media: inclusion in one (1) tweet (56k followers); and one (1) Facebook post (15k followers)</li>
+          <li><%= fa_icon "star" %>Verbal recognition in Summit opening remarks</li>
+          <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
+        </ul>
+
+      <h3>$2.5k</h3>
+        <ul>
+          <li><%= fa_icon "star" %>Company logo/link on Leadership Summit landing page</li>
+          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="sponsors">
+    <div class="headline">
+      <%= image_tag 'flourish.png'%>
+      <h2>Sponsors</h2>
+    </div>
+      <div class="sponsor-logos">
+        <%= link_to image_tag('sponsors/indeed.png' , alt: 'Indeed.com'), 'http://www.indeed.com/' %>
+      </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="headline">
+      <%= image_tag 'flourish.png'%>
+      <h2>Contact Us</h2>
+    </div>
+    <div class="text-block">
+      <p>Have other ideas in mind? Please reach out to <%= mail_to 'sponsorships@girldevelopit.com', nil, target: 'blank' %> to discuss further. All donations are 501(c)3 tax deductible.</p>
+    </div>
+  </section>
+</div>

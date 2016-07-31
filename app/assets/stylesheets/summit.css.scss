@@ -1,0 +1,194 @@
+.summit {
+
+  section {
+    display: inline-block;
+    width: 100%;
+  }
+
+  i {
+    color: $legacyGreen;
+    padding-right: 10px;
+  }
+
+  a {
+    color: $linkcolor;
+    &:hover{
+      color: $pink;
+    }
+  }
+
+  h3 {
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $textGray;
+  }
+
+  .summit-hero {
+    margin-top:25px;
+    padding-bottom: 0;
+    div.chapter-leader-img {
+      margin: 0 auto 30px;
+    }
+  }
+
+  section.about-gdi {
+    padding: 20px 0 30px;
+    @media screen and (max-width: 500px){
+      padding-right: 10px;
+    }
+  }
+
+  section.divider {
+    padding: 15px 0;
+     img{
+      height: 35px;
+      margin: 0 auto;
+      display: block;
+     }
+  }
+
+  section.about-summit {
+    padding-top: 15px;
+  }
+
+  .summit-infographics {
+    @include background-image( radial-gradient(#FFF, $paleblue));
+    padding: 50px 0 30px;
+    text-align: center;
+  .summit-graphic {
+    text-align: center;
+    @include span-columns(4);
+    @include omega(3n);
+    img {
+      width: 100%;
+      padding: 0px 25px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .number {
+      font-weight: 100;
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      margin-bottom: 20px;
+      img{
+        margin-top: 15px;
+      }
+      .number {
+        font-weight: 100;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+  .text-block {
+    @include span-columns(10);
+    @include shift(1);
+    float: none;
+    text-align: center;
+    padding-bottom: 50px;
+    @media screen and (max-width: 500px){
+      float: none;
+      display: inline-block;
+      @include span-columns(12);
+      @include shift(0);
+      margin: 0 5px;
+      padding-right: 10px;
+    }
+  }
+
+
+  section.get-involved {
+    padding: 30px 0 50px;
+    @media screen and (max-width: 500px){
+      padding: 30px 10px 50px;
+    }
+  }
+
+  div.sponsorship-options {
+    @include span-columns(8);
+    @include shift(2);
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
+    h3 {
+      color: $legacyBlue;
+      margin-top: 20px;
+      &:nth-of-type(odd){
+        color: $legacyPink;
+      }
+    }
+    span {
+      color: $textGray;
+    }
+  }
+
+  section.support-levels-perks {
+    padding: 30px 0 50px;
+    @include background-image( radial-gradient(#FFF, $paleblue));
+  }
+
+  div.sponsorship-levels {
+    @include span-columns(8);
+    @include shift(2);
+    @media screen and (max-width: 500px){
+      @include span-columns(12);
+      @include shift(0);
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    ul {
+      line-height: 20px;
+      margin-left: 2em;
+      padding-left: 2em;
+      text-indent: -1em;
+    }
+    li {
+      margin: 10px 0;
+      font-weight: 300;
+      letter-spacing: .05rem;
+    }
+  }
+
+  section.contact-us {
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  section.sponsors {
+    padding-top: 30px;
+  }
+
+  .sponsor-logos {
+    text-align: center;
+    img {
+      max-height: 75px;
+    }
+  }
+}
+
+section.summit-video {
+  padding-bottom: 0;
+}
+// source: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
