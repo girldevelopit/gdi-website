@@ -6,7 +6,7 @@
   }
 
   i {
-    color: $legacyGreen;
+    color: $GDIearthYellow;
     padding-right: 10px;
   }
 
@@ -117,14 +117,14 @@
       @include shift(0);
     }
     h3 {
-      color: $legacyBlue;
+      color: $GDIdarkBlue;
       margin-top: 20px;
       &:nth-of-type(odd){
-        color: $legacyPink;
+        color: $GDIpink;
       }
     }
     span {
-      color: $textGray;
+      color: $GDIdarkGray;
     }
   }
 
