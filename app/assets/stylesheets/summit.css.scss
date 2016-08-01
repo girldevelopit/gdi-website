@@ -6,7 +6,7 @@
   }
 
   i {
-    color: $legacyGreen;
+    color: $GDIearthYellow;
     padding-right: 10px;
   }
 
@@ -29,6 +29,7 @@
     padding-bottom: 0;
     div.chapter-leader-img {
       margin: 0 auto 30px;
+      max-width: $desktopWidth;
     }
   }
 
@@ -116,14 +117,14 @@
       @include shift(0);
     }
     h3 {
-      color: $legacyBlue;
+      color: $GDIdarkBlue;
       margin-top: 20px;
       &:nth-of-type(odd){
-        color: $legacyPink;
+        color: $GDIpink;
       }
     }
     span {
-      color: $textGray;
+      color: $GDIdarkGray;
     }
   }
 
@@ -174,6 +175,7 @@
 
 section.summit-video {
   padding-bottom: 0;
+  background-color: #000;
 }
 // source: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
 .video-container {
@@ -181,6 +183,8 @@ section.summit-video {
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+  max-width: $desktopWidth;
+  margin: 0 auto;
 }
 .video-container iframe {
   position: absolute;
