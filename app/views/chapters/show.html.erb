@@ -27,6 +27,10 @@
                 <% end %>
               <% end %>
             </div>
+            <p>
+              Interested in becoming a sponsor?
+              <%= mail_to @chapter.email, "Contact the chapter", subject: "Sponsoring the #{@chapter.chapter} Chapter" %>
+            </p>
           </div>
       <% end %>
     </aside>
