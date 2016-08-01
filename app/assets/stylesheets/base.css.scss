@@ -4,6 +4,7 @@
 //BASE: styles for basic page components
 // Custom Styles
 $mainfont: "Roboto";
+$desktopWidth: 965px;
 
 //Colors
 $pink: #f95a61;
@@ -16,6 +17,18 @@ $paleblue: #e4e9e5;
 $navy: #2a4758;
 $white: #ffffff;
 $linkcolor: #00838C;
+$legacyBlue: #1babb3;
+$legacyPink: #ed5c64;
+$legacyGreen: #92b84b;
+$textGray: #525252;
+
+//Official Brand Colors https://brandfolder.com/gdi
+$GDIpink: #f05b62;
+$GDIdarkGray: #333333; //used as a text color
+$GDIdarkBlue: $navy;
+$GDIearthYellow: $gold;
+$GDImauve: #a05258;
+
 
 $mobile: new-breakpoint(max-width 420px 4);
 

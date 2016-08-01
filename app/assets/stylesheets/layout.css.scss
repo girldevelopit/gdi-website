@@ -2,17 +2,17 @@
 
 .container {
   @include outer-container;
-  width: 965px;
+  width: $desktopWidth;
   max-width: 100%;
   margin: auto;
-  @media screen and (max-width: 964px) {
+  @media screen and (max-width: $desktopWidth) {
     padding: 0 25px;
   }
 }
 
 .main-container {
   padding-top: 50px;
-  @media screen and (mmax-width: 500px) {
+  @media screen and (max-width: 500px) {
     padding: 0px 25px;
   }
 }
