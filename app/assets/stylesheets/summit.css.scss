@@ -172,27 +172,31 @@
     }
   }
 }
+  div.section-background {
+    background-color: #000;
+  }
 
-section.summit-video {
-  padding-bottom: 0;
-  background-color: #000;
-}
-// source: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-  max-width: $desktopWidth;
-  margin: 0 auto;
-}
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  section.summit-video {
+    padding-bottom: 0;
+    max-width: $desktopWidth;
+    margin: 0 auto;
+    display: block;
+  }
+  //  source: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+  .video-container {
+    position: relative;
+    padding-bottom: 75%; /* 4:3 */
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 
