@@ -31,6 +31,10 @@
       margin: 0 auto 30px;
       max-width: $desktopWidth;
     }
+    div.summit-logo {
+      margin: 0 auto 30px;
+      text-align:center;
+    }
   }
 
   section.about-gdi {
@@ -167,9 +171,6 @@
 
   .sponsor-logos {
     text-align: center;
-    img {
-      max-height: 75px;
-    }
   }
 }
   div.section-background {
