@@ -15,11 +15,14 @@
     img {
       width: 50%;
       margin-bottom: 1.5em;
-      opacity: 0.35;
-      -webkit-filter: grayscale(75%);
+      opacity: 1;
+      -webkit-filter: grayscale(0%);
       &:hover{
-        opacity: 1;
-        -webkit-filter: grayscale(0%);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
       }
     }
     .subtitle {
