@@ -17,7 +17,7 @@
       margin-bottom: 1.5em;
       opacity: 1;
       -webkit-filter: grayscale(0%);
-      &:hover{
+      &:hover, &:focus {
         -webkit-transform: rotate(-10deg);
         -moz-transform: rotate(-10deg);
         -o-transform: rotate(-10deg);
