@@ -1,4 +1,4 @@
-.sponsors{
+.supporters{
   .large {
     text-align: center;
     margin-bottom: 20px;
@@ -9,7 +9,7 @@
   }
 }
 
-.sponsor-logos {
+.supporter-logos {
   text-align: center;
   //margin: 0 -30px 50px;
   img {
@@ -19,9 +19,9 @@
 }
 
 .partners {
-  @extend .sponsors;
+  @extend .supporters;
 }
 
 .partner-logos {
-  @extend .sponsor-logos;
+  @extend .supporter-logos;
 }
