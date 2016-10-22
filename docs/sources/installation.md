@@ -8,6 +8,9 @@ Here are some requirements and guides to contributing to the Girl Develop It web
 * [homebrew](http://brew.sh/), a package manager for Mac OS X.
 * [rvm](http://rvm.io/), a command-line tool to manage different versions of Ruby.
 * ruby 2.1.7
+
+**Note:** If you experience difficulty installing Ruby 2.1.7 due to end-of-life alerts, please scroll down and follow the instructions for Vagrant installation instead.
+
 * PostgreSQL 9.3.+
   * Install with homebrew using `brew install postgres` and follow the brew instructions for these with `brew update` and `brew doctor`.
   * **OR**
