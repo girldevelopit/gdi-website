@@ -10,14 +10,14 @@
      padding: 0em 2em;
     }
   }
-  .sponsors {
+  .supporters {
     .logos {margin-top: 1.5em;}
     img {
       width: 50%;
       margin-bottom: 1.5em;
       opacity: 0.35;
       -webkit-filter: grayscale(75%);
-      &:hover{
+      &:hover {
         opacity: 1;
         -webkit-filter: grayscale(0%);
       }
