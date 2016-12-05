@@ -189,8 +189,8 @@
   }
 }
 
-.jobs, .faq{
-
+.jobs, .faq, .get-involved{
+  
   min-height:500px;
 
   h5{
@@ -208,6 +208,12 @@
   .large{
       text-align: center;
       margin-bottom: 20px;
+  }
+  .sub-header{
+    font-weight:400;
+  }
+  .sub-paragraph{
+    margin-left:25px;
   }
 }
 
