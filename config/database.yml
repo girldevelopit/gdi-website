@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: gdi_development
+  database:
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -31,7 +31,7 @@ development:
   # the same name as the operating system user that initialized the database.
   
   # !!IMPORTANT!! DISABLE IF *NOT* USING VAGRANT
-  username: vagrant
+  #username: vagrant  
 
   # The password associated with the postgres role (username).
   #password:
@@ -41,7 +41,7 @@ development:
   # domain sockets, so uncomment these lines.
   
   # !!IMPORTANT!! DISABLE IF USING VAGRANT
-  #host: localhost
+  host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
