@@ -45,6 +45,7 @@ group :development do
   gem 'guard'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'rb-readline'
   # gem 'capistrano-rails'
 end
 
