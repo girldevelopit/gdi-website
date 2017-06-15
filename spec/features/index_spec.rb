@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'pry'
 
 describe 'index page' do
   context 'visit the index page' do
