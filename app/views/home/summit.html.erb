@@ -1,18 +1,12 @@
-<% provide(:title, "Girl Develop It 2016 Leadership Summit") %>
+<% provide(:title, "Girl Develop It 2017 Leadership Summit") %>
 
 <div class= "summit">
 
   <section class="summit-hero">
     <div class="underlined-headline">
-        <h2>Girl Develop It 2016 Leadership Summit</h2>
+        <h2>2017 Leadership Summit</h2>
         <hr>
       </div>
-    <div class="summit-logo">
-    <%= image_tag 'summit/summit_logo.png', height: '300', alt: '2016 Leadership Summit in Austin, Texas!' %>
-    </div>
-    <div class="chapter-leader-img">
-    <%= image_tag 'chapter-leader-summit.jpg', alt: 'Girl Develop It Chapter Leaders at 2015 Annual Leadership Summit' %>
-    </div>
   </section>
 
   <section class="about-gdi text-block">
@@ -24,81 +18,104 @@
   </section>
 
   <section class="about-summit text-block">
-    <p>On October 6th-9th in Austin, TX, the annual Girl Develop It Leadership Summit will bring together 75 industry-leading technical women from our 50+ chapters across the country, representing more than 68,000 Girl Develop It members nationwide.</p>
+    <p>From October 19th - 22nd in Denver, Colorado, the annual Girl Develop It Leadership Summit will bring together 75 industry-leading technical women from our 50+ chapters across the country, representing more than 85,000 Girl Develop It members nationwide.</p>
   </section>
 
-  <section class="summit-infographics infographic">
-    <div class="container">
-        <div class="summit-graphic">
-        	<div class="number">68,437</div>
-          <%= image_tag 'infographic/members.png', alt: 'GDI Members' %>
-        </div>
-        <div class="summit-graphic">
-        	<div class="number">201</div>
-          <%= image_tag 'infographic/leaders-volunteers.png', alt: 'GDI Leaders' %>
-        </div>
-        <div class="summit-graphic">
-        	<div class="number"><%= @chapter_count %></div>
-          <%= image_tag 'infographic/chapters.png', alt: 'GDI chapters' %>
-        </div>
-    </div>
+  <section class="divider">
+    <%= image_tag 'flourish.png'%>
   </section>
 
-<div class = "section-background">
-  <section class="summit-video">
-    <div class="video-container">
-      <%= raw VideoPlayer::player("https://vimeo.com/149221166") %>
+  <section class="about-summit text-block">
+      <p>The goal of the Summit is to provide our leaders with opportunities to connect, and to receive training and support in order to empower them to continue as ambassadors of GDI's mission, serve as leaders in their communities and the industry. The Summit features workshops on marketing, inclusive outreach, building a leadership team, effective storytelling and much more.</p>
+  </section>
+
+  <section>
+    <div class="chapter-leader-img text-block">
+      <%= image_tag 'chapter-leader-summit.jpg', alt: 'Girl Develop It Chapter Leaders at 2015 Annual Leadership Summit' %>
+      <p class="text-block">Watch video recaps from our <a href="https://vimeo.com/149221166">2015 Leadership Summit</a> and <a href="https://vimeo.com/196622462">last year’s Summit.</a><p>
     </div>
-   </section>
-</div>
+  </section>
 
   <section class="support-levels-perks">
     <div class="underlined-headline">
       <h2>Levels &amp; Perks For Supporting</h2>
       <hr>
     </div>
-    <div class="text-block">
-      <p>The goal of the Summit is to provide our leaders with opportunities to connect, and to receive training and support in order to empower them to continue as ambassadors of GDI's mission. The Summit features workshops on marketing, inclusive outreach, building a leadership team, and effective storytelling.</p>
-    </div>
     <div class="sponsorship-levels">
+      <h3>$50k</h3>
+        <ul>
+          <li><%= fa_icon "star" %>Opportunity to send a company representative to address leaders during Saturday program</li>
+          <li><%= fa_icon "star" %>Inclusion as Girl Develop It headline sponsor including:
+            <ul>
+              <li><%= fa_icon "circle-o" %> company logo, bio & highlight across Summit materials</li>
+              <li><%= fa_icon "circle-o" %>one year of prominent positioning of logo/link across assets, including website Supporters page</li>
+              <li><%= fa_icon "circle-o" %> one year of inclusion in national newsletter, including logo/link and company bio</li>
+            </ul>
+          </li>
+          <li><%= fa_icon "star" %>National and local social media promotion before, during and after Summit</li>
+          <li><%= fa_icon "star" %>Individual recognition via social media</li>
+          <li><%= fa_icon "star" %>Verbal recognition in Summit remarks</li>
+          <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
+        </ul>
+
       <h3>$25k</h3>
         <ul>
-          <li><%= fa_icon "star" %>Opportunity to send a company representative to address leaders during Saturday lunch</li>
-          <li><%= fa_icon "star" %>Company logo/link on <%= link_to 'GDI Website Supporters page', :supporters %></li>
-          <li><%= fa_icon "star" %>Company logo/link included in launch of new national newsletter</li>
-          <li><%= fa_icon "star" %>Individual recognition/Thank You via social media: Four (4) tweets (56k followers); four (4) Facebook posts (15k followers)</li>
-          <li><%= fa_icon "star" %>Company logo/link with headline placement on Leadership Summit landing page</li>
-          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
+          <li><%= fa_icon "star" %>Inclusion as Girl Develop It sponsor including:
+            <ul>
+              <li><%= fa_icon "circle-o" %>company logo, bio & highlight across Summit materials</li>
+              <li><%= fa_icon "circle-o" %>one year of logo/link across assets, including website Supporters page</li>
+            </ul>
+          </li>
+          <li><%= fa_icon "star" %>National and local social media promotion before, during and after Summit</li>
+          <li><%= fa_icon "star" %>Recognition via social media</li>
           <li><%= fa_icon "star" %>Verbal recognition in Summit remarks</li>
           <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
         </ul>
 
       <h3>$10k</h3>
         <ul>
-          <li><%= fa_icon "star" %>Company logo/link on Leadership Summit landing page</li>
-          <li><%= fa_icon "star" %>Company logo/link on <%= link_to 'GDI Website Supporters page', :supporters %></li>
-          <li><%= fa_icon "star" %>Company logo/link included in launch of new national newsletter (68k mailing list)</li>
-          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
-          <li><%= fa_icon "star" %>Individual recognition via social media: Two (2) tweets (56k followers); two (2) Facebook posts (15k followers)</li>
-          <li><%= fa_icon "star" %>Verbal recognition in Summit opening remarks</li>
-          <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
+          <li><%= fa_icon "star" %>Inclusion as Girl Develop It sponsor including:
+            <ul>
+              <li><%= fa_icon "circle-o" %>company logo, bio & highlight across Summit materials</li>
+              <li><%= fa_icon "circle-o" %>six months of logo/link across assets, including website Supporters page</li>
+            </ul>
+          </li>
+          <li><%= fa_icon "star" %>Recognition via social media</li>
+          <li><%= fa_icon "star" %>Verbal recognition in Summit remarks</li>
         </ul>
 
       <h3>$5k</h3>
         <ul>
-          <li><%= fa_icon "star" %>Company logo/link on Leadership Summit landing page</li>
-          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
-          <li><%= fa_icon "star" %>Recognition via social media: inclusion in one (1) tweet (56k followers); and one (1) Facebook post (15k followers)</li>
-          <li><%= fa_icon "star" %>Verbal recognition in Summit opening remarks</li>
-          <li><%= fa_icon "star" %>Option to send company swag for swag bag</li>
+          <li><%= fa_icon "star" %>Inclusion as Girl Develop It sponsor including:
+            <ul>
+              <li><%= fa_icon "circle-o" %>company logo across Summit materials</li>
+              <li><%= fa_icon "circle-o" %>three months of logo/link across assets, including website Supporters page</li>
+            </ul>
+          </li>
+          <li><%= fa_icon "star" %>Verbal recognition in Summit remarks</li>
         </ul>
 
       <h3>$2.5k</h3>
         <ul>
-          <li><%= fa_icon "star" %>Company logo/link on Leadership Summit landing page</li>
-          <li><%= fa_icon "star" %>Logo placement on all printed Summit materials and signage</li>
+          <li><%= fa_icon "star" %>Inclusion as Summit sponsor, including company logo/link on Summit landing page</li>
+          <li><%= fa_icon "star" %>Logo on all printed Summit materials and signage</li>
         </ul>
     </div>
+  </section>
+
+  <section>
+    <div class="sponsorship-levels">
+      <h3>Current GDI National Assets</h3>
+        <ul>
+          <li><%= fa_icon "star" %><b>girldevelopit.com:</b> 10,000 weekly pageviews</li>
+          <li><%= fa_icon "star" %><b>Twitter:</b> 85,000 followers</li>
+          <li><%= fa_icon "star" %><b>Facebook:</b> 17,000 followers</li>
+          <li><%= fa_icon "star" %><b>Instagram:</b> 2,770 followers</li>
+          <li><%= fa_icon "star" %><b>Medium:</b> 13,600 followers</li>
+          <li><%= fa_icon "star" %><b>Tumblr:</b> 550 followers</li>
+          <li><%= fa_icon "star" %><b>Newsletter subscribers:</b> 85,000</li>
+        </ul>
+      </div>
   </section>
 
   <section class="supporters">
@@ -108,16 +125,6 @@
     </div>
       <div class="supporter-logos">
         <%= link_to image_tag('summit/turing-horizontal.png', height: '100', alt: 'turing.io'), 'https://www.turing.io/', target: '_blank' %>
-        <br>
-        <%= link_to image_tag('summit/ibm.jpg', height: '100', alt: 'IBM'), 'https://developer.ibm.com/clouddataservices/', target: '_blank' %>
-        <br>
-        <%= link_to image_tag('summit/CBSi-black.png', height: '60', alt: 'cbsinteractive.com'), 'http://www.cbsinteractive.com/', target: '_blank' %>
-        <%= link_to image_tag('summit/dev_bootcamp.png', height: '60', alt: 'devbootcamp.com'), 'https://devbootcamp.com', target: '_blank' %>
-        <br>
-        <%= link_to image_tag('summit/indeed.png', height: '60', alt: 'Indeed.com'), 'http://www.indeed.jobs/', target: '_blank' %>
-        <%= link_to image_tag('summit/galvanize.png', height: '60', alt: 'galvanize.com'), 'http://www.galvanize.com/', target: '_blank' %>
-        <%= link_to image_tag('summit/fair-play.png', height: '60', alt: 'fairplay.video'), 'http://fairplay.video/', target: '_blank' %>
-        <%= link_to image_tag('summit/cars.png', height: '60', alt: 'cars.com'), 'https://www.cars.com/', target: '_blank' %>
       </div>
   </section>
 
