@@ -30,6 +30,7 @@ module GdiMainSite
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
 
+    # Use custom routing for exceptions
     config.exceptions_app = self.routes
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
