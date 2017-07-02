@@ -1,4 +1,4 @@
-ruby '2.1.7'
+ruby File.read(File.expand_path('../.ruby-version', __FILE__)).chomp
 
 source 'https://rubygems.org'
 
