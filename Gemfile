@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.9'
 
-gem 'pg'
+gem 'pg', '~> 0.20.0'
 gem 'sass-rails', '~> 4.0'
 gem 'uglifier', '>= 1.3'
 gem 'coffee-script-source', '1.8.0', platforms: [:mingw, :mswin, :x64_mingw]
