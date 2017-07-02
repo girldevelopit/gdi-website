@@ -250,7 +250,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
-    json (1.8.3)
+    json (1.8.6)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -452,7 +452,7 @@ DEPENDENCIES
   video_player
 
 RUBY VERSION
-   ruby 2.1.7p400
+   ruby 2.4.1p111
 
 BUNDLED WITH
-   1.12.5
+   1.15.1
