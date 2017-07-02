@@ -1,5 +1,3 @@
-GOOGLE_ANALYTICS_TRACKING_CODE = 'UA-19096645-1'
-
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
