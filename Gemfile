@@ -2,13 +2,13 @@ ruby File.read(File.expand_path('../.ruby-version', __FILE__)).chomp
 
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.9'
+gem 'rails', '4.2.9'
 
 gem 'pg'
 gem 'sass-rails', '~> 4.0'
 gem 'uglifier', '>= 1.3'
 gem 'coffee-script-source', '1.8.0', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'coffee-rails', '~> 4.0'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -27,7 +27,7 @@ gem 'rails_autolink'
 gem 'video_player'
 
 # for aws cloud storage
-gem 'fog'
+gem 'fog-aws'
 # photo resizing
 gem 'mini_magick'
 # file upload solution
