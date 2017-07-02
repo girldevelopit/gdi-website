@@ -1,9 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-   config.action_mailer.default_url_options = { host: 'localhost:3000' }
-
-   config.action_mailer.delivery_method = :smtp
    
   # Mandrill smtp settings
   # config.action_mailer.smtp_settings = {
@@ -14,6 +11,9 @@ Rails.application.configure do
   #   :authentication => :plain,
   #   :enable_starttls_auto => true
   # }
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
 
   # SparkPost smtp settings
   config.action_mailer.smtp_settings = {
@@ -51,6 +51,10 @@ Rails.application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # Asset digests allow you to set far-future HTTP expiration dates on all assets,
+  # yet still be able to expire them through the digest params.
+  config.assets.digest = true
 
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
