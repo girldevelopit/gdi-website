@@ -1,16 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-   
-  # Mandrill smtp settings
-  # config.action_mailer.smtp_settings = {
-  #   :user_name => ENV['MANDRILL_USERNAME'],
-  #   :password => ENV['MANDRILL_APIKEY'],
-  #   :address => 'smtp.mandrillapp.com',
-  #   :port => 587,
-  #   :authentication => :plain,
-  #   :enable_starttls_auto => true
-  # }
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp

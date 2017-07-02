@@ -17,17 +17,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'girldevelopit.com' }
 
   config.action_mailer.delivery_method = :smtp
-  
-  # Mandrill smtp settings
-  # config.action_mailer.smtp_settings = {
-  #   :user_name => ENV['MANDRILL_USERNAME'],
-  #   :password => ENV['MANDRILL_APIKEY'],
-  #   :address => 'smtp.mandrillapp.com',
-  #   :domain => 'girldevelopit.com',
-  #   :port => 587,
-  #   :authentication => :plain,
-  #   :enable_starttls_auto => true
-  # }
 
   # SparkPost smtp settings
   config.action_mailer.smtp_settings = {
