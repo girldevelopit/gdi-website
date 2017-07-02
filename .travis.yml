@@ -8,7 +8,7 @@ cache:
 addons:
   postgresql: "9.3"
 
-script: 
+script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rspec spec/
