@@ -2,6 +2,9 @@ language: ruby
 
 before_install: "bundle config build.nokogiri --use-system-libraries"
 
+cache:
+  bundler: true
+
 addons:
   postgresql: "9.3"
 
