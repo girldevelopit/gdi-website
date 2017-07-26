@@ -1,14 +1,14 @@
 language: ruby
 
-rvm:
-  - 2.1.7
-
 before_install: "bundle config build.nokogiri --use-system-libraries"
+
+cache:
+  bundler: true
 
 addons:
   postgresql: "9.3"
 
-script: 
+script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rspec spec/
@@ -18,3 +18,6 @@ before_script:
 
 after_success:
  # - coveralls
+
+notifications:
+  email: false
