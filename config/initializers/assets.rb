@@ -3,6 +3,9 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.1'
 
-# Precompile additional assets.
+# Add additional assets to the asset load path
+# Rails.application.config.assets.paths << Emoji.images_path
 
-Rails.application.config.assets.precompile += %w( raphael-min.js jquery.mapael.js usa_states.js chapter_map.js main.js reset.css.scss favicon.ico)
+# Precompile additional assets.
+# application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
+Rails.application.config.assets.precompile += %w(raphael-min.js jquery.mapael.js usa_states.js chapter_map.js main.js reset.css.scss favicon.ico)
