@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get 'curriculum', to: redirect('materials')
 
-  resources :materials, only: [:index]
+  resources :materials, only: [:index, :show]
   get '/materials/:slug' => 'materials#show', as: :course
 
   resources :meetups, param: :slug, only: [:show]
