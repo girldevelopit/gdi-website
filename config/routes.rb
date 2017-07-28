@@ -15,14 +15,15 @@ Rails.application.routes.draw do
   resources :materials, only: [:index, :show]
   get '/materials/:slug' => 'materials#show', as: :course
 
+  get 'get-involved', to: 'home#get-involved'
+  get 'code-of-conduct', to: 'home#code-of-conduct'
+  get 'codeofconduct', to: redirect('code-of-conduct')
+
   resources :meetups, param: :slug, only: [:show]
 
   scope module: 'home' do
     get 'about'
-    get 'code-of-conduct'
-    get 'codeofconduct', to: redirect('code-of-conduct')
     get 'faq'
-    get 'get-involved'
     get 'jobs'
     get 'supporters'
     get 'sponsors', to: redirect('supporters')
@@ -30,6 +31,7 @@ Rails.application.routes.draw do
     # Donation page
     get 'donate'
     get 'summit'
+    
   end
 
   # Errors (must be last rule)
