@@ -25,10 +25,10 @@ apt-get install -yfV         \
 
 # get and compile Ruby
 echo "Getting & compiling Ruby from source...This will take a LONG TIME. Fear not!"
-curl -LSso /tmp/ruby-2.1.7.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.7.tar.gz
-tar -zxf /tmp/ruby-2.1.7.tar.gz -C /tmp
+curl -LSso /tmp/ruby-2.4.1.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.1.tar.gz
+tar -zxf /tmp/ruby-2.4.1.tar.gz -C /tmp
 
-cd /tmp/ruby-2.1.7 && \
+cd /tmp/ruby-2.4.1 && \
   ./configure --disable-install-doc && \
   make && \
   sudo make install
