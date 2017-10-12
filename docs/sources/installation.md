@@ -4,7 +4,53 @@ Here are some requirements and guides to contributing to the Girl Develop It web
 
 ---
 
-### Required installations
+### Vagrant installation instructions
+
+Using Vagrant is the suggested way to do development for the website. It provides a standard environment that works across platforms.
+
+#### 1. Install VirtualBox
+VirtualBox is a cross-platform virtualization application (see: [the VirtualBox manual](https://www.virtualbox.org/manual/ch01.html)). That means it can install multiple virtual machines at the same time, which is great for development. You can download the latest version on [the VirtualBox website](https://www.virtualbox.org/wiki/Downloads).
+
+#### 2. Install Vagrant
+Vagrant is a wonderful tool to help you build complete development environments. Download the latest version on [the Vagrant website](https://www.vagrantup.com/downloads.html).
+
+#### 3. Clone the gdi-website Git repository
+Clone the Git repository into your local development folder:
+
+```sh
+git clone git@github.com:girldevelopit/gdi-website.git
+cd gdi-website
+```
+
+#### 4. Start Vagrant
+Depending on your machine, this could take a while. Once it's started, you'll ssh into the Vagrant box and run later commands from that environment.
+
+```sh
+vagrant up
+vagrant ssh
+```
+
+#### 5. Install and initialize the development environment
+Run the following:
+
+```sh
+cd /opt/gdi/development
+bundle install
+rake db:create db:migrate db:seed
+rails server --binding=0.0.0.0
+```
+
+#### 6. View website
+Test your connection in a browser: [http://localhost:3000/](http://localhost:3000/)
+
+---
+
+### MacOS installation instructions
+
+#### Before you begin
+
+There are a few programs you have to have installed on your local machine before download the Girl Develop It code base.
+
 * [homebrew](http://brew.sh/), a package manager for Mac OS X.
 * [rvm](http://rvm.io/), a command-line tool to manage different versions of Ruby.
 * ruby 2.1.7
@@ -15,9 +61,7 @@ Here are some requirements and guides to contributing to the Girl Develop It web
 
 **Note:** If you are upgrading from 9.2., please see instructions below for "Upgrading PostgreSQL from 9.2."
 
----
-
-### Setting up your local dev environment
+#### Getting started
 
 - Fork this repo into your personal Github account.
 - Clone _your_ copy to your desktop, then navigate to that directory.
@@ -58,7 +102,7 @@ Check with
 $ echo $MEETUP_API_KEY
 ```
 
-- Add another remote:  
+- Add another remote:
    `git remote add upstream git@github.com:girldevelopit/gdi-new-site.git`
 - Now test your local dev environment by running `rails s` and visiting http://0.0.0.0:3000. You should now see a local copy of the live website! \o/
 
@@ -109,56 +153,7 @@ sudo apt-get install build-essential libpq-dev  imagemagick libmagickwand-dev no
   **Note:** Change <username> to your ubuntu username
 
     ```sh
-	  sudo su postgres -c psql
-	  postgres=# CREATE ROLE <username> SUPERUSER LOGIN;
+      sudo su postgres -c psql
+      postgres=# CREATE ROLE <username> SUPERUSER LOGIN;
       postgres=# \q
-	 ```
-
----
-
-### How to Vagrant
-
-<!-- To set up the Vagrant environment locally:
-
-1. Install VirtualBox
-2. Install Vagrant
-3. clone the git repository
-4. `$ vagrant up`
-5. `$ vagrant ssh`
-6. `$ cd /opt/gdi/development`
-7. `$ bundle install`
-8. `$ rake db:create db:migrate db:seed`
-9. `$ bin/rails s`
-10. Point your browser to `localhost:3000`
-11. DEVELOP IT! \o/ -->
-
-#### 1. Install VirtualBox
-VirtualBox is a cross-platform virtualization application (see: [the VirtualBox manual](https://www.virtualbox.org/manual/ch01.html)). That means it can install multiple virtual machines at the same time, which is great for development. You can download the latest version on [the VirtualBox website](https://www.virtualbox.org/wiki/Downloads).
-
-#### 2. Install Vagrant
-Vagrant is a wonderful tool to help you build complete development environments. Download the latest version on [the Vagrant website](https://www.vagrantup.com/downloads.html).
-
-#### 3. Clone the gdi-website Git repository
-Clone the Git repository into your local development folder: `git@github.com:girldevelopit/gdi-website.git`
-
-#### 4. Start Vagrant
-Depending on your machine, this could take a while.
-
-```
-$ vagrant up
-$ vagrant ssh
-```
-
-#### 6. Install and initialize the development environment
-
-Run the following:
-
-```
-$ cd /opt/gdi/development
-$ bundle install
-$ rake db:create db:migrate db:seed
-$ bin/rails s
-```
-
-#### 7. View website
-Test your connection in a browser: `localhost:3000`
+     ```
