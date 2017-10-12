@@ -1,30 +1,30 @@
 <ul class="media-links media-links-rounded">
-  <% if user.email? %>
-    <%= mail_to user.email do %>
+  <% if chapter.email? %>
+    <%= mail_to chapter.email do %>
       <i class="fa fa-envelope"></i>
     <% end %>
   <% end %>
 
-  <% if user.fb? %>
-    <%= link_to "https://www.facebook.com/#{user.fb}" do %>
+  <% if chapter.fb? %>
+    <%= link_to "https://www.facebook.com/#{chapter.fb}" do %>
       <i class="fa fa-facebook"></i>
     <% end %>
   <% end %>
 
-  <% if user.twitter? %>
-    <%= link_to "https://twitter.com/#{user.twitter}" do %>
+  <% if chapter.twitter? %>
+    <%= link_to "https://twitter.com/#{chapter.twitter}" do %>
       <i class="fa fa-twitter"></i>
     <% end %>
   <% end %>
 
-  <% if user.linkedin? %>
-    <%= link_to "https://www.linkedin.com/#{user.linkedin}" do %>
+  <% if chapter.linkedin? %>
+    <%= link_to linkedin_link(chapter.linkedin) do %>
       <i class="fa fa-linkedin"></i>
     <% end %>
   <% end %>
 
-  <% if user.github? %>
-    <%= link_to "https://www.github.com/#{user.github}" do %>
+  <% if chapter.github? %>
+    <%= link_to "https://www.github.com/#{chapter.github}" do %>
       <i class="fa fa-github-alt"></i>
     <% end %>
   <% end %>
