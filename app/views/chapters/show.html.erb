@@ -8,7 +8,7 @@
       <hr>
       <h1><%= @chapter.chapter %></h1>
 
-      <%= render partial: "social_media_chapter", locals: {user: @chapter} %>
+      <%= render partial: "social_media_chapter", locals: {chapter: @chapter} %>
 
       <p class="subtitle">- don't be shy -</p>
       <%= link_to "{ Join Us }", "http://www.meetup.com/#{@chapter.meetup}", :class=>"button" %>
