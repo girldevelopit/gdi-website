@@ -1,6 +1,6 @@
 # Contributors
 
-This is a list of volunteers who have dedicated their time to help maintain [girldevelopit.com](http://girldevelopit.com ) as an open source code base. We thank them for their time and contribution to our organization!
+This is a list of volunteers who have dedicated their time to help maintain [girldevelopit.com](http://girldevelopit.com) as an open source code base. We thank them for their time and contribution to our organization!
 
 ## Project Lead(s)
 
@@ -20,7 +20,7 @@ People on this list are those who have volunteered to be the main supports and c
 
 ## Core Contributor(s)
 
-The list of people in this were those who dedicated their time to create the original code base, as well as help guide the future for the code base of the Girl Develop It website. 
+The list of people in this were those who dedicated their time to create the original code base, as well as help guide the future for the code base of the Girl Develop It website.
 
 [Amy Gori](https://github.com/amygori)
 
@@ -41,3 +41,5 @@ This is list of those who have contributed to this code base through pull reques
 [Irina Muchnik](https://github.com/imuchnik)
 
 [David Bayendor](https://github.com/bayendor)
+
+[Frances Coronel](https://github.com/fvcproductions)
