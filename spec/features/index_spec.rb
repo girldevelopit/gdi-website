@@ -41,5 +41,12 @@ describe 'index page' do
       expect(current_path).to eq('/supporters')
       expect(page).to have_content('We thank the following organizations for supporting Girl Develop It:')
     end
+
+    it 'has a link to the faq page' do
+      visit '/'
+      click_on 'faq', match: :first
+      expect(current_path).to eq('/faq')
+      expect(page).to have_content('Frequently Asked Questions')
+    end
   end
 end
