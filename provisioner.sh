@@ -25,7 +25,7 @@ apt-get install -yfV         \
 
 # get and compile Ruby
 echo "Getting & compiling Ruby from source...This will take a LONG TIME. Fear not!"
-curl -LSso /tmp/ruby-2.4.1.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.1.tar.gz
+curl -LSso /tmp/ruby-2.4.1.tar.gz https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.1.tar.gz
 tar -zxf /tmp/ruby-2.4.1.tar.gz -C /tmp
 
 cd /tmp/ruby-2.4.1 && \
