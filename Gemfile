@@ -25,6 +25,7 @@ gem 'meetup_client'
 gem 'underscore-rails'
 gem 'rails_autolink'
 gem 'video_player'
+gem 'rack-attack'
 
 # for aws cloud storage
 gem 'fog-aws'

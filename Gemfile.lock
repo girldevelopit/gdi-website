@@ -227,6 +227,8 @@ GEM
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.8)
+    rack-attack (5.4.0)
+      rack (>= 1.0, < 3)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.9)
@@ -374,6 +376,7 @@ DEPENDENCIES
   pg (~> 0.20.0)
   pry-byebug
   quiet_assets
+  rack-attack
   rails (= 4.2.9)
   rails_12factor
   rails_autolink
