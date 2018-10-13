@@ -74,11 +74,13 @@
                 , <a href=" https://maps.google.com/?q=<%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %>"><%%= course.venue.address_1 %>, <%%= course.venue.city %>, <%%= course.venue.state %></a>
               <%% } %>
               ] </p>
-              <%= render partial: "meetup_map"%>
+              <%# MOVING MAP PARTIAL BELOW PARAGRAPH UNTIL GOOGLE API KEY IS AVAILABLE %>
+              <%#= render partial: "meetup_map"%>
              <p><%%= course.description.substring(0, 400) %><a href="<%%= course.event_url %>"> &hellip;read more</a></p>
              <%% if( typeof course.venue !== "undefined" ||  course.rsvp_limit !== "undefined " && course.yes_rsvp_count >= course.rsvp_limit) { } else { %>
                 <p><a href="<%%= course.event_url %>" class="button">RSVP</a></p>
               <%% } %>
+              <%= render partial: "meetup_map"%>
           </div>
         <%% }); %>
       </script>
