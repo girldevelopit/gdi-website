@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'sprockets', '2.12.5'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
 gem 'devise'
