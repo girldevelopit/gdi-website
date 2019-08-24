@@ -152,3 +152,42 @@ h3.nocaps {
   margin-bottom: 3rem;
   text-align: center;
 }
+ .conduct ul {
+            list-style: lower-alpha;
+        }  
+        
+        .conduct .harassment ul {
+            list-style: inherit;
+        }
+        
+        .conduct li {
+            margin-left: 25px;
+            font-weight: 300;
+            letter-spacing: .05rem;
+            line-height: 1.5em;
+            margin-bottom: 25px;
+        }
+        
+        .conduct {
+            min-height: 500px;
+        }
+        
+        .harassment {
+            display: block;
+            margin-right: 2.35765%;
+            width: 99%;
+            background-color: #e4e9e5;
+            padding: 25px;
+            margin-bottom: 2em;
+            -moz-transition: background, .5s;
+            -webkit-transition: background, .5s;
+            transition: background, .5s;
+        }
+        
+        .harassment.alt {
+             background-color: #fbcfc6;   
+        }
+        
+        .harassment span {
+            text-transform: uppercase;
+        }
