@@ -1,0 +1,66 @@
+<div class="opener">
+    <%#= image_tag("photo2.png") %>
+    <h1><span class="animated fadeInLeft">Don't be shy</span> <%= image_tag("flourish-med.png" , class: "hide") %> <span class="animated fadeInRight">Develop it</span></h1>
+  </div>
+
+  <div class="container" >
+  	<section class="mission-statement">
+      <div class="underlined-headline">
+        <h2>Who We Are</h2>
+        <hr>
+      </div>
+    	<p class="large">Girl Develop It is a nonprofit organization that exists to provide affordable and judgment-free opportunities for women interested in learning web and software development. Through in-person classes and community support, Girl Develop It helps women of diverse backgrounds achieve their technology goals and build confidence in their careers and their every day lives.</p>
+      <%= link_to "[ Learn more ]", about_path, :class=>"subtitle"%>
+    </section>
+  </div>
+
+  <section class="map">
+    <div class="container">
+    	<div class="underlined-headline">
+        <h2>We are now in <%= @chapters.count %> cities!</h2>
+        <hr>
+        <p class="subtitle hide">
+          Don't see your hometown?
+          <% if current_admin_user != nil %>
+            <%= link_to "Start a new chapter!", "#{root_path}admin/chapters/new" %>
+            <% else %>
+            <a href="https://docs.google.com/a/girldevelopit.com/forms/d/18vn6QF64wg8i7euJXSA4HlYWO4AlL9i04o7057-ewuQ/viewform">Start a new chapter!</a>
+          <% end %>
+        </p>
+        <%=link_to "Find GDI in your hometown!", chapters_path, :class=>" subtitle show-inline"%>
+      </div>
+      <div class="us_map hide">
+        <div class="map"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats">
+        <%= image_tag("homepage-stat1.png", :alt => "26 percent") %>
+        <p>Women hold only 26% of the approximately four million computing related occupations in the US. <%= link_to "U.S. Department of Labor, Bureau of Labor Statistics, 2013 (Occupational Category: 15–0000)", "http://www.ncwit.org/sites/default/files/resources/btn_02282014web.pdf", target: "_blank" %></p>
+      </div>
+      <div class="stats">
+        <%= image_tag("homepage-stat2.png", :alt => "18 percent") %>
+        <p>Women obtain 57% of bachelor’s degrees in the U.S, but fewer than 18% of those degrees are in computer science. (Compared to 1984, when women earned 37%) <%= link_to "National Center for Education Statistics (NCES), 2012 (CIP 11)", "http://www.ncwit.org/sites/default/files/resources/btn_02282014web.pdf", target: "_blank" %></p>
+      </div>
+      <div class="stats">
+        <%= image_tag("homepage-stat3.png", :alt => "34 percent") %>
+        <p>Tech companies with more women in management have a 34% higher return of investment. <%= link_to "National Center for Women and IT Fact Sheet", "http://www.ncwit.org/sites/default/files/resources/ncwitfactsheet.pdf", target: "_blank" %></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="press-logos">
+    <h3>{ As seen in }</h3>
+    <%#= image_tag("press-logos.png") %>
+    <%= link_to image_tag("as_seen_in/code_org.png"), "https://www.youtube.com/watch?v=nKIu9yen5nc", target: "_blank" %>
+    <%= link_to image_tag("as_seen_in/tnyt.png"), "http://www.nytimes.com/2012/03/28/technology/for-an-edge-on-the-internet-computer-code-gains-a-following.html", target: "_blank" %>
+    <%= link_to image_tag("as_seen_in/ted.png"), "http://blog.ted.com/2013/01/29/10-places-where-anyone-can-learn-to-code/", target: "_blank" %>
+    <%= link_to image_tag("as_seen_in/fast_company.png"), "http://www.fastcompany.com/1776382/female-geeks-flex-their-skills-ladies-only-hackathon", target: "_blank" %>
+    <%= link_to image_tag("as_seen_in/lifehacker.png"), "http://lifehacker.com/5872682/learn-to-code-in-2012-with-free-weekly-programming-lessons-from-codecademy", target: "_blank" %>
+  </div>
+  <script>
+    var chapter_id = "chapters/3";
+  </script>
