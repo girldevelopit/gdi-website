@@ -6,10 +6,10 @@
   <div class="container" >
   	<section class="mission-statement">
       <div class="underlined-headline">
-        <h2>Who We Are</h2>
+        <h2>Welcome to Girl Develop It</h2>
         <hr>
       </div>
-    	<p class="large">Girl Develop It is a nonprofit organization that exists to provide affordable and judgment-free opportunities for women interested in learning web and software development. Through in-person classes and community support, Girl Develop It helps women of diverse backgrounds achieve their technology goals and build confidence in their careers and their every day lives.</p>
+    	<p class="large">We are a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a jusdgement free environment.</p>
       <%= link_to "[ Learn more ]", about_path, :class=>"subtitle"%>
     </section>
   </div>
@@ -17,21 +17,15 @@
   <section class="map">
     <div class="container">
     	<div class="underlined-headline">
-        <h2>Join Our Class</h2>
+        <h2>Take a Class</h2>
         <hr>
        
-        <p class="subtitle hide">
-          Don't see your hometown?
-          <% if current_admin_user != nil %>
-            <%= link_to "Start a new chapter!", "#{root_path}admin/chapters/new" %>
-            <% else %>
+        <p>
             <a href="https://docs.google.com/a/girldevelopit.com/forms/d/18vn6QF64wg8i7euJXSA4HlYWO4AlL9i04o7057-ewuQ/viewform">Start a new chapter!</a>
           <% end %>
         </p>
-        <%=link_to "Find GDI in your hometown!", chapters_path, :class=>" subtitle show-inline"%>
       </div>
-      <div class="us_map hide">
-        <div class="map"></div>
+      <div style="width:195px; text-align:center;" ><iframe  src="https://www.eventbrite.com/calendar-widget?eid=99368997346" frameborder="0" height="351" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
       </div>
     </div>
   </section>
