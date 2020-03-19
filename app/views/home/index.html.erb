@@ -19,7 +19,26 @@
     	<div class="underlined-headline">
         <h2>Take a Class</h2>
         <hr>
-         <div style="width:800px; text-align:center;" ><iframe  src="https://www.eventbrite.com/calendar-widget?eid=99368997346" frameborder="0" height="351" width="800" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:800px; text-align:center;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
+        <div id="eventbrite-widget-container-99368997346"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '99368997346',
+        iframeContainerId: 'eventbrite-widget-container-99368997346',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
       </div>
    
       </div>
