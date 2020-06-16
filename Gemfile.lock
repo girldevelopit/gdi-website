@@ -106,7 +106,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.3)
-    excon (0.57.1)
+    excon (0.71.0)
     execjs (2.7.0)
     ffi (1.9.25)
     fog-aws (1.4.0)
