@@ -8,7 +8,7 @@ This is the repo for the newly updated Girl Develop It website. In this README y
 
 ## About
 
-Girl Develop It is a nonprofit organization that exists to provide affordable and accessible programs for women interested in learning web and software development. Through mentorship and hands-on instruction Girl Develop It can help them reach their goals.
+Girl Develop It is a nonprofit organization that exists to provide affordable and accessible programs for women interested in learning web and software development. Through mentorship and hands-on instruction Girl Develop It can help them reach their goals. It is really a nice opportunity for all the developers.
 
 ## Documentation
 
