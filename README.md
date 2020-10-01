@@ -1,4 +1,4 @@
-# [Girl Develop It](http://girl-develop-it.herokuapp.com)
+An amazing project : # [Girl Develop It](http://girl-develop-it.herokuapp.com)
 
 [![Build Status](https://api.travis-ci.org/girldevelopit/gdi-website.svg?branch=production)](https://travis-ci.org/girldevelopit/gdi-new-site)
 
