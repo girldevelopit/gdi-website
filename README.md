@@ -4,7 +4,7 @@
 
 <!-- [![Coverage Status](https://coveralls.io/repos/dianpan/gdi-new-site/badge.svg?branch=production&service=github)](https://coveralls.io/github/dianpan/gdi-new-site?branch=production) -->
 
-This is the repo for the newly updated Girl Develop It website. In this README you'll find helpful resources to get you up and running to start contributing to the code base!
+This is the repo for the newly updated Girl Develop It website. In this README you'll find helpfull resources to get you up and running to start contributing to the code base!
 
 ## About
 
