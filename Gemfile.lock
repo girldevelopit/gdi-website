@@ -211,7 +211,7 @@ GEM
       bourbon (>= 3.1)
       sass (~> 3.2.19)
     nenv (0.3.0)
-    nokogiri (1.10.3)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
